@@ -1,0 +1,14 @@
+zk:
+  label: ZK
+  permalink: /zk
+  description: ZK
+
+prover:
+  label: Prover
+  permalink: /prover
+  description: Prover
+
+database:
+  label: Database
+  permalink: /database
+  description: Database
