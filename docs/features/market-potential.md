@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Market Potential
+# Market Potential for Silvana
 
 According to Chainlink, real-world assets (RWAs) are projected to be worth $867 trillion in 2024. Meanwhile, the total crypto market cap for 2024 is estimated to be around $3.5 trillion. This suggests that the ZK and blockchain technology market could be approximately 230 times larger than the existing crypto market, unveiling vast growth prospects. Additionally, the total capitalization of all tokenized assets, including stablecoins, is about $15 billion, indicating a potential market growth of roughly 57,800 times.
 
