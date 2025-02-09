@@ -73,7 +73,7 @@ const config: Config = {
 
   presets: [
     [
-      "classic",
+      "@docusaurus/preset-classic",
       {
         docs: {
           sidebarPath: "./sidebars.ts",
@@ -101,8 +101,9 @@ const config: Config = {
         theme: {
           customCss: "./src/css/custom.css",
         },
-        googleTagManager: {
-          containerId: "G-05SXMZDYQC",
+        gtag: {
+          trackingID: "G-05SXMZDYQC",
+          anonymizeIP: true,
         },
       } satisfies Preset.Options,
     ],
