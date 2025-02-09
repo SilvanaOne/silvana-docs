@@ -46,7 +46,7 @@ const config: Config = {
           "packages/storage",
           "packages/upgradable",
         ],
-        banner: "Proof of everything engine library to scale your business",
+        banner: "Proof of everything engine",
         typedocOptions: {
           excludeExternals: true,
         },
@@ -106,7 +106,7 @@ const config: Config = {
         },
         {
           to: "api",
-          label: "Silvana API",
+          label: "Reference",
           position: "left",
         },
         // { to: "/blog", label: "Blog", position: "left" },
