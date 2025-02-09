@@ -3,7 +3,7 @@ sidebar_position: 1
 slug: /
 ---
 
-# Silvana Documentation
+# Silvana Overview
 
 Welcome to Silvana, a revolutionary platform that transforms how businesses handle trust, compliance, and efficiency challenges in the global marketplace.
 

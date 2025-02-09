@@ -32,7 +32,7 @@ const config: Config = {
     defaultLocale: "en",
     locales: ["en"],
   },
-  //themes: ["docusaurus-theme-openapi-docs"],
+  themes: ["docusaurus-theme-openapi-docs"],
   plugins: [
     [
       "docusaurus-plugin-typedoc-api",
@@ -52,6 +52,23 @@ const config: Config = {
         },
       },
     ],
+    [
+      "docusaurus-plugin-openapi-docs",
+      {
+        id: "openapi", // plugin id
+        docsPluginId: "@docusaurus/preset-classic", // configured for preset-classic
+        config: {
+          silvana: {
+            specPath: "silvana-lib/packages/api/open-api.yaml",
+            outputDir: "docs/OpenAPI",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+            },
+            showSchemas: true,
+          } satisfies OpenApiPlugin.Options,
+        },
+      },
+    ],
   ],
 
   presets: [
@@ -61,7 +78,7 @@ const config: Config = {
         docs: {
           sidebarPath: "./sidebars.ts",
           routeBasePath: "/",
-          //docItemComponent: "@theme/ApiItem",
+          docItemComponent: "@theme/ApiItem",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/SilvanaOne/silvana-docs/tree/main/",
@@ -84,11 +101,63 @@ const config: Config = {
         theme: {
           customCss: "./src/css/custom.css",
         },
+        googleTagManager: {
+          containerId: "G-05SXMZDYQC",
+        },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
+    languageTabs: [
+      {
+        highlight: "bash",
+        language: "curl",
+        logoClass: "curl",
+      },
+      {
+        highlight: "javascript",
+        language: "javascript",
+        logoClass: "javascript",
+      },
+      {
+        highlight: "javascript",
+        language: "nodejs",
+        logoClass: "nodejs",
+      },
+      {
+        highlight: "python",
+        language: "python",
+        logoClass: "python",
+      },
+      {
+        highlight: "rust",
+        language: "rust",
+        logoClass: "rust",
+      },
+      {
+        highlight: "ocaml",
+        language: "ocaml",
+        logoClass: "ocaml",
+      },
+      {
+        highlight: "go",
+        language: "go",
+        logoClass: "go",
+      },
+
+      {
+        highlight: "java",
+        language: "java",
+        logoClass: "java",
+        variant: "unirest",
+      },
+      {
+        highlight: "powershell",
+        language: "powershell",
+        logoClass: "powershell",
+      },
+    ],
     // Replace with your project's social card
     image: "img/silvana-social-card.png",
     navbar: {
@@ -100,13 +169,19 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "docsSidebar",
           position: "left",
           label: "Docs",
         },
         {
+          type: "docSidebar",
+          sidebarId: "apiSidebar",
+          position: "left",
+          label: "OpenAPI",
+        },
+        {
           to: "api",
-          label: "Reference",
+          label: "Library",
           position: "left",
         },
         // { to: "/blog", label: "Blog", position: "left" },
@@ -131,15 +206,6 @@ const config: Config = {
             {
               label: "Docs",
               to: "/",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "X",
-              href: "https://x.com/SilvanaOne",
             },
           ],
         },
