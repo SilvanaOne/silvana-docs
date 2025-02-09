@@ -7,6 +7,8 @@ slug: /
 
 Welcome to Silvana, a revolutionary platform that transforms how businesses handle trust, compliance, and efficiency challenges in the global marketplace.
 
+![Silvana](./silvana.png)
+
 ## What is Silvana?
 
 Silvana is a next-generation platform that combines zero-knowledge (ZK) proofs with an innovative object-centric blockchain design. Our platform enables enterprises to:
