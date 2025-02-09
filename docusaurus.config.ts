@@ -103,7 +103,7 @@ const config: Config = {
         },
         gtag: {
           trackingID: "G-05SXMZDYQC",
-          anonymizeIP: true,
+          anonymizeIP: false,
         },
       } satisfies Preset.Options,
     ],
