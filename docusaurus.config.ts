@@ -110,6 +110,23 @@ const config: Config = {
   ],
 
   themeConfig: {
+    algolia: {
+      // The application ID provided by Algolia
+      appId: "46H8LPLD8M",
+
+      // Public API key: it is safe to commit it
+      apiKey: "6d859da9ebf362293a15cea622bad837",
+
+      indexName: "silvana",
+
+      // Optional: see doc section below
+      contextualSearch: false,
+
+      // Optional: path for search page that enabled by default (`false` to disable it)
+      searchPagePath: "search",
+
+      //... other Algolia params
+    },
     languageTabs: [
       {
         highlight: "bash",
