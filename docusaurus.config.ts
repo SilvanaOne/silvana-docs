@@ -195,11 +195,11 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "apiSidebar",
           position: "left",
-          label: "OpenAPI",
+          label: "Core",
         },
         {
           to: "api",
-          label: "Library",
+          label: "Modules",
           position: "left",
         },
         // { to: "/blog", label: "Blog", position: "left" },
