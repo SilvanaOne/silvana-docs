@@ -4,9 +4,12 @@
  * work well for content-centric websites.
  */
 
+@import './fonts.css';
+@import './markdown.css';
+
 /* You can override the default Infima variables here. */
-/* Global CSS for Docusaurus brand colors */
 :root {
+  /* Brand colors */
   --ifm-color-primary: #8a7d91;
   --ifm-color-primary-dark: #7d7084;
   --ifm-color-primary-darker: #726678;
@@ -14,17 +17,385 @@
   --ifm-color-primary-light: #97899e;
   --ifm-color-primary-lighter: #a093a9;
   --ifm-color-primary-lightest: #b5a8bf;
-  --ifm-code-font-size: 95%;
+  
+  /* Common colors */
+  --silvana-color-white: #FFFFFF;
+  --silvana-color-pink: #D6448F;
+  --silvana-color-pink-light: #FF69B4;
+  --silvana-color-gray-100: #F0F2F5;
+  --silvana-color-gray-200: #E4E6EB;
+  --silvana-color-gray-300: #959DAD;
+  --silvana-color-gray-400: #414852;
+  --silvana-color-gray-500: #777E8C;
+  --silvana-color-gray-600: #283039;
+  --silvana-color-gray-700: #101720;
+  
+  /* Typography colors */
+  --silvana-color-text-primary: var(--silvana-color-gray-700);
+  --silvana-color-text-secondary: var(--silvana-color-gray-600);
+  --silvana-color-text-tertiary: var(--silvana-color-gray-400);
+  --silvana-color-text-quaternary: var(--silvana-color-gray-500);
+  
+  /* UI Element colors */
+  --silvana-color-border: var(--silvana-color-gray-200);
+  --silvana-color-background-secondary: #F8F9FA;
+  --silvana-color-background-note: #EDF8FF;
+  --silvana-color-accent-pink: var(--silvana-color-pink);
+  --silvana-color-accent-pink-light: #FFEBF5;
+  --silvana-color-link: #4674ab;
+  --silvana-color-link-hover: #3a628e;
+
+  /* Navbar colors */
+  --silvana-color-navbar-bg: var(--silvana-color-white);
+  --silvana-color-navbar-border: var(--silvana-color-gray-200);
+  --silvana-color-navbar-item: var(--silvana-color-gray-400);
+  --silvana-color-navbar-item-hover: var(--silvana-color-pink);
+  --silvana-color-navbar-item-active: var(--silvana-color-pink);
+  --silvana-color-navbar-item-active-border: var(--silvana-color-pink);
+  --silvana-color-search-bg: var(--silvana-color-gray-100);
+  --silvana-color-search-placeholder: var(--silvana-color-gray-300);
+  --silvana-color-navbar-search-icon: var(--silvana-color-gray-300);
+  --silvana-color-navbar-theme-toggle: var(--silvana-color-gray-400);
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-[data-theme="dark"] {
-  --ifm-color-primary: #4674ab;
-  --ifm-color-primary-dark: #3f6a9a;
-  --ifm-color-primary-darker: #3a628e;
-  --ifm-color-primary-darkest: #305477;
-  --ifm-color-primary-light: #5281ba;
-  --ifm-color-primary-lighter: #5d8dc8;
-  --ifm-color-primary-lightest: #719dd6;
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.2);
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #a093a9;
+  --ifm-color-primary-dark: #8f819a;
+  --ifm-color-primary-darker: #867891;
+  --ifm-color-primary-darkest: #6d6177;
+  --ifm-color-primary-light: #afa4b7;
+  --ifm-color-primary-lighter: #b8aec0;
+  --ifm-color-primary-lightest: #cdc7d3;
+
+  /* Typography colors - dark theme */
+  --silvana-color-text-primary: var(--silvana-color-white);
+  --silvana-color-text-secondary: rgba(255, 255, 255, 0.9);
+  --silvana-color-text-tertiary: rgba(255, 255, 255, 0.7);
+  --silvana-color-text-quaternary: rgba(255, 255, 255, 0.5);
+
+  /* UI Element colors - dark theme */
+  --silvana-color-border: #2D2D2D;
+  --silvana-color-background-secondary: #1C1C1C;
+  --silvana-color-background-note: #1E2A3D;
+  --silvana-color-accent-pink: var(--silvana-color-pink-light);
+  --silvana-color-accent-pink-light: #4A1B36;
+  --silvana-color-link: #6B9EDB;
+  --silvana-color-link-hover: #8BB8F0;
+
+  /* Navbar colors - dark theme */
+  --silvana-color-navbar-bg: var(--ifm-background-color);
+  --silvana-color-navbar-border: rgba(255, 255, 255, 0.1);
+  --silvana-color-navbar-item: rgba(255, 255, 255, 0.9);
+  --silvana-color-navbar-item-hover: var(--silvana-color-pink-light);
+  --silvana-color-navbar-item-active: var(--silvana-color-pink-light);
+  --silvana-color-navbar-item-active-border: var(--silvana-color-pink-light);
+  --silvana-color-search-bg: rgba(255, 255, 255, 0.05);
+  --silvana-color-search-placeholder: rgba(255, 255, 255, 0.5);
+  --silvana-color-navbar-search-icon: rgba(255, 255, 255, 0.5);
+  --silvana-color-navbar-theme-toggle: rgba(255, 255, 255, 0.9);
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Note section */
+.note-container {
+  display: flex;
+  width: 820px;
+  padding: 12px 16px;
+  align-items: flex-start;
+  gap: 8px;
+  border-radius: 8px;
+  background: var(--silvana-color-background-note);
+  font-family: var(--ff--inter-regular);
+}
+
+.note-title {
+  color: var(--silvana-color-text-primary);
+  font-family: var(--ff--inter-medium);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  text-transform: capitalize;
+}
+
+.note-text {
+  color: var(--silvana-color-text-secondary);
+  font-family: var(--ff--inter-regular);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Header styles */
+.navbar {
+  height: 64px;
+  border-bottom: 1px solid var(--silvana-color-navbar-border);
+  padding: 0;
+  position: fixed;
+  width: 100%;
+  background: var(--silvana-color-navbar-bg);
+  top: 0;
+  z-index: 100;
+  font-family: var(--ff--inter-regular);
+}
+
+.navbar__inner {
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Central menu */
+.navbar__items:not(.navbar__items--right) {
+  padding: 0;
+  gap: 24px;
+  height: 64px;
+}
+
+.navbar__items--right {
+  position: static;
+  transform: none;
+  margin-left: auto;
+  z-index: 1;
+}
+
+.navbar__item {
+  color: var(--silvana-color-navbar-item);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 0;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__item:hover {
+  color: var(--silvana-color-navbar-item-hover);
+}
+
+.navbar__item--active {
+  color: var(--silvana-color-navbar-item-active);
+}
+
+.navbar__item--active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--silvana-color-navbar-item-active-border);
+}
+
+/* Active link styles */
+.navbar__link--active {
+  color: var(--silvana-color-navbar-item-active);
+  font-family: var(--ff--inter-regular);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  border-bottom: 3px solid var(--silvana-color-navbar-item-active-border);
+  margin-bottom: -1px;
+}
+
+/* Search box */
+.navbar__search-container {
+  position: relative;
+  margin-left: auto;
+}
+
+.navbar__search {
+  width: 200px;
+  height: 36px;
+  background: var(--silvana-color-search-bg);
+  border-radius: 8px;
+  padding: 0 16px 0 40px;
+  border: none;
+  font-family: var(--ff--inter-regular);
+  font-size: 14px;
+  color: var(--silvana-color-navbar-item);
+}
+
+.navbar__search::placeholder {
+  color: var(--silvana-color-search-placeholder);
+}
+
+.navbar__search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--silvana-color-navbar-search-icon);
+}
+
+/* Theme toggle */
+.navbar__theme-toggle {
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--silvana-color-navbar-theme-toggle);
+}
+
+/* Dark mode */
+[data-theme='dark'] {
+  --ifm-navbar-background-color: var(--ifm-background-color);
+  --ifm-navbar-shadow: none;
+}
+
+[data-theme='dark'] .navbar {
+  background: var(--silvana-color-navbar-bg);
+  border-bottom: 1px solid var(--silvana-color-navbar-border);
+}
+
+[data-theme='dark'] .navbar__search {
+  background: var(--silvana-color-search-bg);
+}
+
+[data-theme='dark'] .navbar__item {
+  color: var(--silvana-color-navbar-item);
+}
+
+[data-theme='dark'] .navbar__theme-toggle {
+  color: var(--silvana-color-navbar-theme-toggle);
+}
+
+[data-theme='dark'] .navbar__link--active {
+  color: var(--silvana-color-navbar-item-active);
+  border-bottom: 3px solid var(--silvana-color-navbar-item-active-border);
+}
+
+/* Main content padding for fixed header */
+.main-wrapper {
+  padding-top: 64px;
+}
+
+/* Breadcrumbs */
+nav.theme-doc-breadcrumbs {
+  position: relative;
+  top: 16px;
+  margin-bottom: 24px;
+  padding: 0 0 0 32px;
+}
+
+.breadcrumbs__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  font-family: var(--ff--inter-regular);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  display: inline-flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: var(--silvana-color-text-quaternary);
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide home icon and show "Home" text instead */
+.breadcrumbs__item:first-child svg {
+  display: none;
+}
+
+.breadcrumbs__item:first-child .breadcrumbs__link::before {
+  content: 'Home';
+}
+
+/* Hide arrows */
+.breadcrumbs__item svg {
+  display: none;
+}
+
+.breadcrumbs__item:not(:last-child):after {
+  display: none !important;
+}
+
+.breadcrumbs__item:not(:first-child)::before {
+  content: '/';
+  margin: 0 5px;
+  color: var(--silvana-color-text-quaternary);
+  opacity: 0.6;
+}
+
+.breadcrumbs__link {
+  font-family: var(--ff--inter-regular);
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--silvana-color-text-quaternary);
+  text-decoration: none;
+  background: none !important;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+.breadcrumbs__link:hover {
+  color: var(--silvana-color-accent-pink);
+  text-decoration: none;
+  background: none !important;
+}
+
+.breadcrumbs__item:last-child .breadcrumbs__link {
+  background: none !important;
+}
+
+[data-theme='dark'] .breadcrumbs__item,
+[data-theme='dark'] .breadcrumbs__link,
+[data-theme='dark'] .breadcrumbs__item:not(:first-child)::before {
+  color: var(--silvana-color-text-quaternary);
+  background: none;
+}
+
+[data-theme='dark'] .breadcrumbs__link:hover {
+  color: var(--silvana-color-accent-pink);
+}
+
+/* Menu link styles */
+.menu__link {
+  color: var(--silvana-color-navbar-item);
+  font-family: var(--ff--inter-regular);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  background: none !important;
+}
+
+.menu__link--active {
+  color: var(--silvana-color-pink);
+  font-family: var(--ff--inter-regular);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  background: none !important;
 }

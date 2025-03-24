@@ -8,12 +8,19 @@ sidebar_position: 2
 
 We aim to revolutionize on-chain asset management by leveraging advanced zero-knowledge (ZK) proofs for robust data privacy. We address trust, security, and efficiency challenges in fragmented, opaque markets by integrating ZK and blockchain technology into a seamless, enterprise-ready platform. Our ultimate mission is to catalyze a 1000× expansion of blockchain and ZK technologies worldwide.
 
+<blockquote class="note">
+  <strong>Note:</strong>  
+  Silvana aims to bring the light in that forest of complexity, offering a scalable, privacy-centric engine for modern enterprises while shielding them from the intricacies of blockchain.
+</blockquote>
+
 ## Vision & Opportunity
 
 > "Midway upon the journey of our life,  
 > I found myself within a forest dark,  
-> For the straightforward pathway had been lost."  
+> For the straightforward pathway had been lost."       
+>
 > – Dante Alighieri
+
 
 **Vision**: Empower businesses to conduct transactions, confidently verify, and report effectively using ZK-enabled blockchain solutions. These solutions preserve privacy, reduce operational overheads, and create new revenue streams.
 
@@ -23,101 +30,39 @@ Silvana aims to bring the light in that forest of complexity, offering a scalabl
 
 ## Problem Statement
 
-![Vision](./img/vision.png)
-
 ### No Viable Web3 Private Data Verification Solution
 
 - Current L1 and L2 blockchains are not hardwired to handle private data within real-world enterprise infrastructure
 - Traditional verification involves extensive data sharing, manual checks, and dependence on third-party intermediaries, resulting in high costs, security breaches, compliance issues, and inefficiencies
 - Existing solutions contain a lot of ZK complexities that must be abstracted away to get the focus on business needs and applications
 
-### Too Much Focus on Technology Over Business
+## Silvana Core
 
-Many tech startups prioritize ZK technology and issues like data privacy and decentralization, while businesses need:
+**Prover**: Generates ZK proofs for mutated states of provable records
 
-- Compliance
-- Cost-effectiveness
-- Development speed
-- Data security
-- Customizability
+**Verifier**:
 
-### No Comprehensive Package ZK Solution
+**Router**:
 
-Despite its strong utility, ZK technology still lacks a comprehensive integrative product that covers most use cases for private and secure data and proof verification.
+## How Silvana Can Apply
 
-### Project Isolation
+The table below features the use cases we're targeting now:
 
-Projects, especially those involving ZK proof systems, are typically deployed on individual networks, rendering them blockchain-specific and isolated.
+| Use Case                                          | Problem                                                                                                                                                                                 | Solution                                                                                                                                                                         | Benefits                                                                                                           |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Reinsurance                                       | Insurers need to mitigate significant risks, such as those in aviation and oil rigs, without overexposing sensitive details. Manual processes are slow and susceptible to data leakage. | Silvana leverages zero-knowledge proofs to facilitate secure quote requests from multiple reinsurers.                                                                            | - Potential 20%+ Savings on Reinsurance Premiums<br/>- Larger Pool of Reinsurers<br/>- Automated Compliance Checks |
+| Bookkeeping, Accounting, Due Diligence, and Audit | Traditional accounting methods are susceptible to human error, fraud, and slow reconciliation processes.                                                                                | Silvana's object-centric, event-based architecture revolutionizes accounting by transforming double-entry systems into triple-entry accounting, complete with on-chain receipts. | - Continuous Auditing<br/>- Preserved Privacy<br/>- Cost Reduction                                                 |
+| Gaming Object Management                          | The state of a gaming object can be covertly altered, potentially leading to gaming fraud.                                                                                              | Silvana meticulously records and monitors the state of all created objects, ensuring comprehensive tracking and security.                                                        | - Mutable, Provable, and Traceable Object States<br/>- Private Data Concealment<br/>- Enhanced Gaming Logic        |
+| Document Verification                             | Notaries are trusted to verify documents, yet instances of document forgery or criminal conspiracy still occur.                                                                         | Silvana ensures document validity and verifies ownership, providing a secure and reliable solution.                                                                              | - Eliminated Fraud and Forgery Risk<br/>- Continuous Document Availability<br/>- Private Data Concealed            |
 
-### Additional Challenges
 
-**Compliance Issues**
+## Truth Marketplace
 
-- Maintaining regulatory standards can be onerous
-- Businesses risk exposing proprietary data in compliance, lacking the private data proving needed for truly trustless solutions
+One of the Marketplace corner cases is Silvana's Truth Marketplace, the proof marketplace. There are multiple proofs for a single operation with a provable record. Some may be more truthful and trustworthy than others. Truth Marketplace helps users find and obtain them.
 
-**Legacy Infrastructure**
+This is the normal flow of Silvana's Truth Marketplace:
 
-- Outdated, siloed systems slow down verification, hamper collaboration, and inflate costs
-- Manual or double-entry processes remain vulnerable to fraud and errors
+1. Marketplace users can buy and sell proofs of truth, some access-based
+2. Enterprises might sell reconciliation proofs to counterparties for year-end financial liabilities, enabling compliance or audit checks without revealing full data sets
+3. Combining multiple proofs increases the overall "truth probability," considering correlations
 
-## Value Proposition
-
-Our customers and primary beneficiaries are standalone enterprises and industry integrators, including startups specializing in on-chain asset management and RWAs. Our solution will also benefit blockchain ecosystems and regulators.
-
-### Enterprises
-
-Digital and off-chain enterprises use Silvana to manage their assets, either directly or through integrators. They benefit from:
-
-- Improved cost-effectiveness by automating and tokenizing their assets
-- Ready-made, customizable solutions to meet their business needs
-- Ensured legal compliance
-- Guaranteed data security and privacy
-- Cross-chains transactions
-
-### Integrators and Developers
-
-Integrators are key players that aggregate enterprises and cater to their needs. With their expertise, they act as intermediaries between enterprises and Silvana. They benefit from:
-
-- A ready-made, customizable module solution
-- Fast and easy onboarding, thanks to well-packaged modules, API, and SDK for building applications with ZK proofs
-- The ability to deploy solutions on any blockchain, in any environment, and with any technology due to complexity abstraction and a blockchain-agnostic approach
-- An expanded customer base among enterprises, leading to a more extensive portfolio
-
-### Blockchain Ecosystem
-
-Silvana significantly benefits four key actors in blockchain systems:
-
-**Settlement Layer (L1, L2) Blockchains:**
-
-- Increased transaction activity
-- Higher Total Value Locked (TVL)
-- More transaction fees paid
-
-**Data Availability (DA) Layer:**
-
-- Enhanced data recording
-- Increased storage fees paid
-
-**ZK Proof Systems:**
-
-- Integration capabilities
-- Development tools
-- API access
-
-**Blockchain Users:**
-
-- Expanded functionality
-- Improved asset ownership and management
-- Ensured data privacy and security
-
-### Regulators
-
-Regulators and government agencies ensuring compliance with asset management laws benefit from:
-
-- Guaranteed legal compliance
-- Enhanced transaction transparency and traceability
-
-The diagram below provides a clear and comprehensive overview of Silvana's advantages for different stakeholders in the blockchain ecosystem.
-
-![Silvana Ecosystem](./img/advantages.png)
