@@ -1,0 +1,220 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+/* Note: You'll need to add Whyte font separately as it's a commercial font */
+
+/* Base container */
+.markdown {
+  margin: 0 auto;
+  font-family: var(--ff--inter-regular);
+  color: var(--silvana-color-text-primary);
+  padding-left: 24px;
+  padding-right: 26px;
+}
+
+/* Headers */
+.markdown h1 {
+  font-family: var(--ff--inter-bold);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  text-transform: capitalize;
+  color: var(--silvana-color-text-primary);
+  margin-bottom: 24px;
+}
+
+.markdown h2 {
+  font-family: var(--ff--inter-bold);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.03em;
+  color: var(--silvana-color-text-primary);
+  margin: 40px 0 16px;
+}
+
+.markdown h3 {
+  font-family: var(--ff--inter-bold);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  color: var(--silvana-color-text-primary);
+  margin: 24px 0 16px;
+}
+
+/* Paragraphs and Lists */
+.markdown p {
+  font-family: var(--ff--inter-regular);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--silvana-color-text-secondary);
+  margin: 16px 0;
+}
+
+.markdown li {
+  font-family: var(--ff--inter-regular);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--silvana-color-text-secondary);
+}
+
+.markdown ol li::marker {
+  color: var(--silvana-color-accent-pink);
+}
+
+/* Blockquotes */
+.markdown blockquote {
+  padding: 0 16px;
+  margin: 24px 0;
+  border-left: 3px solid var(--silvana-color-accent-pink-light);
+  background: none;
+}
+
+/* Override default paragraph styles for blockquote text */
+.markdown blockquote > p:not(:last-child) {
+  margin: 0;
+  color: var(--silvana-color-text-secondary);
+  font-family: var(--ff--inter-regular);
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Style for the attribution/author */
+.markdown blockquote > p:last-child {
+  margin-top: 8px;
+  color: var(--silvana-color-text-tertiary);
+  font-family: var(--ff--inter-regular);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .markdown blockquote p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-theme="dark"] .markdown blockquote p:last-child {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Code blocks */
+.markdown pre {
+  background: var(--silvana-color-background-secondary);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+  overflow-x: auto;
+  font-family: "Monaco", monospace;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.markdown code {
+  background: var(--silvana-color-background-secondary);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: "Monaco", monospace;
+  font-size: 14px;
+  color: var(--silvana-color-text-secondary);
+}
+
+/* Images */
+.markdown img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 24px 0;
+}
+
+/* Links */
+.markdown a {
+  color: var(--silvana-color-link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.markdown a:hover {
+  color: var(--silvana-color-link-hover);
+  text-decoration: underline;
+}
+
+/* Tables */
+.markdown table {
+  width: 100%;
+  margin: 24px 0;
+  border-collapse: collapse;
+  border: 1px solid var(--silvana-color-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.markdown th {
+  background: var(--silvana-color-background-secondary);
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 500;
+  color: var(--silvana-color-text-primary);
+  border-bottom: 1px solid var(--silvana-color-border);
+}
+
+.markdown td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--silvana-color-border);
+  color: var(--silvana-color-text-secondary);
+}
+
+/* Horizontal Rule */
+.markdown hr {
+  border: 0;
+  height: 1px;
+  background: var(--silvana-color-border);
+  margin: 32px 0;
+}
+
+/* Note blocks */
+.markdown .note {
+  display: flex;
+  background-color: var(--silvana-color-background-note);
+  border: none;
+  padding: 16px;
+  font-family: var(--ff--inter-regular);
+  font-size: 16px;
+  color: var(--silvana-color-text-secondary);
+  border-radius: 8px;
+}
+
+.markdown .note-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 16px;
+  gap: 8px;
+  background: var(--silvana-color-background-note);
+  border-radius: 8px;
+  margin: 16px 0;
+}
+
+.markdown .note strong {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.markdown .note p:last-child {
+  margin-top: 0;
+}
+
+.note::before {
+  content: url('../../static//img/note.image.svg');;
+  font-size: 20px;
+  margin-right: 10px;
+}

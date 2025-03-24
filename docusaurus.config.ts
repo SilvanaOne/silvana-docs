@@ -179,10 +179,9 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/silvana-social-card.png",
     navbar: {
-      title: "Silvana",
       logo: {
         alt: "Silvana Logo",
-        src: "img/silvana-logo.png",
+        src: "img/silvana-logo.svg",
       },
       items: [
         {
@@ -203,16 +202,16 @@ const config: Config = {
           position: "left",
         },
         // { to: "/blog", label: "Blog", position: "left" },
-        {
-          href: "https://github.com/SilvanaOne",
-          label: "GitHub",
-          position: "right",
-        },
-        {
-          href: "https://www.npmjs.com/org/silvana-one",
-          label: "NPM",
-          position: "right",
-        },
+        // {
+        //   href: "https://github.com/SilvanaOne",
+        //   label: "GitHub",
+        //   position: "right",
+        // },
+        // {
+        //   href: "https://www.npmjs.com/org/silvana-one",
+        //   label: "NPM",
+        //   position: "right",
+        // },
       ],
     },
     footer: {
