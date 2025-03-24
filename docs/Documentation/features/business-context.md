@@ -48,8 +48,8 @@ Silvana aims to bring the light in that forest of complexity, offering a scalabl
 variant={TabVariants.FULL_BORDER}
 tabs={[
 { value: 'Prover', label: '1', content: <>Generates ZK proofs for mutated states of provable records</>, default: true },
-{ value: 'Verifier', label: '2', content: <>Verifier</> },
-{ value: 'Router', label: '3', content: <>Router</> },
+{ value: 'Verifier', label: '2', content: <>Checks generated proofs on the verifier's (counterparty's) side</> },
+{ value: 'Router', label: '3', content: <>Interface for users to interact with provable records, including public schemas showing record mutable states. Links data providers with customers, intermediaries, employees and users.</> },
 ]}
 />
 

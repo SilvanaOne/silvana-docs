@@ -1,4 +1,4 @@
-import styles from './NumberedList.module.css';
+import styles from './numberedList.module.css';
 
 export default function NumberedList({ items }) {
   return (
