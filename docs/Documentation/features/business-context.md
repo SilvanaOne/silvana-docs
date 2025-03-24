@@ -1,6 +1,10 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import CustomTabs, { TabVariants } from '@site/src/components/CustomTabs';
+import NumberedList from '@site/src/components/NumberedList';
 
 # Business Context
 
@@ -17,16 +21,18 @@ We aim to revolutionize on-chain asset management by leveraging advanced zero-kn
 
 > "Midway upon the journey of our life,  
 > I found myself within a forest dark,  
-> For the straightforward pathway had been lost."       
+> For the straightforward pathway had been lost."
 >
 > – Dante Alighieri
 
+<CustomTabs
+tabs={[
+{ value: 'Vision', label: '1', content: <>Empower businesses to conduct transactions, confidently verify, and report effectively using ZK-enabled blockchain solutions. These solutions preserve privacy, reduce operational overheads, and create new revenue streams.а</>, default: true },
+{ value: 'Opportunity', label: '2', content: <> As privacy regulations tighten and trustless processes gain traction in supply chains, finance, insurance, and beyond, the demand for cryptographic verification without data leakage is growing. Traditional solutions often fall short, requiring businesses to expose more data than necessary. Silvana's privacy-first approach fills this gap, unlocking the potential for 1000× market growth in ZK and blockchain technology.
 
-**Vision**: Empower businesses to conduct transactions, confidently verify, and report effectively using ZK-enabled blockchain solutions. These solutions preserve privacy, reduce operational overheads, and create new revenue streams.
-
-**Opportunity**: As privacy regulations tighten and trustless processes gain traction in supply chains, finance, insurance, and beyond, the demand for cryptographic verification without data leakage is growing. Traditional solutions often fall short, requiring businesses to expose more data than necessary. Silvana's privacy-first approach fills this gap, unlocking the potential for 1000× market growth in ZK and blockchain technology.
-
-Silvana aims to bring the light in that forest of complexity, offering a scalable, privacy-centric engine for modern enterprises while shielding them from the intricacies of blockchain.
+Silvana aims to bring the light in that forest of complexity, offering a scalable, privacy-centric engine for modern enterprises while shielding them from the intricacies of blockchain.</> },
+]}
+/>
 
 ## Problem Statement
 
@@ -38,11 +44,14 @@ Silvana aims to bring the light in that forest of complexity, offering a scalabl
 
 ## Silvana Core
 
-**Prover**: Generates ZK proofs for mutated states of provable records
-
-**Verifier**:
-
-**Router**:
+<CustomTabs
+variant={TabVariants.FULL_BORDER}
+tabs={[
+{ value: 'Prover', label: '1', content: <>Generates ZK proofs for mutated states of provable records</>, default: true },
+{ value: 'Verifier', label: '2', content: <>Verifier</> },
+{ value: 'Router', label: '3', content: <>Router</> },
+]}
+/>
 
 ## How Silvana Can Apply
 
@@ -55,14 +64,16 @@ The table below features the use cases we're targeting now:
 | Gaming Object Management                          | The state of a gaming object can be covertly altered, potentially leading to gaming fraud.                                                                                              | Silvana meticulously records and monitors the state of all created objects, ensuring comprehensive tracking and security.                                                        | - Mutable, Provable, and Traceable Object States<br/>- Private Data Concealment<br/>- Enhanced Gaming Logic        |
 | Document Verification                             | Notaries are trusted to verify documents, yet instances of document forgery or criminal conspiracy still occur.                                                                         | Silvana ensures document validity and verifies ownership, providing a secure and reliable solution.                                                                              | - Eliminated Fraud and Forgery Risk<br/>- Continuous Document Availability<br/>- Private Data Concealed            |
 
-
 ## Truth Marketplace
 
 One of the Marketplace corner cases is Silvana's Truth Marketplace, the proof marketplace. There are multiple proofs for a single operation with a provable record. Some may be more truthful and trustworthy than others. Truth Marketplace helps users find and obtain them.
 
 This is the normal flow of Silvana's Truth Marketplace:
 
-1. Marketplace users can buy and sell proofs of truth, some access-based
-2. Enterprises might sell reconciliation proofs to counterparties for year-end financial liabilities, enabling compliance or audit checks without revealing full data sets
-3. Combining multiple proofs increases the overall "truth probability," considering correlations
-
+<NumberedList
+  items={[
+    'Marketplace users can buy and sell proofs of truth, some access-based',
+    'Enterprises might sell reconciliation proofs to counterparties for year-end financial liabilities, enabling compliance or audit checks without revealing full data sets',
+    'Combining multiple proofs increases the overall "truth probability," considering correlations',
+  ]}
+/>
