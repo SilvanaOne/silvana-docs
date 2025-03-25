@@ -4,7 +4,8 @@ sidebar_position: 1
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import CustomTabs, { TabVariants } from '@site/src/components/CustomTabs';
-import NumberedList from '@site/src/components/NumberedList';
+import IconNumberedList from '@site/src/components/IconNumberedList';
+import PlusIcon from "@site/static/img/plus.svg";
 
 # Business Context
 
@@ -57,12 +58,14 @@ tabs={[
 
 The table below features the use cases we're targeting now:
 
-| Use Case                                          | Problem                                                                                                                                                                                 | Solution                                                                                                                                                                         | Benefits                                                                                                           |
-| ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Reinsurance                                       | Insurers need to mitigate significant risks, such as those in aviation and oil rigs, without overexposing sensitive details. Manual processes are slow and susceptible to data leakage. | Silvana leverages zero-knowledge proofs to facilitate secure quote requests from multiple reinsurers.                                                                            | - Potential 20%+ Savings on Reinsurance Premiums<br/>- Larger Pool of Reinsurers<br/>- Automated Compliance Checks |
-| Bookkeeping, Accounting, Due Diligence, and Audit | Traditional accounting methods are susceptible to human error, fraud, and slow reconciliation processes.                                                                                | Silvana's object-centric, event-based architecture revolutionizes accounting by transforming double-entry systems into triple-entry accounting, complete with on-chain receipts. | - Continuous Auditing<br/>- Preserved Privacy<br/>- Cost Reduction                                                 |
-| Gaming Object Management                          | The state of a gaming object can be covertly altered, potentially leading to gaming fraud.                                                                                              | Silvana meticulously records and monitors the state of all created objects, ensuring comprehensive tracking and security.                                                        | - Mutable, Provable, and Traceable Object States<br/>- Private Data Concealment<br/>- Enhanced Gaming Logic        |
-| Document Verification                             | Notaries are trusted to verify documents, yet instances of document forgery or criminal conspiracy still occur.                                                                         | Silvana ensures document validity and verifies ownership, providing a secure and reliable solution.                                                                              | - Eliminated Fraud and Forgery Risk<br/>- Continuous Document Availability<br/>- Private Data Concealed            |
+
+
+| Use Case                                          | Problem                                                                                                                                                                                 | Solution                                                                                                                                                                         | Benefits                                                                                                                                                       |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Reinsurance                                       | Insurers need to mitigate significant risks, such as those in aviation and oil rigs, without overexposing sensitive details. Manual processes are slow and susceptible to data leakage. | Silvana leverages zero-knowledge proofs to facilitate secure quote requests from multiple reinsurers.                                                                            | <IconNumberedList icon={<PlusIcon/>} items={["Potential 20%+ Savings on Reinsurance Premiums", "Larger Pool of Reinsurers", "Automated Compliance Checks"]} /> |
+| Bookkeeping, Accounting, Due Diligence, and Audit | Traditional accounting methods are susceptible to human error, fraud, and slow reconciliation processes.                                                                                | Silvana's object-centric, event-based architecture revolutionizes accounting by transforming double-entry systems into triple-entry accounting, complete with on-chain receipts. | <IconNumberedList icon={<PlusIcon/>} items={["Continuous Auditing", "Preserved Privacy", "Cost Reduction "]} />                                                |
+| Gaming Object Management                          | The state of a gaming object can be covertly altered, potentially leading to gaming fraud.                                                                                              | Silvana meticulously records and monitors the state of all created objects, ensuring comprehensive tracking and security.                                                        | <IconNumberedList icon={<PlusIcon/>} items={["Mutable, Provable, and Traceable Object States", "Private Data Concealment", "Enhanced Gaming Logic"]} />        |
+| Document Verification                             | Notaries are trusted to verify documents, yet instances of document forgery or criminal conspiracy still occur.                                                                         | Silvana ensures document validity and verifies ownership, providing a secure and reliable solution.                                                                              | <IconNumberedList icon={<PlusIcon/>} items={["Eliminated Fraud and Forgery Risk", "Continuous Document Availability", "Private Data Concealed"]} />            |
 
 ## Truth Marketplace
 
@@ -70,7 +73,7 @@ One of the Marketplace corner cases is Silvana's Truth Marketplace, the proof ma
 
 This is the normal flow of Silvana's Truth Marketplace:
 
-<NumberedList
+<IconNumberedList
   items={[
     'Marketplace users can buy and sell proofs of truth, some access-based',
     'Enterprises might sell reconciliation proofs to counterparties for year-end financial liabilities, enabling compliance or audit checks without revealing full data sets',
