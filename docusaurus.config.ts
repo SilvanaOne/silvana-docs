@@ -108,6 +108,200 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  headTags: [
+    // Для стандартных браузеров
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        href: "/img/favicon-16x16.png",
+        sizes: "16x16",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        href: "/img/favicon-32x32.png",
+        sizes: "32x32",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        href: "/img/favicon-96x96.png",
+        sizes: "96x96",
+      },
+    },
+
+
+    // Для iOS
+    {
+      tagName: "link",
+      attributes: {
+        rel: "apple-touch-icon",
+        href: "/img/apple-icon-57x57.png",
+        sizes: "57x57",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "apple-touch-icon",
+        href: "/img/apple-icon-60x60.png",
+        sizes: "60x60",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "apple-touch-icon",
+        href: "/img/apple-icon-72x72.png",
+        sizes: "72x72",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "apple-touch-icon",
+        href: "/img/apple-icon-76x76.png",
+        sizes: "76x76",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "apple-touch-icon",
+        href: "/img/apple-icon-114x114.png",
+        sizes: "114x114",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "apple-touch-icon",
+        href: "/img/apple-icon-120x120.png",
+        sizes: "120x120",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "apple-touch-icon",
+        href: "/img/apple-icon-144x144.png",
+        sizes: "144x144",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "apple-touch-icon",
+        href: "/img/apple-icon-152x152.png",
+        sizes: "152x152",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "apple-touch-icon",
+        href: "/img/apple-icon-180x180.png",
+        sizes: "180x180",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "apple-touch-icon",
+        href: "/img/apple-icon.png",
+        sizes: "180x180",
+      },
+    }, // стандартный
+
+    // Для Android
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        href: "/img/android-icon-36x36.png",
+        sizes: "36x36",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        href: "/img/android-icon-48x48.png",
+        sizes: "48x48",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        href: "/img/android-icon-72x72.png",
+        sizes: "72x72",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        href: "/img/android-icon-96x96.png",
+        sizes: "96x96",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        href: "/img/android-icon-144x144.png",
+        sizes: "144x144",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        href: "/img/android-icon-192x192.png",
+        sizes: "192x192",
+      },
+    },
+    // Иконка для Windows (мета-данные)
+    {
+      tagName: "meta",
+      attributes: {
+        name: "msapplication-TileImage",
+        content: "/img/ms-icon-70x70.png",
+      },
+    },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "msapplication-TileImage",
+        content: "/img/ms-icon-144x144.png",
+      },
+    },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "msapplication-TileImage",
+        content: "/img/ms-icon-150x150.png",
+      },
+    },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "msapplication-TileImage",
+        content: "/img/ms-icon-310x310.png",
+      },
+    },
+    // Цвет фона браузера
+    {
+      tagName: "meta",
+      attributes: { name: "theme-color", content: "#ffffff" },
+    },
+  ],
 
   themeConfig: {
     algolia: {
