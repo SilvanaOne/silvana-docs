@@ -24,7 +24,6 @@
   margin-bottom: 24px;
 }
 
-
 .markdown > h3 {
   font-family: var(--ff--inter-bold);
   font-style: normal;
@@ -117,28 +116,19 @@
 }
 
 /* Tables */
-.markdown table {
-  width: 100%;
-  margin: 24px 0;
-  border-collapse: collapse;
-  border: 1px solid var(--silvana-color-border);
-  border-radius: 8px;
-  overflow: hidden;
-}
-
 .markdown th {
-  background: var(--silvana-color-background-secondary);
-  padding: 12px 16px;
+  padding: 18px 16px;
   text-align: left;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   color: var(--silvana-color-text-primary);
-  border-bottom: 1px solid var(--silvana-color-border);
 }
 
 .markdown td {
-  padding: 12px 16px;
+  padding: 16px;
   border-bottom: 1px solid var(--silvana-color-border);
   color: var(--silvana-color-text-secondary);
+  vertical-align: text-top;
 }
 
 /* Horizontal Rule */
@@ -183,7 +173,7 @@
 }
 
 .note::before {
-  content: url('../../static//img/note.image.svg');;
+  content: url("../../static//img/note.image.svg");
   font-size: 20px;
   margin-right: 10px;
 }
