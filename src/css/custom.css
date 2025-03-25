@@ -67,7 +67,9 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Dark theme styles */
 [data-theme="dark"] {
+  /* Brand colors */
   --ifm-color-primary: #a093a9;
   --ifm-color-primary-dark: #8f819a;
   --ifm-color-primary-darker: #867891;
@@ -76,14 +78,14 @@ html {
   --ifm-color-primary-lighter: #b8aec0;
   --ifm-color-primary-lightest: #cdc7d3;
 
-  /* Typography colors - dark theme */
+  /* Typography colors */
   --silvana-color-text-primary: var(--silvana-color-white);
   --silvana-color-text-secondary: rgba(255, 255, 255, 0.9);
   --silvana-color-text-tertiary: rgba(255, 255, 255, 0.7);
   --silvana-color-text-quaternary: rgba(255, 255, 255, 0.5);
   --silvana-color-text-black: var(--silvana-color-white);
 
-  /* UI Element colors - dark theme */
+  /* UI Element colors */
   --silvana-color-border: #2d2d2d;
   --silvana-color-background-secondary: #1c1c1c;
   --silvana-color-background-note: #1e2a3d;
@@ -92,7 +94,7 @@ html {
   --silvana-color-link: #6b9edb;
   --silvana-color-link-hover: #8bb8f0;
 
-  /* Navbar colors - dark theme */
+  /* Navbar colors */
   --silvana-color-navbar-bg: var(--ifm-background-color);
   --silvana-color-navbar-border: rgba(255, 255, 255, 0.1);
   --silvana-color-navbar-item: rgba(255, 255, 255, 0.9);
@@ -105,6 +107,53 @@ html {
   --silvana-color-navbar-theme-toggle: rgba(255, 255, 255, 0.9);
 
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+}
+
+/* Dark theme specific styles */
+[data-theme="dark"] .navbar {
+  background: var(--silvana-color-navbar-bg);
+  border-bottom: 1px solid var(--silvana-color-navbar-border);
+}
+
+[data-theme="dark"] .navbar__search {
+  background: var(--silvana-color-search-bg);
+}
+
+[data-theme="dark"] .navbar__item {
+  color: var(--silvana-color-navbar-item);
+}
+
+[data-theme="dark"] .navbar__theme-toggle {
+  color: var(--silvana-color-navbar-theme-toggle);
+}
+
+[data-theme="dark"] .navbar__link--active {
+  color: var(--silvana-color-navbar-item-active);
+  border-bottom: 3px solid var(--silvana-color-navbar-item-active-border);
+}
+
+[data-theme="dark"] .breadcrumbs__item,
+[data-theme="dark"] .breadcrumbs__link,
+[data-theme="dark"] .breadcrumbs__item:not(:first-child)::before {
+  color: var(--silvana-color-text-quaternary);
+  background: none;
+}
+
+[data-theme="dark"] .breadcrumbs__link:hover {
+  color: var(--silvana-color-accent-pink);
+}
+
+[data-theme="dark"] .menu__link {
+  color: var(--silvana-color-navbar-item);
+}
+
+[data-theme="dark"] .menu__link--active {
+  color: var(--silvana-color-navbar-item-active);
+}
+
+[data-theme="dark"] .table-of-contents__link:hover,
+[data-theme="dark"] .table-of-contents__link--active {
+  color: var(--silvana-color-navbar-item-active);
 }
 
 /* Note section */
@@ -262,34 +311,6 @@ html {
   color: var(--silvana-color-navbar-theme-toggle);
 }
 
-/* Dark mode */
-[data-theme="dark"] {
-  --ifm-navbar-background-color: var(--ifm-background-color);
-  --ifm-navbar-shadow: none;
-}
-
-[data-theme="dark"] .navbar {
-  background: var(--silvana-color-navbar-bg);
-  border-bottom: 1px solid var(--silvana-color-navbar-border);
-}
-
-[data-theme="dark"] .navbar__search {
-  background: var(--silvana-color-search-bg);
-}
-
-[data-theme="dark"] .navbar__item {
-  color: var(--silvana-color-navbar-item);
-}
-
-[data-theme="dark"] .navbar__theme-toggle {
-  color: var(--silvana-color-navbar-theme-toggle);
-}
-
-[data-theme="dark"] .navbar__link--active {
-  color: var(--silvana-color-navbar-item-active);
-  border-bottom: 3px solid var(--silvana-color-navbar-item-active-border);
-}
-
 /* Main content padding for fixed header */
 .main-wrapper {
   padding-top: 64px;
@@ -369,17 +390,6 @@ nav.theme-doc-breadcrumbs {
 
 .breadcrumbs__item:last-child .breadcrumbs__link {
   background: none !important;
-}
-
-[data-theme="dark"] .breadcrumbs__item,
-[data-theme="dark"] .breadcrumbs__link,
-[data-theme="dark"] .breadcrumbs__item:not(:first-child)::before {
-  color: var(--silvana-color-text-quaternary);
-  background: none;
-}
-
-[data-theme="dark"] .breadcrumbs__link:hover {
-  color: var(--silvana-color-accent-pink);
 }
 
 /* Menu link styles */
