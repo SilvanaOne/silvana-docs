@@ -17,6 +17,7 @@
   --ifm-color-primary-light: #97899e;
   --ifm-color-primary-lighter: #a093a9;
   --ifm-color-primary-lightest: #b5a8bf;
+  --ifm-menu-link-sublist-icon: url("../../static/img/chevrons.svg");
 
   /* Common colors */
   --silvana-color-white: #ffffff;
@@ -445,4 +446,35 @@ nav.theme-doc-breadcrumbs {
 
 .table-of-contents__link--active {
   color: var(--silvana-color-accent-pink);
+}
+
+.menu__caret {
+  padding: 0;
+  order: -1;
+  margin-left: 0px;
+}
+
+.menu__caret:before {
+  background: var(--ifm-menu-link-sublist-icon) 50%;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+}
+.menu__link {
+  padding-left: 24px;
+}
+
+.menu__list-item--collapsed .menu__caret:before {
+  transform: rotateZ(0deg);
+}
+.menu__list-item-collapsible .menu__link--active {
+  color: var(--silvana-color-text-primary);
+}
+
+.menu__list-item-collapsible .menu__link {
+  padding-left: 4px;
+}
+
+.menu__list-item-collapsible--active
+  .menu__link.menu__link--sublist.menu__link--active {
+  color: var(--silvana-color-pink);
 }
