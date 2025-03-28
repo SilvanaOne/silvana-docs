@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # About Silvana
 
 Silvana is a blockchain-based platform that leverages zero-knowledge proofs to enable secure, private transactions and data verification.
