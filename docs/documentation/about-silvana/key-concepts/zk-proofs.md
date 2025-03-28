@@ -28,7 +28,7 @@ For a proof to be considered zero-knowledge, it must satisfy three fundamental p
   items={[
     '**Completeness** – If a statement is true, an honest verifier will be convinced by an honest prover.',
     '**Soundness** – If a statement is false, a dishonest prover cannot convince the Verifier that it is true.',
-    '**Zero-Knowledge** – The proof reveals no information other than the statement's validity.',
+    '**Zero-Knowledge** – The proof reveals no information other than the statement`s validity.',
   ]}
 />
 
