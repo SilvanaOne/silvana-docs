@@ -4,7 +4,7 @@ Balancing security and privacy has become a crucial challenge in the current dig
 A ZKP is a cryptographic protocol that allows one party (a prover) to demonstrate to another party (a verifier) that a specific statement is true without revealing any underlying information. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
 <blockquote class="note">
   <strong>Note:</strong>  
-  A **ZKP** is a cryptographic protocol that allows one party (**prover**) to demonstrate to another party (****) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity. 
+  A **ZKP** is a cryptographic protocol that allows one party (**prover**) to demonstrate to another party (**verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity. 
 </blockquote>
 Two types of data exist in a ZKP transaction: the **Private Input** and the **Public Input**. A prover and a verifier are smart contracts that contain the **zkProgram**. The Prover runs the **prover function (circuit)** to generate proof, and the Verifier runs the **verifier function (circuit)** to verify the generated proof.
 - The **Prover** is called by the user, who must provide proof of the private input, 
@@ -19,7 +19,7 @@ Two types of data exist in a ZKP transaction: the **Private Input** and the **Pu
   
   **zkProgram** - the business logic that rules how a proof has to be generated and verified
   
-  **Prover Function (Circuit) the function allowing one party (the prover) to demonstrate to another party (the verifier) that they possess certain information without revealing the actual data itself.
+  **Prover Function (Circuit)** - the function allowing one party (the prover) to demonstrate to another party (the verifier) that they possess certain information without revealing the actual data itself.
   
   **Verifier Function (Circuit)** - the function allowing one party (the validator) validate the proof provided by another party (the prover) without gaining access to the actual information being proved.
 </blockquote>
@@ -237,7 +237,7 @@ Silvana implements Zero-Knowledge Proofs (ZKPs) to ensure privacy and security i
 Unlike many projects that partially implement ZKPs, Silvana provides:
 <IconNumberedList
   items={[
-    '**True ZK Integration:** a fully private and decentralized data verification system,
+    '**True ZK Integration:** a fully private and decentralized data verification system',
     '**ZK Abstraction:** businesses can use ZKPs through simple APIs without needing blockchain expertise',
     '**Enforced Computational Rules:** Ensures cryptographic security and prevents manipulation.',
     '**Modular Architecture:** Allows businesses to integrate Silvana flexibly.',
