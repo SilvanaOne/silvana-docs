@@ -4,8 +4,6 @@ sidebar_position: 3
 
 # Object-Centric Design vs Account-Centric Design
 
-# Account-Centric vs Object-Centric Design
-
 Essentially, a blockchain has a dual nature. On the one hand, at its core, a blockchain is a **replicated deterministic state machine**, meaning that each transaction results in a change of state. On the other hand, a blockchain is a database where data is stored in blocks, and all pieces of such data are recorded in a cryptographically sophisticated way that rules out unauthorized data mutation.
 
 > **Information:**  

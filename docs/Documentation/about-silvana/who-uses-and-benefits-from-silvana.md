@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Who Uses and Benefits from Silvana?
 
-# Beneficiaries
+## Beneficiaries
 
 Silvana customers and primary beneficiaries are standalone **enterprises** and **startups** (including **blockchain startups**), industry **integrators**, and **developers**. Our solution will also benefit **tech companies**, **blockchain ecosystems (settlement layer blockchains, data availability layers, ZK proof systems, individual users)**, **government agencies**, and **regulators**.
 
@@ -23,7 +23,7 @@ The diagram below provides a clear and comprehensive overview of Silvana's advan
 
 ![Silvana Value](./img/silvana-value.png)
 
-# Users and Roles
+## Users and Roles
 
 Basically, all Silvana users can be classified into four roles: **enterprise manager**, **developer**, **guest**, and **operator**.
 

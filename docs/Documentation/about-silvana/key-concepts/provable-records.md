@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Provable Records
 
-# Provable Records: The Foundation of Trust in Silvana
+## Provable Records: The Foundation of Trust in Silvana
 
 Silvana presents a novel solution -  **Provable Records**. Unlike entities in account-based architectures, Provable Records function as autonomous digital objects, each possessing a structured set of fields, predefined behaviors, and cryptographic verifiability.
 
@@ -19,7 +19,7 @@ Each Provable Record comprises two essential elements:
 
 2. **ZkProgram**: This program determines the operational logic of the object and outlines how it interacts with the system. Its behavior is described in a dedicated Module associated with the Provable Record.
 
-# Provable Record Flow
+## Provable Record Flow
 
 To ensure the integrity and authenticity of Provable Records, Silvana employs the following components:
 
@@ -38,7 +38,7 @@ All CRUD operations are available to the manager who created a provable record. 
 
 To create a provable record, first, a schema must be created in the Router, and the zkProgram must be deployed in the module.
 
-# Create Provable Record
+## Create Provable Record
 
 A provable record is created by this flow:
 
@@ -52,7 +52,7 @@ A provable record is created by this flow:
 
 ![Create Provable Record Flow](../img/create-provable-record.png)
 
-# Mutate (Update) Provable Record
+## Mutate (Update) Provable Record
 
 Anytime a transaction runs with a provable record, both the enterprise manager and the counterparty manager participate in and sign it. Mutation with a provable record runs in this flow:
 
@@ -67,7 +67,7 @@ Anytime a transaction runs with a provable record, both the enterprise manager a
 
 ![Mutate Provable Record Flow](../img/mutate-provable-record.png)
 
-# Read Provable Record
+## Read Provable Record
 
 Anytime a guest can read any provable record recorded on DA when needed. Then, the flow looks as follows:
 
@@ -83,7 +83,7 @@ Anytime the manager that created a provable record can delete it from the DA lay
 2. If the provable record is available on the DA layer, it gets deleted, and the space it occupied is now vacant.
 3. The transaction is recorded in the Settlement Layer (L1 or L2 blockchain).
 
-# How Provable Records Work: Real-Life Use Case
+## How Provable Records Work: Real-Life Use Case
 
 In this case study, we'll explore how a playing card manufacturer can utilize Provable Records within Silvana's system to manage their production process securely. This approach ensures the integrity and authenticity of records while safeguarding sensitive information.
 

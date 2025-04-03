@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Why Silvana?
 
-# Problem Statement
+## Problem Statement
 
 Although the ZKP technology has been with us for over a decade, is highly demanded, and offers numerous use cases for businesses, it is still very early on the market. Here are some of the most critical obstacles:
 
@@ -32,7 +32,7 @@ Maintaining regulatory standards can be onerous, as it often involves complex pr
 
 Outdated, siloed systems slow down verification processes, impede collaboration, and inflate operational costs. This fragmentation leads to inefficiencies and hinders adaptation to modern business demands. Manual or double-entry processes are prone to fraud and errors, compromising data integrity and security. These vulnerabilities can result in financial losses and diminished trust, underscoring the need for automated, secure solutions.
 
-# Silvana Mission
+## Silvana Mission
 
 Silvana’s mission can be summed up in this paragraph: 
 
@@ -42,7 +42,7 @@ Silvana's vision is to empower businesses to conduct transactions, confidently v
 
 As privacy regulations become more stringent and trustless processes gain traction across various industries, such as supply chains, finance, and insurance, the demand for cryptographic verification without data leakage continues to grow. Traditional solutions often fall short by requiring businesses to expose more data than necessary. Silvana's privacy-first approach fills this gap, unlocking the potential for exponential market growth in ZK and blockchain technology. By offering a scalable, privacy-centric engine, Silvana enables modern enterprises to navigate the complexities of blockchain while ensuring data security and regulatory compliance.
 
-# What Silvana Brings to the Table
+## What Silvana Brings to the Table
 
 1. **Paradigm Shift: Revolutionizing Enterprise with Web3**
 

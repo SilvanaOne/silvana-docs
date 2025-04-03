@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Zero-Knowledge Proofs
 
-# Overview
+## Overview
 
 Balancing security and privacy has become a crucial challenge in the current digital landscape. Enterprises and individuals alike require trustless verification methods that do not compromise sensitive data. Traditional security models rely on extensive data exposure, where verifying a transaction, compliance, or ownership often reveals more information than necessary. The emergence of **Zero-Knowledge Proofs (ZKPs)** represents a paradigm shift, offering an approach where verification does not necessitate disclosure.
 A ZKP is a cryptographic protocol that allows one party (a prover) to demonstrate to another party (a verifier) that a specific statement is true without revealing any underlying information. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
@@ -36,7 +36,7 @@ For a proof to be considered zero-knowledge, it must satisfy three fundamental p
 2. **Soundness** – If a statement is false, a dishonest prover cannot convince the Verifier that it is true.
 3. **Zero-Knowledge** – The proof reveals no information other than the statement's validity.
 
-# How ZKPs work
+## How ZKPs work
 
 Zero-knowledge proofs (ZKPs) enable secure data verification without revealing the data itself. The process involves structured steps that ensure transaction integrity while maintaining privacy.
 
@@ -56,7 +56,7 @@ The diagram below shows how ZKPs work.
 
 ![How Zk Proofs Work](../img/how-zk-proofs-work.png)
 
-# Real-World Case: Intangible Asset Verification
+## Real-World Case: Intangible Asset Verification
 
 **Company: CertiChain – Blockchain-Based Digital Asset Certification**
 
@@ -214,7 +214,7 @@ The diagram below shows the flow of the use case.
 3. **Trustless Verification**: TechNova does not need to trust Dr. Zhou.
 4. **Efficiency**: The entire process is automated and immutable.
 
-# How Silvana Uses ZKPs
+## How Silvana Uses ZKPs
 
 Silvana implements Zero-Knowledge Proofs (ZKPs) to ensure privacy and security in its transaction validation process. Below is a detailed breakdown of how proofs are generated, who is responsible for different stages, the architectural layers involved, and the components engaged in the process.
 **Silvana ZKP Infrastructure**
@@ -226,7 +226,7 @@ Silvana implements Zero-Knowledge Proofs (ZKPs) to ensure privacy and security i
 | Proof Verification | Verifier (Silvana Network) | The Verifier checks the proof's validity using cryptographic verification. If the proof is valid, it is confirmed and recorded. If invalid, the transaction is rejected. | Trusted Execution Layer | Verifier Node |
 | Proof Storage & Compliance | Silvana Core System | The proof and metadata are stored in the Silvana ledger, ensuring auditability without exposing sensitive data. | Data Availability Layer | Storage Nodes, Compliance System |
 
-# Silvana's Innovations in the Zero-Knowledge Technology
+## Silvana's Innovations in the Zero-Knowledge Technology
 
 Unlike many projects that partially implement ZKPs, Silvana provides:
 
