@@ -2,31 +2,36 @@
 sidebar_position: 1
 ---
 
-# Zero-Knowledge Proofs to Enable Privacy in Crypto
+# Zero-Knowledge Proofs
+
+# Overview
 
 Balancing security and privacy has become a crucial challenge in the current digital landscape. Enterprises and individuals alike require trustless verification methods that do not compromise sensitive data. Traditional security models rely on extensive data exposure, where verifying a transaction, compliance, or ownership often reveals more information than necessary. The emergence of **Zero-Knowledge Proofs (ZKPs)** represents a paradigm shift, offering an approach where verification does not necessitate disclosure.
 A ZKP is a cryptographic protocol that allows one party (a prover) to demonstrate to another party (a verifier) that a specific statement is true without revealing any underlying information. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
-
-> **Note:**  
-> A **ZKP** is a cryptographic protocol that allows one party (**prover**) to demonstrate to another party (**verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity. 
+<blockquote class="note">
+  <strong>Note:</strong>  
+  
+  A **ZKP** is a cryptographic protocol that allows one party (**prover**) to demonstrate to another party (**verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity. 
+</blockquote>
 
 Two types of data exist in a ZKP transaction: the **Private Input** and the **Public Input**. A prover and a verifier are smart contracts that contain the **zkProgram**. The Prover runs the **prover function (circuit)** to generate proof, and the Verifier runs the **verifier function (circuit)** to verify the generated proof.
 - The **Prover** is called by the user, who must provide proof of the private input, 
 - **Counterparty** calls the **Verifier** - a partner, a regulator, an individual, etc.
+<blockquote class="note">
+  <strong>Note:</strong>  
+  
+  **Public Input** - the information the user keeps publicly available. 
 
-> **Note:**  
-> **Public Input** -the information the user keeps publicly available. 
->
-> **Private Input** - the information to be concealed from the public eye. 
->  
-> **Proof Job** - a proof generated to be shown in a transaction as a piece of cipher instead of the private Input.
->  
-> **zkProgram** - the business logic that rules how a proof has to be generated and verified
->  
-> **Prover Function (Circuit)** - the function allowing one party (the prover) to demonstrate to another party (the verifier) that they possess certain information without revealing the actual data itself.
->  
-> **Verifier Function (Circuit)** - the function allowing one party (the validator) validate the proof provided by another party (the prover) without gaining access to the actual information being proved.
-
+  **Private Input** - the information to be concealed from the public eye. 
+  
+  **Proof Job** - a proof generated to be shown in a transaction as a piece of cipher instead of the private Input.
+  
+  **zkProgram** - the business logic that rules how a proof has to be generated and verified
+  
+  **Prover Function (Circuit)** the function allowing one party (the prover) to demonstrate to another party (the verifier) that they possess certain information without revealing the actual data itself.
+  
+  **Verifier Function (Circuit)** - the function allowing one party (the validator) validate the proof provided by another party (the prover) without gaining access to the actual information being proved.
+</blockquote>
 For a proof to be considered zero-knowledge, it must satisfy three fundamental properties:
 
 1. **Completeness** – If a statement is true, an honest verifier will be convinced by an honest prover.
@@ -50,16 +55,20 @@ ZKP Transaction flow now looks like this:
 9. The zk Transaction is sent to the Settlement Layer (L1 or L2 blockchain).
 
 The diagram below shows how ZKPs work.
-![Market Size](../img/how-zk-proofs-work.png)
+
+![How Zk Proofs Work](../img/how-zk-proofs-work.png)
 
 # Real-World Case: Intangible Asset Verification
 
 **Company: CertiChain – Blockchain-Based Digital Asset Certification**
+
 CertiChain is a **blockchain-based certification platform** that allows companies and individuals to verify the authenticity of intangible assets such as patents, digital artwork, music rights, and academic certifications. The company provides a Zero-Knowledge Proof (ZKP)-based verification system that ensures authenticity without exposing confidential information.
 
-### Case: Patent Ownership Verification for Licensing Deal
+<div class="case-study">
+  <h3>Case: Patent Ownership Verification for Licensing Deal</h3>
 
-A large technology firm, TechNova, wants to license a patent from an independent researcher, Dr. Lian Zhou. However, before proceeding with the contract, TechNova needs proof that Dr. Zhou is the legitimate patent owner. While proving ownership, Dr. Zhou does not want to expose sensitive details, such as unpublished patents or confidential legal agreements.
+  <p>A large technology firm, TechNova, wants to license a patent from an independent researcher, Dr. Lian Zhou. However, before proceeding with the contract, TechNova needs proof that Dr. Zhou is the legitimate patent owner. While proving ownership, Dr. Zhou does not want to expose sensitive details, such as unpublished patents or confidential legal agreements.</p>
+</div>
 
 The table below outlines what each actor and component wants to achieve with a ZKP transaction.
 
@@ -94,9 +103,10 @@ The table below outlines what each actor and component wants to achieve with a Z
   "signature": "0xSIG123456789"
 }
 ```
-
-> **Warning:**  
-> If a signature mismatches, the process stops.
+<blockquote class="warning">
+  <strong>Warning:</strong>  
+  If a signature mismatches, the process stops.
+</blockquote>
 
 **Step 2**: Tx Builder (ABI) Sends Inputs to Prover
 - **Tx Builder** prepares the inputs and sends them to **Prover**.
@@ -113,9 +123,10 @@ A **ZK Proof** is generated.
   "proof_timestamp": "28.02.2025 UTC 09:41"
 }
 ```
-
-> **Success:**  
-> ZK Proof was successfully created.
+<blockquote class="success">
+  <strong>Success:</strong>  
+  ZK Proof was successfully created.
+</blockquote>
 
 **Step 4**: Prover Sends ZK Proof to Verifier.
 - The Verifier receives the **ZK Proof**.
@@ -135,9 +146,10 @@ A **ZK Proof** is generated.
   "signing_timestamp": "28.02.2025 UTC 09:42"
 }
 ```
-
-> **Warning:**  
-> If the proof fails, the verification halts.
+<blockquote class="warning">
+  <strong>Warning:</strong>  
+  If the proof fails, the verification halts.
+</blockquote>
 
 **Step 6**: Tx Builder Builds ZK Transaction.
 - The **verified proof** is stored in the **DA Layer** for future reference.
@@ -151,9 +163,10 @@ A **ZK Proof** is generated.
   "storage_timestamp": "28.02.2025 UTC 09:42"
 }
 ```
-
-> **Success:**  
-> Proof securely recorded.
+<blockquote class="success">
+  <strong>Success:</strong>  
+  Proof securely recorded.
+</blockquote>
 
 **Step 7**: **Tx Builder** Uses Public Input & ZK Proof to Build a **ZK Transaction**.
 - The Tx Builder builds the ZK Transaction.
@@ -175,9 +188,10 @@ A **ZK Proof** is generated.
   "counterparty_signature": "0xTECHSIG987654"
 }
 ```
-
-> **Success:**  
-> The counterparty has signed and approved the transaction.
+<blockquote class="success">
+  <strong>Success:</strong>  
+  The counterparty has signed and approved the transaction.
+</blockquote>
 
 **Step 9**: ZK Transaction is Sent to the Settlement Layer (L1 or L2 blockchain).
 
@@ -192,9 +206,10 @@ A **ZK Proof** is generated.
   "blockchain_record": "0xBLOCKHASH123456"
 }
 ```
-
-> **Success:**  
-> The transaction is now immutable on-chain.
+<blockquote class="success">
+  <strong>Success:</strong>  
+  The transaction is now immutable on-chain.
+</blockquote>
 
 **Final Outcome: Secure, Private Patent Verification**
 
@@ -203,14 +218,15 @@ A **ZK Proof** is generated.
 - The verification is permanently stored for future licensing deals.
 - Re-verification is needed for future licensing or disputes.
 The diagram below shows the flow of the use case.
-![Patent Verification Flow](../img/use-case-flow.png)
+
+![Patent Verification Flow](../img/zkp-flow.png)
 
 **Key Takeaways from the ZKP Flow**
 
-**Privacy**: Patent details never exposed.
-**Security**: Only cryptographic proof is shared.
-**Trustless Verification**: TechNova does not need to trust Dr. Zhou.
-**Efficiency**: The entire process is automated and immutable.
+1. **Privacy**: Patent details never exposed.
+2. **Security**: Only cryptographic proof is shared.
+3. **Trustless Verification**: TechNova does not need to trust Dr. Zhou.
+4. **Efficiency**: The entire process is automated and immutable.
 
 # How Silvana Uses ZKPs
 

@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Who Uses and Benefits from Silvana?
 
 # Beneficiaries
@@ -10,10 +14,10 @@ The table below features major beneficiaries and the value Silvana provides them
 
 | Beneficiaries | How they use Silvana | Value |
 |---------------|----------------------|-------|
-| Enterprises | Digital and off-chain enterprises use Silvana to manage their assets, either directly or through integrators | • improved cost-effectiveness by automating and tokenizing their assets<br>• ready-made, customizable solutions to meet their business needs<br>• ensured legal compliance<br>• guaranteed data security and privacy<br>• cross-chains transactions |
-| Integrators and Developers | Integrators are key players that aggregate enterprises and cater to their needs. With their expertise, they act as intermediaries between enterprises and Silvana. | • a ready-made, customizable module solution<br>• fast and easy onboarding, thanks to well-packaged modules, API, and SDK for building applications with ZK proofs<br>• the ability to deploy solutions on any blockchain, in any environment, and with any technology due to complexity abstraction and a blockchain-agnostic approach<br>• an expanded customer base among enterprises, leading to a more extensive portfolio |
-| Blockchain Ecosystem | Silvana significantly benefits four key actors in blockchain systems: Settlement Layer (L1, L2) blockchains, Data Availability (DA) layers, ZK Proof Systems capable of handling private data (frameworks, compilers, zk-specific languages), and blockchain users. | **Settlement Layer Blockchains:**<br>• increased transaction activity<br>• higher Total Value Locked (TVL)<br>• more transaction fees paid<br><br>**DA Layer:**<br>• enhanced data recording<br>• increased storage fees paid<br><br>**ZK Proof Systems:**<br>• integration capabilities<br>• development tools<br>• API access<br><br>**Blockchain Users:**<br>• expanded functionality<br>• improved asset ownership and management<br>• ensured data privacy and security |
-| Regulators | Regulators and government agencies ensure compliance with asset management laws. They need Silvana to monitor compliance with enterprises | • guaranteed legal compliance<br>• enhanced transaction transparency and traceability |
+| Enterprises | Digital and off-chain enterprises use Silvana to manage their assets, either directly or through integrators | • improved cost-effectiveness by automating and tokenizing their assets<br/>• ready-made, customizable solutions to meet their business needs<br/>• ensured legal compliance<br/>• guaranteed data security and privacy<br/>• cross-chains transactions |
+| Integrators and Developers | Integrators are key players that aggregate enterprises and cater to their needs. With their expertise, they act as intermediaries between enterprises and Silvana. | • a ready-made, customizable module solution<br/>• fast and easy onboarding, thanks to well-packaged modules, API, and SDK for building applications with ZK proofs<br/>• the ability to deploy solutions on any blockchain, in any environment, and with any technology due to complexity abstraction and a blockchain-agnostic approach<br/>• an expanded customer base among enterprises, leading to a more extensive portfolio |
+| Blockchain Ecosystem | Silvana significantly benefits four key actors in blockchain systems: Settlement Layer (L1, L2) blockchains, Data Availability (DA) layers, ZK Proof Systems capable of handling private data (frameworks, compilers, zk-specific languages), and blockchain users. | **Settlement Layer Blockchains:**<br/>• increased transaction activity<br/>• higher Total Value Locked (TVL)<br/>• more transaction fees paid<br/><br/>**DA Layer:**<br/>• enhanced data recording<br/>• increased storage fees paid<br/><br/>**ZK Proof Systems:**<br/>• integration capabilities<br/>• development tools<br/>• API access<br/><br/>**Blockchain Users:**<br/>• expanded functionality<br/>• improved asset ownership and management<br/>• ensured data privacy and security |
+| Regulators | Regulators and government agencies ensure compliance with asset management laws. They need Silvana to monitor compliance with enterprises | • guaranteed legal compliance<br/>• enhanced transaction transparency and traceability |
 
 The diagram below provides a clear and comprehensive overview of Silvana's advantages for different stakeholders in the blockchain ecosystem.
 
@@ -30,7 +34,7 @@ Basically, all Silvana users can be classified into four roles: **enterprise man
 | Guest | Third parties that can only view provable records, schemas, modules, or marketplace items. They can be regular blockchain users, regulators, stakeholders, entrepreneurs, authorities, analysts, etc. | Silvana Router<br>DA Layer<br>Marketplace | • read provable records<br>• read provable record schemas<br>• read marketplace items (modules, schemas, agents, blueprints, etc.) |
 | Operator | Those who run nodes in the Silvana Network, thus providing the infrastructure for decentralized proving. | Silvana Network | • run nodes |
 
-Silvana roles are interchangeable, meaning that one user can, in different situations, perform different roles. Let’s see some examples:
+Silvana roles are interchangeable, meaning that one user can, in different situations, perform different roles. Let's see some examples:
 
 **Case 1**
 

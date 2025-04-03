@@ -16,15 +16,15 @@ Essentially, a blockchain has a dual nature. On the one hand, at its core, a blo
 
 Conventionally, in blockchains, an **account** serves as the fundamental unit of data storage and interaction. Every transaction - be it a transfer of funds or a delegation - results in the transition of a state of the affected account and, largely, the state of the whole blockchain - making an account the central entity within blockchain ecosystems (see diagram below).
 
-![Account-Centric Design](./img/account-centric-design.png)
+![Account-Centric Design](../img/account-centric-design.png)
 
 While this approach has been widely adopted, it presents inherent structural limitations, namely:
 
 1. **Scalability**
 
-As the number of accounts and transactions increases, the blockchain can become congested, leading to slower transaction processing times and creating scalability obstacles. That’s what happened with Ethereum, giving rise to multiple L2 solutions designed to address this scalability issue.
+As the number of accounts and transactions increases, the blockchain can become congested, leading to slower transaction processing times and creating scalability obstacles. That's what happened with Ethereum, giving rise to multiple L2 solutions designed to address this scalability issue.
 
-2. **Programmability Restrictions **
+2. **Programmability Restriction**
 
 Account-centered approach to data storage and management significantly impedes the deployment and execution of more complicated business logic, where each entity requires a different set of number of fields. Thus, on Mina, the number of AccountStates is restricted to 8. This effectively limits the potential programmability to several use cases.
 
@@ -36,7 +36,7 @@ These limitations highlight the need for continuous research and development to 
 
 The diagram below illustrates how object-centric design works:
 
-![Object-Centric Design](./img/object-centric-design.png)
+![Object-Centric Design](../img/object-centric-design.png)
 
 Compared to the account-centric design, the object-centric design has the following benefits:
 
@@ -54,7 +54,7 @@ Object-oriented design provides greater flexibility in defining and managing com
 
 4. **Transaction parallelization**
 
-Since transactions can be broken up into the objects they’re associated with, there’s a possibility of several transactions running simultaneously. Moreover, it doesn’t require any blockchain design tweaks or complications like introducing data blobs or sequencers.
+Since transactions can be broken up into the objects they're associated with, there's a possibility of several transactions running simultaneously. Moreover, it doesn't require any blockchain design tweaks or complications like introducing data blobs or sequencers.
 
 5. **Modularity and Reusability**
 
@@ -68,13 +68,7 @@ The table below sums up the comparison of the account-centric and the object-cen
 
 | Account-Centric Approach | Object-Centric Approach |
 |--------------------------|-------------------------|
-| - Lower scalability | - Higher modularity |
-| - Consecutive transaction execution | - Higher scalability |
-| - Restricted programmability | - Higher flexibility |
-| - Slower and more complicated consensus | - Higher programmability |
-|  | - Transaction parallelization |
-|  | - Modularity and reusability |
-|  | - Automation |
+| • Lower scalability<br/>• Consecutive transaction execution<br/>• Restricted programmability<br/>• Slower and more complicated consensus | • Higher modularity<br/>• Higher scalability<br/>• Higher flexibility<br/>• Higher programmability<br/>• Transaction parallelization<br/>• Modularity and reusability<br/>• Automation |
 
 Silvana follows an object-oriented pattern, which totally aligns with the emerging trend of an object-centric blockchain narrative. However, Silvana extends this concept further by integrating **zero-knowledge proofs (ZKPs)**, ensuring that **Provable Records** maintain privacy, regulatory compliance, and immutable verifiability without exposing sensitive data. This design is particularly suitable for the deployment and handling of **real-world assets (RWAs)** on-chain.
 

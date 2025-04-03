@@ -53,7 +53,7 @@ A provable record is created by this flow:
 6. The Provable Record is recorded in the **DA Layer**.
 7. The transaction is recorded in the **Settlement Layer** (L1 or L2 blockchain).
 
-![Create Provable Record Flow](./img/create-provable-record.png)
+![Create Provable Record Flow](../img/create-provable-record.png)
 
 # Mutate (Update) Provable Record
 
@@ -68,7 +68,7 @@ Anytime a transaction runs with a provable record, both the enterprise manager a
 7. The Provable Record is recorded in the DA Layer.
 8. The transaction is recorded in the Settlement Layer (L1 or L2 blockchain).
 
-![Mutate Provable Record Flow](./img/mutate-provable-record.png)
+![Mutate Provable Record Flow](../img/mutate-provable-record.png)
 
 # Read Provable Record
 
@@ -80,7 +80,7 @@ Anytime a guest can read any provable record recorded on DA when needed. Then, t
 
 # Delete Provable Record
 
-Anytime the manager that created a provable record can delete it from the DA layer. That’s the flow:
+Anytime the manager that created a provable record can delete it from the DA layer. That's the flow:
 
 1. An enterprise manager initiates the delete transaction.
 2. If the provable record is available on the DA layer, it gets deleted, and the space it occupied is now vacant.
@@ -97,7 +97,7 @@ The manufacturer receives a shipment of card stock paper and registers it as a P
 **Provable Record: Raw Material (Card Stock Paper)**
 
 | **Parameter** | **Data Type** | **Value** |
-|-----------|-----------|-------|
+|---------------|---------------|-----------|
 | assetId | string | 1247A8B97C23 |
 | assetName | string | Card Stock |
 | assetType | string | Raw Material |
@@ -118,11 +118,11 @@ As the production begins, the card stock is transformed into finished playing ca
 
 | **Parameter** | **Data Type** | **Value** |
 |---------------|---------------|-----------|
-| assetId       | string        | 1247A8B97C23 |
-| assetName     | string        | Playing Cards |
-| assetType     | string        | Finished Goods |
-| quantity      | int           | 1,000 decks |
-| productionDate| date          | 2025-02-21 |
+| assetId | string | 1247A8B97C23 |
+| assetName | string | Playing Cards |
+| assetType | string | Finished Goods |
+| quantity | int | 1,000 decks |
+| productionDate | date | 2025-02-21 |
 
 <blockquote class="success">
   <strong></strong>
@@ -138,12 +138,12 @@ Upon receiving an order, the manufacturer sells some finished playing card decks
 
 | **Parameter** | **Data Type** | **Value** |
 |---------------|---------------|-----------|
-| assetId       | string        | 1247A8B97C23 |
-| assetName     | string        | Playing Cards |
-| assetType     | string        | Sold Goods |
-| quantity      | int           | 500 decks |
-| saleDate      | date          | 2025-02-22 |
-| buyerInfo     | string        | zk-proof |
+| assetId | string | 1247A8B97C23 |
+| assetName | string | Playing Cards |
+| assetType | string | Sold Goods |
+| quantity | int | 500 decks |
+| saleDate | date | 2025-02-22 |
+| buyerInfo | string | zk-proof |
 
 <blockquote class="success">
   <strong></strong>
