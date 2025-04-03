@@ -62,11 +62,9 @@ The diagram below shows how ZKPs work.
 
 CertiChain is a **blockchain-based certification platform** that allows companies and individuals to verify the authenticity of intangible assets such as patents, digital artwork, music rights, and academic certifications. The company provides a Zero-Knowledge Proof (ZKP)-based verification system that ensures authenticity without exposing confidential information.
 
-<div class="case-study">
-  <h3>Case: Patent Ownership Verification for Licensing Deal</h3>
+### Case: Patent Ownership Verification for Licensing Deal
 
-  <p>A large technology firm, TechNova, wants to license a patent from an independent researcher, Dr. Lian Zhou. However, before proceeding with the contract, TechNova needs proof that Dr. Zhou is the legitimate patent owner. While proving ownership, Dr. Zhou does not want to expose sensitive details, such as unpublished patents or confidential legal agreements.</p>
-</div>
+  A large technology firm, TechNova, wants to license a patent from an independent researcher, Dr. Lian Zhou. However, before proceeding with the contract, TechNova needs proof that Dr. Zhou is the legitimate patent owner. While proving ownership, Dr. Zhou does not want to expose sensitive details, such as unpublished patents or confidential legal agreements.
 
 The table below outlines what each actor and component wants to achieve with a ZKP transaction.
 
