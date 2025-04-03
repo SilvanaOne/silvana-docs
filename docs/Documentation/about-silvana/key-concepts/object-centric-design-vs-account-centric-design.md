@@ -8,11 +8,9 @@ sidebar_position: 3
 
 Essentially, a blockchain has a dual nature. On the one hand, at its core, a blockchain is a **replicated deterministic state machine**, meaning that each transaction results in a change of state. On the other hand, a blockchain is a database where data is stored in blocks, and all pieces of such data are recorded in a cryptographically sophisticated way that rules out unauthorized data mutation.
 
-<blockquote class="info">
-  <strong>Information:</strong>  
-  
-  A **state machine** is a computer science concept whereby a machine can have multiple states but only one at any given time. There is a state, which describes the current state of the system and transactions that trigger state transitions.
-</blockquote>
+> **Information:**  
+>  
+> A **state machine** is a computer science concept whereby a machine can have multiple states but only one at any given time. There is a state, which describes the current state of the system and transactions that trigger state transitions.
 
 Conventionally, in blockchains, an **account** serves as the fundamental unit of data storage and interaction. Every transaction - be it a transfer of funds or a delegation - results in the transition of a state of the affected account and, largely, the state of the whole blockchain - making an account the central entity within blockchain ecosystems (see diagram below).
 
@@ -72,12 +70,10 @@ The table below sums up the comparison of the account-centric and the object-cen
 
 Silvana follows an object-oriented pattern, which totally aligns with the emerging trend of an object-centric blockchain narrative. However, Silvana extends this concept further by integrating **zero-knowledge proofs (ZKPs)**, ensuring that **Provable Records** maintain privacy, regulatory compliance, and immutable verifiability without exposing sensitive data. This design is particularly suitable for the deployment and handling of **real-world assets (RWAs)** on-chain.
 
-<blockquote class="info">
-  <strong>Key Terms:</strong>
-  
-  **Provable Record** - Digitally verifiable representations of crypto and real-world assets.
-  
-  **Zero-Knowledge Proofs (ZKPs)** - A cryptographic protocol that allows one party (a **prover**) to demonstrate to another party (a **verifier**) that a specific statement is true **without revealing any underlying information**.
-  
-  **Real-world Assets (RWAs)** - Assets with real economic value that originate outside the blockchain but can be represented, traded, and managed digitally using blockchain technology.
-</blockquote>
+> **Key Terms:**
+>  
+> **Provable Record** - Digitally verifiable representations of crypto and real-world assets.
+>  
+> **Zero-Knowledge Proofs (ZKPs)** - A cryptographic protocol that allows one party (a **prover**) to demonstrate to another party (a **verifier**) that a specific statement is true **without revealing any underlying information**.
+>  
+> **Real-world Assets (RWAs)** - Assets with real economic value that originate outside the blockchain but can be represented, traded, and managed digitally using blockchain technology.

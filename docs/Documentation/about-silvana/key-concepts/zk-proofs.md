@@ -8,30 +8,28 @@ sidebar_position: 1
 
 Balancing security and privacy has become a crucial challenge in the current digital landscape. Enterprises and individuals alike require trustless verification methods that do not compromise sensitive data. Traditional security models rely on extensive data exposure, where verifying a transaction, compliance, or ownership often reveals more information than necessary. The emergence of **Zero-Knowledge Proofs (ZKPs)** represents a paradigm shift, offering an approach where verification does not necessitate disclosure.
 A ZKP is a cryptographic protocol that allows one party (a prover) to demonstrate to another party (a verifier) that a specific statement is true without revealing any underlying information. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
-<blockquote class="note">
-  <strong>Note:</strong>  
-  
-  A **ZKP** is a cryptographic protocol that allows one party (**prover**) to demonstrate to another party (**verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity. 
-</blockquote>
+> **Note:**  
+>  
+> A **ZKP** is a cryptographic protocol that allows one party (**prover**) to demonstrate to another party (**verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity. 
 
 Two types of data exist in a ZKP transaction: the **Private Input** and the **Public Input**. A prover and a verifier are smart contracts that contain the **zkProgram**. The Prover runs the **prover function (circuit)** to generate proof, and the Verifier runs the **verifier function (circuit)** to verify the generated proof.
 - The **Prover** is called by the user, who must provide proof of the private input, 
 - **Counterparty** calls the **Verifier** - a partner, a regulator, an individual, etc.
-<blockquote class="note">
-  <strong>Note:</strong>  
-  
-  **Public Input** - the information the user keeps publicly available. 
 
-  **Private Input** - the information to be concealed from the public eye. 
-  
-  **Proof Job** - a proof generated to be shown in a transaction as a piece of cipher instead of the private Input.
-  
-  **zkProgram** - the business logic that rules how a proof has to be generated and verified
-  
-  **Prover Function (Circuit)** the function allowing one party (the prover) to demonstrate to another party (the verifier) that they possess certain information without revealing the actual data itself.
-  
-  **Verifier Function (Circuit)** - the function allowing one party (the validator) validate the proof provided by another party (the prover) without gaining access to the actual information being proved.
-</blockquote>
+> **Note:**  
+>  
+> **Public Input** - the information the user keeps publicly available. 
+>
+> **Private Input** - the information to be concealed from the public eye. 
+>  
+> **Proof Job** - a proof generated to be shown in a transaction as a piece of cipher instead of the private Input.
+>  
+> **zkProgram** - the business logic that rules how a proof has to be generated and verified
+>  
+> **Prover Function (Circuit)** the function allowing one party (the prover) to demonstrate to another party (the verifier) that they possess certain information without revealing the actual data itself.
+>  
+> **Verifier Function (Circuit)** - the function allowing one party (the validator) validate the proof provided by another party (the prover) without gaining access to the actual information being proved.
+
 For a proof to be considered zero-knowledge, it must satisfy three fundamental properties:
 
 1. **Completeness** – If a statement is true, an honest verifier will be convinced by an honest prover.
@@ -103,10 +101,8 @@ The table below outlines what each actor and component wants to achieve with a Z
   "signature": "0xSIG123456789"
 }
 ```
-<blockquote class="warning">
-  <strong>Warning:</strong>  
-  If a signature mismatches, the process stops.
-</blockquote>
+> **Warning:**  
+> If a signature mismatches, the process stops.
 
 **Step 2**: Tx Builder (ABI) Sends Inputs to Prover
 - **Tx Builder** prepares the inputs and sends them to **Prover**.
@@ -123,10 +119,8 @@ A **ZK Proof** is generated.
   "proof_timestamp": "28.02.2025 UTC 09:41"
 }
 ```
-<blockquote class="success">
-  <strong>Success:</strong>  
-  ZK Proof was successfully created.
-</blockquote>
+> **Success:**  
+> ZK Proof was successfully created.
 
 **Step 4**: Prover Sends ZK Proof to Verifier.
 - The Verifier receives the **ZK Proof**.
@@ -146,10 +140,8 @@ A **ZK Proof** is generated.
   "signing_timestamp": "28.02.2025 UTC 09:42"
 }
 ```
-<blockquote class="warning">
-  <strong>Warning:</strong>  
-  If the proof fails, the verification halts.
-</blockquote>
+> **Warning:**  
+> If the proof fails, the verification halts.
 
 **Step 6**: Tx Builder Builds ZK Transaction.
 - The **verified proof** is stored in the **DA Layer** for future reference.
@@ -163,10 +155,8 @@ A **ZK Proof** is generated.
   "storage_timestamp": "28.02.2025 UTC 09:42"
 }
 ```
-<blockquote class="success">
-  <strong>Success:</strong>  
-  Proof securely recorded.
-</blockquote>
+> **Success:**  
+> Proof securely recorded.
 
 **Step 7**: **Tx Builder** Uses Public Input & ZK Proof to Build a **ZK Transaction**.
 - The Tx Builder builds the ZK Transaction.
@@ -188,10 +178,8 @@ A **ZK Proof** is generated.
   "counterparty_signature": "0xTECHSIG987654"
 }
 ```
-<blockquote class="success">
-  <strong>Success:</strong>  
-  The counterparty has signed and approved the transaction.
-</blockquote>
+> **Success:**  
+> The counterparty has signed and approved the transaction.
 
 **Step 9**: ZK Transaction is Sent to the Settlement Layer (L1 or L2 blockchain).
 
@@ -206,10 +194,8 @@ A **ZK Proof** is generated.
   "blockchain_record": "0xBLOCKHASH123456"
 }
 ```
-<blockquote class="success">
-  <strong>Success:</strong>  
-  The transaction is now immutable on-chain.
-</blockquote>
+> **Success:**  
+> The transaction is now immutable on-chain.
 
 **Final Outcome: Secure, Private Patent Verification**
 

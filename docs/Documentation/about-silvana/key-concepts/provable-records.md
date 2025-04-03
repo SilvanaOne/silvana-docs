@@ -8,11 +8,8 @@ sidebar_position: 2
 
 Silvana presents a novel solution -  **Provable Records**. Unlike entities in account-based architectures, Provable Records function as autonomous digital objects, each possessing a structured set of fields, predefined behaviors, and cryptographic verifiability.
 
-<blockquote class="warning">
-  <strong>Warning:</strong>  
-
-  **Provable Records** are digitally verifiable representations of crypto and real-world assets.
-</blockquote>
+> **Warning:**  
+> **Provable Records** are digitally verifiable representations of crypto and real-world assets.
 
 By leveraging **Zero-Knowledge Proofs (ZKPs)**, provable records ensure trustless, private, and secure transactions while maintaining complete verifiability. They enable businesses to prove ownership, authenticity, and compliance without exposing sensitive data. Through Provable Records, Silvana bridges the gap between traditional asset management and blockchain technology, ensuring enterprises can integrate decentralized solutions seamlessly without compromising regulatory requirements or operational efficiency.
 
@@ -104,11 +101,8 @@ The manufacturer receives a shipment of card stock paper and registers it as a P
 | quantity | int | 10,000 sheets |
 | supplierInfo | string | zk-proof |
 
-<blockquote class="success">
-  <strong></strong>
-
-  **_Note: the `supplierInfo` field is protected using a zero-knowledge proof (ZKP) to maintain confidentiality while enabling supplier verification._**
-</blockquote>
+> **Success:**  
+> **_Note: the `supplierInfo` field is protected using a zero-knowledge proof (ZKP) to maintain confidentiality while enabling supplier verification._**
 
 **Step 2: Production Process**
 
@@ -124,11 +118,8 @@ As the production begins, the card stock is transformed into finished playing ca
 | quantity | int | 1,000 decks |
 | productionDate | date | 2025-02-21 |
 
-<blockquote class="success">
-  <strong></strong>
-
-  **_Note: The `assetId` remains the same to maintain traceability, while other fields are updated to reflect the transformation._**
-</blockquote>
+> **Success:**  
+> **_Note: The `assetId` remains the same to maintain traceability, while other fields are updated to reflect the transformation._**
 
 **Step 3: Sales Transaction**
 
@@ -145,11 +136,8 @@ Upon receiving an order, the manufacturer sells some finished playing card decks
 | saleDate | date | 2025-02-22 |
 | buyerInfo | string | zk-proof |
 
-<blockquote class="success">
-  <strong></strong>
-
-  **_Note: The `buyerInfo` field is protected using a ZKP to ensure privacy._**
-</blockquote>
+> **Success:**  
+> **_Note: The `buyerInfo` field is protected using a ZKP to ensure privacy._**
 
 **ZK Program**
 
