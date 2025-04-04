@@ -17,11 +17,10 @@ Two types of data exist in a ZKP transaction: the **Private Input** and the **Pu
 - The **Prover** is called by the user, who must provide proof of the private input, 
 - **Counterparty** calls the **Verifier** - a partner, a regulator, an individual, etc.
 
-> **Note:**
-> 
-> **Public Input** - the data the user keeps publicly available,
-> 
-> **Private Input** - the private data to be concealed from the public eye,
+> **Note:**  
+>  
+> * **Public Input** - the data the user keeps publicly available  
+> * **Private Input** - the private data to be concealed from the public eye
 
 
 For a proof to be considered zero-knowledge, it must satisfy three fundamental properties:
