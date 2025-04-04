@@ -21,9 +21,8 @@ Two types of data exist in a ZKP transaction: the **Private Input** and the **Pu
 > 
 > **Public Input** - the data the user keeps publicly available,
 > 
-> **Private Input** - the private data to be concealed from the publoic eye,
-> 
-> **Proof Job** - a proof generated to be shown in a transaction as an encryption instead of the Private Input.
+> **Private Input** - the private data to be concealed from the public eye,
+
 
 For a proof to be considered zero-knowledge, it must satisfy three fundamental properties:
 
