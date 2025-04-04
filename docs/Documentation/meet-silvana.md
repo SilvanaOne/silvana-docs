@@ -18,11 +18,11 @@ Silvana is in a way AWS in Web3 that allows for flexible deployment across vario
 
 - **Composability Across Chains**: Silvana integrates seamlessly with blockchains like Ethereum, Solana, Mina, Sui, and others. It fits into your existing infrastructure instead of forcing you to adapt to a new one.
 
-- **Trustless Verification**: every change in Silvana is accompanied by a ZK proof that can be verified by anyone, independently. This ensures data validity without relying on intermediaries or custodial trust.
+- **Trustless Verification**: every change in Silvana is accompanied by a zk proof that can be verified by anyone, independently. This ensures data validity without relying on intermediaries or custodial trust.
 
 - **Highly-scalable, ultra-fast**: Silvana utilizes **Silvana Rollup** - a hybrid rollup integration, blending the high scalability of **optimistic rollups** with the cryptographic guarantees of **ZK-rollups**. This ensures rapid proof generation and high-speed transaction execution without compromising on integrity.
 
-- **Decentralized**: the **Silvana Network** is a decentralized prover network composed of independently operated nodes that generate **zkProofs**. This structure ensures high-quality, low-latency proofs at competitive cost, eliminating reliance on centralized verification infrastructure.
+- **Decentralized**: the **Silvana Network** is a decentralized prover network composed of independently operated nodes that generate **zk proofs**. This structure ensures high-quality, low-latency proofs at competitive cost, eliminating reliance on centralized verification infrastructure.
 
 - **Flexible Deployment**: applications can run in **cloud (CXE)**, **private (PXE)**, or **Secure Enclave (TEE)** environments. This flexibility allows teams to optimize for compliance, latency, or control without changing their application logic.
 
@@ -40,7 +40,7 @@ Silvana caters to:
 
 - **Data Availability (DA) Layers** providing storage for provable records and transaction data,
 
-- **Operators** running decentralized proving infrastructure to generate ZK proofs at scale,
+- **Operators** running decentralized proving infrastructure to generate zk proofs at scale,
 
 - **ZK Proof Systems** integrating advanced cryptographic libraries with Silvana's modular architecture,
 
