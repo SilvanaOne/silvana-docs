@@ -19,7 +19,17 @@ Two types of data exist in a ZKP transaction: the **Private Input** and the **Pu
 
 > **Note:**
 >
-> **Public Input** - 
+> **Public Input** - the information the user keeps publicly available.
+>
+> **Private Input** - the information to be concealed from the public eye. 
+>
+>**Proof Job** - a proof generated to be shown in a transaction as a piece of cipher instead of the private Input.
+>
+> **zkProgram** - the business logic that rules how a proof has to be generated and verified.
+>
+> **Prover Function (Circuit)** the function allowing one party (the prover) to demonstrate to another party (the verifier) that they possess certain information without revealing the actual data itself.
+> 
+> **Verifier Function (Circuit)** - the function allowing one party (the validator) validate the proof provided by another party (the prover) without gaining access to the actual information being proved.
 
 For a proof to be considered zero-knowledge, it must satisfy three fundamental properties:
 
