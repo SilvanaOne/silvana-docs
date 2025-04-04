@@ -17,7 +17,7 @@ Two types of data exist in a ZKP transaction: the **Private Input** and the **Pu
 - **Counterparty** calls the **Verifier** - a partner, a regulator, an individual, etc.
 
 > **Note:** 
->
+>  
 > **Public Input** - the information the user keeps publicly available.
 >
 > **Private Input** - the information to be concealed from the public eye. 
