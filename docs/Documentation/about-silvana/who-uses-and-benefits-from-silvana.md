@@ -22,24 +22,3 @@ The table below features major beneficiaries and the value Silvana provides them
 The diagram below provides a clear and comprehensive overview of Silvana's advantages for different stakeholders in the blockchain ecosystem.
 
 ![Silvana Value](./img/silvana-value.png)
-
-## Users and Roles
-
-Basically, all Silvana users can be classified into four roles: **enterprise manager**, **developer**, **guest**, and **operator**.
-
-| Role | Description | Silvana Components | Functions |
-|------|-------------|-------------------|-----------|
-| Manager | Representatives of enterprises (start-ups) or industry integrators. They primarily deal with provable records to complete their business goals as provided by the modules they use. | Prover<br/>Verifier<br/>Marketplace<br/>DA Layer<br/>Router | • create, read, mutate (update), delete, and sell provable record schemas<br/>• create, read, mutate (update), delete provable records<br/>• buy items on Marketplace (provable records, provable record schemas, modules, blueprints, etc.) |
-| Developer | Representatives of enterprises (start-ups) or industry integrators, or independent programmers who build Silvana's Application Layer | Marketplace<br/>DA Layer<br/>Application Layer<br/>ABI API<br/>Indexer<br/>Tx Monitor | • develop, deploy, sell, and delete modules, agents and blueprints |
-| Guest | Third parties that can only view provable records, schemas, modules, or marketplace items. They can be regular blockchain users, regulators, stakeholders, entrepreneurs, authorities, analysts, etc. | Silvana Router<br/>DA Layer<br/>Marketplace | • read provable records<br/>• read provable record schemas<br/>• read marketplace items (modules, schemas, agents, blueprints, etc.) |
-| Operator | Those who run nodes in the Silvana Network, thus providing the infrastructure for decentralized proving. | Silvana Network | • run nodes |
-
-Silvana roles are interchangeable, meaning that one user can, in different situations, perform different roles. Let's see some examples:
-
-**Case 1**
-
-**User A** is a developer who builds modules in the Application Layer for an industry integrator. When User A develops and deploys a new module in a repo or builds an agent, he or she performs the role of a **Developer**. Now, as User A looks through the provable records created by other counterparts, he or she can only read them being a **Guest**. If User A runs a prover in the Silvana Network, he or she becomes an **Operator**.
-
-**Case 2**
-
-**User B** is an enterprise manager. When it comes to the provable records and provable record schemes that he or she created, User B is a **Manager**. As for the provable records created by someone else, User B is a **Guest**.
