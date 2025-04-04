@@ -101,8 +101,10 @@ The manufacturer receives a shipment of card stock paper and registers it as a P
 | quantity | int | 10,000 sheets |
 | supplierInfo | string | zk-proof |
 
-> **Success:**  
-> **_Note: the `supplierInfo` field is protected using a zero-knowledge proof (ZKP) to maintain confidentiality while enabling supplier verification._**
+> **Success!**  
+> **Note:**
+>
+> the **_`supplierInfo`_** field is protected using a zero-knowledge proof (ZKP) to maintain confidentiality while enabling supplier verification.
 
 **Step 2: Production Process**
 
@@ -118,8 +120,11 @@ As the production begins, the card stock is transformed into finished playing ca
 | quantity | int | 1,000 decks |
 | productionDate | date | 2025-02-21 |
 
-> **Success:**  
-> **_Note: The `assetId` remains the same to maintain traceability, while other fields are updated to reflect the transformation._**
+> **Success!**
+
+> **Note** 
+>
+> The **_`assetId_**` remains the same to maintain traceability, while other fields are updated to reflect the transformation.
 
 **Step 3: Sales Transaction**
 
@@ -136,8 +141,10 @@ Upon receiving an order, the manufacturer sells some finished playing card decks
 | saleDate | date | 2025-02-22 |
 | buyerInfo | string | zk-proof |
 
-> **Success:**  
-> **_Note: The `buyerInfo` field is protected using a ZKP to ensure privacy._**
+> **Success!**  
+> **Note** 
+>
+> The **_`buyerInfo`_** field is protected using a ZKP to ensure privacy.
 
 **ZK Program**
 
@@ -145,7 +152,7 @@ A ZK program is employed to maintain the confidentiality of sensitive informatio
 
 **ZK Program Overview**:
 
-1. **Input**: Confidential details (e.g., `supplierInfo`, `buyerInfo`).
+1. **Input**: Confidential details (e.g., **_`supplierInfo`_**, **_`buyerInfo`_**).
 2. **Process**: Generate a cryptographic proof that verifies the legitimacy of the transaction.
 3. **Output**: A proof that third parties can validate without accessing the confidential inputs.
 
