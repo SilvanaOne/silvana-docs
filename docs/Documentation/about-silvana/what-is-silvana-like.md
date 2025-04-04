@@ -18,8 +18,6 @@ Silvana is a next-generation ultra-fast profer platform designed for **flexibili
 - **Decentralized**: Operates without central control points
 - **Trustless**: Verification without requiring trust between parties
 
-![Silvana](./img/what-is-silvana-like.png)
-
 ## Object-Centric
 
 Most blockchains use an **account-based model**, tracking balances linked to accounts. They store and mutate states of accounts. While common, this creates inefficiencies in privacy, scalability, and security. Silvana employs an **object-centric model**, which means that:
