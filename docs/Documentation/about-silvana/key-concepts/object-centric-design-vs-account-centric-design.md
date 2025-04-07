@@ -94,8 +94,8 @@ Silvana follows an object-oriented design which totally aligns with the object-c
 
 > ### **Note:**  
 >  
-> A **ZKP** is a cryptographic protocol that allows one party (a **prover**) to demonstrate to another party (a **verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
+> * A **ZKP** is a cryptographic protocol that allows one party (a **prover**) to demonstrate to another party (a **verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
 > 
-> **Provable Records** - digitally verifiable representations of crypto and real-world assets.
+> * **Provable Records** - digitally verifiable representations of crypto and real-world assets.
 > 
-> **Settlement Layer** - the foundational layer where transactions are validated, finalized, and recorded as immutable truth, ensuring consensus and security across the network.
+> * **Settlement Layer** - the foundational layer where transactions are validated, finalized, and recorded as immutable truth, ensuring consensus and security across the network.
