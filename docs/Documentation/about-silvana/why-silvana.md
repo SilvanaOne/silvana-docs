@@ -36,7 +36,7 @@ Outdated, siloed systems slow down verification processes, impede collaboration,
 
 Silvana’s mission can be summed up in this paragraph: 
 
-**“We aim to revolutionize on-chain asset management by leveraging advanced zero-knowledge (ZK) proofs for robust data privacy. We address trust, security, and efficiency challenges in fragmented, opaque markets by integrating ZK and blockchain technology into a seamless, enterprise-ready platform. Our ultimate mission is to catalyze a 1000× expansion of blockchain and ZK technologies worldwide”.**
+**_“We aim to revolutionize on-chain asset management by leveraging advanced zero-knowledge (ZK) proofs for robust data privacy. We address trust, security, and efficiency challenges in fragmented, opaque markets by integrating ZK and blockchain technology into a seamless, enterprise-ready platform. Our ultimate mission is to catalyze a 1000× expansion of blockchain and ZK technologies worldwide”._**
 
 Silvana's vision is to empower businesses to conduct transactions, confidently verify, and report effectively using Zero-Knowledge (ZK)-enabled blockchain solutions. By preserving privacy, reducing operational overheads, and creating new revenue streams, Silvana aims to revolutionize the way enterprises manage their data and transactions. The company's innovative approach provides a robust foundation for businesses to operate securely and efficiently, without compromising on privacy or data integrity.
 
