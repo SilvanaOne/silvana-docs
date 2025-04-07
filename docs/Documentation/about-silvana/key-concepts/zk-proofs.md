@@ -226,7 +226,7 @@ Unlike many projects that partially implement ZKPs, Silvana provides:
 
 1. **True ZK Integration:** a fully private and decentralized data verification system
 2. **ZK Abstraction:** businesses can use ZKPs through simple APIs without needing blockchain expertise
-3. **Enforced Computational Rules:** Ensures cryptographic security and prevents manipulation.
-4. **Modular Architecture:** Allows businesses to integrate Silvana flexibly.
-5. **Ultra-fast, Scalable Solution:** Most ZKP projects are computationally heavy and weigh much on CPU; Silvana uses the Coordination Layer on fast object-centric blockchains like Sui or Solana to marry the two worlds: secure and private ZKPs with fast and scalable transactions.
-6. **Blockchain-Agnostic Interoperability:** Compatible with various L1s, L2s, and data availability layers.
+3. **Enforced Computational Rules:** ensures cryptographic security and prevents manipulation.
+4. **Modular Architecture:** allows businesses to integrate Silvana flexibly.
+5. **Ultra-fast, Scalable Solution:** most ZKP projects are computationally heavy and weigh much on CPU; Silvana uses the Coordination Layer on fast object-centric blockchains like Sui or Solana to marry the two worlds: secure and private ZKPs with fast and scalable transactions.
+6. **Blockchain-Agnostic Interoperability:** compatible with various L1s, L2s, and data availability layers.
