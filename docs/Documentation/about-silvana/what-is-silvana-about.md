@@ -12,7 +12,7 @@ Silvana uses zk proofs to help enterprises prove anything without disclosing sen
 
 Customers use **provable records** to represent their assets and simulate their behavior according to predefined business rules stored in modules. Each module handles specific functions, such as managing gaming objects in a Web3 game or accounting for a sales company. Provable records essentially represent business entities, whether gaming items or company assets.
 
-> ### **Note:**  
+> **Note:**  
 >  
 > * **Zero-knowledge Proof (ZKP)** - a cryptographic method that allows one party (the prover) to prove to another party (the verifier) that a statement is true without revealing any additional information beyond the validity of the statement  
 > * **Provable Record** - digitally verifiable representations of crypto and real-world assets  
