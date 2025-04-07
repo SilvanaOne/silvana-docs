@@ -9,7 +9,7 @@ sidebar_position: 1
 Balancing security and privacy has become a crucial challenge in the current digital landscape. Enterprises and individuals alike require trustless verification methods that do not compromise sensitive data. Traditional security models rely on extensive data exposure, where verifying a transaction, compliance, or ownership often reveals more information than necessary. The emergence of **Zero-Knowledge Proofs (ZKPs)** represents a paradigm shift, offering an approach where verification does not necessitate disclosure.
 A ZKP is a cryptographic protocol that allows one party (a prover) to demonstrate to another party (a verifier) that a specific statement is true without revealing any underlying information. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
 
-> **Note:** 
+> ### **Note:** 
 >  
 > A **ZKP** is a cryptographic protocol that allows one party (**prover**) to demonstrate to another party (**verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity. 
 
@@ -95,7 +95,7 @@ The table below outlines what each actor and component wants to achieve with a Z
   "signature": "0xSIG123456789"
 }
 ```
-> **Warning!**  
+> ### **Warning!**  
 > If a signature mismatches, the process stops.
 
 **Step 2**: Tx Builder (ABI) Sends Inputs to Prover
@@ -113,7 +113,7 @@ A **ZK Proof** is generated.
   "proof_timestamp": "28.02.2025 UTC 09:41"
 }
 ```
-> **Success!**  
+> ### **Success!**  
 > ZK Proof was successfully created.
 
 **Step 4**: Prover Sends ZK Proof to Verifier.
@@ -134,7 +134,7 @@ A **ZK Proof** is generated.
   "signing_timestamp": "28.02.2025 UTC 09:42"
 }
 ```
-> **Warning!**  
+> ### **Warning!**  
 > If the proof fails, the verification halts.
 
 **Step 6**: Tx Builder Builds ZK Transaction.
@@ -149,7 +149,7 @@ A **ZK Proof** is generated.
   "storage_timestamp": "28.02.2025 UTC 09:42"
 }
 ```
-> **Success!**  
+> ### **Success!**  
 > Proof securely recorded.
 
 **Step 7**: **Tx Builder** Uses Public Input & ZK Proof to Build a **ZK Transaction**.
@@ -172,7 +172,7 @@ A **ZK Proof** is generated.
   "counterparty_signature": "0xTECHSIG987654"
 }
 ```
-> **Success!**  
+> ### **Success!**  
 > The counterparty has signed and approved the transaction.
 
 **Step 9**: ZK Transaction is Sent to the Settlement Layer (L1 or L2 blockchain).
@@ -188,7 +188,7 @@ A **ZK Proof** is generated.
   "blockchain_record": "0xBLOCKHASH123456"
 }
 ```
-> **Success!**  
+> ### **Success!**  
 > The transaction is now immutable on-chain.
 
 **Final Outcome: Secure, Private Patent Verification**
