@@ -4,8 +4,6 @@ sidebar_position: 5
 
 # Who Uses and Benefits from Silvana?
 
-## Beneficiaries
-
 Silvana customers and primary beneficiaries are standalone **enterprises** and **startups** (including **blockchain startups**), industry **integrators**, and **developers**. Our solution will also benefit **tech companies**, **blockchain ecosystems (settlement layer blockchains, data availability layers, ZK proof systems, individual users)**, **government agencies**, and **regulators**.
 
 ![Beneficiaries](./img/beneficiaries.png)
