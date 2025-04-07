@@ -1,6 +1,7 @@
 {
   "label": "Key Concepts",
   "position": 2,
+  "collapsed": false,
   "link": {
     "type": "generated-index",
     "description": "Fundamental principles and technologies that power Silvana"
