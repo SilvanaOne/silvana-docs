@@ -2,7 +2,9 @@
 sidebar_position: 3
 ---
 
-# Object-Centric Design vs Account-Centric Design
+# Account-Centric Design for Silvana
+
+## Account-Centric Design
 
 Essentially, a blockchain has a dual nature. On the one hand, at its core, a blockchain is a **replicated deterministic state machine**, meaning that each transaction results in a change of state. On the other hand, a blockchain is a database where data is stored in blocks, and all pieces of such data are recorded in a cryptographically sophisticated way that rules out unauthorized data mutation.
 
@@ -10,9 +12,15 @@ Essentially, a blockchain has a dual nature. On the one hand, at its core, a blo
 >  
 > A **state machine** is a computer science concept whereby a machine can have multiple states but only one at any given time. There is a state, which describes the current state of the system and transactions that trigger state transitions.
 
-Conventionally, in blockchains, an **account** serves as the fundamental unit of data storage and interaction. Every transaction - be it a transfer of funds or a delegation - results in the transition of a state of the affected account and, largely, the state of the whole blockchain - making an account the central entity within blockchain ecosystems (see diagram below).
+Conventionally, in blockchains, an **account** serves as the fundamental unit of data storage and interaction. Every transaction - be it a transfer of funds or a delegation - results in the transition of a state of the affected account and, largely, the state of the whole blockchain - making an account the central entity within blockchain ecosystems. Typically, these characteristics describe the **account-centric design**: 
 
-![Account-Centric Design](../img/account-centric-design.png)
+* Everything revolves around accounts — each user or smart contract has an account with a balance and optional code (for contracts).
+
+* State is stored inside accounts.
+
+* Interactions (like a contract calling another contract) are modeled as messages between accounts.
+
+* Smart contracts live in account addresses, each having its own storage.
 
 While this approach has been widely adopted, it presents inherent structural limitations, namely:
 
@@ -28,11 +36,17 @@ Account-centered approach to data storage and management significantly impedes t
 
 All transactions have to be processed and executed consecutively since each state transition for the affected account and for the blockchain has to run through Consensus and be signed by the majority of the validator set. It makes transaction parallelization impossible without either using roll-ups or introducing special nodes - sequencers and transaction builders - to do this job, which sufficiently complicates the blockchain design.
 
-These limitations highlight the need for continuous research and development to improve the efficiency and security of account-centric blockchain designs. Object-centric blockchain design is a true game-changer pioneered by Sui, Aptos, and Solana. With object-centric design, data in a blockchain is arranged by **programmable objects** like with the **OOP** - **Object-Oriented Programming** - rather than by accounts. Such objects have fields that describe their states that get mutated (one or many) with each transaction due to a pre-defined logic described in an on- or off-chain smart contract. 
+## Object-Centric Design
 
-The diagram below illustrates how object-centric design works:
+The above-mentioned limitations highlight the need for continuous research and development to improve the efficiency and security of account-centric blockchains. **Object-centric design** is a true game-changer pioneered by Sui, Aptos, and Solana. With object-centric design, data in a blockchain is arranged by **programmable objects** like with the **Object-Oriented Programming (OOP)** - rather than by accounts. Such objects have fields that describe their states that get mutated (one or many) with each transaction due to a pre-defined logic described in an on- or off-chain smart contract.
 
-![Object-Centric Design](../img/object-centric-design.png)
+This is how object-centric design makes a difference:
+
+* State is composed of discrete objects, each having a unique ID and type.
+
+* Objects can represent anything: tokens, NFTs, contracts, roles, data containers, etc.
+
+* Transactions explicitly reference and manipulate objects, rather than global state.
 
 Compared to the account-centric design, the object-centric design has the following benefits:
 
@@ -66,12 +80,14 @@ The table below sums up the comparison of the account-centric and the object-cen
 |--------------------------|-------------------------|
 | • Lower scalability<br/>• Consecutive transaction execution<br/>• Restricted programmability<br/>• Slower and more complicated consensus | • Higher modularity<br/>• Higher scalability<br/>• Higher flexibility<br/>• Higher programmability<br/>• Transaction parallelization<br/>• Modularity and reusability<br/>• Automation |
 
-Silvana follows an object-oriented pattern, which totally aligns with the emerging trend of an object-centric blockchain narrative. However, Silvana extends this concept further by integrating **zero-knowledge proofs (ZKPs)**, ensuring that **Provable Records** maintain privacy, regulatory compliance, and immutable verifiability without exposing sensitive data. This design is particularly suitable for the deployment and handling of **real-world assets (RWAs)** on-chain.
+## How Silvana Leverages Object-Centric Design
 
-> **Key Terms:**
->  
-> **Provable Record** - Digitally verifiable representations of crypto and real-world assets.
->  
-> **Zero-Knowledge Proofs (ZKPs)** - A cryptographic protocol that allows one party (a **prover**) to demonstrate to another party (a **verifier**) that a specific statement is true **without revealing any underlying information**.
->  
-> **Real-world Assets (RWAs)** - Assets with real economic value that originate outside the blockchain but can be represented, traded, and managed digitally using blockchain technology.
+Silvana follows an object-oriented design which totally aligns with the object-centric blockchain narrative. However, Silvana extends this concept further by integrating **zero-knowledge proofs (ZKPs)**. This is how the object-centric design benefits Silvana:
+
+* **Provable Records** - to represent assets, provable records are created with mutable states. Each time a state is mutated, a zero-knowledge proof is generated to prove the state correctness. This design is particularly suitable for **real-world assets (RWAs)** and empowers their adoption in crypto.
+
+* Silvana uses Sui - an object-centric blockchain - as a **Settlement Layer** for the **Silvana Rollup** ensuring high transaction speed.
+
+* Using provable records as objects helps build **modular**, **scalable**, and **privacy-preserving applications** with reusable custom business logic.
+
+* Since provable records don’t assume a specific **global state layout** or a **single chain** or **execution environment**, this enables Silvana to be **chain-agnostic**, **tech-abstracted**, and have a **modular design** with **built-in data security**.
