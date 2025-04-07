@@ -91,3 +91,11 @@ Silvana follows an object-oriented design which totally aligns with the object-c
 * Using provable records as objects helps build **modular**, **scalable**, and **privacy-preserving applications** with reusable custom business logic.
 
 * Since provable records don’t assume a specific **global state layout** or a **single chain** or **execution environment**, this enables Silvana to be **chain-agnostic**, **tech-abstracted**, and have a **modular design** with **built-in data security**.
+
+> ### **Note:**  
+>  
+> A **ZKP** is a cryptographic protocol that allows one party (a **prover**) to demonstrate to another party (a **verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
+> 
+> **Provable Records** - digitally verifiable representations of crypto and real-world assets.
+> 
+> **Settlement Layer** - the foundational layer where transactions are validated, finalized, and recorded as immutable truth, ensuring consensus and security across the network.
