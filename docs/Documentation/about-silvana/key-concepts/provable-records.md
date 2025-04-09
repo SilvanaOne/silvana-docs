@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Silvana presents a novel solution -  **Provable Records**. Unlike entities in account-based architectures, Provable Records function as autonomous digital objects, each possessing a structured set of fields, predefined behaviors, and cryptographic verifiability.
 
-> **Note:**  
+> **Note!**  
 >
 > **Provable Records** are digitally verifiable representations of crypto and real-world assets.
 
