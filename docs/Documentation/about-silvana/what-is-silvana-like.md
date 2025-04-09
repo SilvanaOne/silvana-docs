@@ -92,4 +92,6 @@ Trustlessness in Silvana means every step of every process produces its own proo
 
 - Every process step has a corresponding **self-verifiable proof**.
 - **No external audits** or **manual attestations** are required for validation.
-- Records remain verifiable regardless of Silvana’s presence.
+- Records remain verifiable regardless of Silvana’s presence.]
+
+1
