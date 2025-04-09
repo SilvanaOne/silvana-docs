@@ -73,13 +73,13 @@ The diagram below illustrates the provable record flow:
 
 What’s special about the DA arrangements with Silvana is provable DB transactions meaning everytime a user calls the DA layer to read, write, delete, or update a provable record, Silvana generates proof for that, which means **provable read** and **provable mutation** of data. See how Silvana's solution compares to other DA layer arrangements.
 
-1. **Traditional DB**
+### Traditional DB
 
 With a traditional DB interaction pattern, a user runs a DB transaction without any proof being generated.
 
 ![Traditional DB Interaction](../img/traditional-db-interaction.png)
 
-2. **Silvana Provable Data Mutation**
+### Silvana Provable Data Mutation
 
 With Silvana, each time data about a provable record is mutated, proof is generated. Then, the data mutation flow looks as follows:
 
@@ -97,7 +97,7 @@ With Silvana, each time data about a provable record is mutated, proof is genera
 
 ![Provable Data Mutation](../img/provable-record-mutation.png)
 
-3. **Silvana Provable Record Reading**
+### Silvana Provable Record Reading
 
 Whenever a user reads data in the DA Layer, Silvana generates proof. Now, the flow for proved data read looks like this:
 
