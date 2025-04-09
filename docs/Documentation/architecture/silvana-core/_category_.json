@@ -1,0 +1,9 @@
+{
+  "label": "Silvana Core",
+  "position": 1,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Silvana Core is the foundational layer of the Silvana architecture, encompassing essential components that enable confidential and verifiable execution of state transitions across decentralized systems."
+  }
+} 
