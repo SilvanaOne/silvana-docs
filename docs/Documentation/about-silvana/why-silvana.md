@@ -63,3 +63,4 @@ Let the sky be your limit. Build whatever you want, integrate with whatever you 
 5. **First Viable Implementation of ZK Cryptography**
 
 Although ZK unlocks a wide array of robust use cases, it is still early since most projects leveraging ZKPs still haven’t demonstrated a viable business solution. We really know how to make ZKPs grow from an intricately designed yet opaque to a truly utilizable technology.
+

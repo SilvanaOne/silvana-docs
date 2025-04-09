@@ -18,7 +18,7 @@ Silvana is a next-generation ultra-fast profer platform designed for **flexibili
 - **Decentralized**: operates without central control points
 - **Trustless**: verification without requiring trust between parties
 
-![What is Silvana Like](./img/what-is-silvana-like-diagramm.png)
+![What is Silvana Like](./img/what-is-silvana-like.png)
 
 ## Object-Centric
 
@@ -28,7 +28,7 @@ Most blockchains use an **account-based model**, tracking balances linked to acc
 - Objects represent crypto or real-world assets and act as units of value, identity, or state.
 - Sensitive data remains hidden, yet can still be proven valid through zero-knowledge methods.
 
-> **Note:**  
+> **Note!**  
 > Silvana is not the first to employ the object-central design. Among other projects are Sui, Solana, and Aptos. Arranging data around objects allows a wide array of use cases, enables deployment of more complicated custom logic, and optimizes data storage introducing Data Availability (DA) layers.
 
 ## Modular
