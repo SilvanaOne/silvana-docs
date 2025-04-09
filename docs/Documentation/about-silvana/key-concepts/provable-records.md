@@ -153,7 +153,7 @@ As the production begins, the card stock is transformed into finished playing ca
 
 > **Success!**
  
-> The **_assetId_**` remains the same to maintain traceability, while other fields are updated to reflect the transformation.
+> The **_`assetId`_**` remains the same to maintain traceability, while other fields are updated to reflect the transformation.
 
 **Step 3: Sales Transaction**
 
