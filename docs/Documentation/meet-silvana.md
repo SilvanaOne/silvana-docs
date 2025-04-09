@@ -54,4 +54,3 @@ Silvana caters to:
 
 - **Government Agencies** aiming to streamline official registries or identity verification systems.
 
-1
