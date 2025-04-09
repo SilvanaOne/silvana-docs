@@ -99,3 +99,5 @@ Silvana follows an object-oriented design which totally aligns with the object-c
 > * **Provable Records** - digitally verifiable representations of crypto and real-world assets.
 > 
 > * **Settlement Layer** - the foundational layer where transactions are validated, finalized, and recorded as immutable truth, ensuring consensus and security across the network.
+
+1

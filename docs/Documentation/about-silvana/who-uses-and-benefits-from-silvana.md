@@ -20,3 +20,5 @@ The table below features major beneficiaries and the value Silvana provides them
 The diagram below provides a clear and comprehensive overview of Silvana's advantages for different stakeholders in the blockchain ecosystem.
 
 ![Silvana Value](./img/silvana-value.png)
+
+1
