@@ -21,4 +21,3 @@ The diagram below provides a clear and comprehensive overview of Silvana's advan
 
 ![Silvana Value](./img/silvana-value.png)
 
-1
