@@ -153,7 +153,7 @@ As the production begins, the card stock is transformed into finished playing ca
 
 > **Success!**
  
-> The **_`assetId`_**` remains the same to maintain traceability, while other fields are updated to reflect the transformation.
+> The **_`assetId`_** remains the same to maintain traceability, while other fields are updated to reflect the transformation.
 
 **Step 3: Sales Transaction**
 
@@ -188,4 +188,3 @@ As can be seen, Silvana sets a new standard in digital asset management by integ
 
 Ensuring data integrity without compromising confidentiality enhances trust in blockchain-based systems and paves the way for broader enterprise adoption. The combination of security, transparency, and usability demonstrates a significant advancement in the development of Web3 technologies.
 
-1

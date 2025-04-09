@@ -114,4 +114,3 @@ Now, quips aside, let’s see how Silvana can really apply for serious business.
 - Enhanced blockchain adoption with real-world companies;
 - More TVL for blockchain ecosystems from RWAs.
 
-1
