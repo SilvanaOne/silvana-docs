@@ -231,3 +231,4 @@ Unlike many projects that partially implement ZKPs, Silvana provides:
 5. **Ultra-fast, Scalable Solution:** most ZKP projects are computationally heavy and weigh much on CPU; Silvana uses the Coordination Layer on fast object-centric blockchains like Sui or Solana to marry the two worlds: secure and private ZKPs with fast and scalable transactions.
 6. **Blockchain-Agnostic Interoperability:** compatible with various L1s, L2s, and data availability layers.
 
+1
