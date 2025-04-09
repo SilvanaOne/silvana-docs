@@ -371,7 +371,7 @@ const config: Config = {
       },
     ],
     // Replace with your project's social card
-    image: "img/silvana-social-card.png",
+    // image: "img/silvana-social-card.png",
     navbar: {
       logo: {
         alt: "Silvana Logo",
