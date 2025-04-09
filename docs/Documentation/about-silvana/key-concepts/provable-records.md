@@ -57,9 +57,9 @@ Provable record flow looks like this:
 
 > **Note!**
 > 
-> **Pickles** - an advanced cryptographic technique used for recursive zero-knowledge proofs.
+> * **Pickles** - an advanced cryptographic technique used for recursive zero-knowledge proofs.
 > 
-> **Recursive Proof** - a special type of zero-knowledge proof that can verify other zero-knowledge proofs — including itself.
+> * **Recursive Proof** - a special type of zero-knowledge proof that can verify other zero-knowledge proofs — including itself.
 
 3. Then the proof is submitted to the DA layer.
 

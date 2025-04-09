@@ -18,7 +18,7 @@ Silvana is a next-generation ultra-fast profer platform designed for **flexibili
 - **Decentralized**: operates without central control points
 - **Trustless**: verification without requiring trust between parties
 
-![What is Silvana Like](./img/what-is-silvana-like-diagramm.png)
+![What is Silvana Like](./img/what-is-silvana-like.png)
 
 ## Object-Centric
 

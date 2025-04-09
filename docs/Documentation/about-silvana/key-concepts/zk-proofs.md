@@ -199,7 +199,7 @@ A **ZK Proof** is generated.
 - Re-verification is needed for future licensing or disputes.
 The diagram below shows the flow of the use case.
 
-![Patent Verification Flow](../img/zkp-flow1.png)
+![Patent Verification Flow](../img/zkp-flow.png)
 
 ### Key Takeaways from the ZKP Flow
 
