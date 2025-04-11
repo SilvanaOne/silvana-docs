@@ -42,7 +42,7 @@ Additionally, Silvana Cloud offers these components:
 
 ### Trusted Execution Environment (TEE)
 
-Enterprises can use Silvana Clud in the TEE, which acts as a Secure Enclave. Enterprises keep their keys in this space. Silvana ensures security against malicious use of keys and sensitive data by unauthorized users and insiders. Silvana Network Nodes provide decentralized proofs. Silvana Cloud is also available.
+Enterprises can use Silvana Cloud in the TEE, which acts as a Secure Enclave. Enterprises keep their keys in this space. Silvana ensures security against malicious use of keys and sensitive data by unauthorized users and insiders. Silvana Network Nodes provide decentralized proofs. Silvana Cloud is also available.
 
 In both arrangements, the following components can be deployed: 
 
