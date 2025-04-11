@@ -84,7 +84,7 @@ Silvana Core is the layer where Silvana’s internal magic unfolds: proof genera
 
 * **Router**: provides schemas and zkPrograms for proofs.
 
-* **ABI (Application Binary Interface)**: *builds, compiles, sends, and monitors transactions.
+* **ABI (Application Binary Interface)**: builds, compiles, sends, and monitors transactions.
 
 * **ABI API**: facilitates transaction data retrieval.
 
