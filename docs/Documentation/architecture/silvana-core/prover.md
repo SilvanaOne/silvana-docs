@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Prover
 ## Overview
 The **Silvana Prover** is directly related to **Zero-Knowledge Proof (ZKP)** technology. It produces cryptographic proofs that confirm the validity of statements or transitions in Provable Records while preserving the confidentiality of the underlying sensitive information. 
