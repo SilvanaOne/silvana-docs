@@ -8,15 +8,15 @@ sidebar_position: 1
 
 **Silvana Core** is the key layer where proofs are generated and verified. This is exactly where all Silvana magic unfolds. Silvana Core includes the following components:
 
-* **Prover**: Generates ZK proofs based on provable record state changes.
-* **Verifier**: Independently verifies generated ZK proofs.
-* **Database**: Stores ZK proofs and provable records.
-* **Router**: Provides schemas and zkPrograms for proofs.
-* **ABI (Application Binary Interface)**: Builds, compiles, sends, and monitors transactions.
-* **ABI API**: Facilitates transaction data retrieval.
-* **Indexer**: Aligns and indexes transaction data.
-* **Tx Monitor**: Monitors transaction statuses.
-* **Tx Sender**: Sends transactions to blockchain networks.
+* **Prover**: generates ZK proofs based on provable record state changes.
+* **Verifier**: independently verifies generated ZK proofs.
+* **Database**: stores ZK proofs and provable records.
+* **Router**: provides schemas and zkPrograms for proofs.
+* **ABI (Application Binary Interface)**: builds, compiles, sends, and monitors transactions.
+* **ABI API**: facilitates transaction data retrieval.
+* **Indexer**: aligns and indexes transaction data.
+* **Tx Monitor**: monitors transaction statuses.
+* **Tx Sender**: sends transactions to blockchain networks.
 
 ![Silvana Core Components](../img/silvana-core.png)
 
@@ -30,17 +30,17 @@ Silvana Core runs two Circuits in a ZKP transaction: the **Prover Function (Circ
 
 > **Note!**  
 >
-> **Zero-knowledge proof (ZKP)** - a cryptographic protocol that allows one party (a prover) to demonstrate to another party (a verifier) that a specific statement is true without revealing any underlying information. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
+> * **Zero-knowledge proof (ZKP)** - a cryptographic protocol that allows one party (a prover) to demonstrate to another party (a verifier) that a specific statement is true without revealing any underlying information. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
 > 
-> **Recursive Proof** - a special type of zero-knowledge proof that can verify other zero-knowledge proofs — including itself.
+> * **Recursive Proof** - a special type of zero-knowledge proof that can verify other zero-knowledge proofs — including itself.
 > 
-> **Prover Function (Circuit)** - the function allowing one party (the prover) to demonstrate to another party (the verifier) that they possess certain information without revealing the actual data itself.
+> * **Prover Function (Circuit)** - the function allowing one party (the prover) to demonstrate to another party (the verifier) that they possess certain information without revealing the actual data itself.
 > 
-> **Verifier Function (Circuit)** - the function allowing one party (the validator) validate the proof provided by another party (the prover) without gaining access to the actual information being proved.
+> * **Verifier Function (Circuit)** - the function allowing one party (the validator) validate the proof provided by another party (the prover) without gaining access to the actual information being proved.
 > 
-> **Router** - an interface for users to interact with provable records. It contains schemas of provable records as a Yaml file containing its fields.
+> * **Router** - an interface for users to interact with provable records. It contains schemas of provable records as a Yaml file containing its fields.
 > 
-> **Prover Program** - the business logic that rules how a proof has to be generated and verified.
+> * **Prover Program** - the business logic that rules how a proof has to be generated and verified.
 
 That’s how it works:
 
