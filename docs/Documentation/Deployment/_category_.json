@@ -1,6 +1,6 @@
 {
-    "label": "Architecture",
-    "position": 5,
+    "label": "Deployment",
+    "position": 4,
     "collapsed": false,
     "link": {
       "type": "generated-index",
