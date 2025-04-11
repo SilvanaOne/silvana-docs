@@ -89,7 +89,7 @@ Silvana distributes proof generation, data management, and state verification ac
 
 ## Trustless
 
-Trustlessness in Silvana means every step of every process produces its own proof: from record creation to data updates and compliance checks. These proofs follow predefined computational rules (**zkPrograms**), which describe exactly what is allowed and how it must be verified.
+Trustlessness in Silvana means every step of every process produces its own proof: from record creation to data updates and compliance checks. These proofs follow predefined computational rules of (**Prover Program**), which describe exactly what is allowed and how it must be verified.
 
 * Every process step has a corresponding **self-verifiable proof**.
 * **No external audits** or **manual attestations** are required for validation.
