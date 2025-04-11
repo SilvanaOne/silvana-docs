@@ -8,41 +8,41 @@ sidebar_position: 1
 
 Due to the complexity and comprehensiveness of the goals that Silvana is targeted at, it has a well-thought architecture that can be described as follows:
 
-* **multi-tier** - there are multiple layers in Silvana’s architecture, each having its own function.
+* **multi-tier** - there are multiple layers in Silvana's architecture, each having its own function.
 
-* **modular** - by sticking to the modular design on the Application Layer, Silvana allows for arranging and deploying the code around particular practical, real-life use cases;
+* **modular** - by sticking to the modular design on the Application Layer, Silvana allows for arranging and deploying the code around particular practical, real-life use cases.
 
-* **flexible** - the components of all architectural tiers can be deployed and used in multiple execution environments, which brings about flexibility in using Silvana;
+* **flexible** - the components of all architectural tiers can be deployed and used in multiple execution environments, which brings about flexibility in using Silvana.
 
 * **business-oriented** - the architectural solution is designed in a way to empower developers to easily build apps based on business needs with all the technology complexities abstracted away and brought to lower levels.
 
-* **chain-agnostic** - we don’t focus on any particular blockchain, project, or cryptography; we can integrate with any L1, L2, DA, or Prover that supports ZKPs of any cryptographic function.
+* **chain-agnostic** - we do not focus on any particular blockchain, project, or cryptography; we can integrate with any L1, L2, DA, or Prover that supports ZKPs of any cryptographic function.
 
 Silvana platform comprises 8 layers and 3 sublayers: 
 
-* **Integration Layer** - deployment integration with end users;
+* **Integration Layer** - deployment integration with end users
 
-* **Application Layer** - basic Silvana and extended enterprise functions;
+* **Application Layer** - basic Silvana and extended enterprise functions
 
-* **Cloud Execution Sublayer** - execution of Silvana functions in Silvana Cloud;
+* **Cloud Execution Sublayer** - execution of Silvana functions in Silvana Cloud
 
-* **Trusted Execution Layer** - execution of Silvana functions in the Trusted Enclave of the Silvana Cloud;
+* **Trusted Execution Layer** - execution of Silvana functions in the Trusted Enclave of the Silvana Cloud
 
-* **Private Execution Layer** - execution of Silvana functions in private infrastructure (cloud, servers);
+* **Private Execution Layer** - execution of Silvana functions in private infrastructure (cloud, servers)
 
-* **Silvana Core** - proof generation and verification;
+* **Silvana Core** - proof generation and verification
 
-* **Silvana Network** - decentralized prover node network;
+* **Silvana Network** - decentralized prover node network
 
-* **Execution Layer** - building, compiling, sequencing, and sending transactions on L1 or L2 chains;
+* **Execution Layer** - building, compiling, sequencing, and sending transactions on L1 or L2 chains
 
-* **Coordination Layer** - decoupling transactions that need a proof from transactions where no proof is required;
+* **Coordination Layer** - decoupling transactions that need a proof from transactions where no proof is required
 
-* **Data Availability (DA) Layer** - storing and updating data;
+* **Data Availability (DA) Layer** - storing and updating data
 
-* **Settlement Layer** - transaction and proof validation.
+* **Settlement Layer** - transaction and proof validation
 
-The diagram below illustrates Silvana’s architectural layers.
+The diagram below illustrates Silvana's architectural layers.
 
 ![Silvana Architecture](./img/silvana-architecture.png)
 
@@ -58,41 +58,41 @@ This is Silvana's execution layer, where the business logic is represented for e
 
 Each module is essentially deployed as code that end users can access in a mono repo. We offer some of the most common modules to cover a wide range of use cases. Additionally, our customers and system integrators can add their modules to extend the application layer's functionality. Some basic modules are provided by Silvana and are open for public use. Such modules will initially include the following:
 
-* Transactions Module;
+* Transactions Module
 
-* NFT Module;
+* NFT Module
 
-* Fungible Tokens Module;
+* Fungible Tokens Module
 
-* DEX Module;
+* DEX Module
 
-* Token Launchpad Module;
+* Token Launchpad Module
 
-* and more…
+* and more...
 
 With time, more such modules will be added. Enterprises, integrators, and developers can additionally develop more modules to meet their business requirements, too. This will enrich our Application layers and cover more and more use cases. 
 
 ## Silvana Core
 
-Silvana Core is the layer where Silvana’s internal magic unfolds: proof generation and verification, Prover Program (proof logic), transaction building, and API interaction. Silvana Core includes the following:
+Silvana Core is the layer where Silvana's internal magic unfolds: proof generation and verification, Prover Program (proof logic), transaction building, and API interaction. Silvana Core includes the following:
 
-* **Prover**: generates ZK proofs based on provable record state changes.
+* **Prover**: generates ZK proofs based on provable record state changes
 
-* **Verifier**: independently verifies generated ZK proofs.
+* **Verifier**: independently verifies generated ZK proofs
 
-* **Database**: stores ZK proofs and provable records.
+* **Database**: stores ZK proofs and provable records
 
-* **Router**: provides schemas and Prover Program for proofs.
+* **Router**: provides schemas and Prover Program for proofs
 
-* **ABI (Application Binary Interface)**: builds, compiles, sends, and monitors transactions.
+* **ABI (Application Binary Interface)**: builds, compiles, sends, and monitors transactions
 
-* **ABI API**: facilitates transaction data retrieval.
+* **ABI API**: facilitates transaction data retrieval
 
-* **Indexer**: aligns and indexes transaction data.
+* **Indexer**: aligns and indexes transaction data
 
-* **Tx Monitor**: monitors transaction statuses.
+* **Tx Monitor**: monitors transaction statuses
 
-* **Tx Sender**: sends transactions to blockchain networks.
+* **Tx Sender**: sends transactions to blockchain networks
 
 ## Silvana Network
 
