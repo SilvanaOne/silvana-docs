@@ -174,15 +174,17 @@ Upon receiving an order, the manufacturer sells some finished playing card decks
 > 
 > The **_`buyerInfo`_** field is protected using a ZKP to ensure privacy.
 
-**ZK Program**
+**Prover Program**
 
-A ZK program is employed to maintain the confidentiality of sensitive information (such as supplier and buyer details). This program allows the manufacturer to prove the transaction's validity without revealing the data.
+A **Prover Program** is employed to maintain the confidentiality of sensitive information (such as supplier and buyer details). This program allows the manufacturer to prove the transaction's validity without revealing the data.
 
-**ZK Program Overview**:
+**Prover Program Overview**:
 
-1. **Input**: Confidential details (e.g., **_`supplierInfo`_**, **_`buyerInfo`_**).
-2. **Process**: Generate a cryptographic proof that verifies the legitimacy of the transaction.
-3. **Output**: A proof that third parties can validate without accessing the confidential inputs.
+1. **Private Input**: confidential details (e.g., **_`supplierInfo`_**, **_`buyerInfo`_**).
+2. **Public Input**: publicly available information.
+2. **Process**: generate a cryptographic proof that verifies the legitimacy of the transaction.
+3. **Public Output**: the data submitted as the **Private Input**.
+4. **Output**: a proof that third parties can validate without accessing the confidential inputs.
 
 As can be seen, Silvana sets a new standard in digital asset management by integrating provable records, structured data, and zero-knowledge proofs. 
 

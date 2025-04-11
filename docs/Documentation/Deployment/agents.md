@@ -25,14 +25,7 @@ To use a module’s function, an agent has to add the repo of the module as a de
 The diagram below illustrates Silvana Agents.
 
 ![Silvana Agents](./img/silvana-agents.png)
-
-> **Terms**  
->
-> Agents are associated with the emergence of AI. An AI Agent is a software program designed to perform specific tasks or functions autonomously. It utilizes artificial intelligence techniques, such as machine learning, natural language processing, and computer vision, to make decisions, interact with their environment, and achieve their goals. AI agents can be found in various applications, including virtual assistants, autonomous vehicles, recommendation systems, and more.
-
-> By leveraging AI agents, we can automate complex processes, enhance user experiences, and improve efficiency across diverse domains.
-
-Using Agents helps automate Silvana functions and allows a wide array of useful options:
+Using Agents helps automate Silvana functions and enables powerful capabilities such as:
 
 * **Account Abstraction**: Agents have a built-in user signature that enables transactions to run within the limits defined by the user without the necessity to be initiated directly by a user.
 
