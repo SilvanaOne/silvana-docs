@@ -10,7 +10,7 @@ Each agent implements a particular real-life use case - car lending, issuing and
 
 To use a module’s function, an agent has to add the repo of the module as a dependency. Now, it can use the module’s code and ABI to build and execute transactions. To generate proofs, Agents have to get access to the **Prover Program** describing the proof generation rules, the Prover executing the **Prover Function (Circuit)**, and the **Verifier** executing the **Verifier Function (Circuit)**. All deployment options - **Private Executino Environment (PXE)**, **Cloud Execution Environment (CXE)**, and **Trusted Execution Environment (TEE)** - are available for Agents.
 
-> **Note!**  
+> **Terms**  
 >
 > * **Prover**: Silvana Core component responsible for the generation of ZK proofs based on provable record state changes.
 > 
@@ -25,7 +25,8 @@ To use a module’s function, an agent has to add the repo of the module as a de
 The diagram below illustrates Silvana Agents.
 
 ![Silvana Agents](./img/silvana-agents.png)
-Using Agents helps automate Silvana functions and enables powerful capabilities such as:
+
+Using Agents helps automate Silvana functions and allows a wide array of useful options:
 
 * **Account Abstraction**: Agents have a built-in user signature that enables transactions to run within the limits defined by the user without the necessity to be initiated directly by a user.
 

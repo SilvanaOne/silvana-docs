@@ -171,8 +171,7 @@ Upon receiving an order, the manufacturer sells some finished playing card decks
 | buyerInfo | string | zk-proof |
 
 > **Success!**
-> 
-> The **_`buyerInfo`_** field is protected using a ZKP to ensure privacy.
+> The **_`buyerInfo`_** field is protected using a ZKP.
 
 **Prover Program**
 

@@ -118,25 +118,11 @@ Each Silvana Network node may perform one or more roles in the ecosystem, either
 
 Transactions involving private data use **zk proofs** to conceal it. However, if a transaction does not contain private data, this means no proof is required to be generated. So there’s a need to decouple those two types of transactions so that they follow two different flows: **with** and **without zk proofs**. Sui is an L1 blockchain that has a novel and intricately designed **Consensus mechanism**. To achieve Consensus, Sui utilizes the **Mysticeti** protocol, an evolution of earlier protocols like **Narwhal and Bullshark**, according to which only transactions involving **shared objects** need to go through consensus, while those where **owned objects** are handled, don’t have to do it. This essentially improves the transaction speed. Silvana leverages this property of Sui to achieve high scalability.
 
-> **Note!**
->   
-> * Zero-knowledge proof (ZKP) - a cryptographic protocol that allows one party (a prover) to demonstrate to another party (a verifier) that a specific statement is true without revealing any underlying information. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
-> 
-> * Consensus - the process by which network participants agree on the validity of transactions and the current state of the ledger, ensuring consistency across a decentralized network.
-> 
-> * Narwhal - Sui’s high-throughput mempool protocol that ensures reliable dissemination and availability of transaction data by organizing it into a Directed Acyclic Graph (DAG) structure.
-> 
-> * Bullshark - Sui’s Byzantine Fault Tolerant (BFT) consensus protocol that orders transactions, achieving high throughput and low latency.
-> 
-> * Shared object - an object that has been made accessible to all users on the network, allowing anyone to read or modify them like a package (smart contract).
-> 
-> * Owned object - an asset exclusively controlled by a single address, allowing their transactions to bypass consensus for faster execution.
-
 ## Data Availability Layer
 
 The **Data Availability (DA) Layer** is a **storage** that keeps recorded data in **data blobs** and provides proof of the availability and state mutation of stored objects - **provable records**. At any time, a user can read the stored objects to see their current state. The object's state can be mutated as a result of running a transaction, and at any time, an object can be deleted from the DA. Silvana is open to integrating with existing or emerging DA layers.
 
-> **Note!**
+> **Terms**
 >   
 > * **Data blob** - a large, unstructured data packet that can be attached to transactions or blocks to enhance scalability and efficiency by enabling the processing of substantial data volumes without congesting the main chain.
 > 
