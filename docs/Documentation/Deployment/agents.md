@@ -24,7 +24,7 @@ To use a module's function, an agent has to add the repo of the module as a depe
 
 The diagram below illustrates Silvana Agents.
 
-<!-- ![Silvana Agents](./img/silvana-agents.png) -->
+![Silvana Agents](./img/silvana-agents.png)
 
 Using Agents helps automate Silvana functions and allows a wide array of useful options:
 

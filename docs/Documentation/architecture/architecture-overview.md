@@ -86,7 +86,7 @@ Silvana Core is the layer where Silvana's internal magic unfolds: proof generati
 > 
 > * **Prover Program** - the business logic that rules how a proof has to be generated and verified.
 > 
-. * **Proof Job** - a proof generated to be shown in a transaction as a piece of cipher instead of the private Input.
+> * **Proof Job** - a proof generated to be shown in a transaction as a piece of cipher instead of the private Input.
 
 Generating proofs requires computational power, which in turn creates infrastructural demands. Silvana deploys a **network of prover nodes** that produce **proof jobs** in exchange for rewards. This ensures decentralization and system robustness.
 
