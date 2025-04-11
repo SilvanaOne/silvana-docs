@@ -74,7 +74,7 @@ With time, more such modules will be added. Enterprises, integrators, and develo
 
 ## Silvana Core
 
-Silvana Core is the layer where Silvana’s internal magic unfolds: proof generation and verification, zkPrograms (proof logic), transaction building, and API interaction. Silvana Core includes the following:
+Silvana Core is the layer where Silvana’s internal magic unfolds: proof generation and verification, Prover Program (proof logic), transaction building, and API interaction. Silvana Core includes the following:
 
 * **Prover**: generates ZK proofs based on provable record state changes.
 
@@ -82,7 +82,7 @@ Silvana Core is the layer where Silvana’s internal magic unfolds: proof genera
 
 * **Database**: stores ZK proofs and provable records.
 
-* **Router**: provides schemas and zkPrograms for proofs.
+* **Router**: provides schemas and Prover Program for proofs.
 
 * **ABI (Application Binary Interface)**: *builds, compiles, sends, and monitors transactions.
 

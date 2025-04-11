@@ -13,7 +13,7 @@ A ZKP is a cryptographic protocol that allows one party (a prover) to demonstrat
 >  
 > A **ZKP** is a cryptographic protocol that allows one party (**prover**) to demonstrate to another party (**verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity. 
 
-Two types of data exist in a ZKP transaction: the **Private Input** and the **Public Input**. A prover and a verifier are smart contracts that contain the **zkProgram**. The Prover runs the **prover function (circuit)** to generate proof, and the Verifier runs the **verifier function (circuit)** to verify the generated proof.
+Two types of data exist in a ZKP transaction: the **Private Input** and the **Public Input**. A prover and a verifier are smart contracts that contain the **Prover Program**. The Prover runs the **prover function (circuit)** to generate proof, and the Verifier runs the **verifier function (circuit)** to verify the generated proof.
 - The **Prover** is called by the user, who must provide proof of the private input, 
 - **Counterparty** calls the **Verifier** - a partner, a regulator, an individual, etc.
 
@@ -22,7 +22,7 @@ Two types of data exist in a ZKP transaction: the **Private Input** and the **Pu
 > * **Public Input** - the data the user keeps publicly available  
 > * **Private Input** - the private data to be concealed from the public eye  
 > * **Proof Job** - a proof generated to be shown in a transaction as a piece of cipher instead of the private Input  
-> * **zkProgram** - the business logic that rules how a proof has to be generated and verified  
+> * **Prover Program** - the business logic that rules how a proof has to be generated and verified  
 > * **Prover Function (Circuit)** - the function allowing one party (the prover) to demonstrate to another party (the verifier) that they possess certain information without revealing the actual data itself  
 > * **Verifier Function (Circuit)** - the function allowing one party (the validator) validate the proof provided by another party (the prover) without gaining access to the actual information being proved
 
@@ -40,8 +40,8 @@ ZKP Transaction flow now looks like this:
 
 1. **User** initiates a transaction by providing the **Private Input**, the **Public Input**, and a **Signature**.
 2. **Tx Builder** provides **Prover** with **public** and **private inputs**.
-3. **Prover** executes the **Prover Function** and uses the **ZkProgram** to generate the **ZK Proof (proof job)**.
-4. The **Verifier** executes the **Verifier Function** and uses the **ZkProgram** to verify and cryptographically sign the **ZK Proof**.
+3. **Prover** executes the **Prover Function** and uses the **Prover Program** to generate the **ZK Proof (proof job)**.
+4. The **Verifier** executes the **Verifier Function** and uses the **Prover Program** to verify and cryptographically sign the **ZK Proof**.
 5. **Tx Builder** provides **Prover** with **public** and **private inputs**.
 6. The verified **ZK Proof** is stored in the **Data Availability (DA) layer**.
 7. The **Tx Builder** uses the **Public Input** and the **ZK Proof** to build a **ZK transaction**.
