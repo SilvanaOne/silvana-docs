@@ -4,11 +4,11 @@ sidebar_position: 2
 
 # Agents
 
-Silvana’s Application Layer is represented by modules where the code is stored in monorepos. However, enterprises don’t interact with these modules directly. Silvana has no user interface, so it’s critical to have a pipeline to interact with Silvana’s modules and Core. Integrators, enterprises, and developers can use agents to perform functions contained in modules' repos.
+Silvana's Application Layer is represented by modules where the code is stored in monorepos. However, enterprises don't interact with these modules directly. Silvana has no user interface, so it's critical to have a pipeline to interact with Silvana's modules and Core. Integrators, enterprises, and developers can use agents to perform functions contained in modules' repos.
 
 Each agent implements a particular real-life use case - car lending, issuing and verifying documents, accounting, etc. A use case may require more than one module to be implemented. An agent assembles all the necessary components of different Silvana architectural layers: Prover and Verifier from Silvana Core, ZkProgram from the Module, ABI, etc.
 
-To use a module’s function, an agent has to add the repo of the module as a dependency. Now, it can use the module’s code and ABI to build and execute transactions. To generate proofs, Agents have to get access to the **Prover Program** describing the proof generation rules, the Prover executing the **Prover Function (Circuit)**, and the **Verifier** executing the **Verifier Function (Circuit)**. All deployment options - **Private Executino Environment (PXE)**, **Cloud Execution Environment (CXE)**, and **Trusted Execution Environment (TEE)** - are available for Agents.
+To use a module's function, an agent has to add the repo of the module as a dependency. Now, it can use the module's code and ABI to build and execute transactions. To generate proofs, Agents have to get access to the **Prover Program** describing the proof generation rules, the Prover executing the **Prover Function (Circuit)**, and the **Verifier** executing the **Verifier Function (Circuit)**. All deployment options - **Private Executino Environment (PXE)**, **Cloud Execution Environment (CXE)**, and **Trusted Execution Environment (TEE)** - are available for Agents.
 
 > **Terms**  
 >
@@ -24,7 +24,7 @@ To use a module’s function, an agent has to add the repo of the module as a de
 
 The diagram below illustrates Silvana Agents.
 
-![Silvana Agents](./img/silvana-agents.png)
+<!-- ![Silvana Agents](./img/silvana-agents.png) -->
 
 Using Agents helps automate Silvana functions and allows a wide array of useful options:
 
