@@ -28,7 +28,7 @@ Silvana Core runs two Circuits in a ZKP transaction: the **Prover Function (Circ
 
 **Verifier**: it is the component that checks the generated proofs on the verifier’s (counterparty’s) side (the **Verifier Circuit**). The Verifier queries the Router to get the Prover Program and the schema for a provable record. Then the Verifier gets proofs from the Prover and verifies them according to the zkProgram. If the proof is valid, the Verifier writes the mutates state of the provable record in the Database.Without accessing the underlying data, the Verifier ensures that the Provable Record adheres to the established schema and behavior, maintaining trust and privacy within the system.
 
-> **Note!**  
+> **Terms**  
 >
 > * **Zero-knowledge proof (ZKP)** - a cryptographic protocol that allows one party (a prover) to demonstrate to another party (a verifier) that a specific statement is true without revealing any underlying information. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
 > 

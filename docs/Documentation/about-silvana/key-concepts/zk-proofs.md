@@ -9,7 +9,7 @@ sidebar_position: 1
 Balancing security and privacy has become a crucial challenge in the current digital landscape. Enterprises and individuals alike require trustless verification methods that do not compromise sensitive data. Traditional security models rely on extensive data exposure, where verifying a transaction, compliance, or ownership often reveals more information than necessary. The emergence of **Zero-Knowledge Proofs (ZKPs)** represents a paradigm shift, offering an approach where verification does not necessitate disclosure.
 A ZKP is a cryptographic protocol that allows one party (a prover) to demonstrate to another party (a verifier) that a specific statement is true without revealing any underlying information. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
 
-> **Note!** 
+> **Terms** 
 >  
 > A **ZKP** is a cryptographic protocol that allows one party (**prover**) to demonstrate to another party (**verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity. 
 
@@ -17,7 +17,7 @@ Two types of data exist in a ZKP transaction: the **Private Input** and the **Pu
 - The **Prover** is called by the user, who must provide proof of the private input, 
 - **Counterparty** calls the **Verifier** - a partner, a regulator, an individual, etc.
 
-> **Note!**  
+> **Terms**  
 >  
 > * **Public Input** - the data the user keeps publicly available  
 > * **Private Input** - the private data to be concealed from the public eye  

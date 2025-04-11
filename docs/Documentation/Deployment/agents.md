@@ -26,7 +26,7 @@ The diagram below illustrates Silvana Agents.
 
 ![Silvana Agents](./img/silvana-agents.png)
 
-> **Note!**  
+> **Terms**  
 >
 > Agents are associated with the emergence of AI. An AI Agent is a software program designed to perform specific tasks or functions autonomously. It utilizes artificial intelligence techniques, such as machine learning, natural language processing, and computer vision, to make decisions, interact with their environment, and achieve their goals. AI agents can be found in various applications, including virtual assistants, autonomous vehicles, recommendation systems, and more.
 
