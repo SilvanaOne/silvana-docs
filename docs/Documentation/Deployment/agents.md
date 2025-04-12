@@ -48,6 +48,8 @@ The diagram below illustrates Silvana Agents.
 
 ![Silvana Agents](./img/silvana-agents.png)
 
+## Agents to Automate Silvana
+
 Using Agents helps automate Silvana functions and allows a wide array of useful options:
 
 * **Account Abstraction**: Agents have a built-in user signature that enables transactions to run within the limits defined by the user without the necessity to be initiated directly by a user.

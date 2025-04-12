@@ -28,7 +28,7 @@ Silvana platform comprises 4 layers. Here they are listed from the highest (busi
 
 * **Silvana Core** - proof generation and verification;
 
-* **Coordination**, **Data *Availability**, and **Settlement Layer** - fast transaction execution and proof aggregation, storing proofs and updating provable record states.
+* **Coordination**, **Data Availability**, and **Settlement Layer** - fast transaction execution and proof aggregation, storing proofs and updating provable record states.
 
 The diagram below illustrates Silvana’s architectural layers.
 
