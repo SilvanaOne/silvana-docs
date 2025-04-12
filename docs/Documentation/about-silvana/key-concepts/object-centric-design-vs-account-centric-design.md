@@ -8,7 +8,7 @@ sidebar_position: 3
 
 Essentially, a blockchain has a dual nature. On the one hand, at its core, a blockchain is a **replicated deterministic state machine**, meaning that each transaction results in a change of state. On the other hand, a blockchain is a database where data is stored in blocks, and all pieces of such data are recorded in a cryptographically sophisticated way that rules out unauthorized data mutation.
 
-> **Note!**  
+> **Terms**  
 >  
 > A **state machine** is a computer science concept whereby a machine can have multiple states but only one at any given time. There is a state, which describes the current state of the system and transactions that trigger state transitions.
 
@@ -92,7 +92,7 @@ Silvana follows an object-oriented design which totally aligns with the object-c
 
 * Since provable records don’t assume a specific **global state layout** or a **single chain** or **execution environment**, this enables Silvana to be **chain-agnostic**, **tech-abstracted**, and have a **modular design** with **built-in data security**.
 
-> **Note!**  
+> **Terms**  
 >  
 > * A **ZKP** is a cryptographic protocol that allows one party (a **prover**) to demonstrate to another party (a **verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
 > 

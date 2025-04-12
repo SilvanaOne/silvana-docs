@@ -1,12 +1,18 @@
+---
+sidebar_position: 1
+---
+
 # Deployment Environments
 
 ## Deployment Options
 
 Silvana offers flexible deployment arrangements to meet business needs. Enterprises can deploy all or some Silvana components of all architectural layers in Silvana Cloud or on their own infrastructure. Enterprises can use already existing modules and components or deploy their own ones.
 
-There are three ways to deploy Silvana:
+There are three ways to deploy Silvana components: in the **Private Execution Environment (PXE)**, the **Cloud Execution Environment (CXE)**, and the **Trusted Execution Environment (TEE)**.
 
-**Private Execution Environment (PXE)**: enterprises can deploy Silvana components either **locally** or in a **Private Cloud**. In the first case, the code of a module or Silvana component is forked from the REPO and saved locally for private use. Enterprises store their keys locally. Here, the following components can be deployed and stored: 
+### Private Execution Environment (PXE)
+
+With PXE. enterprises can deploy Silvana components either **locally** or in a **Private Cloud**. In the first case, the code of a module or Silvana component is forked from the REPO and saved locally for private use. Enterprises store their keys locally. Here, the following components can be deployed and stored: 
 
 * modules and module workers, 
 * a local version of the Silvana Prover.
@@ -17,7 +23,9 @@ The Private Cloud supports the **Serverless Framework** and deployment and autom
 * modules and Module Workers, 
 * Silvana Prover with the parallel proving option using recursive proofs.
 
-2. **Cloud Execution Environment (CXE)**: Silvana offers its official **Cloud** for those enterprises that don’t want to invest in their own infrastructure. This resembles what Amazon does - an AWS for zk computations on blockchains.
+### Cloud Execution Environment (CXE)
+
+Silvana offers its official **Cloud** for those enterprises that don’t want to invest in their own infrastructure. This resembles what Amazon does - an AWS for zk computations on blockchains.
 
 The following components can be deployed in **Silvana Cloud**: 
 
@@ -36,14 +44,16 @@ Additionally, Silvana Cloud offers these components:
 * KV (Key-Value) Storage,
 * Proof Lookup.
 
-3. **Trusted Execution Environment (TEE)**: Enterprises can use Silvana Clud in the TEE, which acts as a Secure Enclave. Enterprises keep their keys in this space. Silvana ensures security against malicious use of keys and sensitive data by unauthorized users and insiders. Silvana Network Nodes provide decentralized proofs. Silvana Cloud is also available.
+### Trusted Execution Environment (TEE)
+
+Enterprises can use Silvana Cloud in the TEE, which acts as a Secure Enclave. Enterprises keep their keys in this space. Silvana ensures security against malicious use of keys and sensitive data by unauthorized users and insiders. Silvana Network Nodes provide decentralized proofs. Silvana Cloud is also available.
 
 In both arrangements, the following components can be deployed: 
 
 * Modules with Module Workers,
 * Silvana Prover.
 
-> **Note!**  
+> **FYI**  
 >
 > **Secure Enclave** - the idea of a secure space for customers comes from Apple, where the Secure Enclave is a dedicated secure subsystem integrated into Apple devices designed to provide an extra layer of security by isolating sensitive user data from the main processor. The Secure Enclave uses a combination of hardware and software features, including a boot ROM, AES engine, and protected memory, to ensure the confidentiality and integrity of the data.
 

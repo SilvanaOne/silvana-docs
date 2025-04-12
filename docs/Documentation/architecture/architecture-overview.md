@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # Architecture Overview
 
-## Layers
+## Overview
 
-Due to the complexity and comprehensiveness of the goals that Silvana is targeted at, it has a well-thought architecture that can be described as follows:
+Silvana’s architecture reflects the complexity and comprehensiveness of the goals that Silvana is targeted at and must meet the high business requirements in scalability and security. All in all, it can be described as follows:
 
 * **multi-tier** - there are multiple layers in Silvana's architecture, each having its own function.
 
@@ -18,43 +18,31 @@ Due to the complexity and comprehensiveness of the goals that Silvana is targete
 
 * **chain-agnostic** - we do not focus on any particular blockchain, project, or cryptography; we can integrate with any L1, L2, DA, or Prover that supports ZKPs of any cryptographic function.
 
-Silvana platform comprises 8 layers and 3 sublayers: 
+## Layers
 
-* **Integration Layer** - deployment integration with end users
+Silvana platform comprises 4 layers. Here they are listed from the highest (business) level to the lowest (technical) level: 
 
-* **Application Layer** - basic Silvana and extended enterprise functions
+* **Integration Layer** - deployment integration with end users;
 
-* **Cloud Execution Sublayer** - execution of Silvana functions in Silvana Cloud
+* **Application Layer** - basic Silvana and extended enterprise functions;
 
-* **Trusted Execution Layer** - execution of Silvana functions in the Trusted Enclave of the Silvana Cloud
+* **Silvana Core** - proof generation and verification;
 
-* **Private Execution Layer** - execution of Silvana functions in private infrastructure (cloud, servers)
+* **Coordination**, **Data Availability**, and **Settlement Layer** - fast transaction execution and proof aggregation, storing proofs and updating provable record states.
 
-* **Silvana Core** - proof generation and verification
-
-* **Silvana Network** - decentralized prover node network
-
-* **Execution Layer** - building, compiling, sequencing, and sending transactions on L1 or L2 chains
-
-* **Coordination Layer** - decoupling transactions that need a proof from transactions where no proof is required
-
-* **Data Availability (DA) Layer** - storing and updating data
-
-* **Settlement Layer** - transaction and proof validation
-
-The diagram below illustrates Silvana's architectural layers.
+The diagram below illustrates Silvana’s architectural layers.
 
 ![Silvana Architecture](./img/silvana-architecture.png)
 
-## Integration Layer
+### Integration Layer
 
 This is the highest-level layer, where consumers integrate what Silvana offers into their application architecture.
 
 Silvana can be used by individual **enterprises** from different industries, **tech startups**, **industry integrators**, and other **consumers**. Enterprises can integrate directly by using modules or Silvana Core in different execution environments, either by forking module repos in their private execution environment by using Silvana Cloud or developing their own modules to meet their business needs. On the other hand, companies can join Silvana via industry integrators - bigger aggregators with extensive experience and expertise in an industry (DeFis, accounting, audit, insurance, real estate, etc.). They can also use Silvana modules and Core or develop new modules themselves.
 
-## Application Layer
+### Application Layer
 
-This is Silvana's execution layer, where the business logic is represented for end users — consumers, enterprises, startups, and integrators. It is represented by multiple modules tailored to a specific business use case (document verification, NFTs, exchange, car rental, etc.). 
+This is the layer where the business logic is represented for end users — consumers, **enterprises** (**startups**), and **industry integrators**. It is represented by multiple modules tailored to a specific business use case (document verification, NFTs, exchange, car rental, etc.). 
 
 Each module is essentially deployed as code that end users can access in a mono repo. We offer some of the most common modules to cover a wide range of use cases. Additionally, our customers and system integrators can add their modules to extend the application layer's functionality. Some basic modules are provided by Silvana and are open for public use. Such modules will initially include the following:
 
@@ -72,7 +60,7 @@ Each module is essentially deployed as code that end users can access in a mono 
 
 With time, more such modules will be added. Enterprises, integrators, and developers can additionally develop more modules to meet their business requirements, too. This will enrich our Application layers and cover more and more use cases. 
 
-## Silvana Core
+### Silvana Core
 
 Silvana Core is the layer where Silvana's internal magic unfolds: proof generation and verification, Prover Program (proof logic), transaction building, and API interaction. Silvana Core includes the following:
 
@@ -94,9 +82,13 @@ Silvana Core is the layer where Silvana's internal magic unfolds: proof generati
 
 * **Tx Sender**: sends transactions to blockchain networks
 
-## Silvana Network
+> **Terms**
+> 
+> * **Prover Program** - the business logic that rules how a proof has to be generated and verified.
+> 
+> * **Proof Job** - a proof generated to be shown in a transaction as a piece of cipher instead of the private Input.
 
-Generating proofs requires computational power, which in turn creates infrastructural demands. Silvana Prover is responsible for generating proofs. However, this may not be enough. Silvana deploys a network of prover nodes that produce proof jobs for rewards. This will provide decentralization and system robustness.
+Generating proofs requires computational power, which in turn creates infrastructural demands. Silvana deploys a **network of prover nodes** that produce **proof jobs** in exchange for rewards. This ensures decentralization and system robustness.
 
 Apart from provers, Silvana Network can extend to the following types of nodes:
 
@@ -110,38 +102,34 @@ Apart from provers, Silvana Network can extend to the following types of nodes:
 
 Each Silvana Network node may perform one or more roles in the ecosystem, either as private corporate infrastructure or as part of the public Silvana network.
 
-## Execution Layer
+### Coordination Layer
 
-​This is the layer responsible for processing and executing transactions, as well as implementing smart contracts. This layer interprets and carries out the instructions embedded in transactions, ensuring that the blockchain's state is updated accordingly. It plays a crucial role in maintaining the deterministic nature of the blockchain, meaning that given a specific set of inputs, the system will consistently produce the same outputs. Silvana relies on highly scalable and programmable L1 and L2 solutions for the execution layer.
+Transactions involving **zero-knowledge proofs (ZKPs)** are generally computationally heavy and, therefore, take longer time. That’s the reason why most ZK L1 or L2 projects lack scalability. Silvana built its **Coordination Layer** to ensure fast and secure transactions with ZKPs. The Coordination Layer is based on a network that can guarantee fast transaction execution. It aggregates proofs and has a Sequencer to queue proofs and transactions and batch them in a block. Once a block is built, it is sent to the Settlement Layer, which is a ZK network. Silvana’s Coordination Layer helps to take the best of the two worlds: the high scalability of the blockchain where transactions are executed, and the data security of the blockchain leveraging zero-knowledge proofs.
 
-## Coordination Layer
-
-Transactions involving private data use **zk proofs** to conceal it. However, if a transaction does not contain private data, this means no proof is required to be generated. So there’s a need to decouple those two types of transactions so that they follow two different flows: **with** and **without zk proofs**. Sui is an L1 blockchain that has a novel and intricately designed **Consensus mechanism**. To achieve Consensus, Sui utilizes the **Mysticeti** protocol, an evolution of earlier protocols like **Narwhal and Bullshark**, according to which only transactions involving **shared objects** need to go through consensus, while those where **owned objects** are handled, don’t have to do it. This essentially improves the transaction speed. Silvana leverages this property of Sui to achieve high scalability.
-
-> **Note!**
+> **Terms**
 >   
-> * Zero-knowledge proof (ZKP) - a cryptographic protocol that allows one party (a prover) to demonstrate to another party (a verifier) that a specific statement is true without revealing any underlying information. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
-> 
-> * Consensus - the process by which network participants agree on the validity of transactions and the current state of the ledger, ensuring consistency across a decentralized network.
-> 
-> * Narwhal - Sui’s high-throughput mempool protocol that ensures reliable dissemination and availability of transaction data by organizing it into a Directed Acyclic Graph (DAG) structure.
-> 
-> * Bullshark - Sui’s Byzantine Fault Tolerant (BFT) consensus protocol that orders transactions, achieving high throughput and low latency.
-> 
-> * Shared object - an object that has been made accessible to all users on the network, allowing anyone to read or modify them like a package (smart contract).
-> 
-> * Owned object - an asset exclusively controlled by a single address, allowing their transactions to bypass consensus for faster execution.
+> A **ZKP** is a cryptographic protocol that allows one party (a prover) to demonstrate to another party (a verifier) that a specific statement is true without revealing any underlying information. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
 
-## Data Availability Layer
+### Data Availability Layer
 
-The **Data Availability (DA) Layer** is a **storage** that keeps recorded data in **data blobs** and provides proof of the availability and state mutation of stored objects - **provable records**. At any time, a user can read the stored objects to see their current state. The object's state can be mutated as a result of running a transaction, and at any time, an object can be deleted from the DA. Silvana is open to integrating with existing or emerging DA layers.
+The **Data Availability (DA) Layer** is a **storage** that keeps recorded data in **data blobs** and provides proof of the availability and state mutation of stored objects - **provable records**. At any time, a user can read the stored objects to see their current state. The object's state can be mutated as a result of running a transaction, and an object can be deleted from the DA. As each of these transactions runs, the proof is generated and events are emitted. Silvana is open to integrating with existing or emerging DA layers.
 
-> **Note!**
+> **Terms**
 >   
 > * **Data blob** - a large, unstructured data packet that can be attached to transactions or blocks to enhance scalability and efficiency by enabling the processing of substantial data volumes without congesting the main chain.
 > 
 > * **Provable record** - a digitally verifiable representation of a crypto and real-world asset.
 
-## Settlement Layer
+### Settlement Layer
 
 The **Settlement Layer** is the lowest-level part of Silvana’s architecture. In other words, this is the blockchain layer, where transactions are signed by a set of validators to ensure transaction consistency and validity. As transactions are validated, they are added to an L1 or L2 blockchain. Keeping transactions on-chain ensures data security and consistency.
+
+## Execution Environments
+
+Silvana offers flexible execution arrangements by providing 3 options for how different Silvana components can be deployed in each particular case by a user. All in all, this can be done in 3 execution environments:
+
+* **Cloud Execution Environment** - execution of Silvana functions in Silvana Cloud;
+
+* **Trusted Execution Environment** - execution of Silvana functions in the Trusted Enclave of the Silvana Cloud;
+
+* **Private Execution Environment** - execution of Silvana functions in private infrastructure (cloud, servers).
