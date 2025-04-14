@@ -11,8 +11,14 @@
   padding-right: 26px;
 }
 
+@media (max-width: 996px) {
+  .markdown {
+    padding: 0 12px;
+  }
+}
+
 /* Headers */
-.markdown h1:first-child{
+.markdown h1:first-child {
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
