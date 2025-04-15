@@ -39,7 +39,7 @@ Inputs provided:
 
 The **Router** is queried to retrieve:
 * The **schema** of the provable record,
-* The corresponding **Prover Logic**, which defines rules and constraints for proof generation.
+* The corresponding **Prover Program**, which defines rules and constraints for proof generation.
 
 3. **State Fetching from DA Layer**
 
@@ -63,11 +63,11 @@ The system gathers:
 
 * All **private inputs** (e.g., sensitive values, metadata),
 
-* Any record-specific logic metadata from the Prover Logic.
+* Any record-specific logic metadata from the Prover Program.
 
-6. **Prover Logic Compilation**
+6. **Prover Program Compilation**
 
-The **ABI** loads and compiles the required **Prover Logic** module. This produces:
+The **ABI** loads and compiles the required **Prover Program** module. This produces:
 
 * Executable constraint logic,
 * Valid state transition rules embedded in the proof circuit.
@@ -77,7 +77,7 @@ The **ABI** loads and compiles the required **Prover Logic** module. This produc
 The **Tx Builder** assembles a job with:
 
 * Input data,
-* Compiled Prover Logic ID,
+* Compiled Prover Program ID,
 * Record metadata.
 
 The job is submitted to the **Prover**.
@@ -91,7 +91,7 @@ The **Tx Compiler** checks for an existing **proving key** for this logic.
 
 9. **Zero-Knowledge Proof Generation**
 
-The **Prover** runs the **Prover Logic** with:
+The **Prover** runs the **Prover Program** with:
 
 * Public and private inputs,
 * The proving key.
@@ -113,7 +113,7 @@ The **Tx Sender** packages:
 
 * The proof,
 * Public inputs,
-* Prover Logic hash and metadata,
+* Prover Program hash and metadata,
 * Required execution details.
 
 This creates a blockchain-ready transaction bundle.
@@ -144,7 +144,7 @@ The **Tx Monitor**:
 
 * Final transaction status,
 * Proof references,
-* Prover Logic metadata,
+* Prover Program metadata,
 * Mutation and audit logs.
 * The status is exposed to the user/system via the **Silvana API** or interface.
 
