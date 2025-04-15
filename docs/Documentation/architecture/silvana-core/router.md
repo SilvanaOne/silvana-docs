@@ -81,7 +81,7 @@ Below are some examples of how the Router handles schemas for businesses. This l
 
 1. **Digital Identity Verification**
 
-An enterprise can register identity record schemas (e.g., KYC documents) with the Router and use them across multiple applications to verify user credentials via zero-knowledge proofs without exposing sensitive data.
+A clients can register identity record schemas (e.g., KYC documents) with the Router and use them across multiple applications to verify user credentials via zero-knowledge proofs without exposing sensitive data.
 
 2. **Patent and IP Management**
 
@@ -145,7 +145,7 @@ When deployed in a **Trusted Execution Environment (TEE)**, the Router benefits 
 
 6. **Data Privacy**
 
-Schemas themselves are generally non-sensitive, but the Router supports private schema visibility and access restrictions, allowing enterprises to control exposure of proprietary data structures.
+Schemas themselves are generally non-sensitive, but the Router supports private schema visibility and access restrictions, allowing clients to control exposure of proprietary data structures.
 
 7. **Resilience and Redundancy**
 
