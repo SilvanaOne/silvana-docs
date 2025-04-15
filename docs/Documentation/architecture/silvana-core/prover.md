@@ -9,10 +9,9 @@ The Silvana Prover is designed to generate **zero-knowledge proofs (ZKPs)** that
 Its functionality is essential, like the engine in a car, making it a critical driver of the entire system. Without a prover, the purpose and functionality of Silvana are fundamentally compromised. Utilizing zero-knowledge technology, Silvana ensures secure and private transactions without compromising data integrity or compliance.
 
 ## Prover Function
-### Prover
 The Prover is responsible for performing the Prover Function (Circuit). It retrieves a **schema** from the **Router**, the **Prover Program** (logic) from the corresponding **module**, and the current **state** of **provable records** from the **Data Availability (DA) layer**. It then processes the collected inputs according to the **Provable Program** logic, executing cryptographic operations to generate proofs. These proofs cryptographically confirm the correctness and compliance of the state transitions without disclosing any private details.
 
-```
+```typescript
 async function generateProverProof(privateInput, publicInput, ProverProgram) {
   const proverKeys = await generateProverKeys(ProverProgram);
   const proof = await ProverProgram.execute(privateInput, publicInput, proverKeys);
@@ -25,7 +24,7 @@ async function generateProverProof(privateInput, publicInput, ProverProgram) {
 
 The Silvana Prover details a structured approach to generating and managing zero-knowledge proofs (ZKPs), ensuring secure and confidential verification of state changes without revealing sensitive data. These proofs are securely stored and submitted to the blockchain for validation and settlement. The flow also covers proof reservation, merging proofs for efficiency, and managing on-chain settlements, ensuring robust and compliant proof handling within the Silvana system.
 
-This is the normal prover flow:
+This is the common prover flow:
 
 1. **Transaction Request Initialization**
 
