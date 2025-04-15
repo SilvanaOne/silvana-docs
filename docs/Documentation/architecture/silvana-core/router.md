@@ -1,8 +1,8 @@
 ---
 sidebar_position: 3
 ---
-
-# Overview
+# Router
+## Overview
 In the overall Silvana architecture, the Router sits at the intersection of the **Application Layer** (where business-specific modules and schemas are defined) and the **Silvana Core** (where proving and verification occur).
 
 > **Terms**  
@@ -11,7 +11,7 @@ In the overall Silvana architecture, the Router sits at the intersection of the 
 
 In implementation, the Router consists of a structured set of **YAML files**, representing interfaces, schema definitions, and application configurations. It is exposed through an endpoint capable of answering a variety of structured queries.
 
-# Capabilities and Scope
+## Capabilities and Scope
 
 1. **Managing Provable Record Schemas**
 
@@ -41,13 +41,13 @@ Each schema is linked to a specific Prover Program, which encodes the rules and 
 
 Planned future enhancements include zone-based visibility limitations and role-based access control to restrict schema access and operation execution by policy or permission.
 
-# Schema Storage and Access
+## Schema Storage and Access
 
 All provable record schemas in Silvana are created and stored in the Router’s registry. When a developer wants to introduce a new type of provable record, they start by defining its schema and registering it via the Router. 
 
 The important point is that the Router is the go-to service for any schema lookup. For instance, if a Verifier wants to ensure they have the latest schema, they fetch it from the Router at verification time. If a developer wants to see if a similar schema already exists (perhaps to reuse an existing template), they would search the Router’s records. Because the Router maintains “all schemas within the system”​, it provides a comprehensive view of the data structures available in Silvana.
 
-## Schema Example in Router
+### Schema Example in Router
 
 Here is a minimal YAML-based schema definition that might be registered with the Router:
 ```yaml
@@ -70,7 +70,7 @@ Once registered, this schema becomes part of the Router’s registry and can be 
 
 * The Router guarantees that **each schema is cryptographically linked** to the correct `ProverProgramId`. This avoids mismatches between data format and proving logic.
 
-# Business Use Cases
+## Business Use Cases
 
 * **Digital Identity Verification**
 
@@ -112,7 +112,7 @@ Healthcare providers can register schemas for medical records and test results, 
 
 Firms can define compliance record schemas for internal audits, enabling external regulators to verify compliance claims cryptographically, without granting access to all internal documentation.
 
-# Security Model Aspects
+## Security Model Aspects
 1. **Schema Integrity and Immutability**
 
 Once a schema is in use, the Router enforces immutability or versioning to prevent unauthorized or accidental changes that could invalidate prior proofs. This guarantees that proofs remain valid and verifiable over time.
