@@ -50,7 +50,7 @@ Silvana is designed to be fully chain-agnostic, meaning it operates **independen
 
 ## Composable
 
-Unlike systems that require specific compilers, Silvana’s approach removes many adoption hurdles. **Zero-knowledge proofs (ZKPs)** can easily integrate advanced cryptographic proofs without major rewrites of existing code. As a result, organizations gain powerful cryptographic capabilities seamlessly.
+Unlike systems that require specific compilers, Silvana’s approach removes many adoption hurdles. [**Zero-knowledge proofs (ZKPs)**](https://docs.silvana.one/Documentation/about-silvana/key-concepts/zk-proofs) can easily integrate advanced cryptographic proofs without major rewrites of existing code. As a result, organizations gain powerful cryptographic capabilities seamlessly.
 
 * Zero-Knowledge tech can be added to multiple blockchains, **even in environments where these technologies do not natively exist**.
 * No forced **compiler dependencies** or **any programming language reliance**.
@@ -59,7 +59,7 @@ Unlike systems that require specific compilers, Silvana’s approach removes man
 
 In contrast to rigid blockchain infrastructures, Silvana allows its components to function independently while remaining interoperable, enabling businesses to tailor their blockchain integration efficiently. 
 
-* Silvana offers multiple execution environments: **Private Execution Environment (PXE)**, **Cloud Execution Environment (CEE)**, and **Trusted Execution Environment (TEE)**.
+* Silvana offers multiple [execution environments](https://docs.silvana.one/Documentation/architecture/architecture-overview#execution-environments): **Private Execution Environment (PXE)**, **Cloud Execution Environment (CEE)**, and **Trusted Execution Environment (TEE)**.
 * Whether running locally, in the cloud, or in a secure enclave, businesses can integrate Silvana **without disrupting existing workflows**.
 
 
@@ -93,5 +93,5 @@ Trustlessness in Silvana means every step of every process produces its own proo
 
 * Every process step has a corresponding **self-verifiable proof**.
 * **No external audits** or **manual attestations** are required for validation.
-* Records remain verifiable regardless of Silvana’s presence.]
+* Records remain verifiable regardless of Silvana’s presence.
 
