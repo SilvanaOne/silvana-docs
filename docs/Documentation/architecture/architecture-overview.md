@@ -34,33 +34,7 @@ The diagram below illustrates Silvana’s architectural layers.
 
 ![Silvana Architecture](./img/silvana-architecture.png)
 
-### Silvana Core
-
-Silvana Core is the layer where Silvana's internal magic unfolds: proof generation and verification, Prover Program (proof logic), transaction building, and API interaction. Silvana Core includes the following:
-
-* **Prover**: generates ZK proofs based on provable record state changes
-
-* **Verifier**: independently verifies generated ZK proofs
-
-* **Database**: stores ZK proofs and provable records
-
-* **Router**: provides schemas and Prover Program for proofs
-
-* **ABI (Application Binary Interface)**: builds, compiles, sends, and monitors transactions
-
-* **ABI API**: facilitates transaction data retrieval
-
-* **Indexer**: aligns and indexes transaction data
-
-* **Tx Monitor**: monitors transaction statuses
-
-* **Tx Sender**: sends transactions to blockchain networks
-
-> **Terms**
-> 
-> * **Prover Program** - the business logic that rules how a proof has to be generated and verified.
-> 
-> * **Proof Job** - a proof generated to be shown in a transaction as a piece of cipher instead of the private Input.
+## Network Nodes
 
 Generating proofs requires computational power, which in turn creates infrastructural demands. Silvana deploys a **network of prover nodes** that produce **proof jobs** in exchange for rewards. This ensures decentralization and system robustness.
 
