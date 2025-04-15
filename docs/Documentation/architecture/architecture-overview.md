@@ -22,13 +22,13 @@ Silvana’s architecture reflects the complexity and comprehensiveness of the go
 
 Silvana platform comprises 4 layers. Here they are listed from the highest (business) level to the lowest (technical) level: 
 
-* **Integration Layer** - deployment integration with end users;
+* [**Integration Layer**](https://docs.silvana.one/Documentation/architecture/Layers/integration-layer) - deployment integration with end users;
 
-* **Application Layer** - basic Silvana and extended enterprise functions;
+* [**Application Layer**](https://docs.silvana.one/Documentation/architecture/Layers/application-layer) - basic Silvana and extended enterprise functions;
 
-* **Silvana Core** - proof generation and verification;
+* [**Silvana Core**](https://docs.silvana.one/Documentation/architecture/silvana-core/) - proof generation and verification;
 
-* **Coordination**, **Data Availability**, and **Settlement Layer** - fast transaction execution and proof aggregation, storing proofs and updating provable record states.
+* [**Coordination**](https://docs.silvana.one/Documentation/architecture/Layers/coordination-layer), [**Data Availability**](https://docs.silvana.one/Documentation/architecture/Layers/data-availability-layer), and [**Settlement Layer**](https://docs.silvana.one/Documentation/architecture/Layers/settlement-layer) - fast transaction execution and proof aggregation, storing proofs and updating provable record states.
 
 The diagram below illustrates Silvana’s architectural layers.
 

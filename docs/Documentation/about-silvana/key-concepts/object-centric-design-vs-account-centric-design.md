@@ -82,21 +82,12 @@ The table below sums up the comparison of the account-centric and the object-cen
 
 ## How Silvana Leverages Object-Centric Design
 
-Silvana follows an object-oriented design which totally aligns with the object-centric blockchain narrative. However, Silvana extends this concept further by integrating **zero-knowledge proofs (ZKPs)**. This is how the object-centric design benefits Silvana:
+Silvana follows an object-oriented design which totally aligns with the object-centric blockchain narrative. However, Silvana extends this concept further by integrating [**zero-knowledge proofs (ZKPs)**](https://docs.silvana.one/Documentation/about-silvana/key-concepts/zk-proofs). This is how the object-centric design benefits Silvana:
 
-* **Provable Records** - to represent assets, provable records are created with mutable states. Each time a state is mutated, a zero-knowledge proof is generated to prove the state correctness. This design is particularly suitable for **real-world assets (RWAs)** and empowers their adoption in crypto.
+* [**Provable Records**](https://docs.silvana.one/Documentation/about-silvana/key-concepts/provable-records) - to represent assets, provable records are created with mutable states. Each time a state is mutated, a zero-knowledge proof is generated to prove the state correctness. This design is particularly suitable for **real-world assets (RWAs)** and empowers their adoption in crypto.
 
-* Silvana uses Sui - an object-centric blockchain - as a **Coordination**, **Execition**, **Settlement Layer** for the **Silvana Rollup** ensuring high transaction speed.
+* Silvana uses Sui - an object-centric blockchain - as a **Coordination**, **Execition**, **Settlement Layer** for the [**Silvana Rollup**](https://docs.silvana.one/Documentation/ultra-fast-rollup/silvana-rollup) ensuring high transaction speed.
 
 * Using provable records as objects helps build **modular**, **scalable**, and **privacy-preserving applications** with reusable custom business logic.
 
 * Since provable records don’t assume a specific **global state layout** or a **single chain** or **execution environment**, this enables Silvana to be **chain-agnostic**, **tech-abstracted**, and have a **modular design** with **built-in data security**.
-
-> **Terms**  
->  
-> * A **ZKP** is a cryptographic protocol that allows one party (a **prover**) to demonstrate to another party (a **verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
-> 
-> * **Provable Records** - digitally verifiable representations of crypto and real-world assets.
-> 
-> * **Settlement Layer** - the foundational layer where transactions are validated, finalized, and recorded as immutable truth, ensuring consensus and security across the network.
-
