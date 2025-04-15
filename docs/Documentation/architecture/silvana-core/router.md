@@ -119,7 +119,7 @@ Once a schema is in use, the Router enforces immutability or versioning to preve
 
 2. **Authentication and Access Control**
 
-Only authorized roles such as Enterprise Managers can create or modify schemas, ensuring that schema definitions and Prover Program mappings are protected from unauthorized alterations.
+Only authorized roles can create or modify schemas, ensuring that **schema definitions** and **Prover Program mappings** are protected from unauthorized alterations.
 
 3. **Cryptographic Linkage**
 
@@ -131,7 +131,7 @@ Modules containing Prover Programs are registered but not executed by the Router
 
 5. **Secure Execution of Router (TEE deployments)**
 
-When deployed in a Trusted Execution Environment (TEE), the Router benefits from hardware-level tamper resistance, ensuring that even infrastructure administrators cannot alter its behavior or stored data.
+When deployed in a **Trusted Execution Environment (TEE)**, the Router benefits from hardware-level tamper resistance, ensuring that even infrastructure administrators cannot alter its behavior or stored data.
 
 6. **Data Privacy**
 
