@@ -7,7 +7,7 @@ In the overall Silvana architecture, the Router sits at the intersection of the 
 
 > **Terms**  
 >
-> **The Router** is a component that responsible for managing and providing access to provable record schemas and their associated zero-knowledge programs (Prover Programs). It acts as a registry that maintains the mapping between record types and the ProverPrograms that define their behavior.
+> The **Router** is a component that responsible for managing and providing access to provable record schemas and their associated zero-knowledge programs (Prover Programs). It acts as a registry that maintains the mapping between record types and the ProverPrograms that define their behavior.
 
 In implementation, the Router consists of a structured set of **YAML files**, representing interfaces, schema definitions, and application configurations. It is exposed through an endpoint capable of answering a variety of structured queries.
 
@@ -15,7 +15,7 @@ In implementation, the Router consists of a structured set of **YAML files**, re
 
 1. **Managing Provable Record Schemas**
 
-The Router’s primary responsibility is to manage the lifecycle of provable record schemas. It also maintains a centralized registry of all provable record schemas used in the system. A schema in Silvana defines the structure of a record – essentially a blueprint of what fields it contains and their data types. The Router provides functionality to **create** a new schema, **read/query** existing schemas, **update (mutate)** a schema if needed, and **delete** schemas that are no longer used.
+The Router’s primary responsibility is to **manage** the lifecycle of **provable record schemas**. It also maintains a centralized registry of all provable record schemas used in the system. A schema in Silvana defines the structure of a record – essentially a blueprint of what fields it contains and their data types. The Router provides functionality to **create** a new schema, **read/query** existing schemas, **update (mutate)** a schema if needed, and **delete** schemas that are no longer used.
 
 2. **State Queries**
 
@@ -43,9 +43,9 @@ Planned future enhancements include zone-based visibility limitations and role-b
 
 ## Schema Storage and Access
 
-All provable record schemas in Silvana are created and stored in the Router’s registry. When a developer wants to introduce a new type of provable record, they start by defining its schema and registering it via the Router. 
+All provable record schemas in Silvana are created and stored in the **Router’s registry**. When a developer wants to introduce a new type of provable record, they start by defining its schema and registering it via the Router. 
 
-The important point is that the Router is the go-to service for any schema lookup. For instance, if a Verifier wants to ensure they have the latest schema, they fetch it from the Router at verification time. If a developer wants to see if a similar schema already exists (perhaps to reuse an existing template), they would search the Router’s records. Because the Router maintains “all schemas within the system”​, it provides a comprehensive view of the data structures available in Silvana.
+The important point is that the Router is the **go-to service for any schema lookup**. For instance, if a **Verifier** wants to ensure they have the latest schema, they fetch it from the Router at verification time. If a developer wants to see if a similar schema already exists (perhaps to reuse an existing template), they would search the Router’s records. Because the Router maintains *“all schemas within the system”*​, it provides a comprehensive view of the data structures available in Silvana.
 
 ### Schema Example in Router
 
