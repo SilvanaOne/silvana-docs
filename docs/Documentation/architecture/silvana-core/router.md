@@ -3,13 +3,13 @@ sidebar_position: 3
 ---
 # Router
 ## Overview
-In the overall Silvana architecture, the Router sits at the intersection of the **Application Layer** (where business-specific modules and schemas are defined) and the **Silvana Core** (where proving and verification occur).
+In the overall Silvana architecture, the Router sits at the intersection of the [**Application Layer**](/Documentation/architecture/Layers/application-layer) (where business-specific modules and schemas are defined) and the [**Silvana Core**](/Documentation/architecture/silvana-core/) (where proving and verification occur).
 
 > **Terms**  
 >
 > The **Router** is a component that responsible for managing and providing access to provable record schemas and their associated **zero-knowledge programs (Prover Programs)**. It acts as a registry that maintains the mapping between record types and the ProverPrograms that define their behavior.
 
-In implementation, the Router consists of a structured set of **YAML files**, representing interfaces, schema definitions, and application configurations. It is exposed through an endpoint capable of answering a variety of structured queries. Essentially, the Router is an interface applications use to interact with **provable records**.
+In implementation, the Router consists of a structured set of **YAML files**, representing interfaces, schema definitions, and application configurations. It is exposed through an endpoint capable of answering a variety of structured queries. Essentially, the Router is an interface applications use to interact with [**provable records**](/Documentation/about-silvana/key-concepts/provable-records).
 
 ## Capabilities and Scope
 The router is responsible for the following functions:

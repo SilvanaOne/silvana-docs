@@ -54,8 +54,8 @@ Each Silvana Network node may perform one or more roles in the ecosystem, either
 
 Silvana offers flexible execution arrangements by providing 3 options for how different Silvana components can be deployed in each particular case by a user. All in all, this can be done in 3 execution environments:
 
-* **Cloud Execution Environment** - execution of Silvana functions in Silvana Cloud;
+* [**Cloud Execution Environment**](/Documentation/Deployment/deployment-environments#cloud-execution-environment-cxe) - execution of Silvana functions in Silvana Cloud;
 
-* **Trusted Execution Environment** - execution of Silvana functions in the Trusted Enclave of the Silvana Cloud;
+* [**Trusted Execution Environment**](/Documentation/Deployment/deployment-environments#trusted-execution-environment-tee) - execution of Silvana functions in the Trusted Enclave of the Silvana Cloud;
 
-* **Private Execution Environment** - execution of Silvana functions in private infrastructure (cloud, servers).
+* [**Private Execution Environment**](/Documentation/Deployment/deployment-environments#private-execution-environment-pxe) - execution of Silvana functions in private infrastructure (cloud, servers).
