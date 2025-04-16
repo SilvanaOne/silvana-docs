@@ -6,11 +6,11 @@ sidebar_position: 1
 ## Welcome to Silvana
 What's Silvana in short? It's a **private, decentralized proving platform to bridge corporate and crypto with zero-knowledge tech**.
 
-Crypto and real-world businesses (enterprises, startups) face trust, compliance, and efficiency challenges due to traditional verification methods requiring extensive data sharing, leading to high costs and security breaches. [**Zero-knowledge proofs (ZKP)**](https://docs.silvana.one/Documentation/about-silvana/key-concepts/zk-proofs) address these issues by concealing private information while ensuring the integrity of public data, enabling proofs for authenticity, compliance, and ownership without revealing underlying data. 
+Crypto and real-world businesses (enterprises, startups) face trust, compliance, and efficiency challenges due to traditional verification methods requiring extensive data sharing, leading to high costs and security breaches. [**Zero-knowledge proofs (ZKP)**](/Documentation/about-silvana/key-concepts/zk-proofs) address these issues by concealing private information while ensuring the integrity of public data, enabling proofs for authenticity, compliance, and ownership without revealing underlying data. 
 
 Silvana uses zk proofs to help enterprises prove anything without disclosing sensitive data. Silvana offers a modular application layer and advanced cryptographic solutions, bridging the gap between corporate finance IT systems and cryptography, enabling businesses to transact, verify, and report with confidence.
 
-Customers use [**provable records**](https://docs.silvana.one/Documentation/about-silvana/key-concepts/provable-records) to represent their assets and simulate their behavior according to predefined business rules stored in modules. Each module handles specific functions, such as managing gaming objects in a Web3 game or accounting for a sales company. Provable records essentially represent business entities, whether gaming items or company assets.  
+Customers use [**provable records**](/Documentation/about-silvana/key-concepts/provable-records) to represent their assets and simulate their behavior according to predefined business rules stored in modules. Each module handles specific functions, such as managing gaming objects in a Web3 game or accounting for a sales company. Provable records essentially represent business entities, whether gaming items or company assets.  
 
 The table below shows how Silvana should be understood.
 
@@ -58,11 +58,11 @@ Silvana allows seamless integration with various **L1s**, **L2s**, **DA layers**
 
 ### Object-Centric Model
 
-The [object-centric design](https://docs.silvana.one/Documentation/about-silvana/key-concepts/object-centric-design-vs-account-centric-design), used in platforms like Sui and Aptos, puts assets as objects in the focus rather than just accounts, providing a more flexible and intuitive approach and allowing the building of an event-based architecture. By focusing on the interactions and states of specific objects, this model allows to build and manage provable records representing business objects that have mutable states.
+The [object-centric design](/Documentation/about-silvana/key-concepts/object-centric-design-vs-account-centric-design), used in platforms like Sui and Aptos, puts assets as objects in the focus rather than just accounts, providing a more flexible and intuitive approach and allowing the building of an event-based architecture. By focusing on the interactions and states of specific objects, this model allows to build and manage provable records representing business objects that have mutable states.
 
 ### Decentralized Data Availability with Staking
 
-A network of [**Silvana nodes**](https://docs.silvana.one/Documentation/architecture/architecture-overview#network-nodes) that enhance data resilience beyond traditional Service Level Agreement (SLA) measures. This one is critical to ensure that data remains available and tamper-resistant on a permissionless layer by utilizing staked nodes, which contribute to the system's robustness and security. As a result, businesses can trust that their data will be consistently accessible and protected against manipulation.
+A network of [**Silvana nodes**](/Documentation/architecture/architecture-overview#network-nodes) that enhance data resilience beyond traditional Service Level Agreement (SLA) measures. This one is critical to ensure that data remains available and tamper-resistant on a permissionless layer by utilizing staked nodes, which contribute to the system's robustness and security. As a result, businesses can trust that their data will be consistently accessible and protected against manipulation.
 
 ## Use Cases
 Now, quips aside, let’s see how Silvana can really apply for serious business.
