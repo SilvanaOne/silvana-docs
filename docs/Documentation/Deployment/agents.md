@@ -12,11 +12,11 @@ Each agent implements and is built around a particular real-life use case - car 
 
 Each component that an agent engages in an application can be deployed in three environments:
 
-* **Private Execution Environment (PXE)** - a component is deployed privately, on the consumer’s local infrastructure;
+* [**Private Execution Environment**](/Documentation/Deployment/deployment-environments#private-execution-environment-pxe) - a component is deployed privately, on the consumer’s local infrastructure;
 
-* **Cloud Execution Environment (CEE)** - a component is deployed in the **Silvana Cloud**;
+* [**Cloud Execution Environment**](/Documentation/Deployment/deployment-environments#cloud-execution-environment-cxe) - a component is deployed in the **Silvana Cloud**;
 
-* **Trusted Execution Environment (TEE)** - a component is deployed in the **Secure Enclave** of the Silvana Cloud.
+* [**Trusted Execution Environment**](/Documentation/Deployment/deployment-environments#trusted-execution-environment-tee) - a component is deployed in the **Secure Enclave** of the Silvana Cloud.
 
 Agents, like modules, are deployed by application developers. Each application can use one or multiple agents, depending on how many use cases it wants to implement. After deployment, agents can be bought and sold on Silvana Marketplace.
 
@@ -26,19 +26,17 @@ To deploy and use an agent, a user has to follow these steps:
 
 1. Add the **repo** of the module or modules as a dependency. 
 
-2. To generate proofs, Agents have to get access to the Prover Program describing the proof generation rules, the Prover executing the **Prover Function (Circuit)**, and the Verifier executing the **Verifier Function (Circuit)**.
+2. To generate proofs, Agents have to get access to the Prover Program describing the proof generation rules, the Prover executing the [**Prover Function (Circuit)**](/Documentation/architecture/silvana-core/prover#prover-function), and the Verifier executing the **Verifier Function (Circuit)**.
 
 3. Add all other Silvana components depending on which functions are required.
 
 > **Terms**  
 >
-> * **Prover** - Silvana Core component responsible for the generation of ZK proofs based on provable record state changes.
 > 
 > * **Verifier** - Silvana Core component responsible for the verification the generated ZK proofs.
 > 
 > * **ABI** - Silvana Core component responsible for building, compiling, sending, and monitoring transactions.
 > 
-> * **Prover Function (Circuit)** - the function allowing one party (the prover) to demonstrate to another party (the verifier) that they possess certain information without revealing the actual data itself.
 > 
 > * **Verifier Function (Circuit)** - the function allowing one party (the validator) validate the proof provided by another party (the prover) without gaining access to the actual information being proved.
 > 

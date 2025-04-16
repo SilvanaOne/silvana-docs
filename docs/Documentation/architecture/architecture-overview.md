@@ -22,13 +22,13 @@ Silvana’s architecture reflects the complexity and comprehensiveness of the go
 
 Silvana platform comprises 4 layers. Here they are listed from the highest (business) level to the lowest (technical) level: 
 
-* [**Integration Layer**](https://docs.silvana.one/Documentation/architecture/Layers/integration-layer) - deployment integration with end users;
+* [**Integration Layer**](/Documentation/architecture/Layers/integration-layer) - deployment integration with end users;
 
-* [**Application Layer**](https://docs.silvana.one/Documentation/architecture/Layers/application-layer) - basic Silvana and extended enterprise functions;
+* [**Application Layer**](/Documentation/architecture/Layers/application-layer) - basic Silvana and extended enterprise functions;
 
-* [**Silvana Core**](https://docs.silvana.one/Documentation/architecture/silvana-core/) - proof generation and verification;
+* [**Silvana Core**](/Documentation/architecture/silvana-core/) - proof generation and verification;
 
-* [**Coordination**](https://docs.silvana.one/Documentation/architecture/Layers/coordination-layer), [**Data Availability**](https://docs.silvana.one/Documentation/architecture/Layers/data-availability-layer), and [**Settlement Layer**](https://docs.silvana.one/Documentation/architecture/Layers/settlement-layer) - fast transaction execution and proof aggregation, storing proofs and updating provable record states.
+* [**Coordination**](/Documentation/architecture/Layers/coordination-layer), [**Data Availability**](/Documentation/architecture/Layers/data-availability-layer), and [**Settlement Layer**](/Documentation/architecture/Layers/settlement-layer) - fast transaction execution and proof aggregation, storing proofs and updating provable record states.
 
 The diagram below illustrates Silvana’s architectural layers.
 
@@ -54,8 +54,8 @@ Each Silvana Network node may perform one or more roles in the ecosystem, either
 
 Silvana offers flexible execution arrangements by providing 3 options for how different Silvana components can be deployed in each particular case by a user. All in all, this can be done in 3 execution environments:
 
-* **Cloud Execution Environment** - execution of Silvana functions in Silvana Cloud;
+* [**Cloud Execution Environment**](/Documentation/Deployment/deployment-environments#cloud-execution-environment-cxe) - execution of Silvana functions in Silvana Cloud;
 
-* **Trusted Execution Environment** - execution of Silvana functions in the Trusted Enclave of the Silvana Cloud;
+* [**Trusted Execution Environment**](/Documentation/Deployment/deployment-environments#trusted-execution-environment-tee) - execution of Silvana functions in the Trusted Enclave of the Silvana Cloud;
 
-* **Private Execution Environment** - execution of Silvana functions in private infrastructure (cloud, servers).
+* [**Private Execution Environment**](/Documentation/Deployment/deployment-environments#private-execution-environment-pxe) - execution of Silvana functions in private infrastructure (cloud, servers).

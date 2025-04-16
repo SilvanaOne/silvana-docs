@@ -4,12 +4,12 @@ sidebar_position: 2
 
 # Prover
 ## Overview
-The Silvana Prover is designed to generate **zero-knowledge proofs (ZKPs)** that confirm the validity of statements or transitions in Provable Records while preserving the confidentiality of the underlying sensitive information (**Private Input**).
+The Silvana Prover is designed to generate [**zero-knowledge proofs (ZKPs)**](/Documentation/about-silvana/key-concepts/zk-proofs) that confirm the validity of statements or transitions in Provable Records while preserving the confidentiality of the underlying sensitive information (**Private Input**).
 
 Its functionality is essential, like the engine in a car, making it a critical driver of the entire system. Without a prover, the purpose and functionality of Silvana are fundamentally compromised. Utilizing zero-knowledge technology, Silvana ensures secure and private transactions without compromising data integrity or compliance.
 
 ## Prover Function
-The Prover is responsible for performing the Prover Function (Circuit). It retrieves a **schema** from the **Router**, the **Prover Program** (logic) from the corresponding **module**, and the current **state** of **provable records** from the **Data Availability (DA) layer**. It then processes the collected inputs according to the **Provable Program** logic, executing cryptographic operations to generate proofs. These proofs cryptographically confirm the correctness and compliance of the state transitions without disclosing any private details.
+The Prover is responsible for performing the Prover Function (Circuit). It retrieves a **schema** from the [**Router**](/Documentation/architecture/silvana-core/router), the **Prover Program** (logic) from the corresponding **module**, and the current **state** of **provable records** from the **Data Availability (DA) layer**. It then processes the collected inputs according to the **Provable Program** logic, executing cryptographic operations to generate proofs. These proofs cryptographically confirm the correctness and compliance of the state transitions without disclosing any private details.
 
 ```typescript
 async function generateProverProof(privateInput, publicInput, ProverProgram) {
