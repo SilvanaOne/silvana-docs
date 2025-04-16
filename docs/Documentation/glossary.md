@@ -148,14 +148,6 @@ State Commitment is a cryptographic representation of the current state of a blo
 ### State Mutation
 State Mutation is the process of changing the state of a provable record; each mutation is accompanied by a proof to ensure the change follows predefined rules.
 
-## T
-
-### Transaction
-Transaction is an operation that changes the state of an asset, record, or contract on a blockchain or within a decentralized system.
-
-### Tx Monitor
-Tx Monitor is a tool for tracking transaction status, execution, and settlement updates within Silvana, ensuring real-time visibility into proof generation and verification processes.
-
 ## V
 
 ### Verifier

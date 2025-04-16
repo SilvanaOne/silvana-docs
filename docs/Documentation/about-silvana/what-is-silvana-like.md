@@ -24,7 +24,7 @@ Silvana is a next-generation ultra-fast profer platform designed for **flexibili
 
 Most blockchains use an **account-based model**, tracking balances linked to accounts. They store and mutate states of accounts. While common, this creates inefficiencies in privacy, scalability, and security. Silvana employs an **object-centric model**, which means that:
 
-* Data is stored in self-contained objects - **provable records** - instead of accounts.
+* Data is stored in self-contained objects - [**provable records**](/Documentation/about-silvana/key-concepts/provable-records) - instead of accounts.
 * Objects represent crypto or real-world assets and act as units of value, identity, or state.
 * Sensitive data remains hidden, yet can still be proven valid through zero-knowledge methods.
 

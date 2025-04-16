@@ -54,11 +54,11 @@ We hide the complexities of zero-knowledge technology from the user, making it a
 
 ### Blockchain-Agnostic & Expandable
 
-Silvana allows seamless integration with various **L1s**, **L2s**, **DA layers**, and any compatible data protection proof systems. This flexibility ensures that businesses can adopt Silvana's advanced cryptographic solutions without being tied to a specific blockchain, which fosters interoperability and scalability.
+Silvana allows seamless integration with various [**L1s**](/Documentation/glossary#layer-1-l1), [**L2s**](/Documentation/glossary#layer-2-l2), [**DA layers**](/Documentation/glossary#data-availability-da-layers), and any compatible data protection [proof systems](/Documentation/glossary#proof-system). This flexibility ensures that businesses can adopt Silvana's advanced cryptographic solutions without being tied to a specific blockchain, which fosters interoperability and scalability.
 
 ### Object-Centric Model
 
-The [object-centric design](/Documentation/about-silvana/key-concepts/object-centric-design-vs-account-centric-design), used in platforms like Sui and Aptos, puts assets as objects in the focus rather than just accounts, providing a more flexible and intuitive approach and allowing the building of an event-based architecture. By focusing on the interactions and states of specific objects, this model allows to build and manage provable records representing business objects that have mutable states.
+The [object-centric design](/Documentation/about-silvana/key-concepts/object-centric-design-vs-account-centric-design), used in platforms like Sui and Aptos, puts assets as objects in the focus rather than just accounts, providing a more flexible and intuitive approach and allowing the building of an [event-based architecture](/Documentation/glossary#event-based-architecture). By focusing on the interactions and states of specific objects, this model allows to build and manage provable records representing business objects that have mutable states.
 
 ### Decentralized Data Availability with Staking
 
