@@ -37,7 +37,7 @@ ZKP Transaction flow now looks like this:
 
 The diagram below shows how ZKPs work.
 
-![How Zk Proofs Work](../img/how-zk-proofs-work.png)
+![How Zk Proofs Work](./img/how-zk-proofs-work.png)
 
 ## Real-World Case: Intangible Asset Verification
 
@@ -186,7 +186,7 @@ A **ZK Proof** is generated.
 - Re-verification is needed for future licensing or disputes.
 The diagram below shows the flow of the use case.
 
-![Patent Verification Flow](../img/zkp-flow.png)
+![Patent Verification Flow](./img/zkp-flow.png)
 
 ### Key Takeaways from the ZKP Flow
 
