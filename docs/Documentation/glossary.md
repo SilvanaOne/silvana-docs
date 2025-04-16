@@ -42,11 +42,6 @@ Execution Environment is a deployment setting where Silvana components run, depe
 ### Execution Mode
 Execution Mode is a processing method that defines how a transaction is handled within the Silvana network. Learn more about execution mode types in the [Execution Modes](/Documentation/ultra-fast-rollup/silvana-rollup#execution-modes).
 
-## H
-
-### Hash Function
-Hash Function is a cryptographic algorithm that transforms input data into a fixed-length output, ensuring data integrity and enabling secure identification of information without revealing the original input.
-
 ## I
 
 ### Indexer
@@ -64,9 +59,6 @@ Layer 2 (L2) is a scaling solution built on top of Layer 1 to increase transacti
 Layers are distinct functional levels that organize the Silvana platform's architecture. Explore all layers in detail in the [Layers](/category/layers).
 
 ## M
-
-### Merkle Tree
-Merkle Tree is a cryptographic data structure that organizes data into a hierarchical tree format, allowing efficient and secure verification of large datasets by checking only a small portion of the data.
 
 ### Modular Architecture
 Modular Architecture is a system design that separates components (such as execution, consensus, and data availability) into independent modules, allowing for greater flexibility and scalability.
@@ -152,9 +144,6 @@ Smart Contract is a self-executing program stored on a blockchain that automatic
 
 ### State Commitment
 State Commitment is a cryptographic representation of the current state of a blockchain or rollup, allowing for efficient verification of past transactions and ensuring data integrity.
-
-### State Machine
-State Machine is a computer science concept whereby a machine can have multiple states but only one at any given time. There is a state, which describes the current state of the system and transactions that trigger state transitions.
 
 ### State Mutation
 State Mutation is the process of changing the state of a provable record; each mutation is accompanied by a proof to ensure the change follows predefined rules.

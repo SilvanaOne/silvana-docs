@@ -20,7 +20,7 @@ Silvana is in a way AWS in Web3 that allows for flexible deployment across vario
 
 - **Trustless Verification**: every change in Silvana is accompanied by a zk proof that can be verified by anyone, independently. This ensures data validity without relying on intermediaries or custodial trust.
 
-- **Highly-scalable, ultra-fast**: Silvana utilizes **Silvana Rollup** - a hybrid rollup integration, blending the high scalability of **optimistic rollups** with the cryptographic guarantees of **ZK-rollups**. This ensures rapid proof generation and high-speed transaction execution without compromising on integrity.
+- **Highly-scalable, ultra-fast**: Silvana utilizes **Silvana Rollup** - a hybrid rollup integration, blending the high scalability of **optimistic rollups** with the cryptographic guarantees of [**ZK-rollups**](/Documentation/glossary#zk-rollup). This ensures rapid [proof generation](/Documentation/glossary#proof-generation) and high-speed transaction execution without compromising on integrity.
 
 - **Decentralized**: the **Silvana Network** is a decentralized prover network composed of independently operated nodes that generate **zk proofs**. This structure ensures high-quality, low-latency proofs at competitive cost, eliminating reliance on centralized verification infrastructure.
 

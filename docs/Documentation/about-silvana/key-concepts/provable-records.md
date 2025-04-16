@@ -12,15 +12,15 @@ By leveraging [**Zero-Knowledge Proofs (ZKPs)**](/Documentation/about-silvana/ke
 
 Each Provable Record comprises two essential elements:
 
-1. **Schema**: Defines the structure of the record, specifying its fields and data types. This schema is stored in the Router, a centralized registry that maintains all schemas within the system.
+1. [**Schema**](/Documentation/glossary#schema): Defines the structure of the record, specifying its fields and data types. This schema is stored in the Router, a centralized registry that maintains all schemas within the system.
 
-2. **Prover Program**: This program determines the operational logic of the object and outlines how it interacts with the system. Its behavior is described in a dedicated Module associated with the Provable Record.
+2. [**Prover Program**](/Documentation/glossary#prover-program): This program determines the operational logic of the object and outlines how it interacts with the system. Its behavior is described in a dedicated Module associated with the Provable Record.
 
 ## Provable Record Operations
 
 To ensure the integrity and authenticity of Provable Records, Silvana employs the following components:
 
-[**Prover**](/Documentation/architecture/silvana-core/prover): This component generates a zero-knowledge proof (ZKP) that validates the state and behavior of a Provable Record. The Prover retrieves the schema from the Router and the behavior from the corresponding Module. Using this information, a ZKP is constructed that attests to the record's compliance with predefined rules without revealing sensitive data.
+[**Prover**](/Documentation/architecture/silvana-core/prover): This component generates a zero-knowledge proof (ZKP) that validates the state and behavior of a Provable Record. The Prover retrieves the schema from the [Router](Documentation/architecture/silvana-core/router) and the behavior from the corresponding Module. Using this information, a ZKP is constructed that attests to the record's compliance with predefined rules without revealing sensitive data.
 
 > **Terms**  
 >
@@ -45,13 +45,7 @@ Provable record flow looks like this:
 
 1. To create a provable record, first, a schema must be created in the Router, and the Prover Program must be deployed in the corresponding module.
 
-2. User queries Silvana Prover to generate a zero-knowledge proof. Silvana Prover uses Pickles to create a recursive proof.
-
-> **Terms**
-> 
-> * **Pickles** - an advanced cryptographic technique used for recursive zero-knowledge proofs.
-> 
-> * **Recursive Proof** - a special type of zero-knowledge proof that can verify other zero-knowledge proofs — including itself.
+2. User queries Silvana Prover to generate a zero-knowledge proof. Silvana Prover uses [Pickles](/Documentation/glossary#pickles) to create a [recursive proof](/Documentation/glossary#recursive-proofs).
 
 3. Then the proof is submitted to the DA layer.
 

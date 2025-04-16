@@ -14,7 +14,7 @@ Current L1 and L2 blockchains struggle with enterprise data privacy and security
 
 2. **No Comprehensive Package ZK Solution**
 
-The market still lacks a comprehensive integrative ZK product that covers most use cases for private and secure data and proof verification. Bridging this gap through advanced development and collaboration between tech startups and enterprises can lead to versatile, secure, and scalable blockchain solutions.
+The market still lacks a comprehensive integrative ZK product that covers most use cases for private and secure data and [proof verification](/Documentation/glossary#proof-verification). Bridging this gap through advanced development and collaboration between tech startups and enterprises can lead to versatile, secure, and scalable blockchain solutions.
 
 3. **Too much focus on the ZK technology while overlooking business needs**
 
@@ -40,7 +40,7 @@ Silvana’s mission can be summed up in this paragraph:
 
 Silvana's vision is to empower businesses to conduct transactions, confidently verify, and report effectively using Zero-Knowledge (ZK)-enabled blockchain solutions. By preserving privacy, reducing operational overheads, and creating new revenue streams, Silvana aims to revolutionize the way enterprises manage their data and transactions. The company's innovative approach provides a robust foundation for businesses to operate securely and efficiently, without compromising on privacy or data integrity.
 
-As privacy regulations become more stringent and trustless processes gain traction across various industries, such as supply chains, finance, and insurance, the demand for cryptographic verification without data leakage continues to grow. Traditional solutions often fall short by requiring businesses to expose more data than necessary. Silvana's privacy-first approach fills this gap, unlocking the potential for exponential market growth in ZK and blockchain technology. By offering a scalable, privacy-centric engine, Silvana enables modern enterprises to navigate the complexities of blockchain while ensuring data security and regulatory compliance.
+As privacy regulations become more stringent and trustless processes gain traction across various industries, such as supply chains, finance, and insurance, the demand for [cryptographic verification](/Documentation/glossary#cryptographic-verification) without data leakage continues to grow. Traditional solutions often fall short by requiring businesses to expose more data than necessary. Silvana's privacy-first approach fills this gap, unlocking the potential for exponential market growth in ZK and blockchain technology. By offering a scalable, privacy-centric engine, Silvana enables modern enterprises to navigate the complexities of blockchain while ensuring data security and regulatory compliance.
 
 ## What Silvana Brings to the Table
 
