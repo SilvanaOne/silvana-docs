@@ -20,7 +20,7 @@ Each Provable Record comprises two essential elements:
 
 To ensure the integrity and authenticity of Provable Records, Silvana employs the following components:
 
-[**Prover**](/Documentation/architecture/silvana-core/prover): This component generates a zero-knowledge proof (ZKP) that validates the state and behavior of a Provable Record. The Prover retrieves the schema from the [Router](Documentation/architecture/silvana-core/router) and the behavior from the corresponding Module. Using this information, a ZKP is constructed that attests to the record's compliance with predefined rules without revealing sensitive data.
+[**Prover**](/Documentation/architecture/silvana-core/prover): This component generates a zero-knowledge proof (ZKP) that validates the state and behavior of a Provable Record. The Prover retrieves the schema from the [Router](/Documentation/architecture/silvana-core/router) and the behavior from the corresponding Module. Using this information, a ZKP is constructed that attests to the record's compliance with predefined rules without revealing sensitive data.
 
 > **Terms**  
 >
