@@ -1,5 +1,5 @@
 ---
-sidebar_position: 7
+sidebar_position: 8
 ---
 
 # Glossary
@@ -10,7 +10,7 @@ sidebar_position: 7
 ABI API provides programmatic access to Silvana's ABI, allowing developers to create, compile, and monitor transactions with provable records.
 
 ### Agent
-Agent is a mechanism of automated launch of decentralized applications. In a way, an agent is a wrapper that joins the necessary Silvana components to perform the application functions. See full breakdown of agent types and functionality in [Agents](/Documentation/Deployment/agents).
+Agent is a mechanism of automated launch of decentralized applications. In a way, an agent is a wrapper that joins the necessary Silvana components to perform the application functions. See full breakdown of agent types and functionality in [Agents](/Documentation/deployment/agents).
 
 ### Application Binary Interface (ABI)
 Application Binary Interface (ABI) defines how modules, smart contracts, and external applications interact with Silvana's system, enabling transaction building and proof verification.
@@ -37,7 +37,7 @@ Data Availability (DA) layers are blockchain components or infrastructure layers
 Event-Based Architecture is a software design pattern where system components communicate and respond to events, allowing for asynchronous processing and improved scalability.
 
 ### Execution Environment
-Execution Environment is a deployment setting where Silvana components run, depending on infrastructure and privacy requirements. Learn more about environment types in the [Deployment Environments](/Documentation/Deployment/deployment-environments).
+Execution Environment is a deployment setting where Silvana components run, depending on infrastructure and privacy requirements. Learn more about environment types in the [Deployment Environments](/Documentation/deployment/deployment-environments).
 
 ### Execution Mode
 Execution Mode is a processing method that defines how a transaction is handled within the Silvana network. Learn more about execution mode types in the [Execution Modes](/Documentation/ultra-fast-rollup/silvana-rollup#execution-modes).

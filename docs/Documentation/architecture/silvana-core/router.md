@@ -24,7 +24,7 @@ The Router’s primary responsibility is to manage the lifecycle of **provable r
 
 2. **State Queries**
 
-**Applications** query the Router to retrieve the schema of a specific provable record, enabling correct data interpretation. They then use this schema to call [**Agent**](/Documentation/Deployment/agents) services or other [**APIs**](/Documentation/glossary#api-application-programming-interface) to fetch the current record state from the data layer.
+**Applications** query the Router to retrieve the schema of a specific provable record, enabling correct data interpretation. They then use this schema to call [**Agent**](/Documentation/deployment/agents) services or other [**APIs**](/Documentation/glossary#api-application-programming-interface) to fetch the current record state from the data layer.
 
 3. **Agent Coordination**
 
