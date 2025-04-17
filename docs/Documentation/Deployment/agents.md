@@ -6,45 +6,47 @@ sidebar_position: 2
 
 ## Overview
 
-Silvana has a complicated modular and multi-layer architecture with multiple components that can be deployed in different ways. Handling the deployment manually would be a challenging task. That’s when agents kick in. An **agent** is a mechanism of automated launch of decentralized applications. In a way, an agent is a wrapper that joins the necessary Silvana components to perform the application functions.
+Silvana has a complicated modular and multi-layer architecture with multiple components that can be deployed in different ways. Handling the deployment manually would be a challenging task. That’s when Agents kick in. 
 
-Each agent implements and is built around a particular real-life use case - car lending, issuing and verifying documents, insurance, accounting, etc. A use case may require more than one module to be implemented. An agent assembles all the necessary components of different Silvana architectural layers: Prover and Verifier from Silvana Core, ZkProgram from the Module, ABI, modules, etc.
 
-Each component that an agent engages in an application can be deployed in three environments:
+> **Terms**  
+>
+> **Silvana Agents** are programmable, decentralized entities designed to automate the lifecycle of transactions and application logic across Silvana’s modular architecture. Functioning as execution orchestrators, Agents wrap and interconnect core components such as Prover Programs, provable record schemas, Provers, Verifiers, and ABI interfaces..
 
-* [**Private Execution Environment**](/Documentation/Deployment/deployment-environments#private-execution-environment-pxe) - a component is deployed privately, on the consumer’s local infrastructure;
+Agents **abstract away operational complexity**, enabling developers and integrators to deploy robust, event-driven applications without directly interacting with every layer of the Silvana stack. In a way, Agents are simultaneously an interface though which applications interact with Silvana wrapping the required Silvana components.
 
-* [**Cloud Execution Environment**](/Documentation/Deployment/deployment-environments#cloud-execution-environment-cxe) - a component is deployed in the **Silvana Cloud**;
+Agents are fundamental in realizing Silvana’s object-centric, ZK-native infrastructure for decentralized business logic and Real-World Asset (RWA) management.
 
-* [**Trusted Execution Environment**](/Documentation/Deployment/deployment-environments#trusted-execution-environment-tee) - a component is deployed in the **Secure Enclave** of the Silvana Cloud.
+## Key Functions
 
-Agents, like modules, are deployed by application developers. Each application can use one or multiple agents, depending on how many use cases it wants to implement. After deployment, agents can be bought and sold on Silvana Marketplace.
+Agents are not just automation scripts or bots. Their main role is to bridge application logic with cryptographic proof generation and validation, ensuring seamless interactions across system layers. That’s what Silvana agents do:
+
+* **Bind modules**, **Prover Programs**, and **Silvana Core components** together into coherent, executable workflows.
+
+* **Ensure scheduled execution** empowering developers to define transactions that will run automatically at a predetermined time. 
+
+* **Integrate across environments**: local (PXE), cloud-based (CXE), or trusted execution enclaves (TEE).
+
+* **Compute and verify zero-knowledge proofs** when records are created, mutated, or deleted.
+
+* **Ensure account abstraction** allowing them to execute transactions based on predefined user permissions without requiring direct user initiation.
+
+* **Support prepaid transaction** that enable users to fund transactions ahead of time. Once funded, Agents can autonomously trigger these transactions when relevant criteria are satisfied, reducing friction in decentralized execution.
+
+* **Empower event-driven logic** to enable transaction automation.
+
+This visual shows that agents are not bound to a fixed architecture - instead, they are **compositional entities**. Each one can orchestrate multiple modules and ZK programs to meet the unique needs of the application.
+
+![Silvana Agents](./img/silvana-agents.png)
 
 ## How to Use an Agent
 
 To deploy and use an agent, a user has to follow these steps:
+1. **Add the repo** of the module or modules as a dependency. All available and upcoming modules are maintained or referenced in the [**Silvana GitHub repository**](https://github.com/SilvanaOne), which is the central source for example implementations, module templates, and SDKs.
 
-1. Add the **repo** of the module or modules as a dependency. 
+2. **Generate proofs** by letting the Agents have to get access to the **Prover Program** describing the proof generation rules, the **Prover** executing the **Prover Function** (**Circuit**), and the **Verifier** executing the **Verifier Function** (**Circuit**).
 
-2. To generate proofs, Agents have to get access to the Prover Program describing the proof generation rules, the Prover executing the [**Prover Function (Circuit)**](/Documentation/architecture/silvana-core/prover#prover-function), and the Verifier executing the **Verifier Function (Circuit)**.
-
-3. Add all other Silvana components depending on which functions are required.
-
-> **Terms**  
->
-> 
-> * **Verifier** - Silvana Core component responsible for the verification the generated ZK proofs.
-> 
-> * **ABI** - Silvana Core component responsible for building, compiling, sending, and monitoring transactions.
-> 
-> 
-> * **Verifier Function (Circuit)** - the function allowing one party (the validator) validate the proof provided by another party (the prover) without gaining access to the actual information being proved.
-> 
-> * **Prover Program** - the business logic that rules how a proof has to be generated and verified.
-
-The diagram below illustrates Silvana Agents.
-
-![Silvana Agents](./img/silvana-agents.png)
+3. **Attach other Silvana components** depending on your application. This can include the **ABI** for interfacing, state storage, event handlers, or logic to respond to external inputs. The agent acts as the coordinator for all these parts, triggering the right calls at the right time.
 
 ## Agents to Automate Silvana
 
@@ -56,7 +58,17 @@ Using Agents helps automate Silvana functions and allows a wide array of useful 
 * **Pre-paid Transactions**: Users pay for transactions long before they run.
 * **Event-triggered Transactions**: Transactions can be called by particular events that the Silvana agent catches as a witness. This allows for building apps with an event-based architecture. There needs to be some kind of middleman between modules and enterprises. In Silvana, those are agents that act both as interfaces and application builds.
 
-Agents, like modules, are deployed by developers. After deployment, agents can be bought and sold on Silvana Marketplace.
+## Developer Notes
+Agents are ideal for applications that need automation, reliability, and auditability. Their modular structure supports development best practices such as separation of logic, reusable components, and configurable behavior.
+
+Here are some general recommendations when building with Agents:
+
+* **Start with a clear definition** of the application workflow, then break it down into discrete modules.
+* **Reuse existing modules where possible**, especially for common tasks like identity, signatures, or compliance.
+* **Use Prover Programs as composable proof strategies** that your Agent can call during execution.
+* **Keep the Agent logic focused on orchestration** - think of it as the “conductor” for your application components
+* **Test your agent thoroughly** with mock transactions and simulated proof requests. Always cover edge cases, invalid inputs, and potential proof failures.
+* **Publish your agent** to the **Silvana Marketplac** once it’s tested and ready. It can then be reused, extended, or monetized by other developers and integrators.
 
 ## Agent Types
 

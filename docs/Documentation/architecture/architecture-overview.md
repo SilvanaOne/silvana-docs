@@ -36,7 +36,7 @@ The diagram below illustrates Silvana’s architectural layers.
 
 ## Network Nodes
 
-Generating proofs requires computational power, which in turn creates infrastructural demands. Silvana deploys a **network of prover nodes** that produce **proof jobs** in exchange for rewards. This ensures decentralization and system robustness.
+Generating proofs requires computational power, which in turn creates infrastructural demands. Silvana deploys a **network of prover nodes** that produce [**proof jobs**](/Documentation/glossary#proof-job) in exchange for rewards. This ensures decentralization and system robustness.
 
 Apart from provers, Silvana Network can extend to the following types of nodes:
 

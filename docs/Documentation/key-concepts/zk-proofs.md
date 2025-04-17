@@ -7,11 +7,11 @@ sidebar_position: 1
 ## Overview
 
 Balancing security and privacy has become a crucial challenge in the current digital landscape. Enterprises and individuals alike require trustless verification methods that do not compromise sensitive data. Traditional security models rely on extensive data exposure, where verifying a transaction, compliance, or ownership often reveals more information than necessary. The emergence of **Zero-Knowledge Proofs (ZKPs)** represents a paradigm shift, offering an approach where verification does not necessitate disclosure.
-A **ZKP** is a cryptographic protocol that allows one party ([prover](/Documentation/architecture/silvana-core/prover)) to demonstrate to another party (**verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
+A **ZKP** is a cryptographic protocol that allows one party (prover) to demonstrate to another party (**verifier**) that a specific statement is true **without revealing any underlying information**. The Verifier is convinced of the claim's truthfulness but gains no additional knowledge beyond its validity.
 
 Two types of data exist in a ZKP transaction: the **Private Input** and the **Public Input**. A prover and a verifier are smart contracts that contain the **Prover Program**. The Prover runs the **prover function (circuit)** to generate proof, and the Verifier runs the **verifier function (circuit)** to verify the generated proof.
-- The **Prover** is called by the user, who must provide proof of the private input, 
-- **Counterparty** calls the **Verifier** - a partner, a regulator, an individual, etc.
+- The [**Prover**](/Documentation/architecture/silvana-core/prover) is called by the user, who must provide proof of the private input, 
+- [**Counterparty**](/Documentation/glossary#counterparty) calls the [**Verifier**](/Documentation/architecture/silvana-core/verifier) - a partner, a regulator, an individual, etc.
 
 For a proof to be considered zero-knowledge, it must satisfy three fundamental properties:
 
@@ -37,7 +37,7 @@ ZKP Transaction flow now looks like this:
 
 The diagram below shows how ZKPs work.
 
-![How Zk Proofs Work](../img/how-zk-proofs-work.png)
+![How Zk Proofs Work](./img/how-zk-proofs-work.png)
 
 ## Real-World Case: Intangible Asset Verification
 
@@ -186,7 +186,7 @@ A **ZK Proof** is generated.
 - Re-verification is needed for future licensing or disputes.
 The diagram below shows the flow of the use case.
 
-![Patent Verification Flow](../img/zkp-flow.png)
+![Patent Verification Flow](./img/zkp-flow.png)
 
 ### Key Takeaways from the ZKP Flow
 

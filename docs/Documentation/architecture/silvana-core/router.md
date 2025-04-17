@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 # Router
 ## Overview
@@ -7,9 +7,9 @@ In the overall Silvana architecture, the Router sits at the intersection of the 
 
 > **Terms**  
 >
-> The **Router** is a component that responsible for managing and providing access to provable record schemas and their associated **zero-knowledge programs (Prover Programs)**. It acts as a registry that maintains the mapping between record types and the ProverPrograms that define their behavior.
+> The **Router** is a component that responsible for managing and providing access to provable record [schemas](/Documentation/glossary#schema) and their associated **zero-knowledge programs (Prover Programs)**. It acts as a registry that maintains the mapping between record types and the ProverPrograms that define their behavior.
 
-In implementation, the Router consists of a structured set of **YAML files**, representing interfaces, schema definitions, and application configurations. It is exposed through an endpoint capable of answering a variety of structured queries. Essentially, the Router is an interface applications use to interact with [**provable records**](/Documentation/about-silvana/key-concepts/provable-records).
+In implementation, the Router consists of a structured set of **YAML files**, representing interfaces, schema definitions, and application configurations. It is exposed through an endpoint capable of answering a variety of structured queries. Essentially, the Router is an interface applications use to interact with [**provable records**](/Documentation/key-concepts/provable-records).
 
 ## Capabilities and Scope
 The router is responsible for the following functions:
@@ -24,7 +24,7 @@ The Router’s primary responsibility is to manage the lifecycle of **provable r
 
 2. **State Queries**
 
-**Applications** query the Router to retrieve the schema of a specific provable record, enabling correct data interpretation. They then use this schema to call **Agent** services or other **APIs** to fetch the current record state from the data layer.
+**Applications** query the Router to retrieve the schema of a specific provable record, enabling correct data interpretation. They then use this schema to call [**Agent**](/Documentation/Deployment/agents) services or other [**APIs**](/Documentation/glossary#api-application-programming-interface) to fetch the current record state from the data layer.
 
 3. **Agent Coordination**
 
@@ -40,7 +40,7 @@ A counterparty queries the Router to obtain the official schema and associated v
 
 6. **Prover Program Association**
 
-Each schema is linked to a specific Prover Program, which encodes the rules and constraints for state transitions of that record type. The Router stores these associations, enabling the system to determine which logic to use during proof generation and verification.
+Each schema is linked to a specific [Prover Program](/Documentation/glossary#prover-program), which encodes the rules and constraints for state transitions of that record type. The Router stores these associations, enabling the system to determine which logic to use during proof generation and verification.
 
 7. **Security and Visibility Controls**
 
@@ -50,7 +50,7 @@ Planned future enhancements include zone-based visibility limitations and role-b
 
 All provable record schemas in Silvana are **created and stored in the Router’s registry**. When a developer wants to introduce a new type of provable record, they start by defining its schema and registering it via the Router. 
 
-The important point is that the Router is the **go-to service for any schema lookup**. For instance, if a **Verifier** wants to ensure they have the latest schema, they fetch it from the Router at verification time. If a developer wants to see if a similar schema already exists (perhaps to reuse an existing template), they would search the Router’s records. Because the Router maintains *"all schemas within the system"*, it provides a comprehensive view of the data structures available in Silvana.
+The important point is that the Router is the **go-to service for any schema lookup**. For instance, if a [**Verifier**](/Documentation/architecture/silvana-core/verifier) wants to ensure they have the latest schema, they fetch it from the Router at verification time. If a developer wants to see if a similar schema already exists (perhaps to reuse an existing template), they would search the Router’s records. Because the Router maintains *"all schemas within the system"*, it provides a comprehensive view of the data structures available in Silvana.
 
 ### Schema Example in Router
 

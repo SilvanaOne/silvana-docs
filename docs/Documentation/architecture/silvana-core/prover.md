@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Prover
 ## Overview
-The Silvana Prover is designed to generate [**zero-knowledge proofs (ZKPs)**](/Documentation/about-silvana/key-concepts/zk-proofs) that confirm the validity of statements or transitions in Provable Records while preserving the confidentiality of the underlying sensitive information (**Private Input**).
+The Silvana Prover is designed to generate [**zero-knowledge proofs (ZKPs)**](/Documentation/key-concepts/zk-proofs) that confirm the validity of statements or transitions in Provable Records while preserving the confidentiality of the underlying sensitive information (**Private Input**).
 
 Its functionality is essential, like the engine in a car, making it a critical driver of the entire system. Without a prover, the purpose and functionality of Silvana are fundamentally compromised. Utilizing zero-knowledge technology, Silvana ensures secure and private transactions without compromising data integrity or compliance.
 
@@ -96,7 +96,7 @@ The **Prover** runs the **Prover Program** with:
 * Public and private inputs,
 * The proving key.
 
-It produces a **zero-knowledge proof** that confirms valid state mutation without revealing private data.
+It produces a **zero-knowledge proof** that confirms valid [state mutation](/Documentation/glossary#state-mutation) without revealing private data.
 
 For multi-record transactions, **recursive proofs** are composed.
 
@@ -155,13 +155,9 @@ The diagram below illustrates the prover flow.
 
 ## Integration and Compatibility
 
-Silvana Prover operates within a flexible, modular architecture compatible with various execution environments (**PXE**, **CXE**, **TEE**) and blockchain networks (**L1**, **L2**). It is blockchain-agnostic, supporting multiple chains, too.
+Silvana Prover operates within a flexible, [modular architecture](/Documentation/glossary#modular-architecture) compatible with various execution environments (**PXE**, **CXE**, **TEE**) and blockchain networks (**L1**, **L2**). It is blockchain-agnostic, supporting multiple chains, too.
 
-Silvana Prover works with various ZKP cryptographic systems and functions including but not limited to Kimchi, Groth16, Blake2. It also supports recursive proof functions like Pickles.
-
-> **Terms**  
->
-> **Recursive Proof** - a special type of zero-knowledge proof that can verify other zero-knowledge proofs — including itself.
+Silvana Prover works with various ZKP cryptographic systems and functions including but not limited to Kimchi, Groth16, Blake2. It also supports recursive proof functions like [Pickles](/Documentation/glossary#pickles).
 
 ## Prover Operations Handling
 

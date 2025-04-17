@@ -24,7 +24,7 @@ Silvana is a next-generation ultra-fast profer platform designed for **flexibili
 
 Most blockchains use an **account-based model**, tracking balances linked to accounts. They store and mutate states of accounts. While common, this creates inefficiencies in privacy, scalability, and security. Silvana employs an **object-centric model**, which means that:
 
-* Data is stored in self-contained objects - **provable records** - instead of accounts.
+* Data is stored in self-contained objects - [**provable records**](/Documentation/key-concepts/provable-records) - instead of accounts.
 * Objects represent crypto or real-world assets and act as units of value, identity, or state.
 * Sensitive data remains hidden, yet can still be proven valid through zero-knowledge methods.
 
@@ -50,7 +50,7 @@ Silvana is designed to be fully chain-agnostic, meaning it operates **independen
 
 ## Composable
 
-Unlike systems that require specific compilers, Silvana’s approach removes many adoption hurdles. [**Zero-knowledge proofs (ZKPs)**](/Documentation/about-silvana/key-concepts/zk-proofs) can easily integrate advanced cryptographic proofs without major rewrites of existing code. As a result, organizations gain powerful cryptographic capabilities seamlessly.
+Unlike systems that require specific compilers, Silvana’s approach removes many adoption hurdles. [**Zero-knowledge proofs (ZKPs)**](/Documentation/key-concepts/zk-proofs) can easily integrate advanced cryptographic proofs without major rewrites of existing code. As a result, organizations gain powerful cryptographic capabilities seamlessly.
 
 * Zero-Knowledge tech can be added to multiple blockchains, **even in environments where these technologies do not natively exist**.
 * No forced **compiler dependencies** or **any programming language reliance**.
@@ -59,7 +59,7 @@ Unlike systems that require specific compilers, Silvana’s approach removes man
 
 In contrast to rigid blockchain infrastructures, Silvana allows its components to function independently while remaining interoperable, enabling businesses to tailor their blockchain integration efficiently. 
 
-* Silvana offers multiple [execution environments](/Documentation/architecture/architecture-overview#execution-environments): **Private Execution Environment (PXE)**, **Cloud Execution Environment (CEE)**, and **Trusted Execution Environment (TEE)**.
+* Silvana offers multiple [execution environments](/Documentation/Deployment/deployment-environments): **Private Execution Environment (PXE)**, **Cloud Execution Environment (CEE)**, and **Trusted Execution Environment (TEE)**.
 * Whether running locally, in the cloud, or in a secure enclave, businesses can integrate Silvana **without disrupting existing workflows**.
 
 

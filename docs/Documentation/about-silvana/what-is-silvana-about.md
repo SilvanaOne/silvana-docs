@@ -6,11 +6,11 @@ sidebar_position: 1
 ## Welcome to Silvana
 What's Silvana in short? It's a **private, decentralized proving platform to bridge corporate and crypto with zero-knowledge tech**.
 
-Crypto and real-world businesses (enterprises, startups) face trust, compliance, and efficiency challenges due to traditional verification methods requiring extensive data sharing, leading to high costs and security breaches. [**Zero-knowledge proofs (ZKP)**](/Documentation/about-silvana/key-concepts/zk-proofs) address these issues by concealing private information while ensuring the integrity of public data, enabling proofs for authenticity, compliance, and ownership without revealing underlying data. 
+Crypto and real-world businesses (enterprises, startups) face trust, compliance, and efficiency challenges due to traditional verification methods requiring extensive data sharing, leading to high costs and security breaches. [**Zero-knowledge proofs (ZKP)**](/Documentation/key-concepts/zk-proofs) address these issues by concealing private information while ensuring the integrity of public data, enabling proofs for authenticity, compliance, and ownership without revealing underlying data. 
 
 Silvana uses zk proofs to help enterprises prove anything without disclosing sensitive data. Silvana offers a modular application layer and advanced cryptographic solutions, bridging the gap between corporate finance IT systems and cryptography, enabling businesses to transact, verify, and report with confidence.
 
-Customers use [**provable records**](/Documentation/about-silvana/key-concepts/provable-records) to represent their assets and simulate their behavior according to predefined business rules stored in modules. Each module handles specific functions, such as managing gaming objects in a Web3 game or accounting for a sales company. Provable records essentially represent business entities, whether gaming items or company assets.  
+Customers use [**provable records**](/Documentation/key-concepts/provable-records) to represent their assets and simulate their behavior according to predefined business rules stored in modules. Each module handles specific functions, such as managing gaming objects in a Web3 game or accounting for a sales company. Provable records essentially represent business entities, whether gaming items or company assets.  
 
 The table below shows how Silvana should be understood.
 
@@ -54,11 +54,11 @@ We hide the complexities of zero-knowledge technology from the user, making it a
 
 ### Blockchain-Agnostic & Expandable
 
-Silvana allows seamless integration with various **L1s**, **L2s**, **DA layers**, and any compatible data protection proof systems. This flexibility ensures that businesses can adopt Silvana's advanced cryptographic solutions without being tied to a specific blockchain, which fosters interoperability and scalability.
+Silvana allows seamless integration with various [**L1s**](/Documentation/glossary#layer-1-l1), [**L2s**](/Documentation/glossary#layer-2-l2), [**DA layers**](/Documentation/glossary#data-availability-da-layers), and any compatible data protection [proof systems](/Documentation/glossary#proof-system). This flexibility ensures that businesses can adopt Silvana's advanced cryptographic solutions without being tied to a specific blockchain, which fosters interoperability and scalability.
 
 ### Object-Centric Model
 
-The [object-centric design](/Documentation/about-silvana/key-concepts/object-centric-design-vs-account-centric-design), used in platforms like Sui and Aptos, puts assets as objects in the focus rather than just accounts, providing a more flexible and intuitive approach and allowing the building of an event-based architecture. By focusing on the interactions and states of specific objects, this model allows to build and manage provable records representing business objects that have mutable states.
+The [object-centric design](/Documentation/key-concepts/object-centric-design-vs-account-centric-design), used in platforms like Sui and Aptos, puts assets as objects in the focus rather than just accounts, providing a more flexible and intuitive approach and allowing the building of an [event-based architecture](/Documentation/glossary#event-based-architecture). By focusing on the interactions and states of specific objects, this model allows to build and manage provable records representing business objects that have mutable states.
 
 ### Decentralized Data Availability with Staking
 
