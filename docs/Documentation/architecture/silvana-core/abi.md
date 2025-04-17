@@ -40,7 +40,7 @@ A request from the frontend or external client is sent via API. It includes:
 
 * Target module (`fungible-token`, `marketplace`, etc.)
 
-* Parameters (token ID, recipient, etc.)
+* Parameters (`token_ID`, `recipient`, etc.)
 
 2. **API → ABI Forwarding**
 
