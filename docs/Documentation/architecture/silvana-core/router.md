@@ -50,7 +50,7 @@ Planned future enhancements include zone-based visibility limitations and role-b
 
 All provable record schemas in Silvana are **created and stored in the Router’s registry**. When a developer wants to introduce a new type of provable record, they start by defining its schema and registering it via the Router. 
 
-The important point is that the Router is the **go-to service for any schema lookup**. For instance, if a **Verifier** wants to ensure they have the latest schema, they fetch it from the Router at verification time. If a developer wants to see if a similar schema already exists (perhaps to reuse an existing template), they would search the Router’s records. Because the Router maintains *"all schemas within the system"*, it provides a comprehensive view of the data structures available in Silvana.
+The important point is that the Router is the **go-to service for any schema lookup**. For instance, if a [**Verifier**](/Documentation/architecture/silvana-core/verifier) wants to ensure they have the latest schema, they fetch it from the Router at verification time. If a developer wants to see if a similar schema already exists (perhaps to reuse an existing template), they would search the Router’s records. Because the Router maintains *"all schemas within the system"*, it provides a comprehensive view of the data structures available in Silvana.
 
 ### Schema Example in Router
 

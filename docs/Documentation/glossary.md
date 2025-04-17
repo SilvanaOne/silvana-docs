@@ -151,10 +151,10 @@ State Mutation is the process of changing the state of a provable record; each m
 ## V
 
 ### Verifier
-Verifier is the component that checks the generated proofs on the verifier's (counterparty's) side.
+Verifier is the component that checks the generated proofs on the verifier's (counterparty's) side. More info: [Verifier](/Documentation/architecture/silvana-core/verifier).
 
 ### Verifier Function (Circuit)
-Verifier Function (Circuit) is the function that allows the verifier to validate a zero-knowledge proof without accessing the private input, ensuring the correctness of the prover's claim.
+Verifier Function (Circuit) is the function that allows the verifier to validate a zero-knowledge proof without accessing the private input, ensuring the correctness of the prover's claim. More info: [Verifier Function](/Documentation/architecture/silvana-core/verifier#verifier-function).
 
 ## Z
 

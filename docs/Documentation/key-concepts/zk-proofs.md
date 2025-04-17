@@ -11,7 +11,7 @@ A **ZKP** is a cryptographic protocol that allows one party (prover) to demonstr
 
 Two types of data exist in a ZKP transaction: the **Private Input** and the **Public Input**. A prover and a verifier are smart contracts that contain the **Prover Program**. The Prover runs the **prover function (circuit)** to generate proof, and the Verifier runs the **verifier function (circuit)** to verify the generated proof.
 - The [**Prover**](/Documentation/architecture/silvana-core/prover) is called by the user, who must provide proof of the private input, 
-- [**Counterparty**](/Documentation/glossary#counterparty) calls the **Verifier** - a partner, a regulator, an individual, etc.
+- [**Counterparty**](/Documentation/glossary#counterparty) calls the [**Verifier**](/Documentation/architecture/silvana-core/verifier) - a partner, a regulator, an individual, etc.
 
 For a proof to be considered zero-knowledge, it must satisfy three fundamental properties:
 

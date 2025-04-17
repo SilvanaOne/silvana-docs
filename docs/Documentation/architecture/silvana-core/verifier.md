@@ -6,13 +6,13 @@ sidebar_position: 3
 
 ## Overview
 
-​The **Silvana Verifier**, along with the **Prover**, is a component of the **Silvana Core** independently validating zero-knowledge proofs to ensure the correctness of state transitions. Operating solely on the **Public Input** and cryptographic keys, it maintains data confidentiality while enabling trustless verification, allowing any participant to confirm transaction validity without intermediaries.​
+​The **Silvana Verifier**, along with the [**Prover**](/Documentation/architecture/silvana-core/prover), is a component of the [**Silvana Core**](/Documentation/architecture/silvana-core/) independently validating zero-knowledge proofs to ensure the correctness of state transitions. Operating solely on the **Public Input** and cryptographic keys, it maintains data confidentiality while enabling trustless verification, allowing any participant to confirm transaction validity without intermediaries.​
 
 Anytime using the Verifier, a user can check that the generated proof is valid. **Without a Verifier, Silvana’s zero-knowledge guarantees would be meaningless** – any invalid or malicious proof could slip through.
 
 ## Verifier Function
 
-​The Verifier executes the **Verifier Function (Circuit)** to validate **zero-knowledge proofs (ZKPs)** each time a **provable record** is **created** or **mutated**. It receives a proof from the Prover, along with the Public Input (e.g., hashes, commitments, timestamps), and uses the verification key to confirm the proof's integrity. The Verifier retrieves the necessary **schema** from the **Router** and the Prover Program from the corresponding module, ensuring alignment with the Prover's parameters. The verifier queries the provable record state in the **DA Layer**. Operating solely on public data, it employs cryptographic algorithms to ascertain that the proof corresponds to the correct processing of private inputs.
+​The Verifier executes the **Verifier Function (Circuit)** to validate [**zero-knowledge proofs (ZKPs)**](/Documentation/key-concepts/zk-proofs) each time a [**provable record**](/Documentation/key-concepts/provable-records) is **created** or **mutated**. It receives a proof from the Prover, along with the Public Input (e.g., hashes, commitments, timestamps), and uses the verification key to confirm the proof's integrity. The Verifier retrieves the necessary **schema** from the [**Router**](/Documentation/architecture/silvana-core/router) and the Prover Program from the corresponding module, ensuring alignment with the Prover's parameters. The verifier queries the provable record state in the [**DA Layer**](/Documentation/architecture/Layers/data-availability-layer). Operating solely on public data, it employs cryptographic algorithms to ascertain that the proof corresponds to the correct processing of private inputs.
 
 The diagram below illustrates how the Verifier works.
 
