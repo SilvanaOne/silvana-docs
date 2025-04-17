@@ -371,7 +371,7 @@ const config: Config = {
       },
     ],
     // Replace with your project's social card
-    // image: "img/silvana-social-card.png",
+    image: "https://example.com/docs?telegram_preview_bypass=123",
     navbar: {
       logo: {
         alt: "Silvana Logo",
