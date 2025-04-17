@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Silvana presents a novel solution -  **Provable Records**. Provable Records are digitally verifiable representations of crypto and real-world assets. Unlike entities in account-based architectures, Provable Records function as autonomous digital objects, each possessing a structured set of fields, predefined behaviors, and cryptographic verifiability.
 
-By leveraging [**Zero-Knowledge Proofs (ZKPs)**](/Documentation/about-silvana/key-concepts/zk-proofs), provable records ensure trustless, private, and secure transactions while maintaining complete verifiability. They enable businesses to prove ownership, authenticity, and compliance without exposing sensitive data. Through Provable Records, Silvana bridges the gap between traditional asset management and blockchain technology, ensuring enterprises can integrate decentralized solutions seamlessly without compromising regulatory requirements or operational efficiency.
+By leveraging [**Zero-Knowledge Proofs (ZKPs)**](/Documentation/key-concepts/zk-proofs), provable records ensure trustless, private, and secure transactions while maintaining complete verifiability. They enable businesses to prove ownership, authenticity, and compliance without exposing sensitive data. Through Provable Records, Silvana bridges the gap between traditional asset management and blockchain technology, ensuring enterprises can integrate decentralized solutions seamlessly without compromising regulatory requirements or operational efficiency.
 
 Each Provable Record comprises two essential elements:
 

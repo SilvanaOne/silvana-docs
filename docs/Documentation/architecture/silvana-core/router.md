@@ -9,7 +9,7 @@ In the overall Silvana architecture, the Router sits at the intersection of the 
 >
 > The **Router** is a component that responsible for managing and providing access to provable record [schemas](/Documentation/glossary#schema) and their associated **zero-knowledge programs (Prover Programs)**. It acts as a registry that maintains the mapping between record types and the ProverPrograms that define their behavior.
 
-In implementation, the Router consists of a structured set of **YAML files**, representing interfaces, schema definitions, and application configurations. It is exposed through an endpoint capable of answering a variety of structured queries. Essentially, the Router is an interface applications use to interact with [**provable records**](/Documentation/about-silvana/key-concepts/provable-records).
+In implementation, the Router consists of a structured set of **YAML files**, representing interfaces, schema definitions, and application configurations. It is exposed through an endpoint capable of answering a variety of structured queries. Essentially, the Router is an interface applications use to interact with [**provable records**](/Documentation/key-concepts/provable-records).
 
 ## Capabilities and Scope
 The router is responsible for the following functions:

@@ -74,7 +74,7 @@ Nodes are core infrastructure units that run and support Silvana's decentralized
 ## O
 
 ### Object-Centric Model
-Object-Centric Model is a data model where assets and records are represented as self-contained objects with mutable states rather than accounts. More info: [Object-Centric Design](/Documentation/about-silvana/key-concepts/object-centric-design-vs-account-centric-design).
+Object-Centric Model is a data model where assets and records are represented as self-contained objects with mutable states rather than accounts. More info: [Object-Centric Design](/Documentation/key-concepts/object-centric-design-vs-account-centric-design).
 
 ### Off-Chain
 Off-Chain refers to data processing, computations, or transactions that occur outside the blockchain to improve scalability and efficiency, with final results or proofs submitted to the blockchain.
@@ -109,7 +109,7 @@ Prover Function (Circuit) is the function that allows the prover to generate a z
 Prover Program is the business logic and cryptographic rule set that governs how a ZKP should be generated and verified. It defines what data must be proven, how it must be validated, and under what conditions the proof is considered valid.
 
 ### Provable Records
-Provable Records are digitally verifiable representations of crypto and real-world assets. More info: [Provabe Records](/Documentation/about-silvana/key-concepts/provable-records). 
+Provable Records are digitally verifiable representations of crypto and real-world assets. More info: [Provabe Records](/Documentation/key-concepts/provable-records). 
 
 ### Provable Record Schemas
 Provable Record Schemas are predefined structures that define the format, rules, and permissible states of provable records within Silvana, ensuring consistency and validity in zero-knowledge proof-based transactions.
@@ -159,7 +159,7 @@ Verifier Function (Circuit) is the function that allows the verifier to validate
 ## Z
 
 ### Zero-Knowledge Proof (ZKP)
-Zero-Knowledge Proof (ZKP) is a cryptographic method that allows one party (the prover) to prove to another party (the verifier) that a statement is true without revealing any additional information beyond the validity of the statement. More info: [Zero-Knowledge Proof (ZKP)](/Documentation/about-silvana/key-concepts/zk-proofs)
+Zero-Knowledge Proof (ZKP) is a cryptographic method that allows one party (the prover) to prove to another party (the verifier) that a statement is true without revealing any additional information beyond the validity of the statement. More info: [Zero-Knowledge Proof (ZKP)](/Documentation/key-concepts/zk-proofs)
 
 ### zkProgram
 zkProgram is the business logic that rules how a proof has to be generated and verified.
