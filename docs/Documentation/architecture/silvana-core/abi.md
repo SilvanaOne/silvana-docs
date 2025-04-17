@@ -1,12 +1,12 @@
 ---
-sidebar_position: 3
+sidebar_position: 4
 ---
 # ABI
 ## Overview
 
 In Silvana, the **Application Binary Interface (ABI)** is a system-level service that builds transactions using module contracts and requested parameters. 
 
-The **ABI API** exposes this capability to external systems and developers. It allows clients to send intent-based requests (e.g., "deploy token", "mint NFT") which ABI transforms into fully constructed transactions ready for proof generation and blockchain submission.
+The **ABI API** exposes this capability to external systems and developers. It allows clients to send intent-based requests (e.g., "deploy token") which ABI transforms into fully constructed transactions ready for proof generation and blockchain submission.
 
 The ABI does **not** execute or submit transactions. Instead, it acts as a **transaction constructor**, taking abstract instructions and transforming them into valid zkApp-compatible transaction payloads.
 
@@ -72,6 +72,10 @@ ABI builds a zkApp-compatible transaction:
 
 The built transaction is returned to the API or passed to the next layer (Prover). ABI’s role ends here.
 
+See how ABI flow looks like:
+
+![Silvana ABI ](../img/abi-flow.png)
+
 ### Example
 This example constructs a transaction to deploy a new fungible token in JSON:
 ```JSON
@@ -106,9 +110,9 @@ schemas:
 
 ABI produces a complete transaction object ready for:
 
-* zk-proof generation (by Prover)
+* Zk-proof generation (by **Prover**)
 
-* blockchain submission (by Tx Sender)
+* Blockchain submission (by **Tx Sender**)
 
 ### Additional Features
 
