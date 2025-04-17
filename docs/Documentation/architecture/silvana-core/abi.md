@@ -79,16 +79,22 @@ See how ABI flow looks like:
 ### Example
 This example constructs a transaction to deploy a new fungible token in JSON:
 ```JSON
-schemas:
-  - id: "user.trading.account"
-    version: 1
-    fields:
-      baseTokenBalance: TokenBalance
-      quoteTokenBalance: TokenBalance
-      bid: Order
-      ask: Order
-      nonce: bigint
-    ProverProgramId: "trading.ProverProgram.v1"
+{
+  "module": "fungible-token",
+  "action": "create",
+  "params": {
+    "name": "GoldUSD",
+    "symbol": "GUSD",
+    "decimals": 2,
+    "initialSupply": "1000000",
+    "owner": "0xA1B2C3D4E5F6G7H8"
+  },
+  "meta": {
+    "timestamp": "2025-04-17T10:45:00Z",
+    "network": "testnet",
+    "Prover Program": "ft_create_v1"
+  }
+}
 ```
 **Explanation of Fields**:
 
