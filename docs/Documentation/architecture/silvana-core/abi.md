@@ -92,7 +92,7 @@ This example constructs a transaction to deploy a new fungible token in JSON:
   "meta": {
     "timestamp": "2025-04-17T10:45:00Z",
     "network": "testnet",
-    "Prover Program": "ft_create_v1"
+    "ProverProgram": "ft_create_v1"
   }
 }
 ```
