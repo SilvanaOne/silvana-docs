@@ -13,7 +13,7 @@ ABI API provides programmatic access to Silvana's ABI, allowing developers to cr
 Agent is a mechanism of automated launch of decentralized applications. In a way, an agent is a wrapper that joins the necessary Silvana components to perform the application functions. See full breakdown of agent types and functionality in [Agents](/Documentation/Deployment/agents).
 
 ### Application Binary Interface (ABI)
-Application Binary Interface (ABI) defines how modules, smart contracts, and external applications interact with Silvana's system, enabling transaction building and proof verification.
+Application Binary Interface (ABI) defines how modules, smart contracts, and external applications interact with Silvana's system, enabling transaction building and proof verification. More info: [**ABI**](/Documentation/architecture/silvana-core/abi).
 
 ### API (Application Programming Interface)
 API (Application Programming Interface) is a set of protocols and tools that allow different software applications to communicate and interact with each other, often used to integrate blockchain functionalities with external systems.

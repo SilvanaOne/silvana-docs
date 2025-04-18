@@ -16,7 +16,7 @@ The ABI is responsible for:
 
 * **Resolving the correct smart contract** from a requested module
 * **Building a transaction object** based on frontend inputs and module definitions
-* **Formatting the transaction** in accordance with ZK-friendly standards (compatible with Prover Program)
+* **Formatting the transaction** in accordance with ZK-friendly standards (compatible with [**Prover Program**](https://docs.silvana.one/Documentation/glossary#prover-program))
 * **Passing the built transaction** to other components (e.g., Prover, Tx Sender)
 
 It serves as the glue between high-level API calls and the underlying module implementations.
@@ -128,4 +128,4 @@ ABI produces a complete transaction object ready for:
 
 * Supports plugins for ABI Explorer interfaces
 
-* Used in **PXE**, **CXE**, and **TEE** environments
+* Used in **PXE**, **CXE**, and **TEE** [**environments**](/Documentation/Deployment/deployment-environments)
