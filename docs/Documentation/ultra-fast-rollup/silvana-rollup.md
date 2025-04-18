@@ -8,7 +8,7 @@ sidebar_position: 1
 
 Silvana needs high scalability to ensure efficient operations and fast transaction execution. However, it uses **zero-knowledge proofs (ZKPs)** when handling private data. Zero-knowledge (ZK) blockchains offer significant scalability benefits by aggregating multiple transactions into a single proof, thereby reducing on-chain data and enhancing throughput. ​However, they face several challenges:​
 
-* **Computational Overhead**: generating and verifying ZK proofs, especially in systems like [zk-SNARKs](/Documentation/glossary#zk-snark) and [zk-STARKs](/Documentation/glossary#zk-stark), requires substantial computational resources, which can slow down transaction processing and increase costs.
+* **Computational Overhead**: generating and verifying ZK proofs, especially in systems like [**zk-SNARKs**](/Documentation/glossary#zk-snark) and [**zk-STARKs**](/Documentation/glossary#zk-stark), requires substantial computational resources, which can slow down transaction processing and increase costs.
 * **Complex Development**: implementing ZK technologies demands specialized cryptographic expertise, making development more complex and potentially hindering widespread adoption. ​
 * **Data Availability Concerns**: ensuring that all necessary data remains accessible for verification is critical; if data becomes unavailable, it can compromise the integrity and security of the blockchain. ​
 
@@ -82,7 +82,7 @@ A typical transaction flow in the Silvana rollup looks like this:
 
 Not all transactions contain private data. Such transactions don’t need proof to be generated. Then they follow a simplified transaction flow and can be processed way faster. 
 
-The ZK circuit plays a vital role by handling its own state and maintaining the [state commitment](/Documentation/glossary#state-commitment) on the Coordination Layer. The ZK circuit operates in four distinct **execution modes**:
+The ZK circuit plays a vital role by handling its own state and maintaining the [**state commitment**](/Documentation/glossary#state-commitment) on the Coordination Layer. The ZK circuit operates in four distinct **execution modes**:
 
 * **Submission Execution**: this mode validates input data before submission, ensuring accuracy and preventing errors from the get-go.
 * **Operators Execution**: in this swift mode, multiple operators confirm the execution result by running the contract in no-proofs mode, which only takes a few milliseconds.

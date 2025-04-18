@@ -54,22 +54,22 @@ We hide the complexities of zero-knowledge technology from the user, making it a
 
 ### Blockchain-Agnostic & Expandable
 
-Silvana allows seamless integration with various [**L1s**](/Documentation/glossary#layer-1-l1), [**L2s**](/Documentation/glossary#layer-2-l2), [**DA layers**](/Documentation/glossary#data-availability-da-layers), and any compatible data protection [proof systems](/Documentation/glossary#proof-system). This flexibility ensures that businesses can adopt Silvana's advanced cryptographic solutions without being tied to a specific blockchain, which fosters interoperability and scalability.
+Silvana allows seamless integration with various [**L1s**](/Documentation/glossary#layer-1-l1), [**L2s**](/Documentation/glossary#layer-2-l2), [**DA layers**](/Documentation/glossary#data-availability-da-layers), and any compatible data protection [**proof systems**](/Documentation/glossary#proof-system). This flexibility ensures that businesses can adopt Silvana's advanced cryptographic solutions without being tied to a specific blockchain, which fosters interoperability and scalability.
 
 ### Object-Centric Model
 
-The [object-centric design](/Documentation/key-concepts/object-centric-design-vs-account-centric-design), used in platforms like Sui and Aptos, puts assets as objects in the focus rather than just accounts, providing a more flexible and intuitive approach and allowing the building of an [event-based architecture](/Documentation/glossary#event-based-architecture). By focusing on the interactions and states of specific objects, this model allows to build and manage provable records representing business objects that have mutable states.
+The [**object-centric design**](/Documentation/key-concepts/object-centric-design-vs-account-centric-design), used in platforms like Sui and Aptos, puts assets as objects in the focus rather than just accounts, providing a more flexible and intuitive approach and allowing the building of an [**event-based architecture**](/Documentation/glossary#event-based-architecture). By focusing on the interactions and states of specific objects, this model allows to build and manage provable records representing business objects that have mutable states.
 
 ### Decentralized Data Availability with Staking
 
 A network of [**Silvana nodes**](/Documentation/architecture/architecture-overview#network-nodes) that enhance data resilience beyond traditional Service Level Agreement (SLA) measures. This one is critical to ensure that data remains available and tamper-resistant on a permissionless layer by utilizing staked nodes, which contribute to the system's robustness and security. As a result, businesses can trust that their data will be consistently accessible and protected against manipulation.
 
 ## Use Cases
-Now, quips aside, let’s see how Silvana can really apply for serious business.
+Now, quips aside, let's see how Silvana can really apply for serious business.
 
 ### Case 1 - Reinsurance
 
-**Case:** some assets are too expensive to be covered by solely one insurer. That’s when insurers decide to hedge their risks by ensuring their risk to other insurance companies (reinsurers). Insurers need to mitigate significant risks, without overexposing sensitive details. Manual processes are slow and susceptible to data leakage.
+**Case:** some assets are too expensive to be covered by solely one insurer. That's when insurers decide to hedge their risks by ensuring their risk to other insurance companies (reinsurers). Insurers need to mitigate significant risks, without overexposing sensitive details. Manual processes are slow and susceptible to data leakage.
 
 **Solution:** Silvana leverages zero-knowledge proofs to facilitate secure quote requests from multiple reinsurers.
 
