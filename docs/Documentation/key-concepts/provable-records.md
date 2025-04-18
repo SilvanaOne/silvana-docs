@@ -119,7 +119,7 @@ The manufacturer receives a shipment of card stock paper and registers it as a P
 | quantity | int | 10,000 sheets |
 | supplierInfo | string | zk-proof |
 
-> **Success!**
+> **Success**
 > 
 > the **_`supplierInfo`_** field is protected using a zero-knowledge proof (ZKP) to maintain confidentiality while enabling supplier verification.
 
@@ -137,7 +137,7 @@ As the production begins, the card stock is transformed into finished playing ca
 | quantity | int | 1,000 decks |
 | productionDate | date | 2025-02-21 |
 
-> **Success!**
+> **Success**
  
 > The **_`assetId`_** remains the same to maintain traceability, while other fields are updated to reflect the transformation.
 
@@ -156,7 +156,7 @@ Upon receiving an order, the manufacturer sells some finished playing card decks
 | saleDate | date | 2025-02-22 |
 | buyerInfo | string | zk-proof |
 
-> **Success!**
+> **Success**
 > The **_`buyerInfo`_** field is protected using a ZKP.
 
 **Prover Program**
