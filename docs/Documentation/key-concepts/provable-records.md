@@ -20,7 +20,7 @@ Each Provable Record comprises two essential elements:
 
 To ensure the integrity and authenticity of Provable Records, Silvana employs the following components:
 
-[**Prover**](/Documentation/architecture/silvana-core/prover): This component generates a zero-knowledge proof (ZKP) that validates the state and behavior of a Provable Record. The Prover retrieves the schema from the [Router](/Documentation/architecture/silvana-core/router) and the behavior from the corresponding Module. Using this information, a ZKP is constructed that attests to the record's compliance with predefined rules without revealing sensitive data.
+[**Prover**](/Documentation/architecture/silvana-core/prover): This component generates a zero-knowledge proof (ZKP) that validates the state and behavior of a Provable Record. The Prover retrieves the schema from the [**Router**](/Documentation/architecture/silvana-core/router) and the behavior from the corresponding Module. Using this information, a ZKP is constructed that attests to the record's compliance with predefined rules without revealing sensitive data.
 
 > **Terms**  
 >
@@ -45,7 +45,7 @@ Provable record flow looks like this:
 
 1. To create a provable record, first, a schema must be created in the Router, and the Prover Program must be deployed in the corresponding module.
 
-2. User queries Silvana Prover to generate a zero-knowledge proof. Silvana Prover uses [Pickles](/Documentation/glossary#pickles) to create a [recursive proof](/Documentation/glossary#recursive-proofs).
+2. User queries Silvana Prover to generate a zero-knowledge proof. Silvana Prover uses [**Pickles**](/Documentation/glossary#pickles) to create a [**recursive proof**](/Documentation/glossary#recursive-proofs).
 
 3. Then the proof is submitted to the DA layer.
 
@@ -57,7 +57,7 @@ The diagram below illustrates the provable record flow:
 
 ![Provable Records](./img/provable-records.png)
 
-What’s special about the DA arrangements with Silvana is provable DB transactions meaning everytime a user calls the DA layer to read, write, delete, or update a provable record, Silvana generates proof for that, which means **provable read** and **provable mutation** of data. See how Silvana's solution compares to other DA layer arrangements.
+What's special about the DA arrangements with Silvana is provable DB transactions meaning everytime a user calls the DA layer to read, write, delete, or update a provable record, Silvana generates proof for that, which means **provable read** and **provable mutation** of data. See how Silvana's solution compares to other DA layer arrangements.
 
 ### Traditional DB
 

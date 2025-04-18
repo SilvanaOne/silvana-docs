@@ -59,7 +59,7 @@ Unlike systems that require specific compilers, Silvana’s approach removes man
 
 In contrast to rigid blockchain infrastructures, Silvana allows its components to function independently while remaining interoperable, enabling businesses to tailor their blockchain integration efficiently. 
 
-* Silvana offers multiple [execution environments](/Documentation/Deployment/deployment-environments): **Private Execution Environment (PXE)**, **Cloud Execution Environment (CEE)**, and **Trusted Execution Environment (TEE)**.
+* Silvana offers multiple [**execution environments**](/Documentation/Deployment/deployment-environments): **Private Execution Environment (PXE)**, **Cloud Execution Environment (CEE)**, and **Trusted Execution Environment (TEE)**.
 * Whether running locally, in the cloud, or in a secure enclave, businesses can integrate Silvana **without disrupting existing workflows**.
 
 

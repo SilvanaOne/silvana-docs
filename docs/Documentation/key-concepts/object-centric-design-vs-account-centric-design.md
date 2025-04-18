@@ -38,7 +38,7 @@ All transactions have to be processed and executed consecutively since each stat
 
 ## Object-Centric Design
 
-The above-mentioned limitations highlight the need for continuous research and development to improve the efficiency and security of account-centric blockchains. **Object-centric design** is a true game-changer pioneered by Sui, Aptos, and Solana. With object-centric design, data in a blockchain is arranged by **programmable objects** like with the **Object-Oriented Programming (OOP)** - rather than by accounts. Such objects have fields that describe their states that get mutated (one or many) with each transaction due to a pre-defined logic described in an on- or off-chain [smart contract](/Documentation/glossary#smart-contract).
+The above-mentioned limitations highlight the need for continuous research and development to improve the efficiency and security of account-centric blockchains. **Object-centric design** is a true game-changer pioneered by Sui, Aptos, and Solana. With object-centric design, data in a blockchain is arranged by **programmable objects** like with the **Object-Oriented Programming (OOP)** - rather than by accounts. Such objects have fields that describe their states that get mutated (one or many) with each transaction due to a pre-defined logic described in an on- or off-chain [**smart contract**](/Documentation/glossary#smart-contract).
 
 This is how object-centric design makes a difference:
 
@@ -84,10 +84,10 @@ The table below sums up the comparison of the account-centric and the object-cen
 
 Silvana follows an object-oriented design which totally aligns with the object-centric blockchain narrative. However, Silvana extends this concept further by integrating [**zero-knowledge proofs (ZKPs)**](/Documentation/key-concepts/zk-proofs). This is how the object-centric design benefits Silvana:
 
-* [**Provable Records**](/Documentation/key-concepts/provable-records) - to represent assets, provable records are created with [mutable states](/Documentation/glossary#mutable-state). Each time a state is mutated, a zero-knowledge proof is generated to prove the state correctness. This design is particularly suitable for **real-world assets (RWAs)** and empowers their adoption in crypto.
+* [**Provable Records**](/Documentation/key-concepts/provable-records) - to represent assets, provable records are created with [**mutable states**](/Documentation/glossary#mutable-state). Each time a state is mutated, a zero-knowledge proof is generated to prove the state correctness. This design is particularly suitable for **real-world assets (RWAs)** and empowers their adoption in crypto.
 
 * Silvana uses Sui - an object-centric blockchain - as a **Coordination**, **Execition**, **Settlement Layer** for the [**Silvana Rollup**](/Documentation/ultra-fast-rollup/silvana-rollup) ensuring high transaction speed.
 
 * Using provable records as objects helps build **modular**, **scalable**, and **privacy-preserving applications** with reusable custom business logic.
 
-* Since provable records don’t assume a specific **global state layout** or a **single chain** or **execution environment**, this enables Silvana to be **chain-agnostic**, **tech-abstracted**, and have a **modular design** with **built-in data security**.
+* Since provable records don't assume a specific **global state layout** or a **single chain** or **execution environment**, this enables Silvana to be **chain-agnostic**, **tech-abstracted**, and have a **modular design** with **built-in data security**.
