@@ -12,7 +12,7 @@ Silvana needs high scalability to ensure efficient operations and fast transacti
 * **Complex Development**: implementing ZK technologies demands specialized cryptographic expertise, making development more complex and potentially hindering widespread adoption. ​
 * **Data Availability Concerns**: ensuring that all necessary data remains accessible for verification is critical; if data becomes unavailable, it can compromise the integrity and security of the blockchain. ​
 
-> Dilemma!
+> Dilemma
 > 
 > How do we combine high transaction speed with the data security of zero-knowledge proofs?
 
@@ -22,7 +22,7 @@ Addressing this dilemma is essential for ZK blockchains to achieve their full po
 
 We created an intricately designed hybrid rollup that combines the best of two worlds: the high scalability of fast blockchains with the data security of ZK blockchains. Silvana Rollup effectively combines an optimistic rollup and a ZK rollup.
 
-> Reference!
+> Reference
 > 
 > Optimistic and Zero-Knowledge (ZK) rollups are both L2 scaling solutions designed to enhance blockchain efficiency by processing transactions off-chain and then submitting summaries to the main chain.​Optimistic rollups assume transactions are valid by default and rely on a challenge period to detect fraud, offering lower costs and easier integration but resulting in slower finality. In contrast, ZK rollups use cryptographic proofs to validate transactions upfront, providing faster finality and enhanced privacy, albeit with higher complexity and computational demands.
 
