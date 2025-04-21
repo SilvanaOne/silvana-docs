@@ -82,8 +82,9 @@ The table below outlines what each actor and component wants to achieve with a Z
   "signature": "0xSIG123456789"
 }
 ```
-> **Warning**  
-> If a signature mismatches, the process stops.
+:::warning Warning
+If a signature mismatches, the process stops.
+:::
 
 **Step 2**: Tx Builder (ABI) Sends Inputs to Prover
 - **Tx Builder** prepares the inputs and sends them to **Prover**.
@@ -100,8 +101,10 @@ A **ZK Proof** is generated.
   "proof_timestamp": "28.02.2025 UTC 09:41"
 }
 ```
-> **Success**  
-> ZK Proof was successfully created.
+
+:::tip Success
+ZK Proof was successfully created.
+::: 
 
 **Step 4**: Prover Sends ZK Proof to Verifier.
 - The Verifier receives the **ZK Proof**.
@@ -121,8 +124,10 @@ A **ZK Proof** is generated.
   "signing_timestamp": "28.02.2025 UTC 09:42"
 }
 ```
-> **Warning**  
-> If the proof fails, the verification halts.
+
+:::warning Warning
+If the proof fails, the verification halts.
+:::
 
 **Step 6**: Tx Builder Builds ZK Transaction.
 - The **verified proof** is stored in the **DA Layer** for future reference.
@@ -136,8 +141,10 @@ A **ZK Proof** is generated.
   "storage_timestamp": "28.02.2025 UTC 09:42"
 }
 ```
-> **Success**  
-> Proof securely recorded.
+
+:::tip Success
+Proof securely recorded.
+::: 
 
 **Step 7**: **Tx Builder** Uses Public Input & ZK Proof to Build a **ZK Transaction**.
 - The Tx Builder builds the ZK Transaction.
@@ -159,8 +166,10 @@ A **ZK Proof** is generated.
   "counterparty_signature": "0xTECHSIG987654"
 }
 ```
-> **Success**  
-> The counterparty has signed and approved the transaction.
+
+:::tip Success
+The counterparty has signed and approved the transaction.
+::: 
 
 **Step 9**: ZK Transaction is Sent to the Settlement Layer (L1 or L2 blockchain).
 
@@ -175,8 +184,10 @@ A **ZK Proof** is generated.
   "blockchain_record": "0xBLOCKHASH123456"
 }
 ```
-> **Success**  
-> The transaction is now immutable on-chain.
+
+:::tip Success
+The transaction is now immutable on-chain.
+::: 
 
 **Final Outcome: Secure, Private Patent Verification**
 

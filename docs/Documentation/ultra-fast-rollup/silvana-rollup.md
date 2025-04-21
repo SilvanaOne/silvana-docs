@@ -10,9 +10,9 @@ Silvana Rollup is built to combine high speed and strong privacy. It uses [**Zer
 
 We created an intricately designed hybrid rollup that combines the best of two worlds: the high scalability of fast blockchains with the data security of ZK blockchains. Silvana Rollup effectively combines an optimistic rollup and a ZK rollup.
 
-> Reference
-> 
-> Optimistic and Zero-Knowledge (ZK) rollups are both L2 scaling solutions designed to enhance blockchain efficiency by processing transactions off-chain and then submitting summaries to the main chain.​Optimistic rollups assume transactions are valid by default and rely on a challenge period to detect fraud, offering lower costs and easier integration but resulting in slower finality. In contrast, ZK rollups use cryptographic proofs to validate transactions upfront, providing faster finality and enhanced privacy, albeit with higher complexity and computational demands.
+:::tip Optimistic vs. Zero-Knowledge (ZK) Rollups
+Optimistic and Zero-Knowledge (ZK) rollups are both L2 scaling solutions designed to enhance blockchain efficiency by processing transactions off-chain and then submitting summaries to the main chain.​Optimistic rollups assume transactions are valid by default and rely on a challenge period to detect fraud, offering lower costs and easier integration but resulting in slower finality. In contrast, ZK rollups use cryptographic proofs to validate transactions upfront, providing faster finality and enhanced privacy, albeit with higher complexity and computational demands.
+::: 
 
 Silvana’s ultra-fast rollup comprises the **Coordination**, **Settlement**, and **Data Availability (DA) Layers**.
 
@@ -81,9 +81,9 @@ The ZK circuit plays a vital role by handling its own state and maintaining the 
 
 Silvana’s Ultra-Fast Rollup is a hybrid scaling solution that operates as an optimistic rollup while integrating zk-proofs to reinforce security. This dual-layered approach ensures efficient transaction processing without compromising on cryptographic robustness. 
 
-> **Key Take**
-> 
-> **_On the one hand, transactions in the Silvana rollup are executed fast. On the other hand, although finality takes time, it is almost 100% ensured since it is next to impossible to impede a zk transaction since it requires tampering with proof, the possibility of which is negligible_**.
+:::tip Key Take
+On the one hand, transactions in the Silvana rollup are executed fast. On the other hand, although finality takes time, it is almost 100% ensured since it is next to impossible to impede a zk transaction since it requires tampering with proof, the possibility of which is negligible.
+:::
 
 Silvana rollup ensures security by:
 

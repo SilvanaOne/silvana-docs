@@ -10,8 +10,6 @@ Silvana needs high scalability to ensure efficient operations and fast transacti
 * **Complex Development**: implementing ZK technologies demands specialized cryptographic expertise, making development more complex and potentially hindering widespread adoption. ​
 * **Data Availability Concerns**: ensuring that all necessary data remains accessible for verification is critical; if data becomes unavailable, it can compromise the integrity and security of the blockchain. ​
 
-> Dilemma
-> 
-> How do we combine high transaction speed with the data security of zero-knowledge proofs?
+How do we combine high transaction speed with the data security of zero-knowledge proofs?
 
 Addressing this dilemma is essential for ZK blockchains to achieve their full potential in scalability and privacy.

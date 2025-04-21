@@ -4,7 +4,7 @@ sidebar_position: 4
 # ABI
 ## Overview
 
-In Silvana, the **Application Binary Interface (ABI)** is a system-level service that builds transactions using module contracts and requested parameters. 
+In Silvana, the **Application Binary Interface (ABI)** is a system-level service that builds transactions using module contracts and requested parameters.
 
 The **ABI API** exposes this capability to external systems and developers. It allows clients to send intent-based requests (e.g., "deploy token") which ABI transforms into fully constructed transactions ready for proof generation and blockchain submission.
 
@@ -21,8 +21,9 @@ The ABI is responsible for:
 
 It serves as the glue between high-level API calls and the underlying module implementations.
 
-> “**API** sends the request, **ABI** builds the transaction”.
-
+:::tip Note
+“**API** sends the request, **ABI** builds the transaction”.
+:::
 
 ## Purpose and Usage
 
