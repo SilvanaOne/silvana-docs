@@ -560,3 +560,45 @@ button.tocCollapsibleButton_TO0P::after {
 .sidebar-menu .menu__list > li:first-child {
   padding-left: 20px;
 }
+
+/* Admonition styles */
+.alert--warning {
+  background-color: #FAEDF0;
+  border: none;
+  padding: 16px;
+  margin: 24px 0;
+  border-radius: 8px;
+}
+
+.alert--warning .alert__icon {
+  color: #D6448F;
+  margin-right: 12px;
+}
+
+.alert--warning .alert__title {
+  color: #241D1F;
+  font-family: var(--ff--inter-medium);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  text-transform: capitalize;
+}
+
+.alert--warning .alert__content {
+  color: var(--silvana-color-text-secondary);
+  font-family: var(--ff--inter-regular);
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 8px;
+}
+
+/* Custom warning icon styles */
+.alert--warning svg {
+  width: 24px;
+  height: 24px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
