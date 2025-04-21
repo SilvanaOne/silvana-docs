@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Silvana has a complicated modular and multi-layer architecture with multiple components that can be deployed in different ways. Handling the deployment manually would be a challenging task. That’s when Agents kick in. 
 
-:::note **Silvana Agents**
+:::note Silvana Agents
 **Silvana Agents** are programmable, decentralized entities designed to automate the lifecycle of transactions and application logic across Silvana’s modular architecture. Functioning as execution orchestrators, Agents wrap and interconnect core components such as Prover Programs, provable record schemas, Provers, Verifiers, and ABI interfaces.
 :::
 

@@ -10,7 +10,7 @@ Silvana Rollup is built to combine high speed and strong privacy. It uses [**Zer
 
 We created an intricately designed hybrid rollup that combines the best of two worlds: the high scalability of fast blockchains with the data security of ZK blockchains. Silvana Rollup effectively combines an optimistic rollup and a ZK rollup.
 
-:::tip **Optimistic vs. Zero-Knowledge (ZK) Rollups**
+:::tip Optimistic vs. Zero-Knowledge (ZK) Rollups
 Optimistic and Zero-Knowledge (ZK) rollups are both L2 scaling solutions designed to enhance blockchain efficiency by processing transactions off-chain and then submitting summaries to the main chain.​Optimistic rollups assume transactions are valid by default and rely on a challenge period to detect fraud, offering lower costs and easier integration but resulting in slower finality. In contrast, ZK rollups use cryptographic proofs to validate transactions upfront, providing faster finality and enhanced privacy, albeit with higher complexity and computational demands.
 ::: 
 

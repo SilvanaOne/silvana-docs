@@ -8,7 +8,7 @@ sidebar_position: 3
 
 Essentially, a blockchain has a dual nature. On the one hand, at its core, a blockchain is a **replicated deterministic state machine**, meaning that each transaction results in a change of state. On the other hand, a blockchain is a database where data is stored in blocks, and all pieces of such data are recorded in a cryptographically sophisticated way that rules out unauthorized data mutation.
 
-:::tip **State Machine**
+:::tip State Machine
 A **state machine** is a computer science concept whereby a machine can have multiple states but only one at any given time. There is a state, which describes the current state of the system and transactions that trigger state transitions.
 ::: 
 
