@@ -53,7 +53,9 @@ In both arrangements, the following components can be deployed:
 * Modules with Module Workers,
 * Silvana Prover.
 
-> **Secure Enclave** - the idea of a secure space for customers comes from Apple, where the Secure Enclave is a dedicated secure subsystem integrated into Apple devices designed to provide an extra layer of security by isolating sensitive user data from the main processor. The Secure Enclave uses a combination of hardware and software features, including a boot ROM, AES engine, and protected memory, to ensure the confidentiality and integrity of the data.
+:::tip **Secure Enclave**
+**Secure Enclave** - the idea of a secure space for customers comes from Apple, where the Secure Enclave is a dedicated secure subsystem integrated into Apple devices designed to provide an extra layer of security by isolating sensitive user data from the main processor. The Secure Enclave uses a combination of hardware and software features, including a boot ROM, AES engine, and protected memory, to ensure the confidentiality and integrity of the data.
+::: 
 
 An enterprise can choose a hybrid deployment option. Thus, it’s possible to deploy modules privately while using Silvana Prover in the Silvana Cloud.
 
