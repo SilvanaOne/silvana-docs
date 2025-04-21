@@ -3,12 +3,17 @@
 /* Note: You'll need to add Whyte font separately as it's a commercial font */
 
 /* Base container */
-.markdown {
+.theme-doc-markdown.markdown {
   margin: 0 auto;
   font-family: var(--ff--inter-regular);
   color: var(--silvana-color-text-primary);
-  padding-left: 24px;
-  padding-right: 26px;
+}
+
+@media (min-width: 996px) {
+  .theme-doc-markdown.markdown {
+    padding-left: 24px;
+    padding-right: 26px;
+  }
 }
 
 @media (max-width: 996px) {
