@@ -21,8 +21,9 @@ The ABI is responsible for:
 
 It serves as the glue between high-level API calls and the underlying module implementations.
 
-> “**API** sends the request, **ABI** builds the transaction”.
-
+:::tip Note
+“**API** sends the request, **ABI** builds the transaction”.
+:::
 
 ## Purpose and Usage
 
