@@ -52,7 +52,7 @@ Each Silvana Network node may perform one or more roles in the ecosystem, either
 
 ## Execution Environments
 
-Silvana offers flexible execution arrangements by providing 3 options for how different Silvana components can be deployed in each particular case by a user. All in all, this can be done in 3 execution environments:
+Silvana offers flexible execution arrangements by providing multiple options for how different Silvana components can be deployed in each particular case by a user. The deployment can be done in various execution environments:
 
 * [**Cloud Execution Environment**](/Documentation/Deployment/deployment-environments#cloud-execution-environment-cxe) - execution of Silvana functions in Silvana Cloud;
 

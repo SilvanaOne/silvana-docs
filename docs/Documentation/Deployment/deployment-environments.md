@@ -10,9 +10,9 @@ Silvana offers flexible deployment arrangements to meet business needs. Enterpri
 
 There are three main ways to deploy Silvana components:
 
-* **Private Execution Environment (PXE)**
-* **Cloud Execution Environment (CXE)** 
-* **Trusted Execution Environment (TEE)**
+* Private Execution Environment (PXE)
+* Cloud Execution Environment (CXE)
+* Trusted Execution Environment (TEE)
 
 ### Private Execution Environment (PXE)
 
