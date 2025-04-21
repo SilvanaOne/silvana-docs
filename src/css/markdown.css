@@ -118,6 +118,7 @@
   color: var(--silvana-color-link);
   text-decoration: none;
   transition: color 0.2s ease;
+  font-weight: 600;
 }
 
 .markdown a:hover {
