@@ -81,7 +81,7 @@ The ZK circuit plays a vital role by handling its own state and maintaining the 
 
 Silvana’s Ultra-Fast Rollup is a hybrid scaling solution that operates as an optimistic rollup while integrating zk-proofs to reinforce security. This dual-layered approach ensures efficient transaction processing without compromising on cryptographic robustness. 
 
-:::tip **Key Take**
+:::tip Key Take
 On the one hand, transactions in the Silvana rollup are executed fast. On the other hand, although finality takes time, it is almost 100% ensured since it is next to impossible to impede a zk transaction since it requires tampering with proof, the possibility of which is negligible.
 :::
 

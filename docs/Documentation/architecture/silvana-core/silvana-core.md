@@ -30,7 +30,7 @@ Silvana Core runs two Circuits in a ZKP transaction: the [**Prover Function (Cir
 
 That’s how it works:
 
-1. Enterprise Manager initiates a transaction by providing the Private and the Public Input.
+1. User initiates a transaction by providing the Private and the Public Input.
 2. Prover generates proof.
 3. Verifier verifies proof.
 4. ABI builds a transaction that is sent to the L1/L2 blockchain. 

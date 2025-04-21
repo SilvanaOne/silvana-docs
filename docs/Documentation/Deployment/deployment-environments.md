@@ -8,11 +8,15 @@ sidebar_position: 1
 
 Silvana offers flexible deployment arrangements to meet business needs. Enterprises can deploy all or some Silvana components of all architectural layers in Silvana Cloud or on their own infrastructure. Enterprises can use already existing modules and components or deploy their own ones.
 
-There are three ways to deploy Silvana components: in the **Private Execution Environment (PXE)**, the **Cloud Execution Environment (CXE)**, and the **Trusted Execution Environment (TEE)**.
+There are three main ways to deploy Silvana components:
+
+* **Private Execution Environment (PXE)**
+* **Cloud Execution Environment (CXE)** 
+* **Trusted Execution Environment (TEE)**
 
 ### Private Execution Environment (PXE)
 
-With PXE. enterprises can deploy Silvana components either **locally** or in a **Private Cloud**. In the first case, the code of a module or Silvana component is forked from the REPO and saved locally for private use. Enterprises store their keys locally. Here, the following components can be deployed and stored: 
+With PXE enterprises can deploy Silvana components either **locally** or in a **Private Cloud**. In the first case, the code of     a module or Silvana component is forked from the REPO and saved locally for private use. Enterprises store their keys locally. Here, the following components can be deployed and stored: 
 
 * modules and module workers, 
 * a local version of the Silvana Prover.
