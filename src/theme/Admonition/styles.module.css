@@ -32,21 +32,23 @@
 
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.warning .header {
+.warning .header .title {
   color: #b2384c;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
+  padding-bottom: 0;
 }
 
-.tip .header {
+.tip .header .title {
   color: #1481b8;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
+  padding-bottom: 0;
 }
 
 .icon {
@@ -59,43 +61,42 @@
   fill: #79beef;
 }
 
-.dangerTitle {
-  color: #241d1f;
+.titleWrapper {
+  display: flex;
+  align-items: flex-start;
+  height: 24px;
+}
+
+.title {
   font-family: var(--ff--inter-medium);
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.48px;
   text-transform: capitalize;
+  line-height: 16px;
+  padding-bottom: 8px;
+}
+
+.dangerTitle {
+  color: #241d1f;
 }
 
 .noteTitle {
-  color: #241d1f;
-  font-family: var(--ff--inter-medium);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.48px;
-  text-transform: capitalize;
-}
-
-.content {
-  font-family: var(--ff--inter-regular);
-  font-size: 14px;
-  line-height: 20px;
-  margin-top: 8px;
-  margin-left: 26px;
+  color: #1e2225;
 }
 
 .content p {
+  font-family: var(--ff--inter-regular);
+  font-size: 14px;
+  line-height: 20px;
   margin: 0;
+  margin-left: 26px;
 }
 
-.dangerContent {
+.dangerContent p {
   color: #4d2b33;
 }
 
-.noteContent {
+.noteContent p {
   color: #2a3e4c;
 }
 
@@ -103,5 +104,12 @@
 .tipContent {
   margin: 0;
   margin-top: 4px;
+}
+
+.warningContent p,
+.tipContent p {
   color: #283039;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
 }

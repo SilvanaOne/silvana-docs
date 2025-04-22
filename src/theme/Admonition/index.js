@@ -65,7 +65,11 @@ function AdmonitionContainer({
           {iconComponent && (
             <span className={styles.icon}>{iconComponent}</span>
           )}
-          {title && <span className={styles[`${type}Title`]}>{title}</span>}
+          {title && (
+            <span className={`${styles.title} ${styles[`${type}Title`]}`}>
+              {title}
+            </span>
+          )}
         </div>
         <div className={`${styles.content} ${styles[`${type}Content`]}`}>
           {children}
