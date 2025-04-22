@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Silvana Rollup
 
-Silvana Rollup is built to combine high speed and strong privacy. It uses [**Zero-Knowledge Proofs (ZKPs)**](/Documentation/key-concepts/zk-proofs) to keep data secure, but ZKPs come with their own challenges — like heavy computation, complex setup, and the need to keep data available for verification. Solving these trade-offs (collectively known as the [**ZKP Scalability Dilemma**](/Documentation/key-concepts/zkp-scalability-dilemma)) is key to making ZK-powered systems truly scalable.  
+Silvana Rollup is built to combine high speed and strong privacy. It uses [**Zero-Knowledge Proofs (ZKPs)**](/Documentation/key-concepts/zk-proofs) to keep data secure, but ZKPs come with their own challenges — like heavy computation, complex setup, and the need to keep data available for verification. Solving these trade-offs (collectively known as the ZKP Scalability Dilemma) is key to making ZK-powered systems truly scalable.  
 
 ## Sivana’s Ultra-Fast Rollup
 
@@ -64,7 +64,7 @@ A typical transaction flow in the Silvana rollup looks like this:
 4. The state of a provable record is recorded in the DA Layer.
 5. The aggregated proof and the state commitment fall on the Settlement Layer.
 
-![Traditional DB Interaction](../ultra-fast-rollup/img/silvana-rollup-flow.png)
+![Traditional DB Interaction](../ultra-fast-rollup/img/silvana-rollup.png)
 
 ## Execution Modes
 

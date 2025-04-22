@@ -63,7 +63,7 @@ What's special about the DA arrangements with Silvana is provable DB transaction
 
 With a traditional DB interaction pattern, a user runs a DB transaction without any proof being generated.
 
-![Traditional DB Interaction](./img/traditional-db-interaction.png)
+![Traditional DB Interaction](./img/traditional-db.png)
 
 ### Silvana Provable Data Mutation
 
@@ -81,7 +81,7 @@ With Silvana, each time data about a provable record is mutated, proof is genera
 
 6. The data about the provable record is mutated.
 
-![Provable Data Mutation](./img/provable-record-mutation.png)
+![Provable Data Mutation](./img/provable-records-mutation.png)
 
 ### Silvana Provable Record Reading
 
@@ -99,7 +99,7 @@ Whenever a user reads data in the DA Layer, Silvana generates proof. Now, the fl
 
 5. The user can read the data.
 
-![Provable Record Reading](./img/provable-record-reading.png)
+![Provable Record Reading](./img/provable-records-reading.png)
 
 ## How Provable Records Work: Real-Life Use Case
 

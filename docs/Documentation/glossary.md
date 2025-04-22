@@ -74,7 +74,7 @@ Nodes are core infrastructure units that run and support Silvana's decentralized
 ## O
 
 ### Object-Centric Model
-Object-Centric Model is a data model where assets and records are represented as self-contained objects with mutable states rather than accounts. More info: [**Object-Centric Design**](/Documentation/key-concepts/object-centric-design-vs-account-centric-design).
+Object-Centric Model is a data model where assets and records are represented as self-contained objects with mutable states rather than accounts. 
 
 ### Off-Chain
 Off-Chain refers to data processing, computations, or transactions that occur outside the blockchain to improve scalability and efficiency, with final results or proofs submitted to the blockchain.

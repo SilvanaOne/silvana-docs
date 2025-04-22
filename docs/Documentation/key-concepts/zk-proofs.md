@@ -218,14 +218,3 @@ Silvana implements Zero-Knowledge Proofs (ZKPs) to ensure privacy and security i
 | Proof Verification | Verifier (Silvana Network) | The Verifier checks the proof's validity using cryptographic verification. If the proof is valid, it is confirmed and recorded. If invalid, the transaction is rejected. | Trusted Execution Layer | Verifier Node |
 | Proof Storage & Compliance | Silvana Core System | The proof and metadata are stored in the Silvana ledger, ensuring auditability without exposing sensitive data. | Data Availability Layer | Storage Nodes, Compliance System |
 
-## Silvana's Innovations in the Zero-Knowledge Technology
-
-Unlike many projects that partially implement ZKPs, Silvana provides:
-
-1. **True ZK Integration:** a fully private and decentralized data verification system
-2. **ZK Abstraction:** businesses can use ZKPs through simple APIs without needing blockchain expertise
-3. **Enforced Computational Rules:** ensures cryptographic security and prevents manipulation.
-4. **Modular Architecture:** allows businesses to integrate Silvana flexibly.
-5. **Ultra-fast, Scalable Solution:** most ZKP projects are computationally heavy and weigh much on CPU; Silvana uses the Coordination Layer on fast object-centric blockchains like Sui or Solana to marry the two worlds: secure and private ZKPs with fast and scalable transactions.
-6. **Blockchain-Agnostic Interoperability:** compatible with various L1s, L2s, and data availability layers.
-
