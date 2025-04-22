@@ -64,7 +64,7 @@ A typical transaction flow in the Silvana rollup looks like this:
 4. The state of a provable record is recorded in the DA Layer.
 5. The aggregated proof and the state commitment fall on the Settlement Layer.
 
-![Traditional DB Interaction](../ultra-fast-rollup/img/silvana-rollup-flow.png)
+![Traditional DB Interaction](../ultra-fast-rollup/img/silvana-rollup.png)
 
 ## Execution Modes
 
