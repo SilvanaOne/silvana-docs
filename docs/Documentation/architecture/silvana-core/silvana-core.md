@@ -37,4 +37,4 @@ That’s how it works:
 5. The provable record gets created or mutated in the DA Layer.
 
 The diagram below illustrates the prover flow.
-![Prover Flow](../img/prover-flow.png)
+![Prover Flow](../img/prover.png)
