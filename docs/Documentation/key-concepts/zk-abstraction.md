@@ -34,7 +34,7 @@ This means developers can construct transactions using familiar structures (JSON
 
 Silvana’s settlement abstraction ensures that all state changes and proofs eventually get anchored on a secure blockchain (Layer-1 or Layer-2) without requiring the developer to handle those details. In a rollup architecture, a Settlement Layer typically refers to the base chain contract that validates proofs and stores the canonical state root. 
 
-In fact, Silvana is described as “chain-agnostic” – it can work with various L1s or L2s (such as Mina, Zeko, Sui, Solana, etc.) to settle transactions. This means the same application code can run while Silvana handles connecting to the appropriate blockchain in the background​file-g3an52zlkdax8ynawv3xyf.
+In fact, Silvana is described as “chain-agnostic” – it can work with various L1s or L2s (such as Mina, Zeko, Sui, Solana, etc.) to settle transactions. This means the same application code can run while Silvana handles connecting to the appropriate blockchain in the background.
 
 Silvana integrates with existing blockchains for settlement rather than making the developer write custom contracts for each deployment.
 
