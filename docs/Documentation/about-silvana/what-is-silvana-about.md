@@ -58,7 +58,7 @@ Silvana allows seamless integration with various [**L1s**](/Documentation/glossa
 
 ### Object-Centric Model
 
-The [**object-centric design**](/Documentation/key-concepts/object-centric-design-vs-account-centric-design), used in platforms like Sui and Aptos, puts assets as objects in the focus rather than just accounts, providing a more flexible and intuitive approach and allowing the building of an [**event-based architecture**](/Documentation/glossary#event-based-architecture). By focusing on the interactions and states of specific objects, this model allows to build and manage provable records representing business objects that have mutable states.
+The **object-centric design**, used in platforms like Sui and Aptos, puts assets as objects in the focus rather than just accounts, providing a more flexible and intuitive approach and allowing the building of an [**event-based architecture**](/Documentation/glossary#event-based-architecture). By focusing on the interactions and states of specific objects, this model allows to build and manage provable records representing business objects that have mutable states.
 
 ### Decentralized Data Availability with Staking
 
