@@ -13,7 +13,7 @@ Zero-knowledge proofs (ZKPs) enable privacy-preserving computation, but implemen
 Silvana addresses this by abstracting ZK complexity across its stack. 
 
 :::tip Note
-**Silvana’s zk Abstraction** is a foundational part of its architecture, designed to isolate developers from the low-level challenges of implementing zero-knowledge systems. It allows clients to build secure, private, and trustless applications **without needing to understand** or **implement zero-knowledge proofs directly**.
+**Silvana’s zk Abstraction** is a foundational part of its key concepts, designed to isolate developers from the low-level challenges of implementing zero-knowledge systems. It allows clients to build secure, private, and trustless applications **without needing to understand** or **implement zero-knowledge proofs directly**.
 ::: 
 
 That’s exactly what Silvana abstraction includes:
