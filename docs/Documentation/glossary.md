@@ -31,6 +31,9 @@ Cryptographic Verification is the process of using cryptographic techniques to c
 ### Data Availability (DA) layers
 Data Availability (DA) layers are blockchain components or infrastructure layers dedicated to storing and serving data necessary to validate blockchain transactions, especially in modular and rollup-based blockchain architectures.
 
+### Data Blob
+A self-contained unit of data stored in the Data Availability Layer, representing the state of a provable record along with metadata needed for verification.
+
 ## E
 
 ### Event-Based Architecture

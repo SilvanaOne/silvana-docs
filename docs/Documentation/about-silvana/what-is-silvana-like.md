@@ -75,7 +75,7 @@ Users and developers do not need in-depth expertise in ZKPs, rollups, or data av
 Most blockchains choke under the weight of growing state and computation, but Silvana avoids this issue by turning all state changes into **provable records**. These records are compact, self-contained, and can be verified independently, meaning data doesn’t need to constantly be replayed or revalidated across the entire chain.
 
 * The scaling strategy is **application-first**, ensuring enterprises can grow their use cases without worrying about hitting technical ceilings.
-* The **Coordination Layer** deployed on the Sui Network ensures high scalability and transaction speeds.
+* The [**Coordination Layer**](/Documentation/architecture/Layers/coordination-layer) deployed on the Sui Network ensures high scalability and transaction speeds.
 
 ## Decentralized
 

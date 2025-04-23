@@ -18,7 +18,7 @@ Silvana’s ultra-fast rollup comprises the **Coordination**, **Settlement**, an
 
 ### Coordination Layer
 
-Silvana’s **Coordination Layer** ​is a pivotal component that orchestrates the interaction between various modules and agents within its ecosystem. Its primary function is facilitating seamless communication and synchronization among components, ensuring tasks are executed coherently and efficiently throughout Silvana’s ecosystem. More specifically, its functions extend to these:
+Silvana’s [**Coordination Layer**](/Documentation/architecture/Layers/coordination-layer) ​is a pivotal component that orchestrates the interaction between various modules and agents within its ecosystem. Its primary function is facilitating seamless communication and synchronization among components, ensuring tasks are executed coherently and efficiently throughout Silvana’s ecosystem. More specifically, its functions extend to these:
 
 * **Transaction Acceleration**: Silvana uses a fast L1 as the Execution Layer where transactions run, and smart contracts can be deployed.
 * **Proof Aggregation**: a ZK blockchain is used as the Settlement Layer to generate aggregated (recursive proofs) that are batched in one block.
@@ -29,16 +29,11 @@ By managing these interactions, the coordination layer facilitates efficient and
 
 ### Settlement Layer
 
-The Settlement Layer in Silvana Rollup is a fundamental component that ensures the finality, integrity, and security of transactions within the network. It serves as the ultimate source of truth, maintaining an immutable and secure record of all transactional data.
-
-The Settlement Layer’s core functions include the following:
-
-* **Transaction Finalization**: once transactions are executed in the execution layer, the Settlement Layer records them permanently, ensuring they cannot be altered or reversed. That’s when finality takes place. This provides users with confidence that their transactions are secure and final, meaning they cannot be mutated.
-* **Proof Verification**: the Settlement Layer is responsible for verifying proofs submitted by rollups. This includes both fraud proofs (used in optimistic rollups) and validity proofs (used in zero-knowledge rollups). By validating these proofs, the Settlement Layer ensures that only legitimate transactions are confirmed.
+The [**Settlement Layer**](/Documentation/architecture/Layers/coordination-layer) in Silvana Rollup is a fundamental component that ensures the finality, integrity, and security of transactions within the network. It serves as the ultimate source of truth, maintaining an immutable and secure record of all transactional data.
 
 ### Data Availability (DA) Layer
 
-The Data Availability Layer is crucial in ensuring that transaction data is accessible and verifiable by all network participants. Each time a transaction runs with a provable record (create, read, mutate, or delete), a proof is generated, and a commitment to the rollup state and the DA hash is sent to the L1 blockchain. 
+The [**Data Availability Layer**](/Documentation/architecture/Layers/data-availability-layer) is crucial in ensuring that transaction data is accessible and verifiable by all network participants. Each time a transaction runs with a provable record (create, read, mutate, or delete), a proof is generated, and a commitment to the rollup state and the DA hash is sent to the L1 blockchain. 
 
 1. Silvana uses **DA** to store the following:
 
