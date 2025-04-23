@@ -4,11 +4,11 @@ sidebar_position: 3
 # zk Abstraction
 ## Why Abstraction?
 Zero-knowledge proofs (ZKPs) enable privacy-preserving computation, but implementing them is technically challenging due to:
-* high technological complexity;
-* heavy burden on computational power;
-* high proving and settlement costs;
-* key management and verification complexities;
-* multiple zk proving systems and functions without a unified zk layer.
+* High technological complexity;
+* Heavy burden on computational power;
+* High proving and settlement costs;
+* Key management and verification complexities;
+* Multiple zk proving systems and functions without a unified zk layer.
 
 Silvana addresses this by abstracting ZK complexity across its stack. **Silvana’s zk Abstraction** is a foundational part of its architecture, designed to isolate developers from the low-level challenges of implementing zero-knowledge systems. It allows clients to build secure, private, and trustless applications **without needing to understand** or **implement zero-knowledge proofs directly**. That’s exactly what Silvana abstraction includes:
 * Proof system abstraction;
@@ -20,7 +20,7 @@ Silvana addresses this by abstracting ZK complexity across its stack. **Silvana�
 ### Functional Framing
 The following table outlines the specific role of each abstraction layer in Silvana:
 
-| Abstraction                      | What You Do                                                      | What Silvana Does                                                 | Internals Abstracted                                        |
+| **Abstractio**                      | **What You Do**                                                      | **What Silvana Does**                                                 | Internals Abstracted                                        |
 |----------------------------------|------------------------------------------------------------------|-------------------------------------------------------------------|-------------------------------------------------------------|
 | **Proof System Abstraction**     | - Define Prover Programs with logical constraints<br/>- Register schemas via the Router<br/>- Trigger proof generation via API | - Converts logical assertions into ZK circuits<br/>- Generates witnesses & composes recursive proofs<br/>- Manages proof keys and formats based on the selected backend | - Circuit creation <br/>- Key compilation & management<br/>- Recursive proof tree construction |
 | **ABI Abstraction**              | - Call high-level functions like `buildTransaction()`<br/>- Submit user inputs as JSON or typed arguments<br/>- Monitor lifecycle via SDK/API | - Serializes input into cryptographic format<br/>- Builds witness data<br/>- Routes transactions to prover & sequencer | - ABI encoding & signature handling<br/>- Witness serialization<br/>- Integration with proving infrastructure |
@@ -57,7 +57,7 @@ This abstraction  allows developers to focus purely on defining logic, without n
 
 ## Application Binary Interface (ABI)
 
-Silvana’s Application Binary Interface (ABI) further abstracts the way developers interact with ZK programs and provable records. In Silvana, the ABI component of Silvana Core is responsible for “building, compiling, sending, and monitoring transactions.” 
+Silvana’s Application Binary Interface (ABI) further abstracts the way developers interact with Prover Programs and provable records. In Silvana, the ABI component of Silvana Core is responsible for “building, compiling, sending, and monitoring transactions.” 
 
 This means developers can construct transactions using familiar structures (JSON payloads, function calls, etc.), and the ABI will handle encoding this data, attaching any required proof metadata, and dispatching it to the Silvana network. 
 
@@ -127,7 +127,7 @@ The **Data Availability Abstraction** in Silvana ensures that all data needed to
 This is a powerful abstraction: the developer interacts with the data store using high-level commands, and behind the scenes Silvana ensures those commands are executed consistently and accompanied by ZK proofs of correctness.
 
 - **Provable CRUD operations**  
-  - Silvana turns `read`, `write`, `mutate`, and `delete` commands into verifiable state transitions.  
+  - Silvana turns ***`read`***, ***`write`***, ***`mutate`***, and ***`delete`*** commands into verifiable state transitions.  
   - Developers don't manage constraints - ZK proofs are automatically generated for every data operation.
 
 - **Data encoding and hashing**  
