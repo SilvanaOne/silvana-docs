@@ -15,7 +15,7 @@ Silvana’s Coordination Layer ​is a pivotal component that orchestrates the i
 * **Sequencing**: The Coordination Layer includes a built-in Sequencer that manages transaction ordering. This enables deterministic execution for use cases like **scheduled**, **prepaid**, and **event-triggered transactions**, which are foundational to Silvana’s automation and event-driven architecture.
 * **Task Coordination**: the Coordination Layer acts as a mediator between modules and agents, facilitating the flow of information and commands. It ensures that agents representing users or automated processes interact correctly with the appropriate modules, maintaining the integrity and consistency of operations across the platform.
 
-## Technical Flow
+### Technical Flow
 
 1. **Initiation**: An agent triggers a transaction (e.g., a scheduled payment or a compliance check).
 2. **Queueing**: The Coordination Layer receives and queues the transaction based on priority or predefined logic.

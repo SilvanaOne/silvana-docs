@@ -15,8 +15,8 @@ The Settlement Layer’s core functions include the following:
 
 By offloading execution to fast environments while securing finality on proven L1s, the Settlement Layer enables Silvana to combine:
 
-- **Ultra-fast application logic**
-- **Cryptographic correctness**
-- **Decentralized finality**
+- Ultra-fast application logic
+- Cryptographic correctness
+- Decentralized finality
 
 This hybrid strategy ensures that enterprise users benefit from **instant UX** at the application level, while also meeting **blockchain-grade expectations** for auditability, compliance, and integrity.
