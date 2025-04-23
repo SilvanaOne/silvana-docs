@@ -62,7 +62,7 @@ This abstraction  allows developers to focus purely on defining logic, without n
 
 ## Application Binary Interface (ABI)
 
-Silvana’s Application Binary Interface (ABI) further abstracts the way developers interact with Prover Programs and provable records. In Silvana, the ABI component of Silvana Core is responsible for “building, compiling, sending, and monitoring transactions.” 
+Silvana’s Application Binary Interface (ABI) further abstracts the way developers interact with Prover Programs and provable records. The ABI component is responsible for “**building**, **compiling**, **sending**, and **monitoring** transactions.” 
 
 This means developers can construct transactions using familiar structures (JSON payloads, function calls, etc.), and the ABI will handle encoding this data, attaching any required proof metadata, and dispatching it to the Silvana network. 
 
