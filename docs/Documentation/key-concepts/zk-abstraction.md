@@ -10,7 +10,13 @@ Zero-knowledge proofs (ZKPs) enable privacy-preserving computation, but implemen
 * Key management and verification complexities;
 * Multiple zk proving systems and functions without a unified zk layer.
 
-Silvana addresses this by abstracting ZK complexity across its stack. **Silvana’s zk Abstraction** is a foundational part of its architecture, designed to isolate developers from the low-level challenges of implementing zero-knowledge systems. It allows clients to build secure, private, and trustless applications **without needing to understand** or **implement zero-knowledge proofs directly**. That’s exactly what Silvana abstraction includes:
+Silvana addresses this by abstracting ZK complexity across its stack. 
+
+:::note
+**Silvana’s zk Abstraction** is a foundational part of its architecture, designed to isolate developers from the low-level challenges of implementing zero-knowledge systems. It allows clients to build secure, private, and trustless applications **without needing to understand** or **implement zero-knowledge proofs directly**.
+:::
+
+That’s exactly what Silvana abstraction includes:
 * Proof system abstraction;
 * Execution abstraction;
 * Settlement abstraction;
@@ -19,7 +25,7 @@ Silvana addresses this by abstracting ZK complexity across its stack. **Silvana�
 
 ### Functional Framing
 The following table outlines the specific role of each abstraction layer in Silvana:
-| **Abstractio**                      | **What You Do**                                                      | **What Silvana Does**                                                 | Internals Abstracted                                        |
+| **Abstraction**                      | **What You Do**                                                      | **What Silvana Does**                                                 | Internals Abstracted                                        |
 |-------------------------------------|----------------------------------------------------------------------|-----------------------------------------------------------------------|-------------------------------------------------------------|
 | **Proof System Abstraction**        | <ul><li>Define Prover Programs with logical constraints</li><li>Register schemas via the Router</li><li>Trigger proof generation via API</li></ul> | <ul><li>Provides a way to convert logical assertions into ZK circuits</li><li>Generates witnesses & composes recursive proofs</li><li>Manages proof keys and formats based on the selected backend</li></ul> | <ul><li>Circuit creation</li><li>Key compilation & management</li><li>Recursive proof tree construction</li></ul> |
 | **ABI Abstraction**                 | <ul><li>Call high-level functions like `buildTransaction()`</li><li>Submit user inputs as JSON or typed arguments</li><li>Monitor lifecycle via SDK/API</li></ul> | <ul><li>Serializes input into cryptographic format</li><li>Builds witness data</li><li>Routes transactions to prover & sequencer</li></ul> | <ul><li>ABI encoding & signature handling</li><li>Witness serialization</li><li>Integration with proving infrastructure</li></ul> |
