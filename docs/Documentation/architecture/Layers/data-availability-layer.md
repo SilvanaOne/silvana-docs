@@ -36,3 +36,6 @@ Silvana’s DA design extends beyond traditional blockchain storage:
 
 Silvana is open to integrating with existing or emerging DA layers.
 
+![DA Layer](../img/da-layer.png)
+
+
