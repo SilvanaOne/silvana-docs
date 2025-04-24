@@ -18,7 +18,7 @@ sidebar_position: 1
 * **Tx Monitor**: monitors transaction statuses.
 * **Tx Sender**: sends transactions to blockchain networks.
 
-![Silvana Core Components](../img/silvana-core-layer.png)
+![Silvana Core Components](../img/silvana-core.png)
 
 ## Prover and Verifier Functions (Circuits)
 
