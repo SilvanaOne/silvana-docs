@@ -300,6 +300,14 @@ const config: Config = {
       tagName: "meta",
       attributes: { name: "theme-color", content: "#ffffff" },
     },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "description",
+        content:
+          "Silvana docs — your guide to building apps with confidential data using Silvana zk prover platform.",
+      },
+    },
   ],
 
   themeConfig: {
