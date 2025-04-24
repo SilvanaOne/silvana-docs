@@ -41,14 +41,14 @@
 
 @font-face {
   font-family: "Whyte Regular";
-  src: url("../fonts/Whyte-Regular.ttf") format("truetype");
+  src: url("../../static/fonts/Whyte-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Whyte Medium";
-  src: url("../fonts/Whyte-Medium.ttf") format("truetype");
+  src: url("../../static/fonts/Whyte-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
