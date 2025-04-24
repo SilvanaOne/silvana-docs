@@ -6,6 +6,20 @@
 }
 
 @font-face {
+  font-family: "Whyte Regular";
+  src: url("../fonts/Whyte-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Whyte Medium";
+  src: url("../fonts/Whyte-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Inter Bold";
   src: url("../fonts/Inter.ttf") format("truetype");
   font-weight: 700;
@@ -21,7 +35,7 @@
 
 @font-face {
   font-family: "Inter Semi Bold";
-  src: url("../fonts/Inter.ttf") format("truetype");
+  src: url("../fonts/Inter_18pt-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -48,7 +62,9 @@
   --ff--inter-semi-bold: Inter Semi Bold, var(--ff--replacement-font);
   --ff--inter-extra-bold: Inter Extra Bold, var(--ff--replacement-font);
   --ff--inter: Inter Test, var(--ff--replacement-font);
-  --ifm-heading-font-family:  var(--ff--inter-bold);
+  --ff--whyte: Whyte Regular, var(--ff--replacement-font);
+  --ff-whyte-medium: Whyte Medium, var(--ff--replacement-font);
+  --ifm-heading-font-family: var(--ff--inter-bold);
   --ifm-heading-font-weight: 500;
-  --ifm-heading-line-height: 2rem
+  --ifm-heading-line-height: 2rem;
 }
