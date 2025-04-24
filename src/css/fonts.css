@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Inter";
-  src: url("/static/fonts/Inter.ttf") format("truetype");
+  src: url("../../static/fonts/Inter.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("/static/fonts/Inter.ttf") format("truetype");
+  src: url("../../static/fonts/Inter.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("/static/fonts/Inter_18pt-SemiBold.ttf") format("truetype");
+  src: url("../../static/fonts/Inter_18pt-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("/static/fonts/Inter_18pt-SemiBold.ttf") format("truetype");
+  src: url("../../static/fonts/Inter_18pt-SemiBold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: "Inter";
-  src: url("/static/fonts/Inter_18pt-ExtraBold.ttf") format("truetype");
+  src: url("../../static/fonts/Inter_18pt-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -40,22 +40,22 @@
 
 @font-face {
   font-family: "Inter Test";
-  src: url("/static/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+  src: url("../../static/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
   font-style: normal;
 }
 
 @font-face {
   font-family: "Whyte Regular";
-  src: url("/static/fonts/Whyte-Regular.ttf") format("truetype");
+  src: url("../../static/fonts/Whyte-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Whyte Medium";
-  src: url("/static/fonts/Whyte-Medium.woff2") format("woff2"),
-    url("/static/fonts/Whyte-Medium.woff") format("woff"),
-    url("/static/fonts/Whyte-Medium.ttf") format("truetype");
+  src: url("../../static/fonts/Whyte-Medium.woff2") format("woff2"),
+    url("../../static/fonts/Whyte-Medium.woff") format("woff"),
+    url("../../static/fonts/Whyte-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
