@@ -4,8 +4,8 @@
  * work well for content-centric websites.
  */
 
-@import "./fonts.css";
 @import "./markdown.css";
+@import "./fonts.css";
 
 @font-face {
   font-family: "Whyte Regular";
