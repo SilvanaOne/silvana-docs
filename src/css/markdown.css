@@ -1,6 +1,26 @@
 /* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@font-face {
+  font-family: "Whyte Regular";
+  src: url("/static/fonts/Whyte-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Whyte Medium";
+  src: url("/static/fonts/Whyte-Medium.woff2") format("woff2"),
+    url("/static/fonts/Whyte-Medium.woff") format("woff"),
+    url("/static/fonts/Whyte-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+
 /* Note: You'll need to add Whyte font separately as it's a commercial font */
+
+:root {
+  --ff--whyte: Whyte Regular, var(--ff--replacement-font);
+  --ff-whyte-medium: Whyte Medium, var(--ff--replacement-font);
+}
 
 /* Base container */
 .theme-doc-markdown.markdown {

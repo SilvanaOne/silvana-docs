@@ -6,6 +6,21 @@
 
 @import "./fonts.css";
 @import "./markdown.css";
+
+@font-face {
+  font-family: "Whyte Regular";
+  src: url("/static/fonts/Whyte-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Whyte Medium";
+  src: url("/static/fonts/Whyte-Medium.woff2") format("woff2"),
+    url("/static/fonts/Whyte-Medium.woff") format("woff"),
+    url("/static/fonts/Whyte-Medium.ttf") format("truetype");
+  font-style: normal;
+}
 /* You can override the default Infima variables here. */
 :root {
   /* Brand colors */
@@ -562,7 +577,7 @@ button.tocCollapsibleButton_TO0P::after {
 
 /* Admonition styles */
 .alert--warning {
-  background-color: #FAEDF0;
+  background-color: #faedf0;
   border: none;
   padding: 16px;
   margin: 24px 0;
@@ -570,12 +585,12 @@ button.tocCollapsibleButton_TO0P::after {
 }
 
 .alert--warning .alert__icon {
-  color: #D6448F;
+  color: #d6448f;
   margin-right: 12px;
 }
 
 .alert--warning .alert__title {
-  color: #241D1F;
+  color: #241d1f;
   font-family: var(--ff--inter-medium);
   font-size: 16px;
   font-weight: 500;
