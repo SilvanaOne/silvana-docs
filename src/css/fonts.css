@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: "Inter Test";
-  src: url("../fonts/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+  src: url("/static/fonts/Inter-VariableFont_opsz,wght.ttf") format("truetype");
   font-style: normal;
 }
 
@@ -55,7 +55,7 @@
   font-family: "Whyte Medium";
   src: url("/static/fonts/Whyte-Medium.woff2") format("woff2"),
     url("/static/fonts/Whyte-Medium.woff") format("woff"),
-    url("../../static/fonts/Whyte-Medium.ttf") format("truetype");
+    url("/static/fonts/Whyte-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
