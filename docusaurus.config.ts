@@ -377,14 +377,6 @@ const config: Config = {
         logoClass: "powershell",
       },
     ],
-    metadata: [
-      { name: "keywords", content: "cooking, blog" },
-      {
-        name: "description",
-        content:
-          "Silvana docs— your guide to building apps with confidential data using Silvana zk prover platform.",
-      },
-    ],
     // Replace with your project's social card
     image: "img/preview.png",
     navbar: {
