@@ -64,8 +64,6 @@
   --ff--inter-semi-bold: Inter Semi Bold, var(--ff--replacement-font);
   --ff--inter-extra-bold: Inter Extra Bold, var(--ff--replacement-font);
   --ff--inter: Inter Test, var(--ff--replacement-font);
-  --ff--whyte: Whyte Regular, var(--ff--replacement-font);
-  --ff-whyte-medium: Whyte Medium, var(--ff--replacement-font);
   --ifm-heading-font-family: var(--ff--inter-bold);
   --ifm-heading-font-weight: 500;
   --ifm-heading-line-height: 2rem;
