@@ -378,14 +378,12 @@ const config: Config = {
         content:
           "Silvana docs — your guide to building apps with confidential data using Silvana zk prover platform.",
       },
-      { name: "og:image", content: "/img/preview.png" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Silvana Documentation" },
       {
         name: "twitter:description",
         content: "Proof of everything engine to scale your business",
       },
-      { name: "twitter:image", content: "/img/preview.png" },
     ],
     navbar: {
       logo: {
