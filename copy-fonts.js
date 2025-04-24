@@ -1,13 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 
-// Ensure the build/static/fonts directory exists
-const buildFontsDir = path.join(__dirname, 'build', 'static', 'fonts');
+// Ensure the build/assets/fonts directory exists
+const buildFontsDir = path.join(__dirname, 'build', 'assets', 'fonts');
 if (!fs.existsSync(buildFontsDir)) {
   fs.mkdirSync(buildFontsDir, { recursive: true });
 }
 
-// Copy fonts from static/fonts to build/static/fonts
+// Copy fonts from static/fonts to build/assets/fonts
 const staticFontsDir = path.join(__dirname, 'static', 'fonts');
 const fonts = fs.readdirSync(staticFontsDir);
 
