@@ -135,7 +135,6 @@ const config: Config = {
       },
     },
 
-
     // Для iOS
     {
       tagName: "link",
@@ -301,6 +300,14 @@ const config: Config = {
       tagName: "meta",
       attributes: { name: "theme-color", content: "#ffffff" },
     },
+    {
+      tagName: "meta",
+      attributes: {
+        name: "description",
+        content:
+          "Silvana docs — your guide to building apps with confidential data using Silvana zk prover platform.",
+      },
+    },
   ],
 
   themeConfig: {
@@ -368,6 +375,14 @@ const config: Config = {
         highlight: "powershell",
         language: "powershell",
         logoClass: "powershell",
+      },
+    ],
+    metadata: [
+      { name: "keywords", content: "cooking, blog" },
+      {
+        name: "description",
+        content:
+          "Silvana docs— your guide to building apps with confidential data using Silvana zk prover platform.",
       },
     ],
     // Replace with your project's social card
