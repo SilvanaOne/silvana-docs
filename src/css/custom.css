@@ -602,3 +602,7 @@ button.tocCollapsibleButton_TO0P::after {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
+.forTesting {
+  font-family: var(--ff-whyte-medium);
+}
