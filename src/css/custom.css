@@ -23,8 +23,6 @@
 }
 /* You can override the default Infima variables here. */
 :root {
-  --ff--whyte: Whyte Regular, var(--ff--replacement-font);
-  --ff-whyte-medium: Whyte Medium, var(--ff--replacement-font);
   /* Brand colors */
   --ifm-color-primary: #8a7d91;
   --ifm-color-primary-dark: #7d7084;
