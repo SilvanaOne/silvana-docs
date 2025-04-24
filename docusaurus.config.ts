@@ -10,7 +10,7 @@ const config: Config = {
   title: "Silvana",
   tagline: "Proof of everything engine to scale your business",
   favicon: "img/favicon.ico",
-
+  staticDirectories: ['static'],
   // Set the production url of your site here
   url: "https://docs.silvana.one",
   // Set the /<baseUrl>/ pathname under which your site is served
