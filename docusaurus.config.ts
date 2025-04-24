@@ -276,6 +276,16 @@ const config: Config = {
         crossorigin: "anonymous",
       },
     },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preload",
+        href: "static/fonts/Whyte-Medium.woff2",
+        as: "font",
+        type: "font/ttf",
+        crossorigin: "anonymous",
+      },
+    },
     // Иконка для Windows (мета-данные)
     {
       tagName: "meta",

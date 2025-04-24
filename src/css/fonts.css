@@ -41,18 +41,19 @@
 
 @font-face {
   font-family: "Whyte Regular";
-  src: url("../../static/fonts/Whyte-Regular.ttf") format("truetype");
+  src: url("/static/fonts/Whyte-Regular.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Whyte Medium";
-  src: url("../../static/fonts/Whyte-Medium.ttf") format("truetype");
+  src: url("/static/fonts/Whyte-Medium.woff2") format("woff2"),
+    url("/static/fonts/Whyte-Medium.woff") format("woff"),
+    url("../../static/fonts/Whyte-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
-
 
 /* stylelint-disable-next-line no-duplicate-selectors */
 :root {
