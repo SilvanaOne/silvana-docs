@@ -135,7 +135,6 @@ const config: Config = {
       },
     },
 
-
     // Для iOS
     {
       tagName: "link",
@@ -372,6 +371,22 @@ const config: Config = {
     ],
     // Replace with your project's social card
     image: "img/preview.png",
+    metadata: [
+      { name: "og:title", content: "Silvana Documentation" },
+      {
+        name: "og:description",
+        content:
+          "Silvana docs — your guide to building apps with confidential data using Silvana zk prover platform.",
+      },
+      { name: "og:image", content: "/img/preview.png" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Silvana Documentation" },
+      {
+        name: "twitter:description",
+        content: "Proof of everything engine to scale your business",
+      },
+      { name: "twitter:image", content: "/img/preview.png" },
+    ],
     navbar: {
       logo: {
         alt: "Silvana Logo",
