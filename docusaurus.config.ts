@@ -266,6 +266,16 @@ const config: Config = {
         sizes: "192x192",
       },
     },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preload",
+        href: "static/fonts/Whyte-Medium.ttf",
+        as: "font",
+        type: "font/ttf",
+        crossorigin: "anonymous",
+      },
+    },
     // Иконка для Windows (мета-данные)
     {
       tagName: "meta",
