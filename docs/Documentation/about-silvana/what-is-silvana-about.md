@@ -34,7 +34,7 @@ Silvana solution rests on these pillars:
 
 ### True ZK Integration
 
-Unlike many "privacy" solutions that rely on partial trust, Silvana is a comprehensive cryptography-driven system, which provides a robust and reliable foundation for businesses seeking to protect sensitive information and maintain trust in their operations.
+Unlike many "privacy" solutions that rely on partial trust, Silvana is a comprehensive cryptography-driven system that provides a robust and reliable foundation for businesses seeking to protect sensitive information and maintain trust in their operations.
 
 ### Private Data Proving & Enforcement
 
@@ -58,7 +58,7 @@ Silvana allows seamless integration with various [**L1s**](/Documentation/glossa
 
 ### Object-Centric Model
 
-The **object-centric design**, used in platforms like Sui and Aptos, puts assets as objects in the focus rather than just accounts, providing a more flexible and intuitive approach and allowing the building of an [**event-based architecture**](/Documentation/glossary#event-based-architecture). By focusing on the interactions and states of specific objects, this model allows to build and manage provable records representing business objects that have mutable states.
+The **object-centric design**, used in platforms like Sui and Aptos, puts assets as objects in focus rather than just accounts, providing a more flexible and intuitive approach and allowing the building of an [**event-based architecture**](/Documentation/glossary#event-based-architecture). By focusing on the interactions and states of specific objects, this model allows to build and manage provable records representing business objects that have mutable states.
 
 ### Decentralized Data Availability with Staking
 
@@ -69,7 +69,7 @@ Now, quips aside, let's see how Silvana can really apply for serious business.
 
 ### Case 1 - Reinsurance
 
-**Case:** some assets are too expensive to be covered by solely one insurer. That's when insurers decide to hedge their risks by ensuring their risk to other insurance companies (reinsurers). Insurers need to mitigate significant risks, without overexposing sensitive details. Manual processes are slow and susceptible to data leakage.
+**Case:** some assets are too expensive to be covered by solely one insurer. That's when insurers decide to hedge their risks by ensuring their risk to other insurance companies (reinsurers). Insurers need to mitigate significant risks without overexposing sensitive details. Manual processes are slow and susceptible to data leakage.
 
 **Solution:** Silvana leverages zero-knowledge proofs to facilitate secure quote requests from multiple reinsurers.
 
