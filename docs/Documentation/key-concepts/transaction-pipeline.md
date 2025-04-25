@@ -2,6 +2,7 @@
 sidebar_position: 3
 ---
 # Transaction Pipeline
+
 ## Overview
 
 The notion of a **"transaction"** extends beyond a singular atomic operation in Silvana. Unlike monolithic systems that rely on centralized consensus or tightly coupled execution, Silvana's architecture enables each component of the transaction pipeline to operate **independently**, **asynchronously**, and on **different infrastructural backends**. 
@@ -10,11 +11,24 @@ A real-life use case is normally broken down into more atomic operations since i
 
 ## Transaction Pipeline
 
-Each transaction is decomposed into **multiple sub-transactions** that run on different layers of the network and follows this pipeline: 
-* **Proof Transaction**;
+Each transaction in Silvana is decomposed into **multiple sub-transactions** that run on different layers of the network and follows this pipeline: 
+
+* **Prover Transaction**;
 * **Coordination Transaction**;
-* **Settlement Transaction**;
-* **DA Transaction**. 
+* **DA Transaction**;
+* **Settlement Transaction**.
+
+So when a user runs a user operation, the abovementioned transactions run one by one. We call this operation a **transaction pipeline**. It covers a whole use case or a business operation that can involve smaller operations, while the transactions that are part of the transaction pipeline are focused on each particular technical execution aspect, namely:
+
+* proof generation;
+* execution of business logic;
+* proof aggregation;
+* provable record state mutation;
+* proof validation and settlement.
+
+:::note Transaction Pipeline
+Transaction Pipeline - a holistic transaction in Silvana covering a complete business operation that includes multiple atomic transactions of proof generation, business logic execution, proof aggregation, provable record state mutation, and proof validation and settlement.
+:::
 
 The diagram below illustrates the Transaction Pipeline in Silvana:
 
@@ -83,7 +97,7 @@ Below is an example of what a generated proof looks like:
 
 ## Coordination Transaction
 
-A Coordination Transaction is the core execution unit in Silvana’s [**Coordination Layer**](/Documentation/architecture/Layers/coordination-layer) - a high-throughput, low-latency blockchain responsible for **orchestrating** and **sequencing** user-defined logic across the stack. After a proof is generated, this layer ensures the transaction is ordered, executed, and recorded as part of the rollup’s state progression and runs in the following flow:
+A Coordination Transaction is the core execution unit in Silvana’s [**Coordination Layer**](/Documentation/architecture/Layers/coordination-layer) - a high-throughput, low-latency blockchain responsible for **orchestrating** and **sequencing** user-defined logic across the stack. After a proof is generated, this layer ensures the pipelined transaction is ordered, executed, and recorded as part of the rollup’s state progression and runs in the following flow:
 
 * **Transaction sequencing**: determines execution order for smart contracts tied to user-defined logic.
 * **Execution coordination**: triggers contract calls on the Execution Layer according to the sequence.
@@ -105,7 +119,7 @@ Coordination Layer is Silvana’s key innovation underpinning the [**Silvana Rol
 
 After successful execution, the Coordination Layer sends the recursive proof to the [**Settlement Layer**](/Documentation/architecture/Layers/settlement-layer) and initiates a Settlement Transaction, where the recursive (aggregated) proof is checked and validated by the validator set on the Settlement blockchain.
 
-It normally takes time since zk proof generation is CPU-heavy, so the **finality** isn’t fast and happens way later than the transaction is executed. However, just for the same reason, the chance of a proof being tampered with is vanishingly small, so the finality, albeit being slow, is guaranteed, which in fact means that the transaction is not only **instant** but also **secure**.
+It normally takes time since zk proof generation is CPU-heavy, so the **finality** isn’t fast and happens way later than the pipelined transaction is executed. However, just for the same reason, the chance of a proof being tampered with is vanishingly small, so the finality, albeit being slow, is guaranteed, which in fact means that the transaction is not only **instant** but also **secure**.
 
 :::tip Note
 In practice, a single transaction may not be sufficient for settlement, especially when multiple proofs or large data blobs are involved. Silvana supports splitting the settlement into **multiple L1 transactions**, each responsible for either uploading data, invoking proof verification, or updating contract state. This modular settlement structure accommodates [**L1**](/Documentation/glossary#layer-1-l1) constraints such as calldata limits and contract logic constraints.

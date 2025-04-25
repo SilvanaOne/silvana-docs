@@ -45,6 +45,11 @@ Execution Environment is a deployment setting where Silvana components run, depe
 ### Execution Mode
 Execution Mode is a processing method that defines how a transaction is handled within the Silvana network. Learn more about execution mode types in the [**Execution Modes**](/Documentation/ultra-fast-rollup/silvana-rollup#execution-modes).
 
+## F
+
+### Finality 
+Finality is the point at which a transaction becomes irreversible and guaranteed to be permanently included in the blockchain.
+
 ## I
 
 ### Indexer
@@ -150,6 +155,11 @@ State Commitment is a cryptographic representation of the current state of a blo
 
 ### State Mutation
 State Mutation is the process of changing the state of a provable record; each mutation is accompanied by a proof to ensure the change follows predefined rules.
+
+## T
+
+### Transaction Pipeline
+Transaction Pipeline is a holistic transaction in Silvana covering a complete business operation that includes multiple atomic transactions of proof generation, business logic execution, proof aggregation, provable record state mutation, and proof validation and settlement.
 
 ## V
 
