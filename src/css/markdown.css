@@ -180,7 +180,7 @@
 }
 
 .note::before {
-  content: url("../../static//img/note.image.svg");
+  content: url("../../static/img/note.image.svg");
   font-size: 20px;
   margin-right: 10px;
 }
