@@ -7,20 +7,6 @@
 @import "./markdown.css";
 @import "./fonts.css";
 
-@font-face {
-  font-family: "Whyte Regular";
-  src: url("/static/fonts/Whyte-Regular.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Whyte Medium";
-  src: url("/static/fonts/Whyte-Medium.woff2") format("woff2"),
-    url("/static/fonts/Whyte-Medium.woff") format("woff"),
-    url("/static/fonts/Whyte-Medium.ttf") format("truetype");
-  font-style: normal;
-}
 /* You can override the default Infima variables here. */
 :root {
   /* Brand colors */
@@ -615,8 +601,4 @@ button.tocCollapsibleButton_TO0P::after {
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
-}
-
-.forTesting {
-  font-family: var(--ff-whyte-medium);
 }
