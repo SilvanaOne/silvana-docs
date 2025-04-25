@@ -140,12 +140,12 @@ As a user transaction runs with a provable record, its metadata is logged to est
 
 **Transaction metadata includes**:
 
-Storage details:
+**Storage details**:
 * `chain`: Pinata (IPFS backend)
 * `network`: Public visibility
 * `hash`: The IPFS CID where the proof is stored
 
-Custom metadata:
+**Custom metadata**:
 * `blockNumber`: Coordination-layer block index (28)
 * `number_of_transactions`: How many settlement transactions this proof supports (3)
 * `sequences`: The range of coordination transaction sequence numbers covered ([49, 51])
@@ -155,7 +155,6 @@ Custom metadata:
 * `proof_data_availability_digest`: Coordination-layer event reference for DA
 * `au_proof_data_availability`: Additional proof DA CID (for aggregated proofs)
 * `coordination_hash`: The new rollup state commitment on the coordination layer
-
-`linkId`: A reference tying this metadata record back to the agent job (ID “28”).
+* `linkId`: A reference tying this metadata record back to the agent job (ID “28”).
 
 Through this process, Silvana guarantees state **anchoring**, **verifiability**, and **data retrievability**. Even if internal Silvana infrastructure were to fail, any third party could reconstruct and verify the rollup’s state using public data and L1 commitments.
