@@ -159,7 +159,7 @@ State Mutation is the process of changing the state of a provable record; each m
 ## T
 
 ### Transaction Pipeline
-Transaction Pipeline is a holistic transaction in Silvana covering a complete business operation that includes multiple atomic transactions of proof generation, business logic execution, proof aggregation, provable record state mutation, and proof validation and settlement.
+Transaction Pipeline is a holistic transaction in Silvana covering a complete business operation that includes multiple atomic transactions of proof generation, business logic execution, proof aggregation, provable record state mutation, and proof validation and settlement. More info: [**Transaction Pipeline**](/Documentation/key-concepts/transaction-pipeline).
 
 ## V
 
