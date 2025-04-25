@@ -40,6 +40,7 @@ This proof stage is computationally intensive and typically lasts a few minutes 
 
 Below is an example of what a generated proof looks like:
 
+:::tip
 ```json
 {3 items
  "storage":{5 items
@@ -96,6 +97,7 @@ Below is an example of what a generated proof looks like:
 * `coordination_hash`: The new rollup state commitment on the coordination layer
 
 **`linkId`**: A reference tying this metadata record back to the agent job (ID “28”).
+:::
 
 ## Coordination Transaction
 
@@ -119,7 +121,9 @@ Coordination Layer is Silvana’s key innovation underpinning the **Silvana Roll
 
 ## Settlement Transaction
 
-After successful execution, the Coordination Layer sends the recursive proof to the Settlement Layer and initiates a Settlement Transaction, where the recursive (aggregated) proof is checked and validated by the validator set on the Settlement blockchain. It normally takes time since zk proof generation is CPU-heavy, so the **finality** isn’t fast and happens way later than the transaction is executed. However, just for the same reason, the chance of a proof being tampered with is vanishingly small, so the finality, albeit being slow, is guaranteed, which in fact means that the transaction is not only **instant** but also **secure**.
+After successful execution, the Coordination Layer sends the recursive proof to the Settlement Layer and initiates a Settlement Transaction, where the recursive (aggregated) proof is checked and validated by the validator set on the Settlement blockchain. 
+
+It normally takes time since zk proof generation is CPU-heavy, so the **finality** isn’t fast and happens way later than the transaction is executed. However, just for the same reason, the chance of a proof being tampered with is vanishingly small, so the finality, albeit being slow, is guaranteed, which in fact means that the transaction is not only **instant** but also **secure**.
 
 :::tip Note
 In practice, a single transaction may not be sufficient for settlement, especially when multiple proofs or large data blobs are involved. Silvana supports splitting the settlement into **multiple L1 transactions**, each responsible for either uploading data, invoking proof verification, or updating contract state. This modular settlement structure accommodates L1 constraints such as calldata limits and contract logic constraints.
