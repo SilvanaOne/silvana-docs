@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -22,7 +26,7 @@
 
   /* Common colors */
   --silvana-color-white: #ffffff;
-  --silvana-color-pink: #d6448f;
+  --silvana-color-pink: #D6448F;
   --silvana-color-pink-light: #ff69b4;
   --silvana-color-gray-100: #f0f2f5;
   --silvana-color-gray-200: #e4e6eb;
@@ -34,7 +38,7 @@
   --silvana-color-black: #000000;
 
   /* Typography colors */
-  --silvana-color-text-primary: var(--silvana-color-gray-700);
+  --silvana-color-text-primary: #000000;
   --silvana-color-text-secondary: var(--silvana-color-gray-600);
   --silvana-color-text-tertiary: var(--silvana-color-gray-400);
   --silvana-color-text-quaternary: var(--silvana-color-gray-500);
@@ -52,7 +56,7 @@
   /* Navbar colors */
   --silvana-color-navbar-bg: var(--silvana-color-white);
   --silvana-color-navbar-border: var(--silvana-color-gray-200);
-  --silvana-color-navbar-item: var(--silvana-color-gray-400);
+  --silvana-color-navbar-item: #000000;
   --silvana-color-navbar-item-hover: var(--silvana-color-pink);
   --silvana-color-navbar-item-active: var(--silvana-color-pink);
   --silvana-color-navbar-item-active-border: var(--silvana-color-pink);
@@ -429,40 +433,30 @@ nav.theme-doc-breadcrumbs {
 
 /* Menu link styles */
 .menu__link {
-  color: var(--silvana-color-navbar-item);
-  font-family: var(--ff--inter-regular);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
+  @apply text-silvana-navbar-item font-inter text-sm font-medium leading-5;
   background: none !important;
 }
 
 .menu__link--active {
-  color: var(--silvana-color-pink);
-  font-family: var(--ff--inter-regular);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 20px;
+  @apply text-silvana-pink font-inter text-sm font-medium leading-5;
   background: none !important;
 }
 
 /* Table of contents */
 .table-of-contents {
-  margin-top: 16px;
-  border: none;
+  @apply mt-[100px] border-none;
 }
 
-.table-of-contents::before {
-  content: "What's on this page";
-  color: var(--silvana-color-text-black);
-  font-family: var(--ff--inter-regular);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 20px;
-  margin-bottom: 16px;
+.table-of-contents__title {
+  @apply text-black font-inter text-sm font-semibold leading-5 mb-4;
+}
+
+.table-of-contents__link {
+  @apply text-silvana-text-primary font-inter text-sm font-normal leading-5;
+}
+
+.table-of-contents__link--active {
+  @apply text-silvana-pink font-inter text-sm font-normal leading-5;
 }
 
 div.theme-doc-toc-mobile {
@@ -483,21 +477,7 @@ div.theme-doc-toc-mobile {
   border-left: 1px solid var(--silvana-color-border);
   padding-left: 16px;
 }
-.table-of-contents__link {
-  font-family: var(--ff--inter-regular);
-  font-size: 14px;
-  color: var(--silvana-color-text-tertiary);
-  line-height: 20px;
-  font-weight: 500;
-}
 
-.table-of-contents__link:hover {
-  color: var(--silvana-color-table-of-contents-hover);
-}
-
-.table-of-contents__link--active {
-  color: var(--silvana-color-table-of-contents-active);
-}
 .table-of-contents li ul {
   padding-left: 0;
 }
@@ -563,42 +543,53 @@ button.tocCollapsibleButton_TO0P::after {
 
 /* Admonition styles */
 .alert--warning {
-  background-color: #faedf0;
-  border: none;
-  padding: 16px;
-  margin: 24px 0;
-  border-radius: 8px;
+  @apply bg-[#faedf0] border-none p-4 my-6 rounded-lg;
 }
 
 .alert--warning .alert__icon {
-  color: #d6448f;
-  margin-right: 12px;
+  @apply text-silvana-pink mr-3;
 }
 
 .alert--warning .alert__title {
-  color: #241d1f;
-  font-family: var(--ff--inter-medium);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: -0.48px;
-  text-transform: capitalize;
+  @apply text-[#241d1f] font-whyte-medium text-base font-medium leading-6 tracking-[-0.48px] capitalize;
 }
 
 .alert--warning .alert__content {
+  @apply font-inter text-sm leading-5 mt-2;
   color: var(--silvana-color-text-secondary);
-  font-family: var(--ff--inter-regular);
-  font-size: 14px;
-  line-height: 20px;
-  margin-top: 8px;
 }
 
 /* Custom warning icon styles */
 .alert--warning svg {
-  width: 24px;
-  height: 24px;
-  stroke: currentColor;
-  stroke-width: 2;
+  @apply w-6 h-6 stroke-current stroke-2;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+
+@layer components {
+  .menu__link {
+    @apply text-silvana-navbar-item font-inter text-sm font-medium leading-5;
+    background: none !important;
+  }
+
+  .menu__link--active {
+    @apply text-silvana-pink font-inter text-sm font-medium leading-5;
+    background: none !important;
+  }
+
+  .table-of-contents {
+    @apply mt-[100px] border-none;
+  }
+
+  .table-of-contents__title {
+    @apply text-black font-inter text-sm font-semibold leading-5 mb-4;
+  }
+
+  .table-of-contents__link {
+    @apply text-silvana-text-primary font-inter text-sm font-normal leading-5;
+  }
+
+  .table-of-contents__link--active {
+    @apply text-silvana-pink font-inter text-sm font-normal leading-5;
+  }
 }

@@ -40,7 +40,7 @@
 }
 
 @font-face {
-  font-family: "Whyte Regular";
+  font-family: "Whyte";
   src: url(/assets/fonts/Whyte-Regular.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
@@ -62,9 +62,8 @@
   --ff--inter-semibold: "Inter", sans-serif;
   --ff--inter-bold: "Inter", sans-serif;
   --ff--inter-extrabold: "Inter", sans-serif;
-  --ff--whyte-regular: "Inter", sans-serif;
+  --ff--whyte-regular: "Whyte", sans-serif;
   --ff--whyte-medium: "Whyte Medium", var(--ff--inter-medium);
-
   --ff--whyte-black: "Inter", sans-serif;
   --ff--replacement-font: Arial, sans-serif;
   --ff--inter-extra-bold: "Inter", var(--ff--replacement-font);
