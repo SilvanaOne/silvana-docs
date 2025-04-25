@@ -1,7 +1,3 @@
-/* Import fonts */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
-/* Note: You'll need to add Whyte font separately as it's a commercial font */
-
 /* Base container */
 .theme-doc-markdown.markdown {
   margin: 0 auto;
@@ -184,7 +180,7 @@
 }
 
 .note::before {
-  content: url("../../static//img/note.image.svg");
+  content: url("../../static/img/note.image.svg");
   font-size: 20px;
   margin-right: 10px;
 }

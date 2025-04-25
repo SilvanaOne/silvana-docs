@@ -10,7 +10,7 @@ const config: Config = {
   title: "Silvana",
   tagline: "Proof of everything engine to scale your business",
   favicon: "img/favicon.ico",
-
+  staticDirectories: ['static'],
   // Set the production url of your site here
   url: "https://docs.silvana.one",
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -264,6 +264,26 @@ const config: Config = {
         rel: "icon",
         href: "/img/android-icon-192x192.png",
         sizes: "192x192",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preload",
+        href: "static/assets/fonts/Whyte-Medium.ttf",
+        as: "font",
+        type: "font/ttf",
+        crossorigin: "anonymous",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "preload",
+        href: "static/assets/fonts/Whyte-Medium.woff2",
+        as: "font",
+        type: "font/ttf",
+        crossorigin: "anonymous",
       },
     },
     // Иконка для Windows (мета-данные)

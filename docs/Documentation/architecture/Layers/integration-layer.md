@@ -16,3 +16,5 @@ The Integration Layer supports Silvana’s broader mission to:
 “Bridge corporate and crypto through a modular, scalable ZK proving engine that hides blockchain complexity and enables trustless business operations at scale.”
 
 By abstracting away the intricacies of ZK proofs and blockchain protocols, the Integration Layer empowers both newcomers and experts to deploy secure, scalable applications that meet the real-world needs of privacy, compliance, and performance.
+
+![Integration Layer](../img/integration-layer.png)

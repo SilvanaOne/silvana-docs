@@ -38,3 +38,6 @@ Silvana allows developers and integrators to build their own modules by:
 4. Packaging and optionally offering them in the **Silvana Marketplace**
 
 This ecosystem model enables rapid expansion of use cases without reinventing the wheel.
+
+![Application Layer](../img/application-layer.png)
+

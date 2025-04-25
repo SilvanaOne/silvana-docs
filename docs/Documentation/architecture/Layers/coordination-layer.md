@@ -25,3 +25,6 @@ Silvana’s Coordination Layer ​is a pivotal component that orchestrates the i
 6. **Finalization**: The batched proof and state updates are submitted to the [**Settlement Layer**](/Documentation/architecture/Layers/settlement-layer) and stored in the [**Data Availability Layer**](/Documentation/architecture/Layers/data-availability-layer) for auditability.
 
 By managing these interactions, the coordination layer facilitates efficient and secure operations, enabling developers to build complex applications without delving into the underlying cryptographic complexities.
+
+![Coordination Layer](../img/coordination-layer.png)
+

@@ -11,7 +11,6 @@ const ADMONITION_TYPES = {
   caution: "caution",
   warning: "warning",
   danger: "danger",
-  "warning-alt": "warning-alt", // кастомный тип
 };
 
 // Цвета для каждого типа (можно переопределить)
