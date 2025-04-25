@@ -4,6 +4,6 @@
     "collapsed": true,
     "link": {
       "type": "generated-index",
-      "description": "This section introduces the Silvana Architecture, outlining its core components and how they interact to enable secure, efficient, and confidential transaction validation using zero-knowledge proofs."
+      "description": "This section outlines how Silvana enables flexible deployment and automation of applications through various environments and agent frameworks."
     }
   } 
