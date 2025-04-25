@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # Data Availability Layer
 
+## Overview
+
 The **Data Availability (DA) Layer** is a **storage**. It securely stores all application data in structured **data blobs** and ensures that any change to a record (whether a creation, mutation, or deletion) is **provable, traceable, and verifiable** using cryptographic proofs.
 
 This layer is critical in maintaining **tamper-resistance**, **auditability**, and **compliance** without compromising privacy or performance.
@@ -18,7 +20,9 @@ This layer is critical in maintaining **tamper-resistance**, **auditability**, a
 * If data is **mutated**, the system produces a **proof of change**.
 * These ZK proofs ensure **verifiability without disclosing** the actual data, preserving confidentiality.
 
-* **Immutable Commitments:** For each stored record or state change, a **commitment** is sent to the [**Settlement Layer**](/Documentation/architecture/Layers/settlement-layer) (L1 or L2 blockchain). This commitment represents the current state root of the rollup and ties together:
+* **Immutable Commitments:** For each stored record or state change, a **commitment** is sent to the [**Settlement Layer**](/Documentation/architecture/Layers/settlement-layer) (L1 or L2 blockchain). 
+
+This commitment represents the current state root of the rollup and ties together:
 
 * The object’s state
 * Proof of change
