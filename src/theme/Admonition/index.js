@@ -2,7 +2,6 @@ import React from "react";
 import { ThemeClassNames } from "@docusaurus/theme-common";
 import WarningIcon from "../../../static/img/info.svg";
 import styles from "./styles.module.css";
-import { cn } from "@site/src/utils/cn";
 
 // Все поддерживаемые типы admonitions
 const ADMONITION_TYPES = {
@@ -61,16 +60,12 @@ function AdmonitionContainer({
         }`}
         {...props}
       >
-        <div className={cn(styles.header, styles[`${type}Header`])}>
+        <div className={`${styles.header} ${styles[`${type}Header`]}`}>
           {iconComponent && (
             <span className={styles.icon}>{iconComponent}</span>
           )}
           {title && (
-            <span
-              className={cn(`${styles.title} ${styles[`${type}Title`]}`, {
-                "font-whyte-medium": type === "note" || type === "danger",
-              })}
-            >
+            <span className={`${styles.title} ${styles[`${type}Title`]}`}>
               {title}
             </span>
           )}
