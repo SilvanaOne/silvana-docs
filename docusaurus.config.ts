@@ -270,7 +270,7 @@ const config: Config = {
       tagName: "link",
       attributes: {
         rel: "preload",
-        href: "static/fonts/Whyte-Medium.ttf",
+        href: "static/assets/fonts/Whyte-Medium.ttf",
         as: "font",
         type: "font/ttf",
         crossorigin: "anonymous",
@@ -280,7 +280,7 @@ const config: Config = {
       tagName: "link",
       attributes: {
         rel: "preload",
-        href: "static/fonts/Whyte-Medium.woff2",
+        href: "static/assets/fonts/Whyte-Medium.woff2",
         as: "font",
         type: "font/ttf",
         crossorigin: "anonymous",
