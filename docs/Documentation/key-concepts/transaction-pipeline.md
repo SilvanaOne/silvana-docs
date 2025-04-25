@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 ---
-# Transaction Pipleline
+# Transaction Pipeline
 ## Overview
 
 The notion of a **"transaction"** extends beyond a singular atomic operation in Silvana. Unlike monolithic systems that rely on centralized consensus or tightly coupled execution, Silvana's architecture enables each component of the transaction pipeline to operate **independently**, **asynchronously**, and on **different infrastructural backends**. 
@@ -23,10 +23,10 @@ The table below provides some basic information about transaction types in Silva
 
 | Transaction              | Layer                              | Function                                                                 |
 |--------------------------|-------------------------------------|--------------------------------------------------------------------------|
-| Proof Transaction        | Silvana Core                        | proof generation                                                         |
-| Coordination Transaction | Coordination Layer (Silvana Rollup)| • transaction ordering and sequencing; <br/>• execution of atomic custom logic; <br/>• proof aggregation; <br/>• transaction acceleration. |
-| Settlement Transaction   | Settlement Layer                    | • checking and validating recursive proofs                               |
-| DA Transaction           | Data Availability (DA) Layer        | • provable record state mutation; <br/>• generating proof of the state mutation; <br/>• proof storage. |
+| Proof Transaction        | Silvana Core                        | Proof generation                                                         |
+| Coordination Transaction | Coordination Layer (Silvana Rollup)| • Transaction ordering and sequencing; <br/>• execution of atomic custom logic; <br/>• proof aggregation; <br/>• transaction acceleration. |
+| Settlement Transaction   | Settlement Layer                    | • Checking and validating recursive proofs                               |
+| DA Transaction           | Data Availability (DA) Layer        | • Provable record state mutation; <br/>• Generating proof of the state mutation; <br/>• Proof storage. |
 
 ## Proof Transaction
 
