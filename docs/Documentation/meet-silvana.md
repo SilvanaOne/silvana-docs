@@ -5,6 +5,8 @@ slug: /
 
 # Meet Silvana
 
+![Silvana Docs Top](../Documentation/silvana-docs-top.png)
+
 ## Introduction
 
 Welcome to **Silvana** - a modular integration-first, composable, interoperable zk prover platform where enterprises can build their business solutions using **zero-knowledge proofs (ZKPs)** to prove private data without disclosing it and **provable records** to stand for their **real-world** or **digital assets**. It is, in a way, AWS in Web3 where you can build apps and maintain fast and efficient operations.

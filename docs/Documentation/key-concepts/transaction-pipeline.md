@@ -18,6 +18,7 @@ Each transaction is decomposed into **multiple sub-transactions** that run on di
 
 The diagram below illustrates the Transaction Pipeline in Silvana:
 
+![Transaction Pipeline](..\key-concepts\img\transaction-pipeline.png)
 
 The table below provides some basic information about transaction types in Silvana:
 
