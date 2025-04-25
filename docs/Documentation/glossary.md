@@ -164,6 +164,9 @@ Verifier Function (Circuit) is the function that allows the verifier to validate
 ### Zero-Knowledge Proof (ZKP)
 Zero-Knowledge Proof (ZKP) is a cryptographic method that allows one party (the prover) to prove to another party (the verifier) that a statement is true without revealing any additional information beyond the validity of the statement. More info: [**Zero-Knowledge Proof (ZKP)**](/Documentation/key-concepts/zk-proofs)
 
+### zk Abstraction 
+zk Abstraction isolates developers from the low-level challenges of implementing zero-knowledge systems. It allows clients to build secure, private, and trustless applications without needing to understand or implement zero-knowledge proofs directly. More info: [**zk Abstraction**](/Documentation/key-concepts/zk-abstraction).
+
 ### zkProgram
 zkProgram is the business logic that rules how a proof has to be generated and verified.
 

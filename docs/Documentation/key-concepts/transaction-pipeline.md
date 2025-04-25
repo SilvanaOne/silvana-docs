@@ -14,8 +14,8 @@ Each transaction is decomposed into **multiple sub-transactions** that run on di
 * **Proof Transaction**;
 * **Coordination Transaction**;
 * **Settlement Transaction**;
-* **DA Transaction**
-. 
+* **DA Transaction**. 
+
 The diagram below illustrates the Transaction Pipeline in Silvana:
 
 
@@ -30,13 +30,13 @@ The table below provides some basic information about transaction types in Silva
 
 ## Proof Transaction
 
-The first transaction in the pipeline In Silvana - Proof Transaction - runs in a prover, be it the Prover in the Silvana Core, or any other type of prover involved. For more information on how zk proofs are generated, see these docs: **Zk Proofs** and **Prover**.
+The first transaction in the pipeline In Silvana - Proof Transaction - runs in a prover, be it the Prover in the Silvana Core, or any other type of prover involved. For more information on how zk proofs are generated, see these docs: [**Zk Proofs**](/Documentation/key-concepts/zk-proofs) and [**Prover**](/Documentation/architecture/silvana-core/prover).
 
-:::tip Note
+:::tip Multi-Proof Generation
 Silvana supports **multi-proof generation** per transaction job, often producing several proofs to enable parallelism and fine-grained execution tracking.
 :::
 
-This proof stage is computationally intensive and typically lasts a few minutes per job. The agent logs record the runtime and timestamps for each step. Once proof generation concludes, the agent prepares metadata including proof references, transaction payload digests, and initial coordination instructions. 
+This proof stage is computationally intensive and typically lasts a few minutes per job. The agent logs record the runtime and timestamps for each step. Once proof generation concludes, the [**agent**](/Documentation/Deployment/agents) prepares metadata including proof references, transaction payload digests, and initial coordination instructions. 
 
 Below is an example of what a generated proof looks like:
 
@@ -101,7 +101,7 @@ Below is an example of what a generated proof looks like:
 
 ## Coordination Transaction
 
-A Coordination Transaction is the core execution unit in Silvana’s Coordination Layer - a high-throughput, low-latency blockchain responsible for **orchestrating** and **sequencing** user-defined logic across the stack. After a proof is generated, this layer ensures the transaction is ordered, executed, and recorded as part of the rollup’s state progression and runs in the following flow:
+A Coordination Transaction is the core execution unit in Silvana’s [**Coordination Layer**](/Documentation/architecture/Layers/coordination-layer) - a high-throughput, low-latency blockchain responsible for **orchestrating** and **sequencing** user-defined logic across the stack. After a proof is generated, this layer ensures the transaction is ordered, executed, and recorded as part of the rollup’s state progression and runs in the following flow:
 
 * **Transaction sequencing**: determines execution order for smart contracts tied to user-defined logic.
 * **Execution coordination**: triggers contract calls on the Execution Layer according to the sequence.
@@ -116,17 +116,17 @@ Each Coordination Transaction Includes:
 * an intermediate coordination hash representing the rollup’s current state.
 
 :::tip Note
-Coordination Layer is Silvana’s key innovation underpinning the **Silvana Rollup**, known for showing the ultra-fast transaction execution of **optimistic rollups** and the security of **zk rollups**. Coordination Layer ensures near-instant transactions by running execution on fast blockchains.
+Coordination Layer is Silvana’s key innovation underpinning the [**Silvana Rollup**](/Documentation/ultra-fast-rollup/silvana-rollup), known for showing the ultra-fast transaction execution of **optimistic rollups** and the security of **zk rollups**. Coordination Layer ensures near-instant transactions by running execution on fast blockchains.
 :::
 
 ## Settlement Transaction
 
-After successful execution, the Coordination Layer sends the recursive proof to the Settlement Layer and initiates a Settlement Transaction, where the recursive (aggregated) proof is checked and validated by the validator set on the Settlement blockchain. 
+After successful execution, the Coordination Layer sends the recursive proof to the [**Settlement Layer**](/Documentation/architecture/Layers/settlement-layer) and initiates a Settlement Transaction, where the recursive (aggregated) proof is checked and validated by the validator set on the Settlement blockchain.
 
 It normally takes time since zk proof generation is CPU-heavy, so the **finality** isn’t fast and happens way later than the transaction is executed. However, just for the same reason, the chance of a proof being tampered with is vanishingly small, so the finality, albeit being slow, is guaranteed, which in fact means that the transaction is not only **instant** but also **secure**.
 
 :::tip Note
-In practice, a single transaction may not be sufficient for settlement, especially when multiple proofs or large data blobs are involved. Silvana supports splitting the settlement into **multiple L1 transactions**, each responsible for either uploading data, invoking proof verification, or updating contract state. This modular settlement structure accommodates L1 constraints such as calldata limits and contract logic constraints.
+In practice, a single transaction may not be sufficient for settlement, especially when multiple proofs or large data blobs are involved. Silvana supports splitting the settlement into **multiple L1 transactions**, each responsible for either uploading data, invoking proof verification, or updating contract state. This modular settlement structure accommodates [**L1**](/Documentation/glossary#layer-1-l1) constraints such as calldata limits and contract logic constraints.
 :::
 
 Settlement is performed by submitting one or more **on-chain transactions** to a zkApp contract or equivalent smart contract interface. These transactions perform the following:
@@ -144,9 +144,9 @@ Upon completion, the final state commitment on L1 (often labeled `settlement_has
 
 ## DA Transaction
 
-The final stage of the lifecycle occurs on the **Data Availability (DA) Layer**, anchored to a public Layer 1 blockchain. This stage ensures that the transaction data, along with its proof artifacts, are permanently recorded and verifiable on-chain.
+The final stage of the lifecycle occurs on the [**Data Availability (DA) Layer**](/Documentation/architecture/Layers/data-availability-layer), anchored to a public Layer 1 blockchain. This stage ensures that the transaction data, along with its proof artifacts, are permanently recorded and verifiable on-chain.
 
-As a transaction runs with a provable record, its state is mutated, for which a proof is generated. Then the proofs are stored in the DA Layer.
+As a transaction runs with a [**provable record**](/Documentation/key-concepts/provable-records), its state is mutated, for which a proof is generated. Then the proofs are stored in the DA Layer.
 
 ## Metadata
 

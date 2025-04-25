@@ -35,26 +35,26 @@ The following table outlines the specific role of each abstraction layer in Silv
 
 ## Proof System Abstraction
 
-Instead of hand-crafting arithmetic circuits or dealing with elliptic curve math, a developer writes high-level **Prover Program** (zero-knowledge programs representing the proof logic) in a familiar format. Then compiles and proves these programs under the hood. This means the developer can focus on business logic and constraints, while Silvana handles witness generation, proof creation, and verification keys internally.
+Instead of hand-crafting arithmetic circuits or dealing with elliptic curve math, a developer writes high-level [**Prover Program**](/Documentation/glossary#prover-program) (zero-knowledge programs representing the proof logic) in a familiar format. Then compiles and proves these programs under the hood. This means the developer can focus on business logic and constraints, while Silvana handles witness generation, proof creation, and verification keys internally.
 
 There’s no need to understand elliptic curve math or recursion composition. Even **recursive proof merges** (for batching or compression) are handled internally.
 
-- **Program compilation**  
+* **Program compilation**  
   Translates high-level logic into ZK circuits and optimizes constraint structure automatically.
 
-- **Key management**  
+* **Key management**  
   Generates and caches proving keys; abstracts all key handling from the developer.
 
-- **Witness preparation**  
+* **Witness preparation**  
   Converts inputs into field-compatible witness data and validates constraints.
 
-- **Proof generation**  
+* **Proof generation**  
   Runs the circuit on Silvana’s prover infrastructure with support for parallel and accelerated proving.
 
-- **Recursive proofs**  
+* **Recursive proofs**  
   Automatically compresses multiple proofs into one for efficient settlement or batching.
 
-- **Proof metadata handling**  
+* **Proof metadata handling**  
   Stores proof results and handles formatting for downstream verification or integration.
 
 
@@ -62,29 +62,29 @@ This abstraction  allows developers to focus purely on defining logic, without n
 
 ## Application Binary Interface (ABI)
 
-Silvana’s Application Binary Interface (ABI) further abstracts the way developers interact with Prover Programs and provable records. The ABI component is responsible for “**building**, **compiling**, **sending**, and **monitoring** transactions.” 
+Silvana’s [**Application Binary Interface (ABI)**](/Documentation/architecture/silvana-core/abi) further abstracts the way developers interact with Prover Programs and provable records. The ABI component is responsible for “**building**, **compiling**, **sending**, and **monitoring** transactions.” 
 
 This means developers can construct transactions using familiar structures (JSON payloads, function calls, etc.), and the ABI will handle encoding this data, attaching any required proof metadata, and dispatching it to the Silvana network. 
 
-- **Transaction construction**  
+* **Transaction construction**  
   Accepts common input formats (JSON, key-value maps) and maps them to Prover Program arguments and record schemas.
 
-- **Encoding and preprocessing**  
+* **Encoding and preprocessing**  
   Converts inputs into a format suitable for proof generation, handling ABI encoding and record references.
 
-- **Proof metadata attachment**  
+* **Proof metadata attachment**  
   Adds required proof metadata **automatically** (e.g., circuit identifiers, input hashes) before dispatch.
 
-- **Dispatch and execution**  
+* **Dispatch and execution**  
   Sends the transaction into the execution pipeline and routes it to the appropriate prover or sequencer.
 
-- **Monitoring and lifecycle management**  
+* **Monitoring and lifecycle management**  
   Tracks transaction progress (pending, executing, proven, finalized) and exposes status via API.
 
 
 ## Settlement Abstraction
 
-Silvana’s settlement abstraction ensures that all state changes and proofs eventually get anchored on a secure blockchain without requiring the developer to handle those details. In a rollup architecture, a **Settlement Layer** typically refers to the base chain contract that validates proofs and stores the canonical state root. 
+Silvana’s settlement abstraction ensures that all state changes and proofs eventually get anchored on a secure blockchain without requiring the developer to handle those details. In a rollup architecture, a [**Settlement Layer**](/Documentation/architecture/Layers/settlement-layer) typically refers to the base chain contract that validates proofs and stores the canonical state root. 
 
 In fact, Silvana is described as **chain-agnostic** - it can work with various L1s or L2s to settle transactions. This means the same application code can run while Silvana handles connecting to the appropriate blockchain in the background.
 
@@ -111,7 +111,7 @@ In fact, Silvana is described as **chain-agnostic** - it can work with various L
 
 ## Coordination Abstraction
 
-Coordinating the flow of transactions and proofs in a ZK system can be complex. Silvana addresses this with a **Coordination Layer** that acts as the sequencer and orchestrator for the rollup.
+Coordinating the flow of transactions and proofs in a ZK system can be complex. Silvana addresses this with a [**Coordination Layer**](/Documentation/architecture/Layers/coordination-layer) that acts as the sequencer and orchestrator for the rollup.
 
 The coordination abstraction means developers do not write their own logic for ordering transactions, managing mempools, or triggering proofs - Silvana’s coordination layer handles all that and presents a simplified model to the developer.
 
@@ -125,7 +125,7 @@ All these steps are automated by Silvana. The developer sees a smooth experience
 
 ## Data Availability (DA) Abstraction
 
-Silvana provides a **Data Availability** Layer that stores transaction data and state in a decentralized way, and it abstracts this such that developers interact with it as if it were a normal database. 
+Silvana provides a [**Data Availability Layer**](/Documentation/architecture/Layers/data-availability-layer) that stores transaction data and state in a decentralized way, and it abstracts this such that developers interact with it as if it were a normal database. 
 
 The **Data Availability Abstraction** in Silvana ensures that all data needed to verify and rebuild the state of the rollup is accessible outside the proving system, without burdening the developer with managing data storage. 
 
