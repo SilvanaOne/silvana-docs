@@ -24,3 +24,26 @@ Coordination Layer is Silvana’s key innovation underpinning the [**Silvana Rol
 :::
 
 Get insights into Coordination Transactions by exploring them on [**Silvascan**](https://silvascan.io/testnet/coordination-txs).
+
+## Metadata
+
+As a user transaction runs with a provable record, its metadata is logged to establish links between all transaction types. Each settlement transaction is associated with:
+
+* A unique L1 hash;
+* A block number and nonce;
+* The associated proof digest (e.g., **_`proof_data_availability_digest`_**);
+* Any referenced coordination hash or data availability fields.
+
+**Custom transaction metadata includes**:
+* **_`blockNumber`_**: Coordination-layer block index (28)
+* **_`number_of_transactions`_**: How many settlement transactions this proof supports (3)
+* **_`sequences`_**: The range of coordination transaction sequence numbers covered ([49, 51])
+* **_`settlement_hash`_**: The L1 state commitment (Mina devnet) updated by this proof
+* **_`nonce`_**: A unique job identifier (626)
+* **_`proof_data_availability`_**: CID for the proof payload used for DA
+* **_`proof_data_availability_digest`_**: Coordination-layer event reference for DA
+* **_`au_proof_data_availability`_**: Additional proof DA CID (for aggregated proofs)
+* **_`coordination_hash`_**: The new rollup state commitment on the coordination layer
+* **_`linkId`_**: A reference tying this metadata record back to the agent job (ID "28").
+
+Through this process, Silvana guarantees state **anchoring**, **verifiability**, and **data retrievability**. Even if internal Silvana infrastructure were to fail, any third party could reconstruct and verify the rollup’s state using public data and L1 commitments.
