@@ -13,10 +13,10 @@ A real-life use case is normally broken down into more atomic operations since i
 
 Each transaction in Silvana is decomposed into **multiple sub-transactions** that run on different layers of the network and follows this pipeline: 
 
-* **Prover Transaction**;
-* **Coordination Transaction**;
-* **DA Transaction**;
-* **Settlement Transaction**.
+* [**Prover Transaction**](/Documentation/key-concepts/Transactions/prover-transaction);
+* [**Coordination Transaction**](/Documentation/key-concepts/Transactions/coordination-transactions);
+* [**DA Transaction**](/Documentation/key-concepts/Transactions/da-transaction);
+* [**Settlement Transaction**](/Documentation/key-concepts/Transactions/settlement-transaction).
 
 So when a user runs a user operation, the abovementioned transactions run one by one. We call this operation a **pipelined transaction**. It covers a whole use case or a business operation that can involve smaller operations, while the transactions that are part of the pipelined transaction are focused on each particular technical execution aspect, namely:
 
@@ -30,15 +30,15 @@ So when a user runs a user operation, the abovementioned transactions run one by
 Pipelined Transaction - a holistic transaction in Silvana covering a complete business operation that includes multiple atomic transactions of proof generation, business logic execution, proof aggregation, provable record state mutation, and proof validation and settlement.
 :::
 
-The diagram below illustrates the Pipelined Transaction in Silvana:
-
-![Pipelined Transaction](..\key-concepts\img\transaction-pipeline.png)
-
 The table below provides some basic information about transaction types in Silvana:
 
 | Transaction              | Layer                              | Function                                                                 |
 |--------------------------|-------------------------------------|--------------------------------------------------------------------------|
-| Proof Transaction        | Silvana Core                        | Proof generation                                                         |
+| Prover Transaction        | Silvana Core                        | • Proof generation                                                         |
 | Coordination Transaction | Coordination Layer (Silvana Rollup)| • Transaction ordering and sequencing; <br/>• Execution of atomic custom logic; <br/>• Proof aggregation; <br/>• Transaction acceleration. |
 | Settlement Transaction   | Settlement Layer                    | • Checking and validating recursive proofs                               |
 | DA Transaction           | Data Availability (DA) Layer        | • Provable record state mutation; <br/>• Generating proof of the state mutation; <br/>• Proof storage. |
+
+The diagram below illustrates the Pipelined Transaction in Silvana:
+
+![Pipelined Transaction](..\key-concepts\img\transaction-pipeline.png)
