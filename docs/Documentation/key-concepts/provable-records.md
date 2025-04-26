@@ -51,7 +51,7 @@ Provable record flow looks like this:
 
 4. At any time, the provable record can be retrieved for reading.
 
-5. As another transaction runs changing the state of the provable record, its is mutated (updated).
+5. As another transaction runs changing the state of the provable record, it is mutated (updated).
 
 The diagram below illustrates the provable record flow:
 

@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## Overview
 
-The **Data Availability (DA) Layer** is a **storage**. It securely stores all application data in structured **data blobs** and ensures that any change to a record (whether a creation, mutation, or deletion) is **provable, traceable, and verifiable** using cryptographic proofs.
+The **Data Availability (DA) Layer** is a **storage**. It securely stores all application data in structured [**data blobs**](/Documentation/glossary#data-blob) and ensures that any change to a record (whether a creation, mutation, or deletion) is **provable, traceable, and verifiable** using cryptographic proofs.
 
 This layer is critical in maintaining **tamper-resistance**, **auditability**, and **compliance** without compromising privacy or performance.
 
@@ -34,9 +34,9 @@ This model ensures **long-term data integrity** even if the DA layer is distribu
 
 Silvana’s DA design extends beyond traditional blockchain storage:
 
-- **Provable DB Transactions**: Every DB operation (read, write, delete) is provable. Unlike traditional databases, these interactions produce immutable cryptographic evidence of the operation.
-- **Recursive Proof Compatibility**: ZK proofs of record changes can be **batched and aggregated** into recursive proofs for efficient verification and settlement.
-- **Compliance-First Logging**: Ensures traceability for every transaction involving asset or record management — vital for industries like finance, insurance, and logistics.
+* **Provable DB Transactions**: Every DB operation (read, write, delete) is provable. Unlike traditional databases, these interactions produce immutable cryptographic evidence of the operation.
+* **Recursive Proof Compatibility**: ZK proofs of record changes can be **batched and aggregated** into recursive proofs for efficient verification and settlement.
+* **Compliance-First Logging**: Ensures traceability for every transaction involving asset or record management — vital for industries like finance, insurance, and logistics.
 
 Silvana is open to integrating with existing or emerging DA layers.
 

@@ -12,7 +12,7 @@ Silvana has a complicated modular and multi-layer architecture with multiple com
 **Silvana Agents** are programmable, decentralized entities designed to automate the lifecycle of transactions and application logic across Silvana’s modular architecture. Functioning as execution orchestrators, Agents wrap and interconnect core components such as Prover Programs, provable record schemas, Provers, Verifiers, and ABI interfaces.
 :::
 
-Agents **abstract away operational complexity**, enabling developers and integrators to deploy robust, event-driven applications without directly interacting with every layer of the Silvana stack. In a way, Agents are simultaneously an interface though which applications interact with Silvana wrapping the required Silvana components.
+Agents **abstract away operational complexity**, enabling developers and integrators to deploy robust, event-driven applications without directly interacting with every layer of the Silvana stack. In a way, Agents are simultaneously an interface through which applications interact with Silvana, wrapping the required Silvana components.
 
 Agents are fundamental in realizing Silvana’s object-centric, ZK-native infrastructure for decentralized business logic and Real-World Asset (RWA) management.
 
@@ -43,7 +43,7 @@ This visual shows that agents are not bound to a fixed architecture - instead, t
 ## How to Use an Agent
 
 To deploy and use an agent, a user has to follow these steps:
-1. **Add the repo** of the module or modules as a dependency. All available and upcoming modules are maintained or referenced in the [**Silvana GitHub repository**](https://github.com/SilvanaOne), which is the central source for example implementations, module templates, and SDKs.
+1. **Add the repo** of the module or modules as a dependency. All available and upcoming modules are maintained or referenced in the [**Silvana GitHub repository**](https://github.com/SilvanaOne), which is the central source for example, implementations, module templates, and SDKs.
 
 2. **Generate proofs** by letting the Agents have to get access to the **Prover Program** describing the proof generation rules, the **Prover** executing the **Prover Function** (**Circuit**), and the **Verifier** executing the **Verifier Function** (**Circuit**).
 

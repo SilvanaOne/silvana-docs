@@ -95,6 +95,9 @@ On-Chain refers to data, transactions, or smart contract executions that occur d
 ### Pickles
 Pickles is an advanced recursive zero-knowledge proof system used by Silvana to enable efficient and scalable verification of proofs by allowing proofs to verify other proofs.
 
+### Pipelined Transaction
+Pipelined Transaction is a holistic transaction in Silvana covering a complete business operation that includes multiple atomic transactions of proof generation, business logic execution, proof aggregation, provable record state mutation, and proof validation and settlement. More info: [**Pipelined Transaction**](/Documentation/key-concepts/transaction-pipeline).
+
 ### Proof Generation
 Proof Generation is the process of creating a cryptographic proof that validates the correctness of a computation or statement without revealing its underlying data.
 
@@ -156,11 +159,6 @@ State Commitment is a cryptographic representation of the current state of a blo
 ### State Mutation
 State Mutation is the process of changing the state of a provable record; each mutation is accompanied by a proof to ensure the change follows predefined rules.
 
-## T
-
-### Pipelined Transaction
-Pipelined Transaction is a holistic transaction in Silvana covering a complete business operation that includes multiple atomic transactions of proof generation, business logic execution, proof aggregation, provable record state mutation, and proof validation and settlement. More info: [**Pipelined Transaction**](/Documentation/key-concepts/transaction-pipeline).
-
 ## V
 
 ### Verifier
@@ -172,7 +170,7 @@ Verifier Function (Circuit) is the function that allows the verifier to validate
 ## Z
 
 ### Zero-Knowledge Proof (ZKP)
-Zero-Knowledge Proof (ZKP) is a cryptographic method that allows one party (the prover) to prove to another party (the verifier) that a statement is true without revealing any additional information beyond the validity of the statement. More info: [**Zero-Knowledge Proof (ZKP)**](/Documentation/key-concepts/zk-proofs)
+Zero-Knowledge Proof (ZKP) is a cryptographic method that allows one party (the prover) to prove to another party (the verifier) that a statement is true without revealing any additional information beyond the validity of the statement. More info: [**Zero-Knowledge Proof (ZKP)**](/Documentation/key-concepts/zk-proofs).
 
 ### zk Abstraction 
 zk Abstraction isolates developers from the low-level challenges of implementing zero-knowledge systems. It allows clients to build secure, private, and trustless applications without needing to understand or implement zero-knowledge proofs directly. More info: [**zk Abstraction**](/Documentation/key-concepts/zk-abstraction).

@@ -8,7 +8,7 @@ The **Settlement Layer** is the lowest-level part of Silvana’s architecture. I
 
 The Settlement Layer’s core functions include the following:
 
-* **Transaction Finalization**: once transactions are executed in the execution layer, the Settlement Layer records them permanently, ensuring they cannot be altered or reversed. That’s when finality takes place. This provides users with confidence that their transactions are secure and final, meaning they cannot be mutated.
+* **Transaction Finalization**: once transactions are executed in the execution layer, the Settlement Layer records them permanently, ensuring they cannot be altered or reversed. That’s when finality takes place. This gives users confidence that their transactions are secure and final, meaning they cannot be mutated.
 * **Proof Verification**: the Settlement Layer is responsible for verifying proofs submitted by rollups. This includes both fraud proofs (used in optimistic rollups) and validity proofs (used in zero-knowledge rollups). By validating these proofs, the Settlement Layer ensures that only legitimate transactions are confirmed.
 
 ## Strategic Role
@@ -19,6 +19,6 @@ By offloading execution to fast environments while securing finality on proven L
 * Cryptographic correctness;
 * Decentralized finality.
 
-This hybrid strategy ensures that enterprise users benefit from **instant UX** at the application level, while also meeting **blockchain-grade expectations** for auditability, compliance, and integrity.
+This hybrid strategy ensures that enterprise users benefit from **instant UX** at the application level while also meeting **blockchain-grade expectations** for auditability, compliance, and integrity.
 
 ![Settlement Layer](../img/settlement-layer.png)

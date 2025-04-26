@@ -11,7 +11,7 @@ A real-life use case is normally broken down into more atomic operations since i
 
 ## Pipelined Transaction
 
-Each transaction in Silvana is decomposed into **multiple sub-transactions** that run on different layers of the network and follows this pipeline: 
+Each transaction in Silvana is decomposed into **multiple sub-transactions** that operate on different layers of the network, following this pipeline:
 
 * [**Prover Transaction**](/Documentation/key-concepts/Transactions/prover-transaction);
 * [**Coordination Transaction**](/Documentation/key-concepts/Transactions/coordination-transactions);

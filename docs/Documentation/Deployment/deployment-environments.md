@@ -16,7 +16,7 @@ There are three main ways to deploy Silvana components:
 
 ### Private Execution Environment (PXE)
 
-With PXE enterprises can deploy Silvana components either **locally** or in a **Private Cloud**. In the first case, the code of     a module or Silvana component is forked from the REPO and saved locally for private use. Enterprises store their keys locally. Here, the following components can be deployed and stored: 
+With PXE, enterprises can deploy Silvana components either **locally** or in a **Private Cloud**. In the first case, the code of a module or Silvana component is forked from the REPO and saved locally for private use. Enterprises store their keys locally. Here, the following components can be deployed and stored: 
 
 * modules and module workers, 
 * a local version of the Silvana Prover.
@@ -41,7 +41,7 @@ Additionally, Silvana Cloud offers these components:
 
 * Scheduler for scheduled transactions,
 * Event Manager for event-triggered transactions, 
-* Storage in the DA Layer including Encrypted Storage, 
+* Storage in the DA Layer, including Encrypted Storage, 
 * Transaction Manager for automated transactions, 
 * a set of Debug Tools, 
 * Recursive Proofs Manager, 

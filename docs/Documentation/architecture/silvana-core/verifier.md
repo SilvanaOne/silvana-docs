@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Overview
 
-​The **Silvana Verifier**, along with the [**Prover**](/Documentation/architecture/silvana-core/prover), is a component of the [**Silvana Core**](/Documentation/architecture/silvana-core/) independently validating zero-knowledge proofs to ensure the correctness of state transitions. Operating solely on the **Public Input** and cryptographic keys, it maintains data confidentiality while enabling trustless verification, allowing any participant to confirm transaction validity without intermediaries.​
+​The **Silvana Verifier**, along with the [**Prover**](/Documentation/architecture/silvana-core/prover), is a component of the [**Silvana Core**](/Documentation/architecture/silvana-core/), which independently validates zero-knowledge proofs to ensure the correctness of state transitions. Operating solely on the **Public Input** and cryptographic keys, it maintains data confidentiality while enabling trustless verification, allowing any participant to confirm transaction validity without intermediaries.​
 
 Anytime using the Verifier, a user can check that the generated proof is valid. **Without a Verifier, Silvana’s zero-knowledge guarantees would be meaningless** – any invalid or malicious proof could slip through.
 
@@ -53,7 +53,7 @@ async function verifyProof(
 }
 ```
 
-If **_`isValid`_** comes out true, the proof is genuine and the proposed state transition can be accepted; if false, the proof (and its transaction) is rejected. This process is extremely fast compared to proof generation and takes only milliseconds.
+If **_`isValid`_** comes out true, the proof is genuine and the proposed state transition can be accepted; if false, the proof (and its transaction) is rejected. This process is extremely fast compared to proof generation, taking only milliseconds.
 
 ## Verifier Flow
 
@@ -66,7 +66,7 @@ This is what the Verifier flow looks like:
 
 2. Schema & Program Retrieval
 * Query the Router to obtain the schema and Prover Program logic.
-* Ensure alignment with the Prover's parameters.​GitHub
+* Ensure alignment with the Prover's parameters.
 
 3. State Consistency Check
 * Fetch current state from the Data Availability (DA) layer.
@@ -93,7 +93,7 @@ This is what the Verifier flow looks like:
 
 8. State Update in DA Layer
 * Write the new state to the DA layer as a pending update.
-* Store the proof and verification result for audit purposes.​
+* Store the proof and verification results for audit purposes.​
 
 9. Transaction Assembly
 * Assemble a transaction containing the proof, public inputs/outputs, and references.
@@ -108,7 +108,7 @@ This is what the Verifier flow looks like:
 * Finalize the state change in the DA layer upon confirmation.
 * Update records in the Indexer and Router databases.
 
-12.Audit and Availability
+12. Audit and Availability
 * Ensure that the proof and its verification are recorded for future independent verification.
 * Support verification of complex transactions, including recursive or batched proofs.
 

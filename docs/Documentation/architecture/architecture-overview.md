@@ -20,7 +20,7 @@ Silvana’s architecture reflects the complexity and comprehensiveness of the go
 
 ## Layers
 
-Silvana platform comprises 4 layers. Here they are listed from the highest (business) level to the lowest (technical) level: 
+Silvana platform comprises 4 layers. Here, they are listed from the highest (business) level to the lowest (technical) level: 
 
 * [**Integration Layer**](/Documentation/architecture/Layers/integration-layer) - deployment integration with end users;
 

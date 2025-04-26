@@ -53,7 +53,7 @@ The [**Data Availability Layer**](/Documentation/architecture/Layers/data-availa
 
 A typical transaction flow in the Silvana rollup looks like this:
 
-1. A user initiates a transaction through an application, for which an Agent is called. If a wallet is used, it generates the transaction signature.
+1. A user initiates a transaction through an application for which an Agent is called. If a wallet is used, it generates the transaction signature.
 2. Transactions are sequenced in the Coordination Layer and executed.
 3. Silvana Prover generates the required proofs and wraps them in a recursive (aggregated) proof.
 4. The state of a provable record is recorded in the DA Layer.

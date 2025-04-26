@@ -157,7 +157,7 @@ The diagram below illustrates the prover flow.
 
 Silvana Prover operates within a flexible, [**modular architecture**](/Documentation/glossary#modular-architecture) compatible with various execution environments (**PXE**, **CXE**, **TEE**) and blockchain networks (**L1**, **L2**). It is blockchain-agnostic, supporting multiple chains, too.
 
-Silvana Prover works with various ZKP cryptographic systems and functions including but not limited to Kimchi, Groth16, Blake2. It also supports recursive proof functions like [**Pickles**](/Documentation/glossary#pickles).
+Silvana Prover works with various ZKP cryptographic systems and functions, including but not limited to Kimchi, Groth16, Blake2. It also supports recursive proof functions like [**Pickles**](/Documentation/glossary#pickles).
 
 ## Prover Operations Handling
 

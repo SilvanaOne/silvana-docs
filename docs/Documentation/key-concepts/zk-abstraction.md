@@ -35,7 +35,7 @@ The following table outlines the specific role of each abstraction layer in Silv
 
 ## Proof System Abstraction
 
-Instead of hand-crafting arithmetic circuits or dealing with elliptic curve math, a developer writes high-level [**Prover Program**](/Documentation/glossary#prover-program) (zero-knowledge programs representing the proof logic) in a familiar format. Then compiles and proves these programs under the hood. This means the developer can focus on business logic and constraints, while Silvana handles witness generation, proof creation, and verification keys internally.
+Instead of hand-crafting arithmetic circuits or dealing with elliptic curve math, a developer writes high-level [**Prover Program**](/Documentation/glossary#prover-program) (zero-knowledge programs representing the proof logic) in a familiar format. Then, compiles and proves these programs under the hood. This means the developer can focus on business logic and constraints while Silvana handles witness generation, proof creation, and verification keys internally.
 
 There’s no need to understand elliptic curve math or recursion composition. Even **recursive proof merges** (for batching or compression) are handled internally.
 
@@ -58,7 +58,7 @@ There’s no need to understand elliptic curve math or recursion composition. Ev
   Stores proof results and handles formatting for downstream verification or integration.
 
 
-This abstraction  allows developers to focus purely on defining logic, without needing to understand the cryptographic foundations of zero-knowledge systems. Whether using **default provers of Silvana Core**, **provers of another proof systems**, **distributed networks**, or **custom-made provers**, Silvana guarantees consistent proof behavior across all configurations.
+This abstraction allows developers to focus purely on defining logic without needing to understand the cryptographic foundations of zero-knowledge systems. Whether using **default provers of Silvana Core**, **provers of another proof systems**, **distributed networks**, or **custom-made provers**, Silvana guarantees consistent proof behavior across all configurations.
 
 ## Application Binary Interface (ABI)
 
