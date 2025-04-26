@@ -30,15 +30,15 @@ The following baseline modules are developed and maintained by Silvana to cover 
 
 * and more...
 
-With time, more such modules will be added. Enterprises, integrators, and developers can additionally develop more modules to meet their business requirements, too. This will enrich our Application layers and cover more and more use cases. 
+With time, more such modules will be added. Enterprises, integrators, and developers can also develop more modules to meet their business requirements. This will enrich our Application layers and cover more and more use cases. 
 
 ### Join the club
 
 Silvana allows developers and integrators to build their own modules by:
 
 1. Forking existing mono repos
-2. Creating custom **Prover Programs** with business rules
-3. Integrating with Silvana’s **ABI**, **Router**, and **Prover/Verifier** components
+2. Creating custom [**Prover Programs**](/Documentation/glossary#prover-program) with business rules
+3. Integrating with Silvana’s [**ABI**](/Documentation/architecture/silvana-core/abi), [**Router**](/Documentation/architecture/silvana-core/router), and [**Prover**](/Documentation/architecture/silvana-core/prover)**/**[**Verifier**](/Documentation/architecture/silvana-core/verifier) components
 4. Packaging and optionally offering them in the **Silvana Marketplace**
 
 This ecosystem model enables rapid expansion of use cases without reinventing the wheel.

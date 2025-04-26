@@ -10,21 +10,21 @@ Silvana offers flexible deployment arrangements to meet business needs. Enterpri
 
 There are three main ways to deploy Silvana components:
 
-* Private Execution Environment (PXE)
-* Cloud Execution Environment (CXE)
-* Trusted Execution Environment (TEE)
+* **Private Execution Environment (PXE)**;
+* **Cloud Execution Environment (CXE)**,
+* **Trusted Execution Environment (TEE)**.
 
 ### Private Execution Environment (PXE)
 
-With PXE enterprises can deploy Silvana components either **locally** or in a **Private Cloud**. In the first case, the code of     a module or Silvana component is forked from the REPO and saved locally for private use. Enterprises store their keys locally. Here, the following components can be deployed and stored: 
+With PXE, enterprises can deploy Silvana components either **locally** or in a **Private Cloud**. In the first case, the code of a module or Silvana component is forked from the REPO and saved locally for private use. Enterprises store their keys locally. Here, the following components can be deployed and stored: 
 
 * modules and module workers, 
 * a local version of the Silvana Prover.
 
 The Private Cloud supports the **Serverless Framework** and deployment and automation tools like **Terraform**. This is what can be deployed in the Private Cloud: 
 
-* EFS (Elastic File System), 
-* modules and Module Workers, 
+* **EFS (Elastic File System)**, 
+* modules and **Module Workers**, 
 * Silvana Prover with the parallel proving option using recursive proofs.
 
 ### Cloud Execution Environment (CXE)
@@ -39,18 +39,18 @@ The following components can be deployed in **Silvana Cloud**:
 
 Additionally, Silvana Cloud offers these components:
 
-* Scheduler for scheduled transactions,
-* Event Manager for event-triggered transactions, 
-* Storage in the DA Layer including Encrypted Storage, 
-* Transaction Manager for automated transactions, 
-* a set of Debug Tools, 
+* **Scheduler** for scheduled transactions,
+* **Event Manager** for event-triggered transactions and event-based app architecture, 
+* **Storage** in the DA Layer, including **Encrypted Storage**, 
+* **Transaction Manager** for automated transactions, 
+* a set of **Debug Tools**, 
 * Recursive Proofs Manager, 
 * KV (Key-Value) Storage,
 * Proof Lookup.
 
 ### Trusted Execution Environment (TEE)
 
-Enterprises can use Silvana Cloud in the TEE, which acts as a Secure Enclave. Enterprises keep their keys in this space. Silvana ensures security against malicious use of keys and sensitive data by unauthorized users and insiders. Silvana Network Nodes provide decentralized proofs. Silvana Cloud is also available.
+Enterprises can use Silvana Cloud in the TEE, which acts as a **Secure Enclave**. Enterprises keep their keys in this space. Silvana ensures security against malicious use of keys and sensitive data by unauthorized users and insiders. **Silvana Network Nodes** provide decentralized proofs. Silvana Cloud is also available.
 
 In both arrangements, the following components can be deployed: 
 

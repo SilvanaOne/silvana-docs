@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Coordination Transaction
 
-A Coordination Transaction is the core execution unit in Silvana’s [**Coordination Layer**](/Documentation/architecture/Layers/coordination-layer) - a high-throughput, low-latency blockchain responsible for **orchestrating** and **sequencing** user-defined logic across the stack. After a proof is generated, this layer ensures the pipelined transaction is ordered, executed, and recorded as part of the rollup’s state progression and runs in the following flow:
+A **Coordination Transaction** is the core execution process in Silvana’s [**Coordination Layer**](/Documentation/architecture/Layers/coordination-layer) - a high-throughput, low-latency blockchain responsible for **orchestrating** and **sequencing** user-defined logic across the stack. After a proof is generated, this layer ensures the pipelined transaction is ordered, executed, and recorded as part of the rollup’s state progression and runs in the following flow:
 
 * **Transaction sequencing**: determines execution order for smart contracts tied to user-defined logic.
 * **Execution coordination**: triggers contract calls on the Execution Layer according to the sequence.
@@ -18,6 +18,8 @@ Each Coordination Transaction Includes:
 * a coordination-specific block number;
 * a reference list of proof CIDs';
 * an intermediate coordination hash representing the rollup’s current state.
+
+Example of a [**Coordination Transaction**](https://suiscan.xyz/devnet/tx/6q7TMPiiprQAShsRkoVEJYRLVbvq8CL5bsWbL6MWYmTm).
 
 :::tip Note
 Coordination Layer is Silvana’s key innovation underpinning the [**Silvana Rollup**](/Documentation/ultra-fast-rollup/silvana-rollup), known for showing the ultra-fast transaction execution of **optimistic rollups** and the security of **zk rollups**. Coordination Layer ensures near-instant transactions by running execution on fast blockchains.

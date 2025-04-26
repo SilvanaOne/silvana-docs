@@ -8,9 +8,9 @@ sidebar_position: 1
 
 Welcome to the MinaTokens API documentation! This API enables developers to easily create and manage custom tokens on the MINA blockchain using zkCloudWorker technology.
 
-Explore our comprehensive API documentation and try out live API endpoints at [docs.minatokens.com](https://docs.minatokens.com)
+Explore our comprehensive API documentation and try out live API endpoints at [docs.minatokens.com](https://docs.minatokens.com).
 
-To obtain an API key, visit [minatokens.com/api](https://minatokens.com/api)
+To obtain an API key, visit [minatokens.com/api](https://minatokens.com/api).
 
 ## Overview
 
@@ -95,7 +95,7 @@ MinaTokens supports two categories of tokens:
 
 - All sensitive operations require proper authentication
 - Whitelisted tokens require MDA member endorsement
-- Transaction proving occurs in secure cloud environment
+- Transaction proving occurs in a secure cloud environment
 - Wallet signatures are required for all transactions
 
 ## Support

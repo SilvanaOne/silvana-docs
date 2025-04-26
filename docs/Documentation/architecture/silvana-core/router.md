@@ -3,7 +3,7 @@ sidebar_position: 4
 ---
 # Router
 ## Overview
-In the overall Silvana architecture, the Router sits at the intersection of the [**Application Layer**](/Documentation/architecture/Layers/application-layer) (where business-specific modules and schemas are defined) and the [**Silvana Core**](/Documentation/architecture/silvana-core/) (where proving and verification occur).
+In the overall Silvana architecture, the **Router** sits at the intersection of the [**Application Layer**](/Documentation/architecture/Layers/application-layer) (where business-specific modules and schemas are defined) and the [**Silvana Core**](/Documentation/architecture/silvana-core/) (where proving and verification occur).
 
 :::note Router
 The **Router** is a component that responsible for managing and providing access to provable record [**schemas**](/Documentation/glossary#schema) and their associated **zero-knowledge programs (Prover Programs)**. It acts as a registry that maintains the mapping between record types and the ProverPrograms that define their behavior.
@@ -12,7 +12,7 @@ The **Router** is a component that responsible for managing and providing access
 In implementation, the Router consists of a structured set of **YAML files**, representing interfaces, schema definitions, and application configurations. It is exposed through an endpoint capable of answering a variety of structured queries. Essentially, the Router is an interface applications use to interact with [**provable records**](/Documentation/key-concepts/provable-records).
 
 ## Capabilities and Scope
-The router is responsible for the following functions:
+The Router is responsible for the following functions:
 
 1. **Managing Provable Record Schemas**
 
@@ -81,7 +81,7 @@ Below are some examples of how the Router handles schemas for businesses. This l
 
 1. **Digital Identity Verification**
 
-A clients can register identity record schemas (e.g., KYC documents) with the Router and use them across multiple applications to verify user credentials via zero-knowledge proofs without exposing sensitive data.
+A client can register identity record schemas (e.g., KYC documents) with the Router and use them across multiple applications to verify user credentials via zero-knowledge proofs without exposing sensitive data.
 
 2. **Patent and IP Management**
 
@@ -117,7 +117,7 @@ Healthcare providers can register schemas for medical records and test results, 
 
 10. **Auditing and Compliance**
 
-Firms can define compliance record schemas for internal audits, enabling external regulators to verify compliance claims cryptographically, without granting access to all internal documentation.
+Firms can define compliance record schemas for internal audits, enabling external regulators to verify compliance claims cryptographically without granting access to all internal documentation.
 
 ## Security Model Aspects
 
@@ -145,7 +145,7 @@ When deployed in a **Trusted Execution Environment (TEE)**, the Router benefits 
 
 6. **Data Privacy**
 
-Schemas themselves are generally non-sensitive, but the Router supports private schema visibility and access restrictions, allowing clients to control exposure of proprietary data structures.
+Schemas themselves are generally non-sensitive, but the Router supports private schema visibility and access restrictions, allowing clients to control the exposure of proprietary data structures.
 
 7. **Resilience and Redundancy**
 

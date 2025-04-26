@@ -21,7 +21,7 @@ Silvana’s Coordination Layer ​is a pivotal component that orchestrates the i
 2. **Ordering and Sequencing**: the Coordination Layer receives and queues the transaction based on priority or predefined logic.
 3. **Execution**: he transaction is executed in the fast L1 **Execution Layer**.
 4. **Generating Recursive Proofs**: the Coordination Layer aggregates multiple proofs into a recursive proof.
-6. **Finalization**: The batched proof and state updates are submitted to the [**Settlement Layer**](/Documentation/architecture/Layers/settlement-layer) and stored in the [**Data Availability Layer**](/Documentation/architecture/Layers/data-availability-layer) for auditability.
+6. **Finalization**: the batched proof and state updates are submitted to the [**Settlement Layer**](/Documentation/architecture/Layers/settlement-layer) and stored in the [**Data Availability Layer**](/Documentation/architecture/Layers/data-availability-layer) for auditability.
 
 By managing these interactions, the coordination layer facilitates efficient and secure operations, enabling developers to build complex applications without delving into the underlying cryptographic complexities.
 

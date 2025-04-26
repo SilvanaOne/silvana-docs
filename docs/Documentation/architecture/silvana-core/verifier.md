@@ -6,7 +6,7 @@ sidebar_position: 3
 
 ## Overview
 
-​The **Silvana Verifier**, along with the [**Prover**](/Documentation/architecture/silvana-core/prover), is a component of the [**Silvana Core**](/Documentation/architecture/silvana-core/) independently validating zero-knowledge proofs to ensure the correctness of state transitions. Operating solely on the **Public Input** and cryptographic keys, it maintains data confidentiality while enabling trustless verification, allowing any participant to confirm transaction validity without intermediaries.​
+​The **Silvana Verifier**, along with the [**Prover**](/Documentation/architecture/silvana-core/prover), is a component of the [**Silvana Core**](/Documentation/architecture/silvana-core/), which independently validates zero-knowledge proofs to ensure the correctness of state transitions. Operating solely on the **Public Input** and cryptographic keys, it maintains data confidentiality while enabling trustless verification, allowing any participant to confirm transaction validity without intermediaries.​
 
 Anytime using the Verifier, a user can check that the generated proof is valid. **Without a Verifier, Silvana’s zero-knowledge guarantees would be meaningless** – any invalid or malicious proof could slip through.
 
@@ -53,62 +53,59 @@ async function verifyProof(
 }
 ```
 
-If **_`isValid`_** comes out true, the proof is genuine and the proposed state transition can be accepted; if false, the proof (and its transaction) is rejected. This process is extremely fast compared to proof generation and takes only milliseconds.
+If **_`isValid`_** comes out true, the proof is genuine and the proposed state transition can be accepted; if false, the proof (and its transaction) is rejected. This process is extremely fast compared to proof generation, taking only milliseconds.
 
 ## Verifier Flow
 
 This is what the Verifier flow looks like:
 
-1. Proof Reception
-
+1. **Proof Reception**
 * Receive proof, public inputs, and metadata from the Prover.
 * Identify the associated Prover Program/module.​
 
-2. Schema & Program Retrieval
+2. **Schema & Program Retrieval**
 * Query the Router to obtain the schema and Prover Program logic.
-* Ensure alignment with the Prover's parameters.​GitHub
+* Ensure alignment with the Prover's parameters.
 
-3. State Consistency Check
+3. **State Consistency Check**
 * Fetch current state from the Data Availability (DA) layer.
 * Confirm that the state matches the Prover's reference.
 * Optionally, verify consistency with the Settlement layer.​
 
-4. Verification Key Initialization
+4. **Verification Key Initialization**
 * Load or compile the verification key for the Prover Program.
 * Utilize cached keys when available to optimize performance.​
 
-5. Proof Verification Execution
+5. **Proof Verification Execution**
 * Execute the verification algorithm using the proof, public inputs, and verification key.
 * Determine the validity of the proof.​
 
-6. Proof Validation & Sign-off
-
+6. **Proof Validation & Sign-off**
 * If valid, proceed; if invalid, abort and log an error.
 * Optionally, generate a cryptographic signature or approval record.​
 
-7. Public Output Extraction
-
+7. **Public Output Extraction**
 * Extract public outputs from the proof, such as new state hashes.
 * Prepare data for state update.​
 
-8. State Update in DA Layer
+8. **State Update in DA Layer**
 * Write the new state to the DA layer as a pending update.
-* Store the proof and verification result for audit purposes.​
+* Store the proof and verification results for audit purposes.​
 
-9. Transaction Assembly
+9. **Transaction Assembly**
 * Assemble a transaction containing the proof, public inputs/outputs, and references.
 * Sign the transaction if required.​
 
-10. Submission to Settlement Layer
+10. **Submission to Settlement Layer**
 * Submit the transaction to the Settlement Layer (L1/L2 blockchain).
 * Depending on the mode (ZK-Rollup or Optimistic/Hybrid), the chain may verify the proof or accept it based on off-chain validation.
 
-11. Confirmation and Finalization
+11. **Confirmation and Finalization**
 * Monitor the Settlement chain for transaction inclusion and confirmation.
 * Finalize the state change in the DA layer upon confirmation.
 * Update records in the Indexer and Router databases.
 
-12.Audit and Availability
+12. **Audit and Availability**
 * Ensure that the proof and its verification are recorded for future independent verification.
 * Support verification of complex transactions, including recursive or batched proofs.
 

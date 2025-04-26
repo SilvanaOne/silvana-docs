@@ -12,7 +12,7 @@ By leveraging [**Zero-Knowledge Proofs (ZKPs)**](/Documentation/key-concepts/zk-
 
 Each Provable Record comprises two essential elements:
 
-1. [**Schema**](/Documentation/glossary#schema): Defines the structure of the record, specifying its fields and data types. This schema is stored in the Router, a centralized registry that maintains all schemas within the system.
+1. [**Schema**](/Documentation/glossary#schema): Defines the structure of the record, specifying its fields and data types. This schema is stored in the **Router**, a registry that maintains all schemas within the system.
 
 2. [**Prover Program**](/Documentation/glossary#prover-program): This program determines the operational logic of the object and outlines how it interacts with the system. Its behavior is described in a dedicated Module associated with the Provable Record.
 
@@ -51,7 +51,7 @@ Provable record flow looks like this:
 
 4. At any time, the provable record can be retrieved for reading.
 
-5. As another transaction runs changing the state of the provable record, its is mutated (updated).
+5. As another transaction runs changing the state of the provable record, it is mutated (updated).
 
 The diagram below illustrates the provable record flow:
 
