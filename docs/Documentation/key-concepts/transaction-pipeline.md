@@ -79,19 +79,19 @@ Since this pipelined transaction involves multiple modules (wallet migration log
 
   * **Proof 2** → Reward claim
 
-  * **Proof 3 Profile update
+  * **Proof 3** Profile update
 
-  2. **Coordination Transaction**.
+2. **Coordination Transaction**.
 
- 2.1. Coordination Layer calls smart contracts to execute 3 Coordination Transactions - one for each piece of business logic:
+2.1. Coordination Layer calls smart contracts to execute 3 Coordination Transactions - one for each piece of business logic:
 
-2.1.1 **Coordination Tx 1**:
+2.1.1. **Coordination Tx 1**:
 
 **Action**: Wallet ownership migration
 
 **Output**: Emits an event recording new ownership.
 
-2.1.2 **Coordination Tx 2**:
+2.1.2. **Coordination Tx 2**:
 
 **Action**: Reward payout logic
 
@@ -127,10 +127,10 @@ The system aggregates these into an intermediate coordination hash.
 
 The provable record gets updated in the DA Layer;
 
-3 transactions are executed on the Execution (Coordination) Layer;
+* 3 transactions are executed on the Execution (Coordination) Layer;
 
-A recursive proof is validated and recorded on the Settlement Layer.
+* A recursive proof is validated and recorded on the Settlement Layer.
 
-The diagram below illustrates the case:
+* The diagram below illustrates the case:
 
 ![Pipelined Transaction - Case](..\key-concepts\img\case-pipeline.png)

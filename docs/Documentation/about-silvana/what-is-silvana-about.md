@@ -69,14 +69,14 @@ Now, quips aside, let's see how Silvana can really apply for serious business.
 
 ### Case 1 - Reinsurance
 
-**Case:** some assets are too expensive to be covered by solely one insurer. That's when insurers decide to hedge their risks by ensuring their risk to other insurance companies (reinsurers). Insurers need to mitigate significant risks without overexposing sensitive details. Manual processes are slow and susceptible to data leakage.
+**Case:** some assets are too expensive to be covered by solely one insurer. That's when insurers decide to hedge their risks by delegating their risk to other insurance companies (reinsurers). Insurers need to mitigate significant risks without overexposing sensitive details. Manual processes are slow and susceptible to data leakage.
 
 **Solution:** Silvana leverages zero-knowledge proofs to facilitate secure quote requests from multiple reinsurers.
 
-**Effects:** 
-- Potential 20%+ Savings on Reinsurance Premiums;
-- Larger Pool of Reinsurers;
-- Automated Compliance Checks.
+**Value:** 
+* Potential 20%+ Savings on Reinsurance Premiums;
+* Larger Pool of Reinsurers;
+* Automated Compliance Checks.
 
 ### Case 2 - Bookkeeping
 
@@ -84,11 +84,11 @@ Now, quips aside, let's see how Silvana can really apply for serious business.
 
 **Solution:** Silvana's object-centric, event-based architecture revolutionizes accounting by transforming double-entry systems into triple-entry accounting, complete with on-chain receipts.
 
-**Effects:**
-- Continuous Auditing;
-- Preserved Privacy;
-- Cost Reduction;
-- Error-proof Accounting.
+**Value:**
+* Continuous Auditing;
+* Preserved Privacy;
+* Cost Reduction;
+* Error-proof Accounting.
 
 ### Case 3 - On-Chain Governance
 
@@ -96,8 +96,8 @@ Now, quips aside, let's see how Silvana can really apply for serious business.
 
 **Solution:** Silvana provides proof of a vote while hiding the account address.
 
-**Effects:**
-- Ensured anonymous voting.
+**Value:**
+Ensured anonymous voting.
 
 ### Case 4 - Collateral Verification for RWAs
 
@@ -105,7 +105,7 @@ Now, quips aside, let's see how Silvana can really apply for serious business.
 
 **Solution:** Silvana provides proof that RWA objects are sufficiently collateralized and secure.
 
-**Effects:**
-- Enhanced blockchain adoption with real-world companies;
-- More TVL for blockchain ecosystems from RWAs.
+**Value:**
+* Enhanced blockchain adoption with real-world companies;
+* More TVL for blockchain ecosystems from RWAs.
 

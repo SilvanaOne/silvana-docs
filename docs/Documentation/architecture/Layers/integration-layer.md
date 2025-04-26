@@ -8,7 +8,7 @@ This is the highest-level layer, where consumers integrate what Silvana offers i
 
 Silvana can be used by individual **enterprises** from different industries, **tech startups**, **industry integrators**, and other **consumers**. 
 
-* Enterprises can integrate directly by using modules or Silvana Core in different execution environments, either by forking module repos in their private execution environment by using Silvana Cloud or developing their own modules to meet their business needs. 
+* Enterprises can integrate directly by using modules or **Silvana Core** in different execution environments, either by forking module repos in their private execution environment by using **Silvana Cloud** or developing their own modules to meet their business needs. 
 * Companies can join Silvana via industry integrators - bigger aggregators with extensive experience and expertise in an industry (DeFis, accounting, audit, insurance, real estate, etc.). They can also use Silvana modules and Core or develop new modules themselves.
 
 The Integration Layer supports Silvana’s broader mission to:

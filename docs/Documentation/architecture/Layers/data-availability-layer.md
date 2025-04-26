@@ -6,7 +6,7 @@ sidebar_position: 4
 
 ## Overview
 
-The **Data Availability (DA) Layer** is a **storage**. It securely stores all application data in structured [**data blobs**](/Documentation/glossary#data-blob) and ensures that any change to a record (whether a creation, mutation, or deletion) is **provable, traceable, and verifiable** using cryptographic proofs.
+The **Data Availability (DA) Layer** is essentially a **storage**. It securely stores all application data in structured [**data blobs**](/Documentation/glossary#data-blob) and ensures that any change to a record (whether a creation, mutation, or deletion) is **provable, traceable, and verifiable** using cryptographic proofs.
 
 This layer is critical in maintaining **tamper-resistance**, **auditability**, and **compliance** without compromising privacy or performance.
 
@@ -24,9 +24,9 @@ This layer is critical in maintaining **tamper-resistance**, **auditability**, a
 
 This commitment represents the current state root of the rollup and ties together:
 
-* The object’s state
-* Proof of change
-* DA hash (data location reference)
+* The provable record’s state;
+* Proof of change;
+* DA hash (data location reference).
 
 This model ensures **long-term data integrity** even if the DA layer is distributed across different storage providers.
 

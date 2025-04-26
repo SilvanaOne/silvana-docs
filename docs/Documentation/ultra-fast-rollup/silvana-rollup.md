@@ -22,10 +22,10 @@ Silvana’s [**Coordination Layer**](/Documentation/architecture/Layers/coordina
 
 * **Transaction Acceleration**: Silvana uses a fast L1 as the Execution Layer where transactions run, and smart contracts can be deployed.
 * **Proof Aggregation**: a ZK blockchain is used as the Settlement Layer to generate aggregated (recursive proofs) that are batched in one block.
-* **Sequencing**: the Coordination Layer manages the timing and sequencing of transactions, enabling features like scheduled and event-triggered transactions. This allows developers to build applications with complex, time-dependent workflows.
-* **Task Coordination**: the Coordination Layer acts as a mediator between modules and agents, facilitating the flow of information and commands. It ensures that agents representing users or automated processes interact correctly with the appropriate modules, maintaining the integrity and consistency of operations across the platform.
+* **Sequencing**: manages the timing and sequencing of transactions, enabling features like scheduled and event-triggered transactions. This allows developers to build applications with complex, time-dependent workflows.
+* **Task Coordination**: acts as a mediator between modules and agents, facilitating the flow of information and commands. It ensures that agents representing users or automated processes interact correctly with the appropriate modules, maintaining the integrity and consistency of operations across the platform.
 
-By managing these interactions, the coordination layer facilitates efficient and secure operations, enabling developers to build complex applications without delving into the underlying cryptographic complexities.
+By managing these interactions, the Coordination Layer facilitates efficient and secure operations, enabling developers to build complex applications without delving into the underlying cryptographic complexities.
 
 ### Settlement Layer
 
@@ -33,7 +33,7 @@ The [**Settlement Layer**](/Documentation/architecture/Layers/coordination-layer
 
 ### Data Availability (DA) Layer
 
-The [**Data Availability Layer**](/Documentation/architecture/Layers/data-availability-layer) is crucial in ensuring that transaction data is accessible and verifiable by all network participants. Each time a transaction runs with a provable record (create, read, mutate, or delete), a proof is generated, and a commitment to the rollup state and the DA hash is sent to the L1 blockchain. 
+The [**Data Availability Layer**](/Documentation/architecture/Layers/data-availability-layer) is crucial in ensuring that transaction data is accessible and verifiable by all network participants. Each time a transaction runs with a provable record (**create**, **read**, **mutat**e, or **delete**), a proof is generated, and a commitment to the rollup state and the DA hash is sent to the L1 blockchain. 
 
 1. Silvana uses **DA** to store the following:
 

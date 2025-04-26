@@ -15,9 +15,9 @@ Two types of data exist in a ZKP transaction: the **Private Input** and the **Pu
 
 For a proof to be considered zero-knowledge, it must satisfy three fundamental properties:
 
-1. **Completeness** – If a statement is true, an honest verifier will be convinced by an honest prover.
-2. **Soundness** – If a statement is false, a dishonest prover cannot convince the Verifier that it is true.
-3. **Zero-Knowledge** – The proof reveals no information other than the statement's validity.
+1. **Completeness** – if a statement is true, an honest verifier will be convinced by an honest prover.
+2. **Soundness** – if a statement is false, a dishonest prover cannot convince the Verifier that it is true.
+3. **Zero-Knowledge** – the proof reveals no information other than the statement's validity.
 
 ## How ZKPs work
 
@@ -209,6 +209,7 @@ The diagram below shows the flow of the use case.
 ## How Silvana Uses ZKPs
 
 Silvana implements Zero-Knowledge Proofs (ZKPs) to ensure privacy and security in its transaction validation process. Below is a detailed breakdown of how proofs are generated, who is responsible for different stages, the architectural layers involved, and the components engaged in the process.
+
 **Silvana ZKP Infrastructure**
 | Stage | Who Performs It | Process Description | Architectural Layer | Components Involved |
 |-------|-----------------|---------------------|---------------------|---------------------|

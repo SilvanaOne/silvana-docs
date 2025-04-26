@@ -6,10 +6,10 @@ sidebar_position: 2
 
 ## Overview
 
-Silvana has a complicated modular and multi-layer architecture with multiple components that can be deployed in different ways. Handling the deployment manually would be a challenging task. That’s when Agents kick in. 
+Silvana has a complicated modular and multi-layer architecture with multiple components that can be deployed in different ways. Handling the deployment manually would be a challenging task. That’s when **Agents** kick in. 
 
 :::note Silvana Agents
-**Silvana Agents** are programmable, decentralized entities designed to automate the lifecycle of transactions and application logic across Silvana’s modular architecture. Functioning as execution orchestrators, Agents wrap and interconnect core components such as Prover Programs, provable record schemas, Provers, Verifiers, and ABI interfaces.
+**Silvana Agents** are programmable, decentralized entities designed to automate the lifecycle of transactions and application logic across Silvana’s modular architecture. Functioning as execution orchestrators, Agents wrap and interconnect core components such as **Prover Programs**, **provable record schemas**, **Provers**, **Verifiers**, and **ABI interfaces**.
 :::
 
 Agents **abstract away operational complexity**, enabling developers and integrators to deploy robust, event-driven applications without directly interacting with every layer of the Silvana stack. In a way, Agents are simultaneously an interface through which applications interact with Silvana, wrapping the required Silvana components.
@@ -53,11 +53,11 @@ To deploy and use an agent, a user has to follow these steps:
 
 Using Agents helps automate Silvana functions and allows a wide array of useful options:
 
-* **Account Abstraction**: Agents have a built-in user signature that enables transactions to run within the limits defined by the user without the necessity to be initiated directly by a user.
+* **Account Abstraction**: agents have a built-in user signature that enables transactions to run within the limits defined by the user without the necessity to be initiated directly by a user.
 
-* **Scheduled Transactions**: Now transactions can run at a pre-planned time.
-* **Pre-paid Transactions**: Users pay for transactions long before they run.
-* **Event-triggered Transactions**: Transactions can be called by particular events that the Silvana agent catches as a witness. This allows for building apps with an event-based architecture. There needs to be some kind of middleman between modules and enterprises. In Silvana, those are agents that act both as interfaces and application builds.
+* **Scheduled Transactions**: now transactions can run at a pre-planned time.
+* **Pre-paid Transactions**: users pay for transactions long before they run.
+* **Event-triggered Transactions**: transactions can be called by particular events that the Silvana agent catches as a witness. This allows for building apps with an event-based architecture. There needs to be some kind of middleman between modules and enterprises. In Silvana, those are agents that act both as interfaces and application builds.
 
 ## Developer Notes
 Agents are ideal for applications that need automation, reliability, and auditability. Their modular structure supports development best practices such as separation of logic, reusable components, and configurable behavior.
@@ -69,7 +69,7 @@ Here are some general recommendations when building with Agents:
 * **Use Prover Programs as composable proof strategies** that your Agent can call during execution.
 * **Keep the Agent logic focused on orchestration** - think of it as the “conductor” for your application components
 * **Test your agent thoroughly** with mock transactions and simulated proof requests. Always cover edge cases, invalid inputs, and potential proof failures.
-* **Publish your agent** to the **Silvana Marketplac** once it’s tested and ready. It can then be reused, extended, or monetized by other developers and integrators.
+* **Publish your agent** to the **Silvana Marketplace** once it’s tested and ready. It can then be reused, extended, or monetized by other developers and integrators.
 
 ## Agent Types
 
@@ -81,6 +81,6 @@ Agents come in the following types:
 Potentially, Silvana Agents can also extend to:
 
 * **ZKML Agents**: this layer enables machine learning models to run in zero-knowledge and provable mode. It offers sophisticated data insights without exposing raw data and with proof of the model training set used.
-* **AI Agents**: Can operate in secure enclaves or as standard AI modules, generating insights or additional encrypted data interpretations.
-* **Human Agents**: Includes professionals or individuals who can provide manual checks, audits, or expert opinions.
-* **Professional Agents**: Domain experts (finance, insurance, accounting, compliance) who add authoritative validation to marketplace proofs.
+* **AI Agents**: can operate in secure enclaves or as standard AI modules, generating insights or additional encrypted data interpretations.
+* **Human Agents**: includes professionals or individuals who can provide manual checks, audits, or expert opinions.
+* **Professional Agents**: domain experts (finance, insurance, accounting, compliance) who add authoritative validation to marketplace proofs.

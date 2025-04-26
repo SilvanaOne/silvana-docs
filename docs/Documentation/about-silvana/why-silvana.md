@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ## Problem Statement
 
-Although the ZKP technology has been with us for over a decade, is highly demanded, and offers numerous use cases for businesses, it is still very early on the market. Here are some of the most critical obstacles:
+Although the ZKP technology has been with us for over a decade, is highly demanded, and offers numerous use cases for businesses, it is still very early on the market. Here are some of the most critical headwinds:
 
 1. **No Viable Web3 Private Data Verification Solution**
 
@@ -18,7 +18,7 @@ The market still lacks a comprehensive integrative ZK product that covers most u
 
 3. **Too much focus on the ZK technology while overlooking business needs**
 
-Tech startups tend to prioritize ZKP technology for data privacy and decentralization, while businesses often focus on regulatory compliance, cost-effectiveness, development speed, data security, and customizability. Addressing these priorities requires collaboration and mutual understanding to create blockchain solutions that are both technically advanced and practically applicable, benefiting both tech innovators and traditional businesses.
+Tech startups tend to prioritize ZKP technology for data privacy and decentralization, while businesses often focus on regulatory compliance, cost-effectiveness, development speed, data security, and customizability. Addressing these priorities requires collaboration and mutual understanding to create blockchain solutions that are both technically advanced and practically applicable, for the mutual benefit of both tech innovators and traditional businesses.
 
 4. **Project isolation**
 

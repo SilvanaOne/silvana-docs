@@ -23,7 +23,7 @@ We offer a multifunctional platform using which you can:
 
 * Implement and roll out any custom logic in plug-and-play **modules**;
 
-* Effectively handle assets, including tokenized real-world assets (RWAs), with **provable records**;
+* Effectively handle assets, including tokenized **real-world assets (RWAs)**, with **provable records**;
 
 * Streamline, automate, and accelerate business processes;
 

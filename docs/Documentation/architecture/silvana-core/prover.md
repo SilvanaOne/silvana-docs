@@ -163,27 +163,27 @@ Silvana Prover works with various ZKP cryptographic systems and functions, inclu
 
 The Silvana Prover manages ongoing operations to ensure optimal resource utilization and consistent transaction processing:
 
-* **Concurrent Processing**: The Prover can execute **multiple proof-generation tasks** in parallel, maximizing CPU usage and preventing a single slow job from blocking others.
+* **Concurrent Processing**: the Prover can execute **multiple proof-generation tasks** in parallel, maximizing CPU usage and preventing a single slow job from blocking others.
 
-* **Isolation and Sandboxing**: Tasks run in a **self-contained environment**, safeguarding private data and preventing any cross-interference among concurrently running proof jobs.
+* **Isolation and Sandboxing**: tasks run in a **self-contained environment**, safeguarding private data and preventing any cross-interference among concurrently running proof jobs.
 
-* **Job Scheduling & Queue Management**: It queues incoming proof requests, prioritizes them, and distributes tasks to worker processes for efficient, fair handling of both high-priority and routine jobs.
+* **Job Scheduling & Queue Management**: it queues incoming proof requests, prioritizes them, and distributes tasks to worker processes for efficient, fair handling of both high-priority and routine jobs.
 
-* **Resource & Memory Management**: The Prover monitors and limits CPU/memory consumption per job, recycling resources between tasks to avoid runaway usage or system instability.
+* **Resource & Memory Management**: the Prover monitors and limits CPU/memory consumption per job, recycling resources between tasks to avoid runaway usage or system instability.
 
-* **Error Detection & Recovery**: On encountering validation or runtime errors in a proof job, the Prover aborts the task gracefully, logs the issue, and isolates the failure so other operations remain unaffected.
+* **Error Detection & Recovery**: on encountering validation or runtime errors in a proof job, the Prover aborts the task gracefully, logs the issue, and isolates the failure so other operations remain unaffected.
 
-* **Automated Retries**: Transient or minor failures prompt the Prover to retry the proof generation automatically, ensuring robust handling of temporary glitches without manual intervention.
+* **Automated Retries**: transient or minor failures prompt the Prover to retry the proof generation automatically, ensuring robust handling of temporary glitches without manual intervention.
 
-* **Extensive Logging**: Each proof operation is recorded, capturing start/stop events, execution times, and any exceptions, enabling in-depth auditing, debugging, and performance tuning.
+* **Extensive Logging**: each proof operation is recorded, capturing start/stop events, execution times, and any exceptions, enabling in-depth auditing, debugging, and performance tuning.
 
-* **Real-Time Monitoring**: The Prover exposes performance metrics (like queue lengths, average proving time) to external systems, giving operators insight into throughput and potential bottlenecks.
+* **Real-Time Monitoring**: the Prover exposes performance metrics (like queue lengths, average proving time) to external systems, giving operators insight into throughput and potential bottlenecks.
 
-* **Proof Batching & Aggregation**: Multiple smaller proofs can be combined into a single job or merged into a recursive proof, boosting efficiency by reducing duplicated cryptographic overhead.
+* **Proof Batching & Aggregation**: multiple smaller proofs can be combined into a single job or merged into a recursive proof, boosting efficiency by reducing duplicated cryptographic overhead.
 
-* **Validation & Consistency Checks**: The Prover often verifies the generated proof internally before submission, guaranteeing correctness and preventing invalid proofs from being dispatched.
+* **Validation & Consistency Checks**: the Prover often verifies the generated proof internally before submission, guaranteeing correctness and preventing invalid proofs from being dispatched.
 
-* **Integration with Tx Sender & Monitor**: Once a proof is generated, it's handed off for transaction packaging and blockchain submission; status updates are then communicated back to the Prover framework.
+* **Integration with Tx Sender & Monitor**: once a proof is generated, it's handed off for transaction packaging and blockchain submission; status updates are then communicated back to the Prover framework.
 
 
 
