@@ -115,6 +115,8 @@ Each Coordination Transaction Includes:
 Coordination Layer is Silvana’s key innovation underpinning the [**Silvana Rollup**](/Documentation/ultra-fast-rollup/silvana-rollup), known for showing the ultra-fast transaction execution of **optimistic rollups** and the security of **zk rollups**. Coordination Layer ensures near-instant transactions by running execution on fast blockchains.
 :::
 
+Get insights into Coordination Transactions by exploring them on [**Silvascan**](https://silvascan.io/testnet/coordination-txs).
+
 ## Settlement Transaction
 
 After successful execution, the Coordination Layer sends the recursive proof to the [**Settlement Layer**](/Documentation/architecture/Layers/settlement-layer) and initiates a Settlement Transaction, where the recursive (aggregated) proof is checked and validated by the validator set on the Settlement blockchain.
@@ -143,6 +145,8 @@ Upon completion, the final state commitment on L1 (often labeled **_`settlement_
 The final stage of the lifecycle occurs on the [**Data Availability (DA) Layer**](/Documentation/architecture/Layers/data-availability-layer), anchored to a public Layer 1 blockchain. This stage ensures that the transaction data, along with its proof artifacts, are permanently recorded and verifiable on-chain.
 
 As a transaction runs with a [**provable record**](/Documentation/key-concepts/provable-records), its state is mutated, for which a proof is generated. Then the proofs are stored in the DA Layer.
+
+Get insights into DA Transactions by exploring them on [**Silvascan**](https://silvascan.io/testnet/da-txs).
 
 ## Metadata
 

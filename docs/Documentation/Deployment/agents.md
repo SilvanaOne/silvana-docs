@@ -16,6 +16,8 @@ Agents **abstract away operational complexity**, enabling developers and integra
 
 Agents are fundamental in realizing Silvana’s object-centric, ZK-native infrastructure for decentralized business logic and Real-World Asset (RWA) management.
 
+Explore [**Agents on Silvascan**](https://silvascan.io/testnet/agents).
+
 ## Key Functions
 
 Agents are not just automation scripts or bots. Their main role is to bridge application logic with cryptographic proof generation and validation, ensuring seamless interactions across system layers. That’s what Silvana agents do:

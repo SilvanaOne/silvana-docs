@@ -21,4 +21,4 @@ By offloading execution to fast environments while securing finality on proven L
 
 This hybrid strategy ensures that enterprise users benefit from **instant UX** at the application level, while also meeting **blockchain-grade expectations** for auditability, compliance, and integrity.
 
-![Settlement Layer](../img/da-layer.png)
+![Settlement Layer](../img/settlement-layer.png)
