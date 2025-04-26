@@ -37,15 +37,15 @@ As a user transaction runs with a provable record, its metadata is logged to est
 * Any referenced coordination hash or data availability fields.
 
 **Custom transaction metadata includes**:
-* **_`blockNumber`_**: Coordination Layer block index (28);
-* **_`number_of_transactions`_**: how many settlement transactions this proof supports (3);
-* **_`sequences`_**: the range of coordination transaction sequence numbers covered ([49, 51]);
-* **_`settlement_hash`_**: the L1 state commitment updated by this proof;
-* **_`nonce`_**: a unique job identifier (626);
-* **_`proof_data_availability`_**: CID for the proof payload used for DA;
-* **_`proof_data_availability_digest`_**: Coordination Layer event reference for DA;
-* **_`au_proof_data_availability`_**: additional proof DA CID (for aggregated proofs);
-* **_`coordination_hash`_**: the new rollup state commitment on the coordination layer;
-* **_`linkId`_**: a reference tying this metadata record back to the agent job (ID "28").
+* **_`blockNumber`_**: Coordination-layer block index (28)
+* **_`number_of_transactions`_**: How many settlement transactions this proof supports (3)
+* **_`sequences`_**: The range of coordination transaction sequence numbers covered ([49, 51])
+* **_`settlement_hash`_**: The L1 state commitment (Mina devnet) updated by this proof
+* **_`nonce`_**: A unique job identifier (626)
+* **_`proof_data_availability`_**: CID for the proof payload used for DA
+* **_`proof_data_availability_digest`_**: Coordination-layer event reference for DA
+* **_`au_proof_data_availability`_**: Additional proof DA CID (for aggregated proofs)
+* **_`coordination_hash`_**: The new rollup state commitment on the coordination layer
+* **_`linkId`_**: A reference tying this metadata record back to the agent job (ID "28").
 
 Through this process, Silvana guarantees state **anchoring**, **verifiability**, and **data retrievability**. Even if internal Silvana infrastructure were to fail, any third party could reconstruct and verify the rollup’s state using public data and L1 commitments.
