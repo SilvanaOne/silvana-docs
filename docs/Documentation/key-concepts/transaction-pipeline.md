@@ -34,7 +34,7 @@ The table below provides some basic information about transaction types in Silva
 
 | Transaction              | Layer                              | Function                                                                 |
 |--------------------------|-------------------------------------|--------------------------------------------------------------------------|
-| Prover Transaction        | Silvana Core                        | • Proof generation                                                         |
+| Prover Transaction        | Silvana Core                        | Proof generation                                                         |
 | Coordination Transaction | Coordination Layer (Silvana Rollup)| • Transaction ordering and sequencing; <br/>• Execution of atomic custom logic; <br/>• Proof aggregation; <br/>• Transaction acceleration. |
 | Settlement Transaction   | Settlement Layer                    | • Checking and validating recursive proofs                               |
 | DA Transaction           | Data Availability (DA) Layer        | • Provable record state mutation; <br/>• Generating proof of the state mutation; <br/>• Proof storage. |
