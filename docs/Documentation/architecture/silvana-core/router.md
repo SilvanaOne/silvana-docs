@@ -67,13 +67,13 @@ schemas:
       nonce: bigint
     ProverProgramId: "trading.ProverProgram.v1"
 ```
-Once registered, this schema becomes part of the Router's registry and can be queried via API or used during proof generation. The `ProverProgramId` field links the schema to a specific proving circuit, ensuring verifiability and consistency across all consumers of the record type.
+Once registered, this schema becomes part of the Router's registry and can be queried via API or used during proof generation. The ***`ProverProgramId`*** field links the schema to a specific proving circuit, ensuring verifiability and consistency across all consumers of the record type.
 
-* When the schema for `user.trading.account` is registered, the Router persists the **structure**, its **version**, and the associated **proving program** (`ProverProgramId`). This ensures global discoverability and consistency.
+* When the schema for ***`user.trading.account`*** is registered, the Router persists the **structure**, its **version**, and the associated **proving program** (***`ProverProgramId`***). This ensures global discoverability and consistency.
 
-* When a Prover or Verifier needs to generate or validate a proof, it queries the Router using the schema ID (`user.trading.account`) to retrieve the latest or specified version of the schema.
+* When a Prover or Verifier needs to generate or validate a proof, it queries the Router using the schema ID (***`user.trading.account`***) to retrieve the latest or specified version of the schema.
 
-* The Router guarantees that **each schema is cryptographically linked** to the correct `ProverProgramId`. This avoids mismatches between data format and proving logic.
+* The Router guarantees that **each schema is cryptographically linked** to the correct ***`ProverProgramId`***. This avoids mismatches between data format and proving logic.
 
 ## Business Use Cases
 

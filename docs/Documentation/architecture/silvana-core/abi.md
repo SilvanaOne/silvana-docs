@@ -37,11 +37,11 @@ Its role is to act as the **transaction construction gateway** - receiving inten
 
 A request from the frontend or external client is sent via API. It includes:
 
-* Action type (`create`, `transfer`, etc.)
+* Action type (***`create`***, ***`transfer`***, etc.)
 
-* Target module (`fungible-token`, `marketplace`, etc.)
+* Target module (***`fungible-token`***, ***`marketplace`***, etc.)
 
-* Parameters (`token_ID`, `recipient`, etc.)
+* Parameters (***`token_ID`***, ***`recipient`***, etc.)
 
 2. **API → ABI Forwarding**
 
@@ -99,19 +99,19 @@ This example constructs a transaction to deploy a new fungible token in JSON:
 ```
 **Explanation of Fields**:
 
-* `module`: Target logic module (must be registered in Silvana Core)
+* ***`module`***: Target logic module (must be registered in Silvana Core)
 
-* `action`: Requested operation within the module
+* ***`action`***: Requested operation within the module
 
-* `params`: Action-specific inputs, matched against the contract interface
+* ***`params`***: Action-specific inputs, matched against the contract interface
 
-* `meta`: Optional context metadata
+* ***`meta`***: Optional context metadata
 
-     * `timestamp`: Client-side request time (used in transaction context)
+     * ***`timestamp`***: Client-side request time (used in transaction context)
 
-     * `network`: Network ID or alias
+     * ***`network`***: Network ID or alias
 
-     * `ProverProgram`: Optional ProverProgram version or identifier to resolve
+     * ***`ProverProgram`***: Optional ProverProgram version or identifier to resolve
 
 **Output**:
 

@@ -67,7 +67,7 @@ The table below outlines what each actor and component wants to achieve with a Z
 - **Private Input**: Full patent details
 - **Public Input**: Patent hash
 - **Signature**: Digital signature for authentication
-```
+```json
 {
   "private_input": {
     "owner_wallet": "B62qpnqhvK...",
@@ -94,7 +94,7 @@ Prover runs cryptographic operations using the **ZK Program** to prove:
 - The patent exists.
 - Dr. Zhou owns it.
 A **ZK Proof** is generated.
-```
+```json
 {
   "zk_proof": "0xDEF456GH789IJ",
   "validity": "true",
@@ -116,7 +116,7 @@ ZK Proof was successfully created.
 - If not, the transaction gets aborted.
 
 **Verifier Signed Proof Output**
-```
+```json
 {
   "verified_proof": "0xVERIFIED123ABC",
   "patent_hash": "0xABCD1234EF5678",
@@ -133,7 +133,7 @@ If the proof fails, the verification halts.
 - The **verified proof** is stored in the **DA Layer** for future reference.
 
 **Stored Proof Record**
-```
+```json
 {
   "zk_proof_id": "zkp-09345",
   "verified_proof": "0xVERIFIED123ABC",
@@ -149,7 +149,7 @@ Proof securely recorded.
 **Step 7**: **Tx Builder** Uses Public Input & ZK Proof to Build a **ZK Transaction**.
 - The Tx Builder builds the ZK Transaction.
 **ZK Transaction Build**
-```
+```json
 {
   "transaction_id": "txn-56789",
   "zk_proof_id": "zkp-09345",
@@ -160,7 +160,7 @@ Proof securely recorded.
 **Step 8**: Counterparty (TechNova) Signs the ZK Transaction.
 - TechNova (Counterparty) reviews and signs the transaction.
 **TechNova's Signed Transaction**
-```
+```json
 {
   "transaction_id": "txn-56789",
   "counterparty_signature": "0xTECHSIG987654"
@@ -177,7 +177,7 @@ The counterparty has signed and approved the transaction.
 - The final ZK Transaction is published to the blockchain.
 - **Settlement** completed securely, with patent verification recorded permanently.
 **Final Settlement Record on Blockchain**
-```
+```json
 {
   "transaction_id": "txn-56789",
   "zk_proof_id": "zkp-09345",
