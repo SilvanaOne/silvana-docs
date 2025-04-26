@@ -19,6 +19,8 @@ Each Coordination Transaction Includes:
 * a reference list of proof CIDs';
 * an intermediate coordination hash representing the rollup’s current state.
 
+Example of a [**Coordination Transaction**](https://suiscan.xyz/devnet/tx/6q7TMPiiprQAShsRkoVEJYRLVbvq8CL5bsWbL6MWYmTm).
+
 :::tip Note
 Coordination Layer is Silvana’s key innovation underpinning the [**Silvana Rollup**](/Documentation/ultra-fast-rollup/silvana-rollup), known for showing the ultra-fast transaction execution of **optimistic rollups** and the security of **zk rollups**. Coordination Layer ensures near-instant transactions by running execution on fast blockchains.
 :::

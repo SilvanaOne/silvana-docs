@@ -8,4 +8,6 @@ The final stage of the lifecycle occurs on the [**Data Availability (DA) Layer**
 
 As a transaction runs with a [**provable record**](/Documentation/key-concepts/provable-records), its state is mutated, for which a proof is generated. Then the proofs are stored in the DA Layer.
 
+Example of a [**DA Transaction**](https://suiscan.xyz/devnet/tx/5S91htVLBAvqa9VaJS7exyMETfHGc5uzRKyzMwaZGfPZ).
+
 Get insights into DA Transactions by exploring them on [**Silvascan**](https://silvascan.io/testnet/da-txs).

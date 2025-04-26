@@ -24,3 +24,5 @@ Upon completion, the final state commitment on L1 (often labeled **_`settlement_
 * All prior computations were valid and sequenced correctly;
 * The L1 contract now holds an authoritative record of the rollup state;
 * Future state transitions must build upon this commitment.
+
+Example of a [**Settlement Transaction**](https://minascan.io/devnet/tx/5JvEKZo3qF3w74jAHGQiqe6Qv5F43jdsLrsrMVHMk79pKvzgLTrx?type=zk-tx).
