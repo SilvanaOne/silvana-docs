@@ -18,7 +18,7 @@ Each transaction in Silvana is decomposed into **multiple sub-transactions** tha
 * **DA Transaction**;
 * **Settlement Transaction**.
 
-So when a user runs a user operation, the abovementioned transactions run one by one. We call this operation a **Pipelined Transaction**. It covers a whole use case or a business operation that can involve smaller operations, while the transactions that are part of the pipelined transaction are focused on each particular technical execution aspect, namely:
+So when a user runs a user operation, the abovementioned transactions run one by one. We call this operation a **pipelined transaction**. It covers a whole use case or a business operation that can involve smaller operations, while the transactions that are part of the pipelined transaction are focused on each particular technical execution aspect, namely:
 
 * proof generation;
 * execution of business logic;
