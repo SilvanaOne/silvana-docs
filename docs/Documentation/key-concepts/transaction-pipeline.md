@@ -42,3 +42,95 @@ The table below provides some basic information about transaction types in Silva
 The diagram below illustrates the Pipelined Transaction in Silvana:
 
 ![Pipelined Transaction](..\key-concepts\img\transaction-pipeline.png)
+
+## Real-Life Case: User Wallet Migration with Embedded Reward Claim
+
+Let's see what a pipelined transaction looks like on a real-life example.
+
+### Case
+
+Bob decides to migrate his wallet from an old rollup to a new one on a decentralized application built on Silvana. Meanwhile, during the migration, he wants to claim the pending reward and update his on-chain profile.
+
+Since this pipelined transaction involves multiple modules (wallet migration logic, reward module, user profile module), Silvana splits them into multiple Coordination Layer transactions, even though Bob triggered a single action only.
+
+### Transaction Flow
+
+1. **Prover Transaction**.
+
+1.1. The **Agent** picks up the user operation and calls the Prover
+
+1.2. The Prover executes all three tasks inside a zk-SNARK circuit under constraint logic:
+
+1.2.1. Verify wallet migration logic.
+
+1.2.2. Verify reward eligibility.
+
+1.2.3. Validate profile update data.
+
+1.2.4. Generate proofs - one for each piece of business logic.
+
+**Outputs**:
+
+* New rollup state commitment.
+
+* Multiple proof CIDs for the three tasks:
+
+  * **Proof 1** → Wallet migration
+
+  * **Proof 2** → Reward claim
+
+  * **Proof 3 Profile update
+
+  2. **Coordination Transaction**.
+
+ 2.1. Coordination Layer calls smart contracts to execute 3 Coordination Transactions - one for each piece of business logic:
+
+2.1.1 **Coordination Tx 1**:
+
+**Action**: Wallet ownership migration
+
+**Output**: Emits an event recording new ownership.
+
+2.1.2 **Coordination Tx 2**:
+
+**Action**: Reward payout logic
+
+**Output**: Emits event confirming reward transferred.
+
+2.1.3. **Coordination Tx 3:**
+
+**Action**: Profile metadata update
+
+**Output**: Emits event confirming profile data updated.
+
+The system aggregates these into an intermediate coordination hash.
+
+2.2. Coordination Layer aggregates the previously generated proofs in a single **recursive proof**.
+
+3. **DA Transaction**.
+
+3.1. DA Layer compares the old and the new state of the corresponding provable record and records the updated state.
+
+3.2. DA Layer generates proof for the updated state. 
+
+**Output**: Proof for the updated state of the provable record.
+
+4. **Settlement Transaction**.
+
+4.1. Recursive proof is submitted to the Settlement Layer.
+
+4.2. Validators sign the proof.
+
+4.3. Settlement Transaction is recorded in the Settlement Layer and finality is reached.
+
+**Output of running the pipelined transactions**:
+
+The provable record gets updated in the DA Layer;
+
+3 transactions are executed on the Execution (Coordination) Layer;
+
+A recursive proof is validated and recorded on the Settlement Layer.
+
+The diagram below illustrates the case:
+
+![Pipelined Transaction - Case](..\key-concepts\img\case-pipeline.png)
