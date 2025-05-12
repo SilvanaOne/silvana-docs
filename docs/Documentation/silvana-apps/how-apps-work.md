@@ -6,17 +6,15 @@ sidebar_position: 1
 ## Overview
 The **Application Layer** is where the business logic in Silvana is deployed. Every enterprise has its own business goals and requirements for which functions are developed. Most conventional L1 and L2 blockchains **struggle to provide the possibility to deploy** any custom logic due to a number of limitations, be it the maximum field limit, the programming language, or the absence of the required primitives. One of Silvana’s key characteristics is **composability**, meaning developers can deploy **any logic** using **any programming language** or cryptographic curves.
 
-Silvana’s Application Layer has a **modular structure**. Enterprises (startups), industry integrators and other customers deploy code in modules that are designed to meet particular business needs and provide specific business value. 
-
-Modules are built around real-life use cases. Some modules are supplied by Silvana: Transactions, NFTs, Fungible Tokens, DEX, etc. Other modules are custom and can cover any use case out there: insurance, lending, governance, document verification and certification, car rental, and more.
+Silvana’s Application Layer has a **modular structure**. Enterprises, industry integrators and other customers deploy code in modules that are designed to meet particular business needs and provide specific business value. 
 
 Silvana’s basic modules are open-source and can be used by anyone. They cover the most general functions that can be used in any other module and are developed and deployed by the Silvana team. Custom modules are developed by enterprises, industry integrators, and individual developers.
 
 :::tip Note
 Essentially, a module is a piece of code in a mono repo. To use a module, a developer needs to deploy an agent. An agent assembles everything needed for a particular use case: the required modules, Prover Program, the Prover, and the Verifier Circuit.
+:::
 
 Custom modules can be open-source or restricted from public use. In the latter case, they can be either private, i.e., to be used by creators only, or for sale. Custom modules for sale are displayed in the **Silvana Marketplace** as **blueprints**.
-:::
 
 ![How Apps Work](./img/how-apps-work.png)
 
@@ -39,15 +37,13 @@ In Silvana’s modular stack, an Agent acts as the glue that joins your business
 
 In this way, the Agent serves as both a wrapper and a **programmable interface** for your application, abstracting away the complexity of interacting with each layer of Silvana’s multi-layer architecture.
 
-An Agent’s primary role is to bridge high-level application logic (business modules) with low-level cryptographic proof generation and state verification. 
-
 :::tip
 An Agent’s primary role is to bridge high-level application logic (business modules) with low-level cryptographic proof generation and state verification. 
 :::
 
 Each Agent encapsulates one or more modules, and a **Prover Program** defining the rules/constraints of those modules, and coordinates the generation and validation of proofs for any state changes. This design lets developers focus on business logic while the Agent ensures all operations produce the required zero-knowledge proofs and state updates. 
 
-In Silvana, *“Agents are not just scripts or bots”*,  they are first-class components that **bind modules**, **Prover Programs**, and **core components into coherent workflows**. Because Agents handle all interactions with Silvana Core, they present a unified interface through which the application logic (modules) can trigger proofs, update records, and communicate with the underlying blockchain layers.
+In Silvana, *“Agents are not just scripts or bots”*,  they are first-class components that **bind modules**, **Prover Programs**, and **core components into coherent workflows**. 
 
 ## How Applications Work in Silvana
 
@@ -145,13 +141,9 @@ Event-driven mechanisms allow real-time automated responsiveness to system or ex
 When an Agent executes a transaction:
 
 * **State change is initiated** via an Agent method call or event trigger.
-
 * **ZK Prover generates cryptographic proof**, verifying compliance with predefined Prover Program rules.
-
 * **Transaction packaged**: Proof and data encapsulated for submission.
-
 * **Transaction submitted** automatically to **Silvana’s Coordination Layer**.
-
 * **Settlement and verification happen automatically**, with records updated accordingly.
 
 This lifecycle guarantees each state transition's integrity, auditability, and correctness without manual intervention.
@@ -160,9 +152,7 @@ This lifecycle guarantees each state transition's integrity, auditability, and c
 Silvana’s modular structure allows developers to easily combine different modules into Agents:
 
 * **Reusability**: Use existing modules from Silvana’s library.
-
 * **Forkability**: Modify existing modules for tailored functionality.
-
 * **Composable Logic**: Integrate multiple modules within a single Agent to create complex application flows.
 
 Example composition:
