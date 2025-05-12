@@ -4,7 +4,7 @@ sidebar_position: 1
 # How Apps Work
 
 ## Overview
-The **Application Layer** is where the business logic in Silvana is deployed. Every enterprise has its own business goals and requirements for which functions are developed. Most conventional L1 and L2 blockchains struggle to provide the capability to deploy custom logic due to several limitations, such as:
+The **Application Layer** is where the business logic in Silvana is deployed. Every client has its own business goals and requirements for which functions are developed. Most conventional L1 and L2 blockchains struggle to provide the capability to deploy custom logic due to several limitations, such as:
 
 * Maximum field limit
 * Restrictions related to the programming language
@@ -14,7 +14,7 @@ One of Silvana’s key characteristics is **composability**, meaning developers 
 
 Silvana’s Application Layer has a **modular structure**. Enterprises, industry integrators and other customers deploy code in modules that are designed to meet particular business needs and provide specific business value. 
 
-Silvana’s basic modules are open-source and can be used by anyone. They cover the most general functions that can be used in any other module and are developed and deployed by the Silvana team. Custom modules are developed by enterprises, industry integrators, and individual developers.
+Silvana’s basic modules are open-source and can be used by anyone. They cover the most general functions that can be used in any other module and are developed and deployed by the Silvana team. Custom modules are created by various stakeholders, including businesses, industry experts, and independent developers.
 
 :::tip Note
 Essentially, a module is a piece of code in a mono repo. To use a module, a developer needs to deploy an agent. An agent assembles everything needed for a particular use case: the required modules, Prover Program, the Prover, and the Verifier Circuit.
@@ -39,7 +39,7 @@ Silvana's execution embodies the logic presented to end users on the consumer si
 Silvana **Agents** are programmable orchestrators that bundle the necessary pieces of an application and automate its lifecycle. 
 :::
 
-In Silvana’s modular stack, an Agent acts as the glue that joins your business-specific modules with the Silvana Core components like Prover programs, Provers, Verifiers, and ABIs. Essentially, **a developer deploys an Agent to use a module** – the Agent will assemble everything needed for a given use case: the required module(s), the associated Prover Program(zero-knowledge program), and the corresponding Prover and Verifier circuits. 
+In Silvana’s modular stack, an Agent acts as the glue that joins your business-specific modules with the Silvana Core components like Prover programs, Provers, Verifiers, and ABIs. Essentially, **a developer deploys an Agent to use a module** – the Agent will assemble everything needed for a given use case: the required module(s), the associated Prover Program, and the corresponding Prover and Verifier circuits. 
 
 In this way, the Agent serves as both a wrapper and a **programmable interface** for your application, abstracting away the complexity of interacting with each layer of Silvana’s multi-layer architecture.
 
