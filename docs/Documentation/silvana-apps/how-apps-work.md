@@ -4,7 +4,13 @@ sidebar_position: 1
 # How Apps Work
 
 ## Overview
-The **Application Layer** is where the business logic in Silvana is deployed. Every enterprise has its own business goals and requirements for which functions are developed. Most conventional L1 and L2 blockchains **struggle to provide the possibility to deploy** any custom logic due to a number of limitations, be it the maximum field limit, the programming language, or the absence of the required primitives. One of Silvana’s key characteristics is **composability**, meaning developers can deploy **any logic** using **any programming language** or cryptographic curves.
+The **Application Layer** is where the business logic in Silvana is deployed. Every enterprise has its own business goals and requirements for which functions are developed. Most conventional L1 and L2 blockchains struggle to provide the capability to deploy custom logic due to several limitations, such as:
+
+* Maximum field limit
+* Restrictions related to the programming language
+* Lack of necessary cryptographic primitives 
+
+One of Silvana’s key characteristics is **composability**, meaning developers can deploy **any logic** using **any programming language** or cryptographic curves.
 
 Silvana’s Application Layer has a **modular structure**. Enterprises, industry integrators and other customers deploy code in modules that are designed to meet particular business needs and provide specific business value. 
 
