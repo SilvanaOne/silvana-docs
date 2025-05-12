@@ -114,9 +114,10 @@ These configurations ensure your Agent operates correctly within the wider ecosy
 Agents automate transaction execution through several methods:
 
 **Direct Invocation**
+
 Agents expose API endpoints that trigger transactions directly from user interactions or backend processes. For example:
 
-```yaml
+```javascript
 await Agent.transferTokens({ from, to, amount });
 ```
 
