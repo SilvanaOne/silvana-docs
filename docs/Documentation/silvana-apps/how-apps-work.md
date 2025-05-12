@@ -55,7 +55,7 @@ In Silvana, *“Agents are not just scripts or bots”*,  they are first-class c
 
 Silvana enables developers to rapidly deploy blockchain applications by assembling modules and managing them through specialized scripts known as Agents. This document describes the technical workflow for deploying applications on Silvana, focusing on using Agents, integrating modules, defining provable record schemas, configuring additional components, and automating transactions.
 
-## 1. Deploying Agents
+### 1. Deploying Agents
 
 To operationalize modules into complete applications, you must deploy an **Agent**, which acts as an orchestrator. Agents are scripts that collect and coordinate several essential components:
 
@@ -73,7 +73,7 @@ Agents reference module repositories (usually monorepos hosted on GitHub) direct
 
 Each module's logic is expressed through a Prover Program, which specifies the rules needed for state transitions. When an Agent is configured, it explicitly links each module to its corresponding Prover and Verifier components to ensure accurate proof generation and verification.
 
-## 2. Defining Provable Record Schemas via Router
+### 2. Defining Provable Record Schemas via Router
 Before application execution, Provable Records must be explicitly defined in the Silvana **Router** using YAML schema definitions. These schemas describe the structure of your application's data and connect them to the appropriate Prover Program.
 
 **Example YAML Schema**
@@ -98,7 +98,7 @@ silvana-cli schema:register -f schema.yaml
 ```
 Once registered, the schema becomes globally discoverable, ensuring consistency across all interactions.
 
-## 3. Configuring Additional Components
+### 3. Configuring Additional Components
 
 Depending on the application’s specific needs, developers might need to configure additional components within the Agent:
 
@@ -109,7 +109,7 @@ Depending on the application’s specific needs, developers might need to config
 
 These configurations ensure your Agent operates correctly within the wider ecosystem and meets precise business logic and workflow requirements.
 
-## 4. Automating Transactions with Agents
+### 4. Automating Transactions with Agents
 
 Agents automate transaction execution through several methods:
 
@@ -143,7 +143,7 @@ Agent.on("depositConfirmed", async (event) => {
 ```
 Event-driven mechanisms allow real-time automated responsiveness to system or external states.
 
-## 5. Transaction Lifecycle Automation
+### 5. Transaction Lifecycle Automation
 When an Agent executes a transaction:
 
 * **State change is initiated** via an Agent method call or event trigger.
@@ -154,7 +154,7 @@ When an Agent executes a transaction:
 
 This lifecycle guarantees each state transition's integrity, auditability, and correctness without manual intervention.
 
-## 6. Composing Applications with Modular Design
+### 6. Composing Applications with Modular Design
 Silvana’s modular structure allows developers to easily combine different modules into Agents:
 
 * **Reusability**: Use existing modules from Silvana’s library.
@@ -174,7 +174,7 @@ agent.on("tradeExecuted", async ({ buyer, seller, amount }) => {
 });
 ```
 
-## 7. Monitoring and Interaction
+### 7. Monitoring and Interaction
 
 For operational transparency and debugging, Silvana provides tools:
 
