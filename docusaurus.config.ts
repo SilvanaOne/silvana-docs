@@ -10,7 +10,7 @@ const config: Config = {
   title: "Silvana",
   tagline: "Proof of everything engine to scale your business",
   favicon: "img/favicon.ico",
-  staticDirectories: ['static'],
+  staticDirectories: ["static"],
   // Set the production url of your site here
   url: "https://docs.silvana.one",
   // Set the /<baseUrl>/ pathname under which your site is served
@@ -82,6 +82,34 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/SilvanaOne/silvana-docs/tree/main/",
+
+          sidebarItemsGenerator: async function customSidebarItemsGenerator({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) {
+            const sidebarItems = await defaultSidebarItemsGenerator(args);
+
+            function filterHiddenCategories(items) {
+              return items
+                .map((item) => {
+                  if (item.type === "category" && item.className === "hidden") {
+                    return null;
+                  }
+
+                  if (item.type === "category" && item.items) {
+                    return {
+                      ...item,
+                      items: filterHiddenCategories(item.items),
+                    };
+                  }
+
+                  return item;
+                })
+                .filter(Boolean);
+            }
+
+            return filterHiddenCategories(sidebarItems);
+          },
         },
         blog: false,
         // {
