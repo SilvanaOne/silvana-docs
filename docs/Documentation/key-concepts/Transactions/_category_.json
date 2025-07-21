@@ -2,6 +2,7 @@
     "label": "Transactions",
     "position": 4,
     "collapsed": true,
+    "hidden": true,
     "link": {
       "type": "generated-index",
       "description": "Learn about the different types of pipelined transactions in Silvana."
