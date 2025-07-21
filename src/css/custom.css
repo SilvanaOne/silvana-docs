@@ -592,6 +592,10 @@
    line-height: 20px;
    margin-top: 8px;
  }
+
+ .theme-doc-sidebar-item-category.hidden {
+    display: none !important;
+  }
  
  /* Custom warning icon styles */
  .alert--warning svg {

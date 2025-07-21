@@ -1,9 +1,10 @@
 {
-    "label": "Transactions",
-    "position": 4,
-    "collapsed": true,
-    "link": {
-      "type": "generated-index",
-      "description": "Learn about the different types of pipelined transactions in Silvana."
-    }
-  } 
+  "label": "Transactions",
+  "position": 4,
+  "collapsed": true,
+  "className": "hidden",
+  "link": {
+    "type": "generated-index",
+    "description": "Learn about the different types of pipelined transactions in Silvana."
+  }
+}
