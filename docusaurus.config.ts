@@ -97,6 +97,22 @@ const config: Config = {
                   }
 
                   if (item.type === "category" && item.items) {
+                    if (
+                      item.customProps &&
+                      item.customProps.hiddenItems &&
+                      item.items
+                    ) {
+                      return {
+                        ...item,
+                        items: filterHiddenCategories(
+                          item.items.filter((el) => {
+                            return !item.customProps.hiddenItems.includes(
+                              el.id.split("/")[el.id.split("/")?.length - 1]
+                            );
+                          })
+                        ),
+                      };
+                    }
                     return {
                       ...item,
                       items: filterHiddenCategories(item.items),
