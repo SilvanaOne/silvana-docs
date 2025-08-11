@@ -453,17 +453,17 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
-        {
-          type: "docSidebar",
-          sidebarId: "apiSidebar",
-          position: "left",
-          label: "Core",
-        },
-        {
-          to: "api",
-          label: "Modules",
-          position: "left",
-        },
+        // {
+        //   type: "docSidebar",
+        //   sidebarId: "apiSidebar",
+        //   position: "left",
+        //   label: "Core",
+        // },
+        // {
+        //   to: "api",
+        //   label: "Modules",
+        //   position: "left",
+        // },
         // { to: "/blog", label: "Blog", position: "left" },
         // {
         //   href: "https://github.com/SilvanaOne",
