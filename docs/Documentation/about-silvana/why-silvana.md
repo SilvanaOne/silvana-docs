@@ -58,4 +58,4 @@ Zero-knowledge proofs can be used to verify that businesses meet all legal and c
 
 6. **Flexible and Easy App Building and Setup**
 
-All apps are modular and composable. You can assemble them like a constructor. All interfaces are familiar and simple. You can easily integrate the data, processes, assets, interfaces, and systems you already have. Everything is mutable and configurable. 0
+All apps are modular and composable. You can assemble them like a constructor. All interfaces are familiar and simple. You can easily integrate the data, processes, assets, interfaces, and systems you already have. Everything is mutable and configurable.
