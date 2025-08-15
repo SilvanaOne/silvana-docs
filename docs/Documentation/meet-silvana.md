@@ -31,4 +31,4 @@ We offer a multifunctional platform using which you can:
 
 * Integrate with the battle-tested on-chain infra and networks for streamlined operation.
 
-As you can see, there are lots of nice things you can do with Silvana. Just kick in and give it a try. Grow wild and free with us!
+As you can see, there are lots of nice things you can do with Silvana. Just kick in and give it a try. Grow wild and free with us! 0

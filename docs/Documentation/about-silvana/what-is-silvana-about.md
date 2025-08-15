@@ -86,4 +86,4 @@ Multiple proofs can be aggregated in a single recursive proof, which means that 
 
 ### Confidential Computation
 
-With TEE and MPC, execution runs within a customer’s secured enclave according to the preset cryptographic rules that no one can access, making sure no outsider or insider can tamper with the operation.
+With TEE and MPC, execution runs within a customer’s secured enclave according to the preset cryptographic rules that no one can access, making sure no outsider or insider can tamper with the operation. 0

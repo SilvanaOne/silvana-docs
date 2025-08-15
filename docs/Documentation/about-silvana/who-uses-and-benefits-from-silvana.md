@@ -26,4 +26,4 @@ Silvana caters to:
 
 The diagram below provides a clear and comprehensive overview of Silvana's advantages for different stakeholders in the blockchain ecosystem.
 
-![Silvana Value](./img/silvana-value.png)
+![Silvana Value](./img/silvana-value.png) 0
