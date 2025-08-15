@@ -16,4 +16,4 @@ Silvana is designed for **flexibility**, **privacy**, and **interoperability**. 
 * **Decentralized**: operates without central control points;
 * **Trustless**: verification without requiring trust between parties.
 
-![What is Silvana Like](./img/what-is-silvana-like.png)
+![What is Silvana Like](./img/what-is-silvana-like.png) 0
