@@ -97,6 +97,22 @@ const config: Config = {
                   }
 
                   if (item.type === "category" && item.items) {
+                    if (
+                      item.customProps &&
+                      item.customProps.hiddenItems &&
+                      item.items
+                    ) {
+                      return {
+                        ...item,
+                        items: filterHiddenCategories(
+                          item.items.filter((el) => {
+                            return !item.customProps.hiddenItems.includes(
+                              el.id.split("/")[el.id.split("/")?.length - 1]
+                            );
+                          })
+                        ),
+                      };
+                    }
                     return {
                       ...item,
                       items: filterHiddenCategories(item.items),
@@ -453,17 +469,17 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
-        {
-          type: "docSidebar",
-          sidebarId: "apiSidebar",
-          position: "left",
-          label: "Core",
-        },
-        {
-          to: "api",
-          label: "Modules",
-          position: "left",
-        },
+        // {
+        //   type: "docSidebar",
+        //   sidebarId: "apiSidebar",
+        //   position: "left",
+        //   label: "Core",
+        // },
+        // {
+        //   to: "api",
+        //   label: "Modules",
+        //   position: "left",
+        // },
         // { to: "/blog", label: "Blog", position: "left" },
         // {
         //   href: "https://github.com/SilvanaOne",

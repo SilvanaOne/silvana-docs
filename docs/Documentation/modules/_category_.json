@@ -1,6 +1,9 @@
 {
   "label": "Modules",
   "position": 8,
+    "customProps": {
+    "hiddenItems": ["fungible-tokens"]
+  },
   "link": {
     "type": "generated-index"
   }

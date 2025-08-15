@@ -3,109 +3,87 @@ sidebar_position: 1
 ---
 
 # What is Silvana About?
+
 ## Welcome to Silvana
-What's Silvana in short? It's a **private, decentralized proving platform to bridge corporate and crypto with zero-knowledge tech**.
+What's Silvana in short? It's a private, decentralized proving engine and operating system that allows off- and on-chain businesses to own and control their data and assets across multiple networks and corporate systems of their choice without the need to use a bridge with cryptographically enforced logic and blazing-fast execution.
 
-Crypto and real-world businesses (enterprises, startups) face trust, compliance, and efficiency challenges due to traditional verification methods requiring extensive data sharing, leading to high costs and security breaches. [**Zero-knowledge proofs (ZKP)**](/Documentation/key-concepts/zk-proofs) address these issues by concealing private information while ensuring the integrity of public data, enabling proofs for authenticity, compliance, and ownership without revealing underlying data. 
+Silvana leverages zero-knowledge proofs to let businesses prove authenticity, compliance, and ownership without exposing sensitive data. By turning assets into provable objects and applying business rules through modular applications, Silvana bridges corporate finance and crypto, enabling secure transactions, verification, and reporting with confidence.
 
-Silvana uses zk proofs to help enterprises prove anything without disclosing sensitive data. Silvana offers a modular application layer and advanced cryptographic solutions, bridging the gap between corporate finance IT systems and cryptography, enabling businesses to transact, verify, and report with confidence.
-
-Customers use [**provable records**](/Documentation/key-concepts/provable-records) to represent their assets and simulate their behavior according to predefined business rules stored in modules. Each module handles specific functions, such as managing gaming objects in a Web3 game or accounting for a sales company. Provable records essentially represent business entities, whether gaming items or company assets.  
-
-The table below shows how Silvana should be understood.
-
-### What we are vs What we are not
-
-| We are | We are not |
-|--------|------------|
-| Modular, scalable engine for provable records | Settlement Layer |
-| ZK proof computations | Consensus layer |
-| Enforced computational rules | Proof system |
-| Decentralized prover network | |
-| Ecosystem | |
-| Cloud service for enterprises, ensuring data privacy and security | |
-| ZK and blockchain complexities are hidden from the end user | |
-| Standard REST APIs and SQL interfaces | |
-| Decentralized data availability | |
-| Marketplace | |
-
-## Silvana Fundamentals
+# Silvana Fundamentals
 Silvana solution rests on these pillars:
 
-### True ZK Integration
+### Viable ZK Implementation
 
-Unlike many "privacy" solutions that rely on partial trust, Silvana is a comprehensive cryptography-driven system that provides a robust and reliable foundation for businesses seeking to protect sensitive information and maintain trust in their operations.
-
-### Private Data Proving & Enforcement
-
-Unlike most public blockchain solutions, Silvana generates proofs without exposing underlying data. It leverages decentralized data availability and enforced computational rules to mitigate the risk of data manipulation.
+Silvana is among the most viable zk solutions today, delivering efficient, fully cryptographic privacy without reliance on partial trust, without a trade-off on the execution speed.
 
 ### Enforced Computational Rules
 
-All data and transactions follow cryptographically guaranteed logic, effectively preventing any form of manipulation, providing a robust safeguard, and maintaining the integrity and security of the entire system. By enforcing these rules, the system guarantees trust and reliability in every transaction and data operation.
+All data and transactions follow cryptographically enforced rules that prevent manipulation, safeguard integrity, and ensure security – guaranteeing trust and reliability in every operation.
 
-### Modular, Scalable Architecture
+### Layered Privacy
 
-Silvana offers plug-and-play components tailored for diverse industries, significantly reducing integration friction. This design allows businesses to seamlessly incorporate Silvana's solutions into their existing infrastructure, enhancing efficiency and adaptability. With this flexibility and ease of integration, Silvana supports a wide range of enterprise applications.
+There are many ways to skin a cat when it comes to ensuring user privacy – whether through zero-knowledge proofs (ZKPs), trusted execution environments (TEE), or multi-party computation (MPC). You decide what level of protection your data needs, if any.
 
-### ZK Abstraction
+### Modular, Blockchain-Agnostic, and Scalable Architecture
 
-We hide the complexities of zero-knowledge technology from the user, making it accessible even to those without deep blockchain expertise. By providing intuitive interfaces like **REST API** and **SQL**, Silvana allows users to interact seamlessly with the system which simplifies the integration process, enabling businesses to leverage advanced cryptographic solutions without the need for specialized knowledge while focusing on their business needs.
+Silvana’s modular architecture is designed with scalability in mind, providing plug-and-play cryptographic solutions that integrate seamlessly with enterprise systems, L1s, L2s, DA layers, and diverse proof systems – reducing friction, ensuring interoperability, and enabling scalable adoption without lock-in.
 
-### Blockchain-Agnostic & Expandable
+### Totally Abstracted
 
-Silvana allows seamless integration with various [**L1s**](/Documentation/glossary#layer-1-l1), [**L2s**](/Documentation/glossary#layer-2-l2), [**DA layers**](/Documentation/glossary#data-availability-da-layers), and any compatible data protection [**proof systems**](/Documentation/glossary#proof-system). This flexibility ensures that businesses can adopt Silvana's advanced cryptographic solutions without being tied to a specific blockchain, which fosters interoperability and scalability.
+We hide the complexities of Zero-Knowledge (ZK) technology from the user, making it accessible even to those without deep blockchain expertise. By providing intuitive interfaces like REST APIs and SQL, Silvana allows users to interact seamlessly with the system. Multiple languages and proof systems are supported. All in all, Silvana is hardwired to make life easier for devs.
 
-### Object-Centric Model
+### Bridging Corporate and Web3
 
-The **object-centric design**, used in platforms like Sui and Aptos, puts assets as objects in focus rather than just accounts, providing a more flexible and intuitive approach and allowing the building of an [**event-based architecture**](/Documentation/glossary#event-based-architecture). By focusing on the interactions and states of specific objects, this model allows to build and manage provable records representing business objects that have mutable states.
+Silvana bridges Web3 and traditional companies with a universal layer for verifiable computation, enabling trustworthy proofs and confidential inputs across both on-chain and off-chain applications. We pave the way for corporate customers to enter Web3 with their assets, data, and systems.
 
-### Decentralized Data Availability with Staking
+### Integration over Competition
 
-A network of [**Silvana nodes**](/Documentation/architecture/architecture-overview#network-nodes) that enhance data resilience beyond traditional Service Level Agreement (SLA) measures. This one is critical to ensure that data remains available and tamper-resistant on a permissionless layer by utilizing staked nodes, which contribute to the system's robustness and security. As a result, businesses can trust that their data will be consistently accessible and protected against manipulation.
+We aren’t in the rat race for the market share; instead of following the zero-sum thinking, it successfully integrates networks, creating a win-win situation by amplifying existing ecosystems and growing the whole pie.
 
-## Use Cases
-Now, quips aside, let's see how Silvana can really apply for serious business.
+### Rollup As A Service
 
-### Case 1 - Reinsurance
+Every app is deployed as a multi-based rollup, meaning each component can be on any network out there. That empowers you to pick the battle-tested blockchains for increased performance.
 
-**Case:** some assets are too expensive to be covered by solely one insurer. That's when insurers decide to hedge their risks by delegating their risk to other insurance companies (reinsurers). Insurers need to mitigate significant risks without overexposing sensitive details. Manual processes are slow and susceptible to data leakage.
+### Ultra Rollup
 
-**Solution:** Silvana leverages zero-knowledge proofs to facilitate secure quote requests from multiple reinsurers.
+At the heart of Silvana is its ultra-fast Rollup and Coordination Layer, using high-performance blockchains for execution and efficient proof aggregation for settlement, creating a high-speed backbone that delivers lightning-fast, privacy-preserving transactions with minimal latency.
 
-**Value:** 
-* Potential 20%+ Savings on Reinsurance Premiums;
-* Larger Pool of Reinsurers;
-* Automated Compliance Checks.
+### Optimistic State with Guaranteed Finality
 
-### Case 2 - Bookkeeping
+Ultra Rollup marries the best of the two worlds: optimistic state on a fast execution network and guaranteed finality on the settlement network that supports zk proofs.
 
-**Case:** traditional accounting methods are susceptible to human error, fraud, and slow account reconciliation processes.
+### Custom Logic with Modular Apps
 
-**Solution:** Silvana's object-centric, event-based architecture revolutionizes accounting by transforming double-entry systems into triple-entry accounting, complete with on-chain receipts.
+Silvana makes app development as simple as assembling Lego blocks, with atomic modules that can be combined into custom applications to streamline logic, reduce complexity, and accelerate iteration.
 
-**Value:**
-* Continuous Auditing;
-* Preserved Privacy;
-* Cost Reduction;
-* Error-proof Accounting.
+### Agent-Driven Execution
 
-### Case 3 - On-Chain Governance
+Agents whap core components into unified, programmable interfaces and perform operations within an app for automation.
 
-**Case:** although governance aids decentralization, blockchain transparency can hinder anonymous voting.
+### Flexible Deployment
 
-**Solution:** Silvana provides proof of a vote while hiding the account address.
+Silvana gives developers unmatched deployment flexibility by letting each component run privately, in TEE, or Silvana Cloud, allowing teams to balance control, security, and scalability without lock-in.
 
-**Value:**
-Ensured anonymous voting.
+### Bridgeless Interoperability
 
-### Case 4 - Collateral Verification for RWAs
+Coordination layer allows to manage assets on multiple without using a bridge, and therefore, bypass the bottlenecks and pitfalls associated with it.
 
-**Case:** Real-Worlds Assets keep entering Web3 which creates numerous opportunities for both enterprises and crypto. However, there's a need to prove that a securitized asset has a collateral which makes it real and rules away the possibility of scam. Therefore, proving collateralization for each on-chain RWA object is crucial for RWAs to enter Web3.
+### All Data is Accepted
 
-**Solution:** Silvana provides proof that RWA objects are sufficiently collateralized and secure.
+Silvana turns any data into zero-knowledge–ready artifacts, enabling proofs across chains, clouds, and codebases so that all information is verifiable without disclosure, unlocking trust, interoperability, and privacy for next-generation workflows.
 
-**Value:**
-* Enhanced blockchain adoption with real-world companies;
-* More TVL for blockchain ecosystems from RWAs.
+### SQL-Compatible
 
+Silvana supports SQL-compatible verifiable computation, letting developers query and transform data from any source with familiar syntax while adding ZK assurance for building trustworthy apps.
+
+### Provable Database
+
+All assets and data are stored as provable objects, and every state change automatically generates a proof—ensuring each object remains authentic and tamper-free.
+
+### Full Asset History
+
+Multiple proofs can be aggregated in a single recursive proof, which means that at any time full asset history can be retrieved.
+
+### Confidential Computation
+
+With TEE and MPC, execution runs within a customer’s secured enclave according to the preset cryptographic rules that no one can access, making sure no outsider or insider can tamper with the operation.
