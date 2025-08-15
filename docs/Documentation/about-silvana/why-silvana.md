@@ -8,27 +8,23 @@ sidebar_position: 2
 
 Although the ZKP technology has been with us for over a decade, is highly demanded, and offers numerous use cases for businesses, it is still very early on the market. Here are some of the most critical headwinds:
 
-1. **No Viable Web3 Private Data Verification Solution**
+1. **No Viable Comprehensive Private Data Verification Solution**
 
 Current L1 and L2 blockchains fall short of privacy needs, where traditional verification demands heavy data sharing, manual checks, and third-party reliance – driving up costs, risks, and inefficiencies. Existing ZK solutions add further complexity, underscoring the need for simpler, business-focused approaches.
 
-2. **No Comprehensive Package ZK Solution**
-
-The market still lacks a comprehensive ZK solution for private, secure data and proof verification, but bridging this gap through innovation and enterprise collaboration can deliver versatile, scalable blockchain systems.
-
-3. **Too much focus on the ZK technology while overlooking business needs**
+2. **Too much focus on the ZK technology while overlooking business needs**
 
 Startups often prioritize ZKP technology, while businesses focus on compliance, cost, speed, security, and customization. Bridging these priorities through collaboration can deliver blockchain solutions that are both technically advanced and business-ready.
 
-4. **Ecosystem Fragmentation**
+3. **Ecosystem Fragmentation**
 
 Most projects run on isolated networks, leaving the ZKP landscape fragmented and limiting interoperability, scalability, and adoption. Cross-chain solutions and greater interoperability are key to unlocking their full potential.
 
-5. **Compliance Issues**
+4. **Compliance Issues**
 
 Regulatory compliance is resource-intensive, forcing companies through complex procedures that risk exposing proprietary data and creating security gaps. The challenge lies in safeguarding sensitive information while meeting strict standards and striving for truly trustless solutions.
 
-6. **Legacy Infrastructure**
+5. **Legacy Infrastructure**
 
 Outdated, siloed systems slow down verification, hinder collaboration, and raise costs. Fragmentation and manual processes invite errors and fraud, compromising data integrity and trust – highlighting the need for automated, secure solutions.
 

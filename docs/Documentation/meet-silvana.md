@@ -17,17 +17,17 @@ We offer a multifunctional platform using which you can:
 
 * Prove any business data in day-to-day operations without disclosing it using zero-knowledge proofs (ZKPs);
 
-* Bring corporate data and assets on-chain.
+* Bring corporate data and assets on-chain;
 
 * Build and deploy applications as a zk rollup using agents for ease and automation;
 
 * Implement and roll out any custom logic in plug-and-play modules;
 
-* Effectively handle corporate assets, including tokenized real-world assets (RWAs) by bringing them on-chain;
+* Effectively handle corporate assets, including tokenized real-world assets (RWAs);
 
-* Execute business logic privately, in a trusted execution environment (TEE);
+* Execute business logic privately, in a Trusted Execution Environment (TEE);
 
-* Store corporate assets as provable objects in a DA or privately in own database;
+* Store corporate assets as provable objects in a DA or in a private database;
 
 * Integrate with the battle-tested on-chain infra and networks for streamlined operation.
 

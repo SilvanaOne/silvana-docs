@@ -18,11 +18,11 @@ Silvana is among the most viable zk solutions today, delivering efficient, fully
 
 ### Enforced Computational Rules
 
-All data and transactions follow cryptographically enforced rules that prevent manipulation, safeguard integrity, and ensure security – guaranteeing trust and reliability in every operation.
+All state changes and transactions follow cryptographically enforced rules that prevent manipulation, safeguard integrity, and ensure security – guaranteeing trust and reliability in every operation.
 
 ### Layered Privacy
 
-There are many ways to skin a cat when it comes to ensuring user privacy – whether through zero-knowledge proofs (ZKPs), trusted execution environments (TEE), or multi-party computation (MPC). You decide what level of protection your data needs, if any.
+There are many ways to skin a cat when it comes to ensuring user privacy – whether through zero-knowledge proofs (ZKPs), trusted execution environments (TEE), or multi-party computation (MPC). You decide what level of protection your data needs, if at all.
 
 ### Modular, Blockchain-Agnostic, and Scalable Architecture
 
@@ -38,7 +38,7 @@ Silvana bridges Web3 and traditional companies with a universal layer for verifi
 
 ### Integration over Competition
 
-We aren’t in the rat race for the market share; instead of following the zero-sum thinking, it successfully integrates networks, creating a win-win situation by amplifying existing ecosystems and growing the whole pie.
+We aren’t in the rat race for the market share; instead of following the zero-sum thinking, Silvana successfully integrates networks, creating a win-win situation by amplifying existing ecosystems and growing the whole pie.
 
 ### Rollup As A Service
 
@@ -78,7 +78,7 @@ Silvana supports SQL-compatible verifiable computation, letting developers query
 
 ### Provable Database
 
-All assets and data are stored as provable objects, and every state change automatically generates a proof—ensuring each object remains authentic and tamper-free.
+All assets and data are stored as provable objects, and every state change automatically generates a proof – ensuring each object remains authentic and tamper-free.
 
 ### Full Asset History
 
