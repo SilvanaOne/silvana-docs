@@ -1,5 +1,6 @@
 {
   "label": "Modules",
+  "className": "hidden",
   "position": 8,
     "customProps": {
     "hiddenItems": ["fungible-tokens"]
