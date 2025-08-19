@@ -1,7 +1,8 @@
 {
   "label": "Modules",
+  "className": "hidden",
   "position": 8,
-  "link": null,
-  "className": "hidden"
+  "link": {
+    "type": "generated-index"
+  }
 }
-

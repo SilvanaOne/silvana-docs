@@ -10,7 +10,7 @@ The **Application Layer** in Silvana is where real-world business logic comes al
 
 ## Modules
 
-The Application Layer is composed of modular, plug-and-play components called [**modules**](/category/modules), which encapsulate functionality for a specific domain. These modules are designed for **composability**, **customization**, and **reuse** across a wide range of industries. They allow businesses to tokenize assets, verify documents, manage transactions, and more — all while leveraging [**Zero-Knowledge Proofs (ZKPs)**](/Documentation/key-concepts/zk-proofs).
+The Application Layer is composed of modular, plug-and-play components called modules, which encapsulate functionality for a specific domain. These modules are designed for **composability**, **customization**, and **reuse** across a wide range of industries. They allow businesses to tokenize assets, verify documents, manage transactions, and more — all while leveraging [**Zero-Knowledge Proofs (ZKPs)**](/Documentation/key-concepts/zk-proofs).
 
 These modules are accessible via **mono repos** and integrate seamlessly into different [**environments**](/Documentation/Deployment/deployment-environments) (**PXE**, **CXE**, **TEE**), making the Application Layer both powerful and flexible.
 
