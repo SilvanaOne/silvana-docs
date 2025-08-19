@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+slug: /Documentation/key-concepts/provable-records
 ---
 
 # Provable Records
