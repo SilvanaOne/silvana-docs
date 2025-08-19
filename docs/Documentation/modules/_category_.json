@@ -1,6 +1,7 @@
 {
   "label": "Modules",
   "position": 8,
-  "link": null
+  "link": null,
+  "className": "hidden"
 }
 
