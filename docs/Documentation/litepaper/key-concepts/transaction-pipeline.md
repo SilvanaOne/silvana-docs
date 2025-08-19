@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+slug: /Documentation/key-concepts/transaction-pipeline
 ---
 # Pipelined Transaction
 

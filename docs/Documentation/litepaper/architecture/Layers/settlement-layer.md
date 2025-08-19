@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+slug: /Documentation/architecture/Layers/settlement-layer
 ---
 
 # Settlement Layer

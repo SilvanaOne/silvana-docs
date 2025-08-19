@@ -1,5 +1,6 @@
 ---
 sidebar_position: 2
+slug: /Documentation/architecture/Layers/application-layer
 ---
 
 # Application Layer

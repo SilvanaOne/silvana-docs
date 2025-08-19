@@ -1,5 +1,6 @@
 ---
 sidebar_position: 5
+slug: /Documentation/key-concepts/zk-abstraction
 ---
 # zk Abstraction
 ## Why Abstraction?

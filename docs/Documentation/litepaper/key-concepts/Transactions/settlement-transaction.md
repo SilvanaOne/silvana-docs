@@ -1,5 +1,6 @@
 ---
 sidebar_position: 4
+slug: /Documentation/key-concepts/Transactions/settlement-transaction
 ---
 
 # Settlement Transaction

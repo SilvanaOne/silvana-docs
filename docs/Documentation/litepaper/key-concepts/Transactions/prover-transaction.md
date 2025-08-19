@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /Documentation/key-concepts/Transactions/prover-transaction
 ---
 
 # Prover Transaction

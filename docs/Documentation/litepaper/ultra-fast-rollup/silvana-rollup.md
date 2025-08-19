@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+slug: /Documentation/ultra-fast-rollup/silvana-rollup
 ---
 
 # Silvana Rollup
