@@ -9,7 +9,14 @@ slug: /
 
 ## Introduction
 
-Welcome to **Silvana** – a modular integration-first, composable, interoperable prover engine and operating system where users can handle both on- and off-chain business assets and data across Web3 and corporate systems – with cryptographically enforced logic and blazing-fast execution.
+**Silvana** is an ultra-fast prover engine and operational system that lets developers build and run applications across Web3 and corporate systems. 
+
+With Silvana, both on- and off-chain business assets and data are handled as objects with provable states, enforced by cryptography and defined logic.
+
+Every app runs as a stand-alone rollup with its own infra, powered by modular agents and orchestrated by the Coordination Layer, delivering sub-second execution with guaranteed ZK-backed finality.
+
+## Navigation
+
 
 ## What Can You Do with Silvana?
 
