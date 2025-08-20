@@ -19,7 +19,7 @@ Every app runs as a stand-alone rollup with its own infra, powered by modular ag
 
 
 ## How Silvana Works
-1. **Business logic with Lego-like modules**: use Silvana’s ready-made, add third-party ones, or create and add your own.
+1. **Build business logic**: use Silvana’s Lego-like ready-made modules, add third-party ones, or create and add your own.
 
 2. **Add Agents**: use Silvana’s, build your own, or integrate third-party to run logic, fetch, prove, and automate the operation flow.
 
