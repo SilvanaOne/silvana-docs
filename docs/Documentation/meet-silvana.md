@@ -32,11 +32,11 @@ Every app runs as a stand-alone rollup with its own infra, powered by modular ag
 - **Easy onboarding and development** enables integrating modules and agents, configuring the rollup, and building apps in a few lines of code with SQL-friendly interfaces and standard APIs.  
 - **Agnostic in all means** allows you to code in your language of choice, pick the proving system we support, and deploy app components to the networks that fit your needs.  
 - **ZK Abstraction** emphasizes building powerful applications without getting lost in the complexity of ZK cryptography.  
-- **Rollup as a service** ensures each app is a multi-based rollup that helps you pick the best infrastructure from the battle-tested networks available to meet your infrastructural needs.  
+- **Rollup as a service** ensures each app is a multi-based rollup that helps you pick the best infrastructure from the battle-tested networks available to meet your needs.  
 - **Modular, chain-agnostic architecture** that scales horizontally and works across ecosystems.  
-- **Seamless coordination and automated transaction flow** through the dedicated Coordination Layer, automating the transaction pipeline – agents, proving, storage, and settlement – powered by the Agent Network to handle atomic tasks.  
+- **Seamless tx orchestration and automated flow** through the dedicated Coordination Layer that manages the transaction pipeline – agents, proving, storage, and settlement – powered by the Agent Network to handle atomic tasks.  
 - **Ultra-fast execution with guaranteed finality** provides lightning-fast execution with ZK proofs. The Coordination Layer runs first with the optimistic state, and settlement follows later.  
 - **Bridgeless interoperability** lets you own and control native assets from where your Coordination Layer rests without a bridge and the insecurities and vulnerabilities it brings forward.  
 - **Flexible deployment** adapts from cloud execution to secure enclaves (TEE), adapting to the workload and privacy needs.  
-- **Layered privacy** with ZKPs, MPC, and TEEs working together to protect both public and private data. Pick the level of privacy you need for both provable and non-provable data. Embark on confidential and a private database.  
+- **Layered privacy** with ZKPs, MPC, and TEEs working together to protect both public and private data. Pick the level of privacy you need for both provable and non-provable data. Embark on confidential computing and a private database.  
 - **Automated key security**, powered by Shamir Sharding + KMS, ensures safe distribution and recovery of cryptographic keys.  
