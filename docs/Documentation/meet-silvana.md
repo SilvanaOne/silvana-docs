@@ -9,26 +9,31 @@ slug: /
 
 ## Introduction
 
-Welcome to **Silvana** – a modular integration-first, composable, interoperable prover engine and operating system where users can handle both on- and off-chain business assets and data across Web3 and corporate systems – with cryptographically enforced logic and blazing-fast execution.
+**Silvana** is an ultra-fast prover engine and operational system that lets developers build and run applications across Web3 and corporate systems. 
 
-## What Can You Do with Silvana?
+With Silvana, both on- and off-chain business assets and data are handled as objects with provable states, enforced by cryptography and defined logic.
 
-We offer a multifunctional platform using which you can:
+Every app runs as a stand-alone rollup with its own infra, powered by modular agents and orchestrated by the Coordination Layer, delivering sub-second execution with guaranteed ZK-backed finality.
 
-* Prove any business data in day-to-day operations without disclosing it using zero-knowledge proofs (ZKPs);
+## How Silvana Works
+1. **Build business logic**: use Silvana’s Lego-like ready-made modules, add third-party ones, or create and add your own.
 
-* Bring corporate data and assets on-chain;
+2. **Add Agents**: use Silvana’s, build your own, or integrate third-party agents to run logic, fetch, prove, and automate the operation flow.
 
-* Build and deploy applications as a zk rollup using agents for ease and automation;
+3. **Configure your rollup** by setting coordination, data availability, settlement networks, proving system, modules, and agents, and optionally enable TEE. Use the configuration file for this.
 
-* Implement and roll out any custom logic in plug-and-play modules;
+3. **Operate**: bring in any type of data via standard API/SQL, tokenize assets as objects with provable state, run transactions across the pipeline, and track results in Silvascan Explorer.
 
-* Effectively handle corporate assets, including tokenized real-world assets (RWAs);
+## Why Silvana?  
 
-* Execute business logic privately, in a Trusted Execution Environment (TEE);
-
-* Store corporate assets as provable objects in a DA or in a private database;
-
-* Integrate with the battle-tested on-chain infra and networks for streamlined operation.
-
-As you can see, there are lots of nice things you can do with Silvana. Just kick in and give it a try. Grow wild and free with us!
+- **Easy onboarding and development** enables integrating modules and agents, configuring the rollup, and building apps in a few lines of code with SQL-friendly interfaces and standard APIs.  
+- **Agnostic in all means** allows you to code in your language of choice, pick the proving system we support, and deploy app components to the networks that fit your needs.  
+- **ZK Abstraction** emphasizes building powerful applications without getting lost in the complexity of ZK cryptography.  
+- **Rollup as a service** ensures each app is a multi-based rollup that helps you pick the best infrastructure from the battle-tested networks available to meet your needs.  
+- **Modular, chain-agnostic architecture** that scales horizontally and works across ecosystems.  
+- **Seamless tx orchestration and automated flow** through the dedicated Coordination Layer that manages the transaction pipeline – agents, proving, storage, and settlement – powered by the Agent Network to handle atomic tasks.  
+- **Ultra-fast execution with guaranteed finality** provides lightning-fast execution with ZK proofs. The Coordination Layer runs first with the optimistic state, and settlement follows on.  
+- **Bridgeless interoperability** lets you own and control native assets from where your Coordination Layer rests without a bridge and the insecurities and vulnerabilities it brings forward.  
+- **Flexible deployment** provides you the freedom to choose the setup you want for each component: from cloud execution to secure enclaves (TEE), adapting to the workload and privacy needs.  
+- **Layered privacy** with ZKPs, MPC, and TEEs working together to protect both public and private data. Pick the level of privacy you need for both provable and non-provable data. Embark on confidential computing and a private database.  
+- **Automated key security**, powered by Shamir Sharding + KMS, ensures safe distribution and recovery of cryptographic keys.  
