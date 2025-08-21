@@ -15,9 +15,6 @@ With Silvana, both on- and off-chain business assets and data are handled as obj
 
 Every app runs as a stand-alone rollup with its own infra, powered by modular agents and orchestrated by the Coordination Layer, delivering sub-second execution with guaranteed ZK-backed finality.
 
-## Navigation
-
-
 ## How Silvana Works
 1. **Build business logic**: use Silvana’s Lego-like ready-made modules, add third-party ones, or create and add your own.
 
