@@ -2,6 +2,7 @@
   "label": "About Silvana",
   "position": 2,
   "collapsed": true,
+  "className": "hidden",
   "link": {
     "type": "generated-index",
     "description": "Learn about Silvana's core concepts, architecture, and use cases"
