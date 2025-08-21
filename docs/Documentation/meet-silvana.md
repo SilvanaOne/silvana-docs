@@ -21,9 +21,9 @@ Every app runs as a stand-alone rollup with its own infra, powered by modular ag
 ## How Silvana Works
 1. **Build business logic**: use Silvana’s Lego-like ready-made modules, add third-party ones, or create and add your own.
 
-2. **Add Agents**: use Silvana’s, build your own, or integrate third-party to run logic, fetch, prove, and automate the operation flow.
+2. **Add Agents**: use Silvana’s, build your own, or integrate third-party agents to run logic, fetch, prove, and automate the operation flow.
 
-3. **Configure your rollup** by setting coordination, data availability, settlement networks, proving system, modules, and agents, and optionally enable TEE for confidential computation and private database. Use the configuration file for this.
+3. **Configure your rollup** by setting coordination, data availability, settlement networks, proving system, modules, and agents, and optionally enable TEE. Use the configuration file for this.
 
 3. **Operate**: bring in any type of data via standard API/SQL, tokenize assets as objects with provable state, run transactions across the pipeline, and track results in Silvascan Explorer.
 
@@ -35,8 +35,8 @@ Every app runs as a stand-alone rollup with its own infra, powered by modular ag
 - **Rollup as a service** ensures each app is a multi-based rollup that helps you pick the best infrastructure from the battle-tested networks available to meet your needs.  
 - **Modular, chain-agnostic architecture** that scales horizontally and works across ecosystems.  
 - **Seamless tx orchestration and automated flow** through the dedicated Coordination Layer that manages the transaction pipeline – agents, proving, storage, and settlement – powered by the Agent Network to handle atomic tasks.  
-- **Ultra-fast execution with guaranteed finality** provides lightning-fast execution with ZK proofs. The Coordination Layer runs first with the optimistic state, and settlement follows later.  
+- **Ultra-fast execution with guaranteed finality** provides lightning-fast execution with ZK proofs. The Coordination Layer runs first with the optimistic state, and settlement follows on.  
 - **Bridgeless interoperability** lets you own and control native assets from where your Coordination Layer rests without a bridge and the insecurities and vulnerabilities it brings forward.  
-- **Flexible deployment** adapts from cloud execution to secure enclaves (TEE), adapting to the workload and privacy needs.  
+- **Flexible deployment** provides you the freedom to choose the setup you want for each component: from cloud execution to secure enclaves (TEE), adapting to the workload and privacy needs.  
 - **Layered privacy** with ZKPs, MPC, and TEEs working together to protect both public and private data. Pick the level of privacy you need for both provable and non-provable data. Embark on confidential computing and a private database.  
 - **Automated key security**, powered by Shamir Sharding + KMS, ensures safe distribution and recovery of cryptographic keys.  
