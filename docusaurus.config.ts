@@ -461,6 +461,7 @@ const config: Config = {
       logo: {
         alt: "Silvana Logo",
         src: "img/silvana-logo.svg",
+        srcDark: "img/silvana-logo-dark.svg",
       },
       items: [
         {
