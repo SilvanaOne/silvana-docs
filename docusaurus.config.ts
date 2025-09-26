@@ -442,7 +442,7 @@ const config: Config = {
       },
     ],
     // Replace with your project's social card
-    image: "img/preview.png",
+    image: "img/preview-img.png",
     metadata: [
       { name: "og:title", content: "Silvana Documentation" },
       {
