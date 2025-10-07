@@ -1,6 +1,5 @@
 ---
 sidebar_position: 1
-slug: /Documentation/guides/add-a-node
 ---
 
 # How to Add a Node
