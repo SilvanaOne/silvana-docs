@@ -47,7 +47,7 @@ Supported Platforms:
 ### Manual Installation
 If you choose to install manually:
 
-1. Go to the releases page.
+1. Go to the [releases page](https://github.com/SilvanaOne/silvana/releases).
 2. Download the archive suitable for your platform:
  - `silvana-arm64-linux.tar.gz` for Linux ARM64;
  - `silvana-x86_64-linux.tar.gz` for Linux x86_64;
@@ -200,14 +200,14 @@ During the startup, the coordinator performs these initialization steps:
 3. **Balance Check**: verifies sufficient SUI balance for operations.
 4. **Gas Coin Pool**: splits large coins into smaller ones for better transaction performance.
 5. **Service Startup**:
- - **Job Searcher**: monitors blockchain for new jobs.
- - **Multicall Processor**: batches operations for efficiency.
- - **Docker Buffer**: manages container execution.
- - **Event Monitor**: watches blockchain events.
- - **gRPC Server**: provides API for agent communication.
- - **Periodic Tasks**: ensures reconciliation, block creation, proof analysis.
+   - **Job Searcher**: monitors blockchain for new jobs.
+   - **Multicall Processor**: batches operations for efficiency.
+   - **Docker Buffer**: manages container execution.
+   - **Event Monitor**: watches blockchain events.
+   - **gRPC Server**: provides API for agent communication.
+   - **Periodic Tasks**: ensures reconciliation, block creation, proof analysis.
 
- ### Monitoring
+### Monitoring
 
 Once running, you'll see logs indicating job processing:
 
@@ -225,3 +225,65 @@ The coordinator may fail to start for a number of reasons. This is what you can 
 - Connection issues: verify network connectivity to RPC endpoints, gRPC TCP protocol is used for connection that requires streaming support and a continuous TCP connection.
 - Docker errors: ensure Docker daemon is running.
 - Registry not found: check `SILVANA_REGISTRY` and `SILVANA_REGISTRY_PACKAGE` values.
+
+### Next Steps
+
+After starting your Coordinator, do this:
+1. **Create a new project**: `silvana new myproject`.
+2. **Deploy an application**: follow the [Add Example](https://github.com/SilvanaOne/silvana/blob/main/examples/add/README.md).
+3. **Monitor jobs**: use `silvana jobs --instance <your-app-instance>`.
+4. **Check balances**: `silvana balance sui`.
+
+For detailed application development, see the [examples documentation](https://github.com/SilvanaOne/silvana/blob/main/examples/add/README.md).
+
+## Features
+This is what you have with Silvana:
+
+- gRPC server and client: gRPC, gRPC-Web;
+- TiDB Serverless database: store events, query, fulltext search;
+- NATS JetStream on nats and wss;
+- Internal buffering in memory for batch processing;
+- Protobuf definitions and reflection on endpoint and in Rust code;
+- Monitoring: logs to file/console, logs/metrics via OpenTelemetry gRPC push/REST pull, Grafana/Prometheus/BetterStack support for logs and dashboards.
+
+The diagram below illustrates the Silvana Networking architecture.
+![How Apps Work](./img/silvana-networking-scheme.png)
+
+## Performance
+The table below features how Silvana performs:
+
+| **Indicator** | **Value** |
+|----------------|------------|
+| Responce time for any operation, including adding event, query event, fulltext search | 100–200 |
+| Events per second | 10,000 |
+| Low-load RAM consumption | 200 MB |
+| High-load RAM consumption (1 mln events) | 300 MB |
+| CPU load | <20–30% on thousands of events per second |
+
+## Deployment
+To deploy an app, follow the instructions below.
+
+1. Cross-build Rust executable using Docker and upload it to S3
+
+```bash script
+make build-rpc
+```
+2. Run pulumi script to:
+ - Create AWS Stack, including EC2 instance;
+ - Install certificates, NATS, Silvana RPC;
+ - Configure and run services.
+
+```bash script
+mpulumi up
+```
+
+## Protobuf
+
+Follow this workflow to use Protobuf:
+1. Create [proto definitions](https://github.com/SilvanaOne/silvana/tree/main/proto).
+2. Compile with `make regen` for Rust and `buf lint && buf generate` for TypeScript - definitions will be compiled to SQL, SQL migrations, Rust [interfaces](https://github.com/SilvanaOne/silvana/tree/main/crates/proto) with reflection and server/client, TypeScript [interfaces](https://github.com/SilvanaOne/silvana/tree/main/clients/grpc-node/src/proto) and client, [sea-orm interfaces for TiDB](https://github.com/SilvanaOne/silvana/tree/main/crates/tidb/src/entity).
+
+## Examples of clients
+
+- [node example](https://github.com/SilvanaOne/silvana/tree/main/clients/grpc-node)
+- [web example](https://github.com/SilvanaOne/silvana/tree/main/clients/grpc-web) - https://grpc-web.silvana.dev
