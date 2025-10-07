@@ -286,4 +286,4 @@ Follow this workflow to use Protobuf:
 ## Examples of clients
 
 - [node example](https://github.com/SilvanaOne/silvana/tree/main/clients/grpc-node)
-- [web example](https://github.com/SilvanaOne/silvana/tree/main/clients/grpc-web) - https://grpc-web.silvana.dev
+- [web example](https://github.com/SilvanaOne/silvana/tree/main/clients/grpc-web) - [https://grpc-web.silvana.dev](https://grpc-web.silvana.dev/)
