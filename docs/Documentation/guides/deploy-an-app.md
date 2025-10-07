@@ -12,7 +12,7 @@ Before starting, make sure you have these **tools** installed:
 
 1. Node.js and npm
 
-```bash script
+```javascript
 node --version  # Should be v22 or higher
 npm --version
 ```
@@ -21,7 +21,7 @@ npm --version
 
 Follow the installation instructions at [Sui Documentation](https://docs.sui.io/guides/developer/getting-started/sui-install).
 
-```bash script
+```javascript
 sui --version
 ```
 
@@ -30,13 +30,13 @@ sui --version
   - Download from [Docker Desktop](https://www.docker.com/products/docker-desktop/)
   - Ensure Docker is running before proceeding
 
-```bash script
+```javascript
 docker --version
 ```
 
 4. Silvana CLI
 
-```bash script
+```javascript
 # Quick install
 curl -sSL https://raw.githubusercontent.com/SilvanaOne/silvana/main/install.sh | bash
 
@@ -48,7 +48,7 @@ silvana --version
 ### Step 1: Create a New Project
 Use the Silvana CLI to create a new project from the template:
 
-```bash script
+```javascript
 silvana new myprogram
 ```
 This command will:
@@ -63,12 +63,12 @@ This command will:
 ### Step 2: Navigate to Your Project
 Run this command:
 
-```bash script
+```javascript
 cd myprogram
 ```
 Your project structure will look like this:
 
-```bash script
+```javascript
 
  📁 Project structure:
     myprogram/
@@ -84,7 +84,7 @@ Your project structure will look like this:
 ### Step 3: Build and Deploy Move Contract
 Navigate to the move directory and deploy your smart contract:
 
-```bash script
+```javascript
 cd move
 
 # Switch to devnet
@@ -108,7 +108,7 @@ sui client publish
 
 After publishing, you'll see output containing the PackageID, like:
 
-```bash script
+```javascript
 PackageID: 0xf238cb13361d361c6324e069b99a2ebccbd69c3ac703b25c2f0ee41e7924736b
 ```
 :::warning Warning
@@ -118,7 +118,7 @@ Copy this PackageID and add it to your `agent/.env` file: `APP_PACKAGE_ID=0xf238
 ### Step 4: Build and Compile the Agent
 Navigate to the agent directory and set up the TypeScript agent:
 
-```bash script
+```javascript
 cd agent
 
 # Install dependencies
@@ -138,7 +138,7 @@ The `npm run compile` command needs to be run twice to create a complete set of 
 ### Step 5: Verify Account Funding
 The setup process automatically funded your accounts, but you can verify the balances:
 
-```bash script
+```javascript
 # Get the Mina address from agent/.env (MINA_PUBLIC_KEY)
 silvana balance mina --network mina:devnet --address <YOUR_MINA_PUBLIC_KEY>
 ```
@@ -147,7 +147,7 @@ You should see positive balances. Otherwise, you can manually request funds usin
 ### Step 6: Deploy the Application
 Deploy your application to both Mina and Sui blockchains:
 
-```bash script
+```javascript
 # From the agent directory
 npm run deploy
 ```
@@ -160,7 +160,7 @@ This command will:
 
 You should see an output of this type:
 
-```bash script
+```javascript
 App initialized successfully
 ✅ App created successfully!
 📦 App ID: 0x40deec126c7f08ce85135381646759533e6c7e1c5193674e4e71091052d18822
@@ -179,7 +179,7 @@ The deployment will automatically save the configuration to `.env.app` file with
 ### Step 7: Start the Silvana Coordinator
 Open a new terminal window and navigate to the silvana folder:
 
-```bash script
+```javascript
 cd silvana
 silvana start
 ```
@@ -217,7 +217,7 @@ Once running, the Coordinator will:
 
 You'll see logs like:
 
-```bash script
+```javascript
 📝 JobCreated: seq=4, dev=AddDeveloper, agent=AddAgent/prove, app_method=add
 🐳 Starting Docker container for buffered job 1: AddDeveloper/AddAgent/prove
 ✅ Job 1 started and reserved for Docker session
@@ -226,13 +226,13 @@ You'll see logs like:
 ### Step 8: Send Test Transactions
 With the Coordinator running, open another terminal and navigate to the agent directory to send test transactions:
 
-```bash script
+```javascript
 cd agent
 npm run batch
 ```
 This command runs a batch test that sends multiple transactions to your deployed application. You'll see output like:
 
-```bash script
+```javascript
 > add@0.1.0 batch
 > npm run test test/batch.test.ts
 
@@ -275,12 +275,12 @@ To use the shared Silvana devnet registry:
 
 1. **Get the devnet registry ID**:
 
-```bash script
+```javascript
 silvana config
 ```
 Look for:
 
-```bash script
+```javascript
 SILVANA_REGISTRY = 0x916a3b24de8165fb6fb25d060ec82b50683dc9e9cebf0dfae559f943ee32adb2
 SILVANA_REGISTRY_PACKAGE = 0x32f8ad21df94c28401912c8ffebcc3bd186f5bf7da0995057a63755005937025
 ```
@@ -288,7 +288,7 @@ SILVANA_REGISTRY_PACKAGE = 0x32f8ad21df94c28401912c8ffebcc3bd186f5bf7da0995057a6
 
 2. **Update your agent configuration** to use the shared registry:
 
-```bash script
+```javascript
 # In agent/.env, update:
 SILVANA_REGISTRY=0x916a3b24de8165fb6fb25d060ec82b50683dc9e9cebf0dfae559f943ee32adb2
 SILVANA_REGISTRY_PACKAGE=0x32f8ad21df94c28401912c8ffebcc3bd186f5bf7da0995057a63755005937025
@@ -296,7 +296,7 @@ SILVANA_REGISTRY_PACKAGE=0x32f8ad21df94c28401912c8ffebcc3bd186f5bf7da0995057a637
 
 3. **Register your app** in the shared registry using Silvana registry commands:
 
-```bash script
+```javascript
 silvana registry --help
 ```
 
@@ -307,14 +307,14 @@ To contribute computing power to the Silvana devnet:
 
 1. **Configure your Coordinator** to use the shared registry:
 
-```bash script
+```javascript
 # In silvana/.env, set:
 SILVANA_REGISTRY=0x916a3b24de8165fb6fb25d060ec82b50683dc9e9cebf0dfae559f943ee32adb2
 SILVANA_REGISTRY_PACKAGE=0x32f8ad21df94c28401912c8ffebcc3bd186f5bf7da0995057a63755005937025
 ```
 2. **Start your Coordinator**:
 
-```bash script
+```javascript
 cd silvana
 silvana start
 ```
@@ -329,7 +329,7 @@ Edit `agent/src/circuit.ts` to implement your custom computation logic. This fil
 ### Step 2: Configure Docker Hub
 Before building and pushing your Docker image, configure your Docker Hub credentials in `agent/.env`:
 
-```bash script
+```javascript
 # Edit agent/.env and add your Docker Hub credentials:
 DOCKER_USERNAME=your-dockerhub-username
 DOCKER_PASSWORD=your-dockerhub-password
@@ -337,7 +337,7 @@ IMAGE_NAME=your-image-name (like 'add')
 DOCKER_ACCESS_TOKEN=your-docker-access-token
 ```
 To get a Docker Access Token, follow these steps:
-1. Log in to [Docker Hub] (https://hub.docker.com/).
+1. Log in to [Docker Hub](https://hub.docker.com/).
 2. Go to Account Settings → Security.
 3. Create a New Access Token.
 4. Copy the token to `DOCKER_ACCESS_TOKEN`.
@@ -345,7 +345,7 @@ To get a Docker Access Token, follow these steps:
 ### Step 3: Build and Deploy
 After making your changes, rebuild and deploy your agent:
 
-```bash script
+```javascript
 cd agent
 
 # Build the TypeScript code
@@ -376,6 +376,8 @@ After pushing your new Docker image, update your app to use it:
 The compiled **prover keys** are large (can be several GB) and are included in the Docker image. Therefore, the docker image can be large, too.
 :::
 
+
+
 :::warning Warning
 You should use a **public Docker repository** to ensure that the Coordinator will be able to pull the image.
 :::
@@ -395,7 +397,7 @@ In the table below, see typical issues you may encounter and how you can handle 
 ##  Silvana CLI
 Run `silvana help` to see all available commands:
 
-```bash script
+```javascript
 Usage: silvana [OPTIONS] <COMMAND>
 
 Commands:
