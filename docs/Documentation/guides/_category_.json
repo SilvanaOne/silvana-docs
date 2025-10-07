@@ -1,6 +1,6 @@
 {
-  "label": "Guides",
-  "position": 3,
+  "label": "Guide",
+  "position": 4,
   "collapsed": true,
   "link": {
     "type": "generated-index"
