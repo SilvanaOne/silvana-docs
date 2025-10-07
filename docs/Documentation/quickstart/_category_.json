@@ -4,5 +4,8 @@
   "collapsed": true,
   "link": {
     "type": "generated-index"
+  },
+  "customProps": {
+    "hiddenItems": ["add-agent", "add-module", "configure-rollup", "examples", "tooling"]
   }
 } 
