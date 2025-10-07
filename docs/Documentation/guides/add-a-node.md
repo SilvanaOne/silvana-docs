@@ -141,7 +141,87 @@ If you’re running silvana start for the first time, follow these steps:
 ✅ Faucet request successful!
    Transaction: GGRwF1ybif9nRsjiJEneBguQppzKLkWVzxSZmToj1mLH
    🔗 Explorer: https://suiscan.xyz/devnet/tx/GGRwF1ybif9nRsjiJEneBguQppzKLkWVzxSZmToj1mLH
+```
+2. Specify the network you’re about to use:
 
+```bash script
+# Devnet (default)
+silvana start --chain devnet
+
+# Testnet
+silvana start --chain testnet
+
+# Mainnet
+silvana start --chain mainnet
 ```
 
+3. If you have existing Sui credentials, create a .env file:
 
+```bash script
+# .env
+SUI_ADDRESS=0x...your-address...
+SUI_SECRET_KEY=suiprivkey1...your-private-key...
+SUI_CHAIN=devnet
+```
+
+4. To join a specific Silvana registry (e.g., shared devnet), run this command:
+
+```bash script
+# Get the shared devnet registry
+silvana config
+
+# Add to your .env:
+SILVANA_REGISTRY=0x916a3b24de8165fb6fb25d060ec82b50683dc9e9cebf0dfae559f943ee32adb2
+SILVANA_REGISTRY_PACKAGE=0x32f8ad21df94c28401912c8ffebcc3bd186f5bf7da0995057a63755005937025
+```
+
+5. Process all jobs from your registry:
+
+```bash script
+silvana start
+```
+
+6. Process jobs only from a specific app instance:
+
+```bash script
+silvana start --instance 0xaacf350ac6ae669ebf9804b455b0bc75a71f28a34bdc48d87ca78f1f90ba0f3b
+```
+
+7. Run as a dedicated settlement node:
+
+```bash script
+silvana start --settle
+```
+
+During the startup, the coordinator performs these initialization steps:
+
+1. **Configuration Loading**: fetches and injects environment variables from RPC server.
+2. **Sui Connection**: connects to the Sui blockchain RPC endpoint.
+3. **Balance Check**: verifies sufficient SUI balance for operations.
+4. **Gas Coin Pool**: splits large coins into smaller ones for better transaction performance.
+5. **Service Startup**:
+ - **Job Searcher**: monitors blockchain for new jobs.
+ - **Multicall Processor**: batches operations for efficiency.
+ - **Docker Buffer**: manages container execution.
+ - **Event Monitor**: watches blockchain events.
+ - **gRPC Server**: provides API for agent communication.
+ - **Periodic Tasks**: ensures reconciliation, block creation, proof analysis.
+
+ ### Monitoring
+
+Once running, you'll see logs indicating job processing:
+
+```bash script
+📝 JobCreated: seq=4, dev=AddDeveloper, agent=AddAgent/prove, app_method=add
+🐳 Starting Docker container for buffered job 1: AddDeveloper/AddAgent/prove
+✅ Job 1 started and reserved for Docker session
+```
+
+#### Troubleshooting
+The coordinator may fail to start for a number of reasons. This is what you can do in each of these situations:
+
+- Missing credentials: will auto-generate on devnet, or check your `.env` file.
+- Insufficient balance: run `silvana faucet sui --address 0x...`.
+- Connection issues: verify network connectivity to RPC endpoints, gRPC TCP protocol is used for connection that requires streaming support and a continuous TCP connection.
+- Docker errors: ensure Docker daemon is running.
+- Registry not found: check `SILVANA_REGISTRY` and `SILVANA_REGISTRY_PACKAGE` values.
