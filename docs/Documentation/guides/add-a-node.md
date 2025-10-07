@@ -246,7 +246,9 @@ This is what you have with Silvana:
 - Monitoring: logs to file/console, logs/metrics via OpenTelemetry gRPC push/REST pull, Grafana/Prometheus/BetterStack support for logs and dashboards.
 
 The diagram below illustrates the Silvana Networking architecture.
-![How Apps Work](./img/silvana-networking-scheme.png)
+
+![How to Add a Node](./img/silvana-networking-scheme.png)
+
 
 ## Performance
 The table below features how Silvana performs:
@@ -257,7 +259,8 @@ The table below features how Silvana performs:
 | Events per second | 10,000 |
 | Low-load RAM consumption | 200 MB |
 | High-load RAM consumption (1 mln events) | 300 MB |
-| CPU load | <20–30% on thousands of events per second |
+| CPU load | \<20–30% on thousands of events per second |
+
 
 ## Deployment
 To deploy an app, follow the instructions below.
