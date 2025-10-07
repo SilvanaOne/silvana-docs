@@ -46,7 +46,7 @@ Supported Platforms:
 ### Manual Installation
 If you choose to install manually:
 
-1. Go to the [releases page](https://github.com/SilvanaOne/silvana/releases).
+1. Go to the releases page.
 2. Download the archive suitable for your platform:
  - `silvana-arm64-linux.tar.gz` for Linux ARM64;
  - `silvana-x86_64-linux.tar.gz` for Linux x86_64;
@@ -229,11 +229,11 @@ The coordinator may fail to start for a number of reasons. This is what you can 
 
 After starting your Coordinator, do this:
 1. **Create a new project**: `silvana new myproject`.
-2. **Deploy an application**: follow the [Add Example](https://github.com/SilvanaOne/silvana/blob/main/examples/add/README.md).
+2. **Deploy an application**: follow the Add Example.
 3. **Monitor jobs**: use `silvana jobs --instance <your-app-instance>`.
 4. **Check balances**: `silvana balance sui`.
 
-For detailed application development, see the [examples documentation](https://github.com/SilvanaOne/silvana/blob/main/examples/add/README.md).
+For detailed application development, see the examples documentation.
 
 ## Features
 This is what you have with Silvana:
@@ -279,10 +279,10 @@ mpulumi up
 ## Protobuf
 
 Follow this workflow to use Protobuf:
-1. Create [proto definitions](https://github.com/SilvanaOne/silvana/tree/main/proto).
-2. Compile with `make regen` for Rust and `buf lint && buf generate` for TypeScript - definitions will be compiled to SQL, SQL migrations, Rust [interfaces](https://github.com/SilvanaOne/silvana/tree/main/crates/proto) with reflection and server/client, TypeScript [interfaces](https://github.com/SilvanaOne/silvana/tree/main/clients/grpc-node/src/proto) and client, [sea-orm interfaces for TiDB](https://github.com/SilvanaOne/silvana/tree/main/crates/tidb/src/entity).
+1. Create proto definitions.
+2. Compile with `make regen` for Rust and `buf lint && buf generate` for TypeScript - definitions will be compiled to SQL, SQL migrations, Rust interfaces with reflection and server/client, TypeScript interfaces and client, sea-orm interfaces for TiDB.
 
 ## Examples of clients
 
-- [node example](https://github.com/SilvanaOne/silvana/tree/main/clients/grpc-node)
-- [web example](https://github.com/SilvanaOne/silvana/tree/main/clients/grpc-web) - [https://grpc-web.silvana.dev](https://grpc-web.silvana.dev/)
+- node example
+- web example
