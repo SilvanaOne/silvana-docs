@@ -72,7 +72,7 @@ The delayed settlement may pose a potential risk that the transaction can be tam
 
 Silvana Ultra is a **multi-based rollup**, meaning you can land the Coordination layer, like any other app component, on any network of your choice. Build your killer app by picking the battle-tested networks and projects out there.
 
-How Rollups Work on Silvana
+## How Rollups Work on Silvana
 In Silvana’s Ultra Rollup, a **Network of Agents** handles all app operations, with each agent dedicated to a single task – such as proving, witnessing, data fetching, or executing functions like send or swap. 
 
 The **Coordination Layer** orchestrates the transaction pipeline, ensuring tasks run in the correct sequence. Agents receive tasks from the Coordination Layer or other agents, allowing developers to define workflows easily by specifying task order and target networks in a simple config file.
