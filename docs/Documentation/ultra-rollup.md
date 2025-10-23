@@ -27,21 +27,29 @@ Finality takes more time, like with zk rollups, but it happens on a settlement n
 
 Land your coordination layer on a network of your choice, and pick the prover system or settlement layer to match your requirements. Choose from the best to excel!
 
-4. **Private Database and Confidential Computing**
+4. **Real-Time Operations**
+
+You can finally run decentralized apps that respond as fast as centralized systems.
+
+5. **Private Database and Confidential Computing**
 
 Applications process and store sensitive business data confidentially using ZKPs, TEE, and MPC.
 
-5. **Bridgeless Interoperability**
+6. **Bridgeless Interoperability**
 
 Manage digital assets of any network from your coordination network without bridging them;
 
-6. **Modular Chain-Agnostic architecture**
+7. **Modular Chain-Agnostic architecture**
 
 Apps in Silvana are modular, with custom logic, modules, able plugging into different ecosystems, which ensures a high degree of developer flexibility.
 
-7. **Easy onboarding**
+8. **Easy onboarding**
 
 You can deploy our application in a rollup using your CLI by just writing a few lines of code - nice and easy.
+
+9. **Lower Operational Costs**
+
+Streamlined execution and proof aggregation reduce both gas fees and infrastructure overhead.
 
 Voilà, those are the reasons why you should onboard on Silvana to deploy your own rollup.
 
