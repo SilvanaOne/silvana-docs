@@ -470,6 +470,16 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
+        {
+          to: "/api",
+          label: "API",
+          position: "left",
+        },
+        {
+          to: "/orderbook",
+          label: "Orderbook",
+          position: "left",
+        },
         // {
         //   type: "docSidebar",
         //   sidebarId: "apiSidebar",
