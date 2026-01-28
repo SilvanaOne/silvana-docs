@@ -104,14 +104,6 @@ If any party fails to meet the contractual obligations and fulful their part of 
 
 ## Comparison with Traditional Systems
 
-| Feature | Traditional Arrangements | Canton DvP |
-|--------|--------------------------|------------|
-| Settlement Time | T+2 or longer | Near-instant |
-| Counterparty Risk | Managed by intermediaries | Eliminated through atomicity |
-| Privacy | Limited, requires trusted parties | Built-in, cryptographic |
-| Interoperability | Single system | Cross-chain atomic |
-| Finality | Reversible in some cases | Cryptographic finality |
-
 
 ## How Silvana Book Leverages DvP
 Orders are matched off-chain in a private environment. Agents, orchestrated by Silvana’s Coordination Layer, run execution on the networks where parties are. 
