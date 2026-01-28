@@ -5,7 +5,7 @@ sidebar_position: 1
 ---
 
 # Meet Silvana Book
-
+n
 ## Overview
 **Silvana Book** is a private order book designed for high-performance trading on **Canton**, combining ultra-fast off-chain order matching with secure, atomic on-chain settlement. It enables market participants to trade with full asset control, strong privacy guarantees, and deterministic execution, without exposing orders or strategies to the public network Silvana Book.
 
