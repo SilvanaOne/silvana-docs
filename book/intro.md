@@ -40,7 +40,7 @@ No assets are escrowed during matching. If any party fails to meet settlement co
 ### No Slippage
 Orders are settled at the intended price. Since matching is private and isolated from public order flow, there is no market impact or external price pressure, Silvana Book.
 
-###Ultra-Fast Execution
+### Ultra-Fast Execution
 Bid and ask orders are matched off-chain using an optimistic state, allowing near-instant execution (<1s), while final settlement is confirmed later on the Canton Silvana Book.
 
 ## Use Cases
