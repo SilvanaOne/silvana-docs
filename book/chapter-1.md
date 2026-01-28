@@ -38,7 +38,7 @@ Canton Network implements **Delivery vs Payment (DvP)** transaction model that e
 ### Atomic Settlement Across Multiple Chains
 DVP is a settlement mechanism that ensures asset transfer occurs simultaneously with the payment. In traditional finance, DvP prevents scenarios where one party delivers assets without receiving payment, or vice versa. Canton Network extends this concept to a decentralized, multi-party environment where transactions can involve multiple participants across independent blockchains, all while maintaining institutional-grade privacy and security.
 
-:::tip Success
+:::tip
 With atomic settlement, DVP effectively eliminates counterparty risk.
 :::
 
@@ -71,13 +71,13 @@ The sequencer's message contents are encrypted and not visible to the sequencer 
 - **Tamper Resistance**: the Sequencer cannot manipulate transaction details;
 - **Privacy Preservation**: transaction data remains confidential during the ordering process.
 
-:::tip Success
+:::tip
 This enables private execution environments, making it suitable for institutional, bilateral, or agent-driven trading where confidentiality matters.
 :::
 
 Canton's Global Synchronizer uses a **2/3 majority Byzantine Fault Tolerant (BFT) consensus protocol** operated by independent Super Validators. 
 
-:::tip Success
+:::tip
 This ensures fault tolerance, decentralization, and reliability.
 :::
 
