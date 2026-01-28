@@ -40,7 +40,7 @@ const config: Config = {
         id: "book",
         path: "book",
         routeBasePath: "book",
-        sidebarPath: "./sidebars.ts",
+        sidebarPath: "./book-sidebars.ts",
         editUrl: "https://github.com/SilvanaOne/silvana-docs/tree/main/",
       },
     ],
