@@ -8,25 +8,33 @@ sidebar_position: 2
 
 Canton Network implements **Delivery vs Payment (DvP)** transaction model that ensures atomic settlement while maintaining enterprise-level privacy and security.
 
-## What's Wrong with Swaps Today?
+# What's Wrong with Swaps Today?
 
 Traditional swap mechanisms have serious structural limitations:
 
-### Counterparty risk
+## Counterparty Risk
 
 In many swap flows, a) one party transfers an asset first, and b) the counterparty is expected to complete their side afterward. This creates a window where one side is exposed. Even smart-contract swaps can fail due to partial execution, reverted transactions after one transfer, and off-chain coordination errors.
 
-### Escrow and custody assumptions
+## Liquidity Pool Vulnerabilities
+
+Liquidity pools are a common way to make swap operations. However, these arrangements turn out to be inefficient because they expose participants to slippage, impermanent loss, and pricing that depends on arbitrary curve mechanics rather than real market demand.
+
+## Escrow and Custody Assumptions
 
 Typical swaps often rely on a) escrow contracts, b) intermediaries, and c) temporary custody of funds. This introduces trust assumptions, additional attack surfaces, and operational complexity.
 
-### Settlement uncertainty
+## Settlement Uncertainty
 
 In standard swaps execution and settlement are often decoupled, finality may depend on multiple transactions, and failures can leave systems in inconsistent states.
 
-### Poor fit for private or institutional trading
+## Poor Fit for Private or Institutional Trading
 
 Public swap mechanisms expose trade intent, allow front-running and MEV, and leak pricing and strategy information.
+
+# Delivery Versus Payment (DvP) - Canton’s Response to Existing Insecurities
+
+Canton Network implements **Delivery vs Payment (DvP)** transaction model that ensures atomic settlement while maintaining enterprise-level privacy and security.
 
 ---
 
@@ -86,7 +94,11 @@ Canton's Global Synchronizer uses a **2/3 majority Byzantine Fault Tolerant (BFT
 This ensures fault tolerance, decentralization, and reliability.
 :::
 
-### Transaction Security Flow
+## No Pools
+
+DvP in the Silvana Book removes the need for liquidity pools by enabling direct, atomic exchanges between buyers and sellers at agreed prices. Assets and payments settle simultaneously, eliminating slippage, impermanent loss, and pool-based pricing distortions. This order-based approach ensures fair price discovery and reduces risk for participants.
+
+# Transaction Security Flow
 
 A typical DvP transaction on Canton follows this secure flow:
 
@@ -102,9 +114,11 @@ A typical DvP transaction on Canton follows this secure flow:
 If any party fails to meet the contractual obligations and fulfil their part of the contract, settlement fails, and the transaction rolls back. No assets move from one account to another.
 :::
 
+![DvP](./img/DVP.png)
+
 ---
 
-## Comparison with Traditional Systems
+# Comparison with Traditional Systems
 
 | Feature | Traditional Arrangements | Canton DvP |
 |--------|---------------------------|------------|
@@ -116,7 +130,7 @@ If any party fails to meet the contractual obligations and fulfil their part of 
 
 ---
 
-## How Silvana Book Leverages DvP
+# How Silvana Book Leverages DvP
 
 Orders are matched off-chain in a private environment. Agents, orchestrated by Silvana's Coordination Layer, run execution on the networks where parties are.
 
