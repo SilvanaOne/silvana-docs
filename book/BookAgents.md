@@ -4,7 +4,7 @@ title: Book Agents
 sidebar_position: 3
 ---
 
-# Book Agents
+# Orderbook Agents
 
 ## Introduction
 
