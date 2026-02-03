@@ -35,6 +35,16 @@ const config: Config = {
   themes: ["docusaurus-theme-openapi-docs"],
   plugins: [
     [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "book",
+        path: "book",
+        routeBasePath: "book",
+        sidebarPath: "./book-sidebars.ts",
+        editUrl: "https://github.com/SilvanaOne/silvana-docs/tree/main/",
+      },
+    ],
+    [
       "docusaurus-plugin-typedoc-api",
       {
         projectRoot: path.join(__dirname, "silvana-lib"),
@@ -469,6 +479,13 @@ const config: Config = {
           sidebarId: "docsSidebar",
           position: "left",
           label: "Docs",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "bookSidebar",
+          position: "left",
+          label: "Silvana Book",
+          docsPluginId: "book",
         },
         // {
         //   type: "docSidebar",
