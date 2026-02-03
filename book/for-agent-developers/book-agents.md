@@ -1,7 +1,7 @@
 ---
 id: book-agents
-title: Book Agents
-sidebar_position: 3
+title: Orderbook Agents
+sidebar_position: 1
 ---
 
 # Orderbook Agents

@@ -1,7 +1,7 @@
 ---
 id: orderbook-sdk
 title: Orderbook SDK
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Orderbook SDK
