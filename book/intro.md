@@ -1,6 +1,6 @@
 ---
 id: intro
-title: Introduction
+title: Meet Silvana Book
 sidebar_position: 1
 ---
 
