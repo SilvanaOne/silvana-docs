@@ -1,7 +1,7 @@
 ---
 id: supportedwallets
 title: Supported Wallets
-sidebar_position: 5
+sidebar_position: 3
 ---
 # Supported Wallets
 
@@ -41,8 +41,6 @@ While DvP is a native capability of the Canton network, only a small number of w
 - atomic settlement between independent parties;
 - reduced counterparty risk;
 - strong guarantees around trade finality.
-
-> Wallets without native DvP support can still be used with Silvana Book for holding assets and participating in trading, but the settlement experience may rely on simplified or indirect flows rather than direct DvP interactions at the wallet level.
 
 :::tip Note
 Wallets without native DvP support can still be used with Silvana Book for holding assets and participating in trading, but the settlement experience may rely on simplified or indirect flows rather than direct DvP interactions at the wallet level.
