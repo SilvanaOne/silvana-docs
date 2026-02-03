@@ -28,4 +28,4 @@ Validators verify transaction correctness. Settlement is recorded on all relevan
 If any party fails to meet the contractual obligations and fulful their part of the contract, settlement fails, and the transaction rolls back. No assets move from one account to another.
 :::
 
-![Ordeflow](../img/DVP.png)
+![Ordeкflow](../img/DVP.png)
