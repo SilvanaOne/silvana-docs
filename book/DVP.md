@@ -4,9 +4,7 @@ title: Delivery Versus Payment (DvP)
 sidebar_position: 2
 ---
 
-# Delivery Versus Payment (DvP) — Canton's Response to Existing Insecurities
-
-Canton Network implements **Delivery vs Payment (DvP)** transaction model that ensures atomic settlement while maintaining enterprise-level privacy and security.
+# Secured Transactions Via DVP
 
 # What's Wrong with Swaps Today?
 
@@ -80,10 +78,6 @@ The sequencer's message contents are encrypted and not visible to the sequencer 
 - **Tamper Resistance**: the Sequencer cannot manipulate transaction details;
 - **Privacy Preservation**: transaction data remains confidential during the ordering process.
 
----
-
-## Global Synchronizer and Transaction Security Flow
-
 :::tip
 This enables private execution environments, making it suitable for institutional, bilateral, or agent-driven trading where confidentiality matters.
 :::
@@ -97,26 +91,6 @@ This ensures fault tolerance, decentralization, and reliability.
 ## No Pools
 
 DvP in the Silvana Book removes the need for liquidity pools by enabling direct, atomic exchanges between buyers and sellers at agreed prices. Assets and payments settle simultaneously, eliminating slippage, impermanent loss, and pool-based pricing distortions. This order-based approach ensures fair price discovery and reduces risk for participants.
-
-# Transaction Security Flow
-
-A typical DvP transaction on Canton follows this secure flow:
-
-1. **Transaction Initiation** — Participants create DAML contracts representing the asset transfer and payment that include conditions to be met for settlement. Each participant signs their part of the transaction.
-
-2. **Privacy-Preserving Submission** — Transaction data is encrypted before submission. Only relevant sub-transactions are shared with each participant. Sequencer receives encrypted messages for ordering.
-
-3. **Atomic Execution** — Global Synchronizer coordinates across blockchains. Settlement utility ensures both delivery and payment occur atomically.
-
-4. **Finality and Settlement** — Validators verify transaction correctness. Settlement is recorded on all relevant blockchains. Participants receive confirmation of completed settlement.
-
-:::tip
-If any party fails to meet the contractual obligations and fulfil their part of the contract, settlement fails, and the transaction rolls back. No assets move from one account to another.
-:::
-
-![DvP](./img/DVP.png)
-
----
 
 # Comparison with Traditional Systems
 
